@@ -121,11 +121,11 @@ const HeroSection = () => {
 
             {/* Dynamic Content based on active tab */}
             <div className="space-y-6 pt-4 animate-fadeIn">
-              <div className="prose">
+              {/* <div className="prose">
                 <p className="text-[#ffffff] leading-relaxed">
                   {currentService?.description}
                 </p>
-              </div>
+              </div> */}
 {/*               
               <div className="grid grid-cols-1 gap-3">
                 {currentService?.features.map((feature, idx) => (

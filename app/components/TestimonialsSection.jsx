@@ -128,7 +128,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Google Reviews Badge */}
-        <div className={`flex justify-center mb-12 transition-all duration-700 delay-200 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        {/* <div className={`flex justify-center mb-12 transition-all duration-700 delay-200 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="inline-flex flex-col items-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl border border-indigo-100">
             <div className="flex items-center gap-4 mb-3">
               <div className="flex items-center gap-2">
@@ -159,7 +159,7 @@ const TestimonialsSection = () => {
               </svg>
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {/* Swiper Slider */}
         <div className={`transition-all duration-700 delay-400 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>

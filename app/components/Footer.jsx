@@ -93,8 +93,8 @@ const Footer = () => {
     {
       title: 'LEGAL',
       links: [
-        { label: 'Privacy policy', href: '/privacy' },
-        { label: 'Cookie settings', href: '/cookies' },
+        { label: 'Privacy policy', href: '/privacy-policy' },
+        { label: 'Cookie settings', href: '/cookie-settings' },
         { label: 'Disclaimer', href: '/disclaimer' },
         { label: 'Whistleblowing service', href: '/whistleblowing' }
       ]
