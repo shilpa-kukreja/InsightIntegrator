@@ -53,134 +53,134 @@ const MediaPage = () => {
   }, []);
 
   const serviceItems = [
-    {
-      id: 'press-releases',
-      name: 'Press Releases',
-      shortDescription: 'Professional press release writing and distribution services.',
-      description: 'Our media team crafts compelling press releases that effectively communicate your news and announcements to target audiences through strategic distribution channels.',
-      detailedDescription: 'Press releases remain a cornerstone of effective media relations. Our experienced writers craft compelling announcements that capture attention, deliver key messages, and generate meaningful media coverage across traditional and digital channels.',
-      keyFeatures: [
-        'Professional press release writing and editing',
-        'Strategic messaging development',
-        'Media distribution services',
-        'Press release SEO optimization',
-        'Coverage tracking and reporting',
-        'Crisis communication support'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'news-events',
-      name: 'News & Events',
-      shortDescription: 'Event coverage and news story development.',
-      description: 'We provide comprehensive news and event coverage services, including story development, event planning, and post-event reporting to maximize your visibility.',
-      detailedDescription: 'Events provide powerful opportunities to connect with stakeholders and generate positive media coverage. Our team manages every aspect of event communications, from pre-event promotion to real-time coverage and post-event reporting.',
-      keyFeatures: [
-        'Event planning and coordination',
-        'News story development and pitching',
-        'Media attendance coordination',
-        'Real-time event coverage',
-        'Post-event reporting and analysis',
-        'Speaker and spokesperson support'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'media-coverage',
-      name: 'Media Coverage',
-      shortDescription: 'Strategic media relations and coverage placement.',
-      description: 'Our media relations experts help you secure positive media coverage through targeted outreach, relationship building, and strategic story placement.',
-      detailedDescription: 'Securing positive media coverage requires strategic relationships and compelling stories. Our media relations team leverages established journalist relationships to secure meaningful coverage that enhances your reputation and reaches target audiences.',
-      keyFeatures: [
-        'Media relations strategy development',
-        'Journalist relationship management',
-        'Strategic media pitching',
-        'Interview coordination and prep',
-        'Coverage monitoring and analysis',
-        'Media training for executives'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'annual-reports',
-      name: 'Annual Reports',
-      shortDescription: 'Annual report design, writing, and production.',
-      description: 'We create compelling annual reports that effectively communicate your organization\'s achievements, financial performance, and strategic direction to stakeholders.',
-      detailedDescription: 'Annual reports are critical communication tools that tell your organization\'s story to investors, employees, and other stakeholders. Our team creates visually stunning reports that effectively communicate achievements, financial performance, and strategic vision.',
-      keyFeatures: [
-        'Annual report strategy and planning',
-        'Content development and writing',
-        'Creative design and layout',
-        'Print and digital production',
-        'Stakeholder distribution',
-        'Interactive digital reports'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'thought-leadership',
-      name: 'Thought Leadership',
-      shortDescription: 'Executive positioning and thought leadership content.',
-      description: 'Our team helps position your executives as industry thought leaders through strategic content development, speaking engagements, and media placements.',
-      detailedDescription: 'Establishing executives as thought leaders builds trust, differentiates your brand, and opens new opportunities. Our team develops comprehensive thought leadership programs including bylined articles, speaking engagements, and executive branding initiatives.',
-      keyFeatures: [
-        'Executive positioning strategy',
-        'Thought leadership content development',
-        'Byline article writing and placement',
-        'Speaking engagement support',
-        'Social media amplification',
-        'Executive brand development'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'podcasts',
-      name: 'Podcasts',
-      shortDescription: 'Podcast production and content strategy.',
-      description: 'We help you launch and produce professional podcasts that engage your audience, build brand authority, and deliver valuable content consistently.',
-      detailedDescription: 'Podcasts offer a powerful way to connect with audiences through authentic conversations. Our team handles everything from concept development and guest booking to recording, editing, and distribution, ensuring professional-quality episodes that build brand authority.',
-      keyFeatures: [
-        'Podcast strategy and concept development',
-        'Episode content planning and scripting',
-        'Professional recording and editing',
-        'Guest coordination and booking',
-        'Distribution and promotion',
-        'Performance analytics'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'webinars',
-      name: 'Webinars',
-      shortDescription: 'Webinar planning, production, and promotion.',
-      description: 'Our webinar services cover everything from planning and content development to production, promotion, and post-event follow-up to maximize engagement.',
-      detailedDescription: 'Webinars deliver valuable content while generating qualified leads. Our end-to-end webinar services include topic development, speaker preparation, technical production, promotion, and post-event follow-up to maximize attendance and engagement.',
-      keyFeatures: [
-        'Webinar strategy and topic planning',
-        'Content and presentation development',
-        'Speaker preparation and coaching',
-        'Technical production and platform management',
-        'Promotion and registration management',
-        'Post-webinar follow-up and analytics'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'case-studies',
-      name: 'Case Studies',
-      shortDescription: 'Success story development and case study creation.',
-      description: 'We transform your client successes into compelling case studies that demonstrate your value, build credibility, and support your sales and marketing efforts.',
-      detailedDescription: 'Case studies provide powerful social proof that demonstrates your value to prospective clients. Our team conducts in-depth client interviews and crafts compelling success stories that highlight challenges, solutions, and measurable results.',
-      keyFeatures: [
-        'Case study strategy and planning',
-        'Client interview management',
-        'Success story development and writing',
-        'Professional design and formatting',
-        'Distribution and repurposing',
-        'Sales enablement support'
-      ],
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    }
+    // {
+    //   id: 'press-releases',
+    //   name: 'Press Releases',
+    //   shortDescription: 'Professional press release writing and distribution services.',
+    //   description: 'Our media team crafts compelling press releases that effectively communicate your news and announcements to target audiences through strategic distribution channels.',
+    //   detailedDescription: 'Press releases remain a cornerstone of effective media relations. Our experienced writers craft compelling announcements that capture attention, deliver key messages, and generate meaningful media coverage across traditional and digital channels.',
+    //   keyFeatures: [
+    //     'Professional press release writing and editing',
+    //     'Strategic messaging development',
+    //     'Media distribution services',
+    //     'Press release SEO optimization',
+    //     'Coverage tracking and reporting',
+    //     'Crisis communication support'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'news-events',
+    //   name: 'News & Events',
+    //   shortDescription: 'Event coverage and news story development.',
+    //   description: 'We provide comprehensive news and event coverage services, including story development, event planning, and post-event reporting to maximize your visibility.',
+    //   detailedDescription: 'Events provide powerful opportunities to connect with stakeholders and generate positive media coverage. Our team manages every aspect of event communications, from pre-event promotion to real-time coverage and post-event reporting.',
+    //   keyFeatures: [
+    //     'Event planning and coordination',
+    //     'News story development and pitching',
+    //     'Media attendance coordination',
+    //     'Real-time event coverage',
+    //     'Post-event reporting and analysis',
+    //     'Speaker and spokesperson support'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'media-coverage',
+    //   name: 'Media Coverage',
+    //   shortDescription: 'Strategic media relations and coverage placement.',
+    //   description: 'Our media relations experts help you secure positive media coverage through targeted outreach, relationship building, and strategic story placement.',
+    //   detailedDescription: 'Securing positive media coverage requires strategic relationships and compelling stories. Our media relations team leverages established journalist relationships to secure meaningful coverage that enhances your reputation and reaches target audiences.',
+    //   keyFeatures: [
+    //     'Media relations strategy development',
+    //     'Journalist relationship management',
+    //     'Strategic media pitching',
+    //     'Interview coordination and prep',
+    //     'Coverage monitoring and analysis',
+    //     'Media training for executives'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'annual-reports',
+    //   name: 'Annual Reports',
+    //   shortDescription: 'Annual report design, writing, and production.',
+    //   description: 'We create compelling annual reports that effectively communicate your organization\'s achievements, financial performance, and strategic direction to stakeholders.',
+    //   detailedDescription: 'Annual reports are critical communication tools that tell your organization\'s story to investors, employees, and other stakeholders. Our team creates visually stunning reports that effectively communicate achievements, financial performance, and strategic vision.',
+    //   keyFeatures: [
+    //     'Annual report strategy and planning',
+    //     'Content development and writing',
+    //     'Creative design and layout',
+    //     'Print and digital production',
+    //     'Stakeholder distribution',
+    //     'Interactive digital reports'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'thought-leadership',
+    //   name: 'Thought Leadership',
+    //   shortDescription: 'Executive positioning and thought leadership content.',
+    //   description: 'Our team helps position your executives as industry thought leaders through strategic content development, speaking engagements, and media placements.',
+    //   detailedDescription: 'Establishing executives as thought leaders builds trust, differentiates your brand, and opens new opportunities. Our team develops comprehensive thought leadership programs including bylined articles, speaking engagements, and executive branding initiatives.',
+    //   keyFeatures: [
+    //     'Executive positioning strategy',
+    //     'Thought leadership content development',
+    //     'Byline article writing and placement',
+    //     'Speaking engagement support',
+    //     'Social media amplification',
+    //     'Executive brand development'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'podcasts',
+    //   name: 'Podcasts',
+    //   shortDescription: 'Podcast production and content strategy.',
+    //   description: 'We help you launch and produce professional podcasts that engage your audience, build brand authority, and deliver valuable content consistently.',
+    //   detailedDescription: 'Podcasts offer a powerful way to connect with audiences through authentic conversations. Our team handles everything from concept development and guest booking to recording, editing, and distribution, ensuring professional-quality episodes that build brand authority.',
+    //   keyFeatures: [
+    //     'Podcast strategy and concept development',
+    //     'Episode content planning and scripting',
+    //     'Professional recording and editing',
+    //     'Guest coordination and booking',
+    //     'Distribution and promotion',
+    //     'Performance analytics'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'webinars',
+    //   name: 'Webinars',
+    //   shortDescription: 'Webinar planning, production, and promotion.',
+    //   description: 'Our webinar services cover everything from planning and content development to production, promotion, and post-event follow-up to maximize engagement.',
+    //   detailedDescription: 'Webinars deliver valuable content while generating qualified leads. Our end-to-end webinar services include topic development, speaker preparation, technical production, promotion, and post-event follow-up to maximize attendance and engagement.',
+    //   keyFeatures: [
+    //     'Webinar strategy and topic planning',
+    //     'Content and presentation development',
+    //     'Speaker preparation and coaching',
+    //     'Technical production and platform management',
+    //     'Promotion and registration management',
+    //     'Post-webinar follow-up and analytics'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'case-studies',
+    //   name: 'Case Studies',
+    //   shortDescription: 'Success story development and case study creation.',
+    //   description: 'We transform your client successes into compelling case studies that demonstrate your value, build credibility, and support your sales and marketing efforts.',
+    //   detailedDescription: 'Case studies provide powerful social proof that demonstrates your value to prospective clients. Our team conducts in-depth client interviews and crafts compelling success stories that highlight challenges, solutions, and measurable results.',
+    //   keyFeatures: [
+    //     'Case study strategy and planning',
+    //     'Client interview management',
+    //     'Success story development and writing',
+    //     'Professional design and formatting',
+    //     'Distribution and repurposing',
+    //     'Sales enablement support'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // }
   ];
 
   const faqs = [

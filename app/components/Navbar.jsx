@@ -184,18 +184,18 @@ const Navbar = () => {
         },
         {
           name: "In-Country Value (ICV)",
-          href: "/services/audit-and-assurance#business-risk-services",
+          href: "/services/audit-and-assurance#in-country",
           sectionId: "business-risk-services",
         },
         {
           name: "Outsourcing and Business Solutions",
-          href: "/services/audit-and-assurance#business-process-solutions",
+          href: "/services/audit-and-assurance#outsourcing-business",
           sectionId: "business-process-solutions",
           hasSubmenu: true,
           subItems: [
             {
               name: "Accounting and Book-keeping",
-              href: "/services/audit-and-assurance#accounting-bookkeeping",
+              href: "/services/audit-and-assurance#accounting",
             },
             {
               name: "Business Incorporation",
@@ -207,7 +207,7 @@ const Navbar = () => {
             },
             {
               name: "Stock & Asset Audit / Count",
-              href: "/services/audit-and-assurance#stock-audit",
+              href: "/services/audit-and-assurance#stock-asset",
             },
             {
               name: "HR and Payroll",
@@ -317,11 +317,11 @@ const Navbar = () => {
             },
             {
               name: "Internal Controls over Financial Reporting (ICFR)",
-              href: "/services/advisory#icfr",
+              href: "/services/advisory#internal-controls",
             },
             {
               name: "Enterprise Risk Management (ERM)",
-              href: "/services/advisory#erm",
+              href: "/services/advisory#enterprise-risk",
             },
             {
               name: "Corporate Governance Assessment",
@@ -331,33 +331,33 @@ const Navbar = () => {
         },
         {
           name: "Regulatory & Compliance",
-          href: "/services/advisory#business-risk",
+          href: "/services/advisory#regulatory",
           sectionId: "business-risk",
           hasSubmenu: true,
           subItems: [
             {
               name: "AML & CFT Compliance",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#aml-cft",
             },
             {
               name: "Regulatory compliance advisory",
-              href: "/services/advisory#icfr",
+              href: "/services/advisory#regulatory-comliance",
             },
             {
               name: "Compliance monitoring & assurance ",
-              href: "/services/advisory#erm",
+              href: "/services/advisory#compilance-monitorign",
             },
             {
               name: "Training and development",
-              href: "/services/advisory#corporate-governance",
+              href: "/services/advisory#training-development",
             },
             {
               name: "Independent third-party reviews ",
-              href: "/services/advisory#corporate-governance",
+              href: "/services/advisory#independent-third",
             },
             {
               name: "Islamic finance advisory and shari’ah compliance ",
-              href: "/services/advisory#corporate-governance",
+              href: "/services/advisory#islamic-finance",
             },
           ],
         },
@@ -369,39 +369,39 @@ const Navbar = () => {
           subItems: [
             {
               name: "Feasibility Studies ",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#feasibility-studies",
             },
-            { name: "Due Diligence ", href: "/services/advisory#icfr" },
+            { name: "Due Diligence ", href: "/services/advisory#due-diligence" },
             {
               name: "Valuations and Financial Modelling  ",
-              href: "/services/advisory#erm",
+              href: "/services/advisory#valuations-financial",
             },
           ],
         },
 
         {
           name: "Technology & Cybersecurity",
-          href: "/services/advisory#financial-advisory",
-          sectionId: "financial-advisory",
+          href: "/services/advisory#technology-cybersecurity",
+          sectionId: "technology-cybersecurity",
           hasSubmenu: true,
           subItems: [
             {
               name: "Cybersecurity",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#cybersecurity",
             },
-            { name: "Digital strategy ", href: "/services/advisory#icfr" },
+            { name: "Digital strategy ", href: "/services/advisory#digital-strategy" },
             {
               name: "Implementation Support   ",
-              href: "/services/advisory#erm",
+              href: "/services/advisory#implementation-support",
             },
             {
               name: "Post Implementation Review ",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#post-implementation",
             },
-            { name: "Technology Advisory   ", href: "/services/advisory#icfr" },
+            { name: "Technology Advisory   ", href: "/services/advisory#technology-advisory" },
             {
               name: "Training and change management   ",
-              href: "/services/advisory#erm",
+              href: "/services/advisory#training-change",
             },
           ],
         },
@@ -423,43 +423,54 @@ const Navbar = () => {
         // },
         {
           name: "Forensic",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/advisory#forensics",
+          sectionId: "forensics",
           hasSubmenu: true,
           subItems: [
             {
               name: "Fraud investigations ",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#fraud-investigations",
             },
             {
               name: "Anti-fraud program and controls  ",
-              href: "/services/advisory#icfr",
+              href: "/services/advisory#anti-fraud",
             },
-            { name: "Digital forensics ", href: "/services/advisory#erm" },
+            { name: "Digital forensics ", href: "/services/advisory#digital-forensics" },
             {
               name: "Dispute advisory services ",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#dispute-advisory",
             },
           ],
         },
 
         {
           name: "ESG Services",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/advisory#esg-services",
+          sectionId: "esg-services",
           hasSubmenu: true,
           subItems: [
             {
               name: "ESG Reporting & Compliance ",
-              href: "/services/advisory#internal-audit",
+              href: "/services/advisory#esg-reporting",
             },
             {
               name: "Benchmarking & Gap Analysis  ",
-              href: "/services/advisory#icfr",
+              href: "/services/advisory#benchmarking-gap",
             },
             {
               name: "Materiality Assessment  ",
-              href: "/services/advisory#erm",
+              href: "/services/advisory#materiality-assessment",
+            },
+             {
+              name: "Post Implementation Review  ",
+              href: "/services/advisory#post-implementation",
+            }, {
+              name: "Technology Advisory  ",
+              href: "/services/advisory#technology-advisory",
+            },
+            {
+              name: "Training and change management",
+              href: "/services/advisory#training-change",
             },
           ],
         },
@@ -798,11 +809,6 @@ const Navbar = () => {
                           ? "text-[#4f2d80] bg-[#4f2d80]/5"
                           : "text-gray-700 hover:text-[#4f2d80] hover:bg-gray-50"
                       }`}
-                      onClick={(e) => {
-                        if (link.hasDropdown) {
-                          e.preventDefault();
-                        }
-                      }}
                     >
                       {link.name}
                       {link.hasDropdown && (
@@ -832,7 +838,7 @@ const Navbar = () => {
                     {/* Services Mega Dropdown */}
                     {link.hasDropdown && activeDropdown === "Services" && (
                       <div
-                        className="absolute top-full left-1/2 mt-6 w-screen max-w-[1400px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden animate-fadeIn"
+                        className="absolute top-full left-1/2  w-screen max-w-[1400px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-visible animate-fadeIn"
                         style={{
                           left: "50%",
                           right: "auto",
@@ -858,68 +864,75 @@ const Navbar = () => {
                               </Link>
                               <ul className="space-y-2">
                                 {category.items.map((item, itemIdx) => (
-                                  <li
-                                    key={itemIdx}
-                                    className="relative"
-                                    onMouseEnter={() =>
-                                      item.hasSubmenu &&
-                                      setActiveSubmenu(item.name)
-                                    }
-                                    onMouseLeave={() =>
-                                      item.hasSubmenu && setActiveSubmenu(null)
-                                    }
-                                  >
-                                    <Link
-                                      href={item.href}
-                                      className="text-gray-600 hover:text-[#4f2d80] text-sm transition-all duration-200 block py-2 px-2 hover:bg-gray-50 rounded-md flex justify-between items-center"
-                                      onClick={() => setActiveDropdown(null)}
+                                  <li key={itemIdx}>
+                                    {/* Wrapper spans row + submenu so pointer can cross spacing without firing mouseleave */}
+                                    <div
+                                      className="relative"
+                                      onMouseEnter={() =>
+                                        item.hasSubmenu &&
+                                        setActiveSubmenu(item.name)
+                                      }
+                                      onMouseLeave={() =>
+                                        item.hasSubmenu &&
+                                        setActiveSubmenu(null)
+                                      }
                                     >
-                                      {item.name}
+                                      <Link
+                                        href={item.href}
+                                        className="text-gray-600 hover:text-[#4f2d80] text-sm transition-all duration-200 block py-2 px-2 hover:bg-gray-50 rounded-md flex justify-between items-center"
+                                        onClick={() => setActiveDropdown(null)}
+                                      >
+                                        {item.name}
 
-                                      {item.hasSubmenu && (
-                                        <svg
-                                          className={`w-3 h-3 ml-2 transition-transform duration-300 ${
-                                            activeSubmenu === item.name
-                                              ? "rotate-180"
-                                              : ""
-                                          }`}
-                                          fill="none"
-                                          stroke="currentColor"
-                                          viewBox="0 0 24 24"
-                                        >
-                                          <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M19 9l-7 7-7-7"
-                                          />
-                                        </svg>
-                                      )}
-                                    </Link>
+                                        {item.hasSubmenu && (
+                                          <svg
+                                            className={`w-3 h-3 ml-2 shrink-0 transition-transform duration-300 ${
+                                              activeSubmenu === item.name
+                                                ? "rotate-180"
+                                                : ""
+                                            }`}
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              strokeWidth={2}
+                                              d="M19 9l-7 7-7-7"
+                                            />
+                                          </svg>
+                                        )}
+                                      </Link>
 
-                                    {/* Submenu BELOW (not right) */}
-                                    {item.hasSubmenu &&
-                                      activeSubmenu === item.name && (
-                                        <div className="absolute left-[-10px] top-full mt-2 w-[260px] bg-white shadow-lg border border-gray-100 rounded-lg p-3 z-50">
-                                          <ul className="space-y-1">
-                                            {item.subItems.map(
-                                              (subItem, subIdx) => (
-                                                <li key={subIdx}>
-                                                  <Link
-                                                    href={subItem.href}
-                                                    className="block text-gray-600 hover:text-[#4f2d80] text-sm py-1.5 px-2 hover:bg-gray-50 rounded-md transition-all"
-                                                    onClick={() =>
-                                                      setActiveDropdown(null)
-                                                    }
-                                                  >
-                                                    {subItem.name}
-                                                  </Link>
-                                                </li>
-                                              ),
-                                            )}
-                                          </ul>
-                                        </div>
-                                      )}
+                                      {/* pt-2 = hover bridge — margin created a dead zone that cleared the submenu */}
+                                      {item.hasSubmenu &&
+                                        activeSubmenu === item.name && (
+                                          <div className="absolute left-[-10px] top-full z-60 pt-2 w-[260px]">
+                                            <div className="bg-white shadow-lg border border-gray-100 rounded-lg p-3">
+                                              <ul className="space-y-1">
+                                                {item.subItems.map(
+                                                  (subItem, subIdx) => (
+                                                    <li key={subIdx}>
+                                                      <Link
+                                                        href={subItem.href}
+                                                        className="block text-gray-600 hover:text-[#4f2d80] text-sm py-1.5 px-2 hover:bg-gray-50 rounded-md transition-all"
+                                                        onClick={() =>
+                                                          setActiveDropdown(
+                                                            null,
+                                                          )
+                                                        }
+                                                      >
+                                                        {subItem.name}
+                                                      </Link>
+                                                    </li>
+                                                  ),
+                                                )}
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        )}
+                                    </div>
                                   </li>
                                 ))}
                               </ul>

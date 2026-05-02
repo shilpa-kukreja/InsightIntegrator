@@ -73,20 +73,23 @@ const Footer = () => {
     {
       title: 'ABOUT',
       links: [
+        {label: 'Home', href: '/'},
         { label: 'About us', href: '/about' },
-        { label: 'Meet our people', href: '/team' },
+        // { label: 'Meet our people', href: '/team' },
         { label: 'Careers', href: '/careers' },
-        { label: 'Events', href: '/events' },
-        { label: 'Media', href: '/media' },
-        { label: 'Our offices', href: '/offices' }
+        { label: 'Blogs' , href: '/blogs'}
+        // { label: 'Events', href: '/events' },
+        // { label: 'Media', href: '/media' },
+        // { label: 'Our offices', href: '/offices' }
       ]
     },
     {
       title: 'CONNECT',
       links: [
-        { label: 'Insights', href: '/insights' },
+        // { label: 'Insights', href: '/insights' },
         { label: 'Contact us', href: '/contact' },
-        { label: 'China Desk', href: '/china-desk' },
+        // { label: 'China Desk', href: '/china-desk' },
+        // { label : 'Consult' , href: '#consult'},
         { label: 'Global India Growth Hub', href: '/global-india' }
       ]
     },

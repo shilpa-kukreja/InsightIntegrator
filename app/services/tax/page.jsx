@@ -48,134 +48,134 @@ const TaxPage = () => {
   }, []);
 
   const serviceItems = [
-    {
-      id: 'corporate-tax',
-      name: 'Corporate Tax',
-      shortDescription: 'Comprehensive corporate tax compliance and planning services.',
-      description: 'Our corporate tax team helps organizations navigate the complex corporate tax landscape in the UAE and internationally. We provide strategic planning, compliance support, and advisory services to optimize your tax position.',
-      detailedDescription: 'With the introduction of Corporate Tax in the UAE, businesses need expert guidance to ensure compliance while optimizing their tax position. Our team provides end-to-end support including registration, return filing, and strategic planning to minimize your effective tax rate within legal frameworks.',
-      keyFeatures: [
-        'Corporate tax registration and filing',
-        'Tax impact assessment for new regulations',
-        'Tax provision calculations under IFRS',
-        'Tax authority correspondence and audit support',
-        'Strategic tax planning and structuring',
-        'Loss utilization and relief optimization'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'vat',
-      name: 'VAT',
-      shortDescription: 'Value Added Tax registration, filing, and advisory services.',
-      description: 'We provide comprehensive VAT services to ensure compliance with UAE VAT regulations. Our team helps with registration, return filing, refund applications, and complex VAT matters.',
-      detailedDescription: 'Since the introduction of VAT in the UAE, businesses have faced numerous challenges in implementation and ongoing compliance. Our VAT specialists provide practical solutions to ensure accurate reporting, timely filing, and optimization of VAT positions.',
-      keyFeatures: [
-        'VAT registration and deregistration',
-        'VAT return preparation and filing',
-        'VAT refund applications for tourists and businesses',
-        'VAT health checks and compliance reviews',
-        'VAT training and awareness programs',
-        'Cross-border VAT advisory'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'transfer-pricing',
-      name: 'Transfer Pricing',
-      shortDescription: 'Documentation, compliance, and advisory for intercompany transactions.',
-      description: 'Our transfer pricing specialists help multinational enterprises establish arm\'s length pricing for intercompany transactions, prepare documentation, and manage compliance with local and international requirements.',
-      detailedDescription: 'Transfer pricing remains a key focus area for tax authorities worldwide. Our team helps you establish robust transfer pricing policies, maintain comprehensive documentation, and defend your positions during tax audits.',
-      keyFeatures: [
-        'Transfer pricing policy development and review',
-        'Master file and local file preparation',
-        'Benchmarking studies and economic analyses',
-        'TP risk assessments and health checks',
-        'Advance pricing agreements (APAs)',
-        'Litigation support and defense'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'international-tax',
-      name: 'International Tax and Tax Due Diligence',
-      shortDescription: 'Cross-border tax planning and transaction advisory.',
-      description: 'We provide international tax advisory services for cross-border transactions, helping you navigate complex tax treaties, permanent establishment risks, and global tax optimization strategies.',
-      detailedDescription: 'Operating across borders introduces complex tax considerations. Our international tax team helps you structure cross-border operations efficiently while managing permanent establishment risks and leveraging tax treaty benefits.',
-      keyFeatures: [
-        'Cross-border transaction advisory and structuring',
-        'Tax treaty analysis and benefits optimization',
-        'Permanent establishment risk assessment',
-        'Withholding tax optimization strategies',
-        'Tax due diligence for M&A transactions',
-        'Inbound and outbound investment advisory'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'customs-trade',
-      name: 'Customs and International Trade',
-      shortDescription: 'Customs compliance and trade optimization strategies.',
-      description: 'Our customs and trade experts help organizations manage import/export compliance, optimize duty positions, and navigate complex customs regulations across multiple jurisdictions.',
-      detailedDescription: 'International trade regulations are constantly evolving. Our customs specialists help you navigate complex import/export requirements, optimize duty positions, and maintain compliance with customs authorities.',
-      keyFeatures: [
-        'Customs classification (HS code determination)',
-        'Valuation advisory and transfer pricing for customs',
-        'Origin determination and preference programs',
-        'Customs audit support and representation',
-        'Trade compliance program development',
-        'Authorized Economic Operator (AEO) certification'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'excise-tax',
-      name: 'Excise Tax',
-      shortDescription: 'Excise tax registration, filing, and compliance services.',
-      description: 'We help businesses in the UAE comply with excise tax regulations, including registration, return filing, and compliance with specific requirements for excisable goods.',
-      detailedDescription: 'Excise tax applies to specific goods including tobacco, energy drinks, and carbonated beverages. Our team ensures your business remains compliant with all registration, reporting, and payment obligations.',
-      keyFeatures: [
-        'Excise tax registration and deregistration',
-        'Return preparation and monthly filing',
-        'Stock and production record maintenance',
-        'Tax audit support and representation',
-        'Compliance health checks and reviews',
-        'Excise tax planning for new products'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'pillar-two',
-      name: 'Pillar Two Services in the UAE',
-      shortDescription: 'Global minimum tax compliance and advisory.',
-      description: 'Our team provides comprehensive advisory on Pillar Two global minimum tax rules, helping multinational enterprises assess impact, calculate top-up taxes, and meet compliance obligations.',
-      detailedDescription: 'The OECD Pillar Two framework introduces a global minimum tax of 15% for large multinational enterprises. Our specialists help you understand the impact, calculate top-up taxes, and implement compliance frameworks.',
-      keyFeatures: [
-        'Pillar Two impact assessment for your group',
-        'GloBE rules application and interpretation',
-        'Top-up tax calculations and reporting',
-        'Safe harbor assessments and elections',
-        'Compliance framework design and implementation',
-        'Transitional and ongoing compliance support'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'fatca-crs',
-      name: 'FATCA & CRS Compliance Services in the UAE',
-      shortDescription: 'International tax information exchange compliance.',
-      description: 'We help financial institutions comply with FATCA and CRS requirements, including registration, due diligence, reporting, and ongoing compliance management.',
-      detailedDescription: 'Financial institutions face increasing obligations under FATCA and CRS for automatic exchange of financial account information. Our team helps you establish robust compliance frameworks and meet all reporting deadlines.',
-      keyFeatures: [
-        'FATCA/CRS registration with relevant authorities',
-        'Due diligence procedures for account classification',
-        'Annual reporting to tax authorities',
-        'Compliance reviews and gap assessments',
-        'Training and awareness for staff',
-        'Ongoing compliance management support'
-      ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    }
+    // {
+    //   id: 'corporate-tax',
+    //   name: 'Corporate Tax',
+    //   shortDescription: 'Comprehensive corporate tax compliance and planning services.',
+    //   description: 'Our corporate tax team helps organizations navigate the complex corporate tax landscape in the UAE and internationally. We provide strategic planning, compliance support, and advisory services to optimize your tax position.',
+    //   detailedDescription: 'With the introduction of Corporate Tax in the UAE, businesses need expert guidance to ensure compliance while optimizing their tax position. Our team provides end-to-end support including registration, return filing, and strategic planning to minimize your effective tax rate within legal frameworks.',
+    //   keyFeatures: [
+    //     'Corporate tax registration and filing',
+    //     'Tax impact assessment for new regulations',
+    //     'Tax provision calculations under IFRS',
+    //     'Tax authority correspondence and audit support',
+    //     'Strategic tax planning and structuring',
+    //     'Loss utilization and relief optimization'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'vat',
+    //   name: 'VAT',
+    //   shortDescription: 'Value Added Tax registration, filing, and advisory services.',
+    //   description: 'We provide comprehensive VAT services to ensure compliance with UAE VAT regulations. Our team helps with registration, return filing, refund applications, and complex VAT matters.',
+    //   detailedDescription: 'Since the introduction of VAT in the UAE, businesses have faced numerous challenges in implementation and ongoing compliance. Our VAT specialists provide practical solutions to ensure accurate reporting, timely filing, and optimization of VAT positions.',
+    //   keyFeatures: [
+    //     'VAT registration and deregistration',
+    //     'VAT return preparation and filing',
+    //     'VAT refund applications for tourists and businesses',
+    //     'VAT health checks and compliance reviews',
+    //     'VAT training and awareness programs',
+    //     'Cross-border VAT advisory'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'transfer-pricing',
+    //   name: 'Transfer Pricing',
+    //   shortDescription: 'Documentation, compliance, and advisory for intercompany transactions.',
+    //   description: 'Our transfer pricing specialists help multinational enterprises establish arm\'s length pricing for intercompany transactions, prepare documentation, and manage compliance with local and international requirements.',
+    //   detailedDescription: 'Transfer pricing remains a key focus area for tax authorities worldwide. Our team helps you establish robust transfer pricing policies, maintain comprehensive documentation, and defend your positions during tax audits.',
+    //   keyFeatures: [
+    //     'Transfer pricing policy development and review',
+    //     'Master file and local file preparation',
+    //     'Benchmarking studies and economic analyses',
+    //     'TP risk assessments and health checks',
+    //     'Advance pricing agreements (APAs)',
+    //     'Litigation support and defense'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'international-tax',
+    //   name: 'International Tax and Tax Due Diligence',
+    //   shortDescription: 'Cross-border tax planning and transaction advisory.',
+    //   description: 'We provide international tax advisory services for cross-border transactions, helping you navigate complex tax treaties, permanent establishment risks, and global tax optimization strategies.',
+    //   detailedDescription: 'Operating across borders introduces complex tax considerations. Our international tax team helps you structure cross-border operations efficiently while managing permanent establishment risks and leveraging tax treaty benefits.',
+    //   keyFeatures: [
+    //     'Cross-border transaction advisory and structuring',
+    //     'Tax treaty analysis and benefits optimization',
+    //     'Permanent establishment risk assessment',
+    //     'Withholding tax optimization strategies',
+    //     'Tax due diligence for M&A transactions',
+    //     'Inbound and outbound investment advisory'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'customs-trade',
+    //   name: 'Customs and International Trade',
+    //   shortDescription: 'Customs compliance and trade optimization strategies.',
+    //   description: 'Our customs and trade experts help organizations manage import/export compliance, optimize duty positions, and navigate complex customs regulations across multiple jurisdictions.',
+    //   detailedDescription: 'International trade regulations are constantly evolving. Our customs specialists help you navigate complex import/export requirements, optimize duty positions, and maintain compliance with customs authorities.',
+    //   keyFeatures: [
+    //     'Customs classification (HS code determination)',
+    //     'Valuation advisory and transfer pricing for customs',
+    //     'Origin determination and preference programs',
+    //     'Customs audit support and representation',
+    //     'Trade compliance program development',
+    //     'Authorized Economic Operator (AEO) certification'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'excise-tax',
+    //   name: 'Excise Tax',
+    //   shortDescription: 'Excise tax registration, filing, and compliance services.',
+    //   description: 'We help businesses in the UAE comply with excise tax regulations, including registration, return filing, and compliance with specific requirements for excisable goods.',
+    //   detailedDescription: 'Excise tax applies to specific goods including tobacco, energy drinks, and carbonated beverages. Our team ensures your business remains compliant with all registration, reporting, and payment obligations.',
+    //   keyFeatures: [
+    //     'Excise tax registration and deregistration',
+    //     'Return preparation and monthly filing',
+    //     'Stock and production record maintenance',
+    //     'Tax audit support and representation',
+    //     'Compliance health checks and reviews',
+    //     'Excise tax planning for new products'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'pillar-two',
+    //   name: 'Pillar Two Services in the UAE',
+    //   shortDescription: 'Global minimum tax compliance and advisory.',
+    //   description: 'Our team provides comprehensive advisory on Pillar Two global minimum tax rules, helping multinational enterprises assess impact, calculate top-up taxes, and meet compliance obligations.',
+    //   detailedDescription: 'The OECD Pillar Two framework introduces a global minimum tax of 15% for large multinational enterprises. Our specialists help you understand the impact, calculate top-up taxes, and implement compliance frameworks.',
+    //   keyFeatures: [
+    //     'Pillar Two impact assessment for your group',
+    //     'GloBE rules application and interpretation',
+    //     'Top-up tax calculations and reporting',
+    //     'Safe harbor assessments and elections',
+    //     'Compliance framework design and implementation',
+    //     'Transitional and ongoing compliance support'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // },
+    // {
+    //   id: 'fatca-crs',
+    //   name: 'FATCA & CRS Compliance Services in the UAE',
+    //   shortDescription: 'International tax information exchange compliance.',
+    //   description: 'We help financial institutions comply with FATCA and CRS requirements, including registration, due diligence, reporting, and ongoing compliance management.',
+    //   detailedDescription: 'Financial institutions face increasing obligations under FATCA and CRS for automatic exchange of financial account information. Our team helps you establish robust compliance frameworks and meet all reporting deadlines.',
+    //   keyFeatures: [
+    //     'FATCA/CRS registration with relevant authorities',
+    //     'Due diligence procedures for account classification',
+    //     'Annual reporting to tax authorities',
+    //     'Compliance reviews and gap assessments',
+    //     'Training and awareness for staff',
+    //     'Ongoing compliance management support'
+    //   ],
+    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    // }
   ];
 
   const faqs = [

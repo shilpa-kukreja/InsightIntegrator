@@ -694,7 +694,7 @@ const IndustryExpertisePage = () => {
 
             <div className="space-y-12">
             {industryData.map((industry, index) => (
-  <div key={industry.id} className="mb-20">
+  <div key={industry.id} id={industry.id} className="mb-20">
 
     {/* INDUSTRY HEADING */}
     <div className="text-center mb-12">
@@ -711,6 +711,7 @@ const IndustryExpertisePage = () => {
       {industry.services.map((service, i) => (
         <div
           key={service.id}
+          id={service.id}
           className="grid lg:grid-cols-2 gap-16 items-center"
         >
 

@@ -168,7 +168,7 @@ const ConsultPopup = ({ isOpen, onClose }) => {
           }`}
         ref={popupRef}
       >
-        <div className="bg-white shadow-2xl overflow-hidden">
+        <div className="bg-white shadow-2xl overflow-hidden " id='consult'>
           {/* Premium Header */}
           <div className="relative bg-[#2c154f] px-8 pt-10 pb-8 text-center">
             <button
