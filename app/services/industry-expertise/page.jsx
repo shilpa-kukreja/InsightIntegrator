@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
-const AdvisoryPage = () => {
+const IndustryExpertisePage = () => {
   const [visibleSections, setVisibleSections] = useState({});
   const [activeItem, setActiveItem] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
@@ -52,36 +52,17 @@ const AdvisoryPage = () => {
     };
   }, []);
 
-  const serviceItems = [
-    {
-      id: 'strategy-transformation',
-      name: 'Strategy & Transformation',
-      shortDescription: 'Strategic planning and business transformation services.',
-      description: 'Our strategy and transformation team helps organizations define their strategic direction, identify growth opportunities, and execute transformative initiatives.',
-      detailedDescription: 'In today\'s rapidly evolving business landscape, organizations must constantly adapt and transform. Our strategy experts work with you to define clear strategic direction, identify growth opportunities, and execute transformative initiatives that drive sustainable value creation.',
-      keyFeatures: [
-        'Strategic planning and roadmap development',
-        'Operating model design and optimization',
-        'Digital transformation strategy',
-        'Change management and organizational alignment',
-        'Performance improvement and cost optimization',
-        'M&A integration and separation management'
-      ],
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-  ];
+ const industryData = [
 
-  const industryData = [
-
-    //  Business Risk  
+  // manufacturing
   {
-    id: "business-risk",
-    title: "Business Risk  ",
+    id: "manufacturing",
+    title: "Manufacturing",
     description: "Driving operational excellence and efficiency across manufacturing value chains.",
     services: [
       {
-        id: "internal-audit",
-        name: "Internal Audit ",
+        id: "supply-chain",
+        name: "Supply Chain & Logistics Strategy",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
         detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
@@ -95,8 +76,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "internal-controls",
-        name: "Internal Controls over Financial Reporting (ICFR) ",
+        id: "operational-efficiency",
+        name: "Operational Efficiency (Lean Management)",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "Enhance operational performance by eliminating waste and improving processes.",
         detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
@@ -110,107 +91,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "enterprise-risk",
-        name: "Enterprise Risk Management (ERM) ",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
-        keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },
-      {
-        id: "corporate-governance",
-        name: "Corporate Governance Assessment",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
-        keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      }
-    ]
-  },
-
-   //  Regulatory & Compliance   
-  {
-    id: "regulatory",
-    title: "Regulatory & Compliance ",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
-    services: [
-      {
-        id: "aml-cft",
-        name: "AML & CFT Compliance  ",
-        shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
-        keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
-        ],
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
-      },
-      {
-        id: "regulatory-comliance",
-        name: "Regulatory compliance advisory ",
-        shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
-        keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
-        ],
-        image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
-      },
-      {
-        id: "compilance-monitoring",
-        name: "Compliance monitoring & assurance ",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
-        keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },
-      {
-        id: "training-development",
-        name: "Training and development ",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
-        keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },
-      {
-        id: "independent-third",
-        name: "Independent third-party reviews ",
+        id: "inventory",
+        name: "Inventory & Warehouse Management",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -224,8 +106,23 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
        {
-        id: "islamic-finance",
-        name: "Islamic finance advisory and shari’ah compliance ",
+        id: "sustainability",
+        name: "Sustainability & ESG Advisory",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+      {
+        id: "cost",
+        name: "Cost & Profitability Analysis",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -241,15 +138,15 @@ const AdvisoryPage = () => {
     ]
   },
 
-   //   Financial Advisory    
-  {
-    id: " financial-advisory ",
-    title: " Financial Advisory ",
+  //  Real Estate 
+   {
+    id: "realestate",
+    title: " Real Estate ",
     description: "Driving operational excellence and efficiency across manufacturing value chains.",
     services: [
       {
-        id: "feasibility-studies  ",
-        name: "Feasibility Studies ",
+        id: "supply-chain",
+        name: "Market Feasibility Studies",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
         detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
@@ -263,8 +160,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "due-diligence ",
-        name: "Due Diligence",
+        id: "operational-efficiency",
+        name: "Property Portfolio Strategy",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "Enhance operational performance by eliminating waste and improving processes.",
         detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
@@ -278,8 +175,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "valuations-financial ",
-        name: "Valuations and Financial Modelling  ",
+        id: "inventory",
+        name: "Tenant Retention & Experience",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -292,18 +189,48 @@ const AdvisoryPage = () => {
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
+       {
+        id: "sustainability",
+        name: "Sales & Marketing Positioning",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+      {
+        id: "cost",
+        name: "Property Management Optimization",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      }
     ]
   },
 
-  //   Technology & Cybersecurity  
-  {
-    id: " technology-cybersecurity ",
-    title: " Technology & Cybersecurity ",
+  // Hospitality
+   {
+    id: "hospitality",
+    title: " Hospitality (Hotels, F&B, Tourism) ",
     description: "Driving operational excellence and efficiency across manufacturing value chains.",
     services: [
       {
-        id: "cybersecurity ",
-        name: "Cybersecurity  ",
+        id: "supply-chain",
+        name: "Guest Experience Mapping",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
         detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
@@ -317,8 +244,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "digital-strategy ",
-        name: "Digital strategy ",
+        id: "operational-efficiency",
+        name: "Revenue Management Strategy",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "Enhance operational performance by eliminating waste and improving processes.",
         detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
@@ -332,8 +259,23 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "implementation-support ",
-        name: "Implementation Support ",
+        id: "inventory",
+        name: "Franchise & Expansion Advisory",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+       {
+        id: "sustainability",
+        name: "Menu & Service Profitability Analysis",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -347,8 +289,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "post-implementation",
-        name: "Post Implementation Review ",
+        id: "cost",
+        name: "Staff Retention & Culture Building",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -360,47 +302,19 @@ const AdvisoryPage = () => {
           "Demand planning"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },{
-        id: "technology-advisory  ",
-        name: "Technology Advisory  ",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
-        keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },{
-        id: "training-change",
-        name: "Training and change management ",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
-        keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },
+      }
     ]
   },
 
-  //   Forensics  
-  {
-    id: " forensics  ",
-    title: "Forensics ",
+  // Education
+   {
+    id: "education",
+    title: "  Education (Schools, Universities, EdTech)  ",
     description: "Driving operational excellence and efficiency across manufacturing value chains.",
     services: [
       {
-        id: "fraud-investigations",
-        name: "Fraud investigations",
+        id: "supply-chain",
+        name: "Enrollment & Admissions Strategy",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
         detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
@@ -414,8 +328,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "anti-fraud",
-        name: "Anti-fraud program and controls ",
+        id: "operational-efficiency",
+        name: "Operational Cost Review",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "Enhance operational performance by eliminating waste and improving processes.",
         detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
@@ -429,8 +343,23 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "digital-forensics ",
-        name: "Digital forensics ",
+        id: "inventory",
+        name: "Student Experience & Retention",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+       {
+        id: "sustainability",
+        name: "Accreditation & Regulatory Readiness",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -444,8 +373,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "dispute-advisory",
-        name: "Dispute advisory services ",
+        id: "cost",
+        name: "Corporate Partnerships",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -457,19 +386,19 @@ const AdvisoryPage = () => {
           "Demand planning"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },
+      }
     ]
   },
 
-  // ESG Services  
-  {
-    id: "esg-services",
-    title: " ESG Services",
+   // healthcare
+   {
+    id: "healthcare",
+    title: " Healthcare (Clinics, Hospitals, Wellness Centers)",
     description: "Driving operational excellence and efficiency across manufacturing value chains.",
     services: [
       {
-        id: "esg-reporting",
-        name: "ESG Reporting & Compliance ",
+        id: "supply-chain",
+        name: "Patient Flow Optimization",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
         detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
@@ -483,8 +412,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "benchmarking-gap",
-        name: "Benchmarking & Gap Analysis ",
+        id: "operational-efficiency",
+        name: "Revenue Cycle Management",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "Enhance operational performance by eliminating waste and improving processes.",
         detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
@@ -498,8 +427,23 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "materiality-assessment ",
-        name: "Materiality Assessment ",
+        id: "inventory",
+        name: "Healthcare Marketing & Brand Trust",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+       {
+        id: "sustainability",
+        name: "Service Expansion Feasibility",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -513,8 +457,8 @@ const AdvisoryPage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "post-implementation",
-        name: "Post Implementation Review ",
+        id: "cost",
+        name: "Administrative Compliance Readiness",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -526,23 +470,49 @@ const AdvisoryPage = () => {
           "Demand planning"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },{
-        id: "technology-advisory  ",
-        name: "Technology Advisory  ",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+      }
+    ]
+  },
+
+   // financial services
+   {
+    id: "financial-services",
+    title: "  Financial Services (DNFBPs Only)",
+    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    services: [
+      {
+        id: "supply-chain",
+        name: "AML & CFT Policy Development",
+        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
+        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Supply chain diagnostics",
+          "Logistics optimization",
+          "Vendor management strategy",
+          "Demand forecasting",
+          "Digital supply chain transformation"
         ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
-      },{
-        id: "training-change",
-        name: "Training and change management ",
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+      },
+      {
+        id: "operational-efficiency",
+        name: "KYC (Know Your Customer) Process Design",
+        shortDescription: "Improve productivity using lean methodologies.",
+        description: "Enhance operational performance by eliminating waste and improving processes.",
+        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        keyFeatures: [
+          "Lean transformation",
+          "Process optimization",
+          "Waste reduction",
+          "KPI tracking",
+          "Continuous improvement frameworks"
+        ],
+        image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
+      },
+      {
+        id: "inventory",
+        name: "GoAML Registration & Reporting Support",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "Improve stock visibility and warehouse operations.",
         detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
@@ -555,8 +525,39 @@ const AdvisoryPage = () => {
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
+       {
+        id: "sustainability",
+        name: "Risk Profiling",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+      {
+        id: "cost",
+        name: "Training",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      }
     ]
   },
+  
 ];
 
   const faqs = [
@@ -627,7 +628,7 @@ const AdvisoryPage = () => {
               </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 tracking-tight leading-[1.1]">
-                Strategic <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Advisory</span>
+                Industry <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Expertise</span>
               </h1>
               
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
@@ -692,92 +693,7 @@ const AdvisoryPage = () => {
             </div>
 
             <div className="space-y-12">
-              {serviceItems.map((item, index) => (
-                <div
-                  key={item.id}
-                  ref={el => sectionRefs.current[item.id] = el}
-                  id={item.id}
-                  data-observe="true"
-                  className={`scroll-mt-24 transition-all duration-700 transform ${visibleSections[item.id] ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
-                  style={{ transitionDelay: `${Math.min(index * 100, 500)}ms` }}
-                >
-                  <div className={`grid lg:grid-cols-2 gap-16 items-center transition-all duration-500 ${activeItem === item.id ? 'bg-gray-50 p-10 rounded-2xl -m-6' : ''}`}>
-                    
-                    {/* Left Side - Content */}
-                    <div className="order-2 lg:order-1">
-                      <div className="flex items-center gap-4 mb-6">
-                        <span className="text-sm font-light text-gray-500 tracking-wider">{(index + 1).toString().padStart(2, '0')}</span>
-                        <div className="w-12 h-px bg-gray-500"></div>
-                        <span className="text-[12px] text-gray-500 font-light uppercase tracking-wider">Advisory Service</span>
-                      </div>
-                      
-                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-5 leading-tight">
-                        {item.name}
-                      </h3>
-                      
-                      <p className="text-gray-500 text-base leading-relaxed mb-6">
-                        {item.description}
-                      </p>
-                      
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4">
-                        {item.detailedDescription}
-                      </p>
-                      
-                      <div className="mb-6">
-                        <h4 className="text-xs font-semibold text-gray-600 mb-4 tracking-wide uppercase">Key Capabilities</h4>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                          {item.keyFeatures.map((feature, idx) => (
-                            <div key={idx} className="flex items-center gap-2 group">
-                              <div className="w-1.5 h-1.5 rounded-full bg-[#0a0a0a]/50 group-hover:bg-[#0a0a0a] transition-all"></div>
-                              <span className="text-sm text-gray-500 font-light group-hover:text-gray-700 transition-colors">{feature}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      <button
-                        onClick={() => scrollToItem(item.id)}
-                        className="group inline-flex items-center gap-3 text-[#0a0a0a] text-sm font-medium tracking-wide transition-all"
-                      >
-                        <span className="border-b border-[#0a0a0a]/50 group-hover:border-[#0a0a0a] pb-0.5 transition-all">Learn More</span>
-                        <span className="group-hover:translate-x-1 transition-transform">→</span>
-                      </button>
-                    </div>
-                    
-                    {/* Right Side - Image */}
-                    <div className="order-1 lg:order-2">
-                      <div className="relative group/image">
-                        <div className="absolute -inset-2 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent rounded-md opacity-0 group-hover/image:opacity-100 transition-all duration-500"></div>
-                        <div className="relative overflow-hidden rounded-2xl shadow-xl">
-                          <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/50 via-transparent to-transparent z-10"></div>
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="w-full h-[430px] object-cover transition-transform duration-700 group-hover/image:scale-105"
-                          />
-                          {/* <div className="absolute bottom-0 left-0 w-24 h-px bg-white/20"></div>
-                          <div className="absolute bottom-0 right-0 w-24 h-px bg-white/10"></div> */}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Divider */}
-                  {index < serviceItems.length - 1 && (
-                    <div className="relative mt-12">
-                      <div className="absolute left-1/2 -translate-x-1/2 w-px h-12 bg-gradient-to-b from-gray-500 to-gray-300"></div>
-                      <div className="flex justify-center">
-                        <div className="w-2 h-1 rounded-full bg-gray-500"></div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-
-{/* this is servies with sub-servies */}
-             <div className="space-y-12 mt-10">
-             {industryData.map((industry, index) => (
+            {industryData.map((industry, index) => (
   <div key={industry.id} className="mb-20">
 
     {/* INDUSTRY HEADING */}
@@ -1088,4 +1004,4 @@ const AdvisoryPage = () => {
   );
 };
 
-export default AdvisoryPage;
+export default IndustryExpertisePage;

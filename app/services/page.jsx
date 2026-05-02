@@ -32,6 +32,7 @@ const ServicesPage = () => {
   const services = [
     {
       id: 'audit-assurance',
+      href:'audit-and-assurance',
       title: 'Audit and Assurance',
       shortDescription: 'Independent, objective assurance that enhances credibility and builds stakeholder confidence.',
       description: 'Our Audit & Assurance services provide independent, objective assurance that enhances credibility and builds stakeholder confidence. We deliver thorough examinations of financial records, internal controls, and operational processes.',
@@ -55,6 +56,7 @@ const ServicesPage = () => {
     },
     {
       id: 'tax',
+      href:'tax',
       title: 'Tax',
       shortDescription: 'Strategic tax solutions that minimize liability while ensuring full regulatory compliance.',
       description: 'Our Tax practice provides strategic solutions that minimize liability while ensuring full regulatory compliance. We help you navigate complex tax landscapes, identify opportunities, and implement effective tax strategies.',
@@ -78,6 +80,7 @@ const ServicesPage = () => {
     },
     {
       id: 'advisory',
+      href:'advisory',
       title: 'Advisory',
       shortDescription: 'Strategic guidance to navigate complexity and unlock sustainable growth opportunities.',
       description: 'Our Advisory practice delivers strategic guidance to help you navigate complexity and unlock sustainable growth opportunities. We combine deep industry expertise with analytical rigor to solve your most pressing business challenges.',
@@ -101,12 +104,59 @@ const ServicesPage = () => {
     },
     {
       id: 'media',
+      href:'media',
       title: 'Media',
       shortDescription: 'Compelling brand narratives and creative solutions that captivate audiences and drive engagement.',
       description: 'Our Media practice delivers compelling brand narratives and creative solutions that captivate audiences and drive meaningful engagement. We blend creativity with strategy to tell your story in ways that resonate and inspire action.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+        </svg>
+      ),
+      items: [
+        'Press Releases',
+        'News & Events',
+        'Media Coverage',
+        'Annual Reports',
+        'Thought Leadership',
+        'Podcasts',
+        'Webinars',
+        'Case Studies',
+      ],
+      color: 'from-gray-800 to-gray-600',
+      bgLight: 'bg-gray-50'
+    },
+     {
+      id: 'industry-expertise',
+      href:'industry-expertise',
+      title: 'Industry Expertise',
+      shortDescription: 'Compelling brand narratives and creative solutions that captivate audiences and drive engagement.',
+      description: 'Our Media practice delivers compelling brand narratives and creative solutions that captivate audiences and drive meaningful engagement. We blend creativity with strategy to tell your story in ways that resonate and inspire action.',
+      icon: (
+         <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          {/* Factory */}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M4 21V11l5 3V11l5 3V6l6 3v12H4z"
+          />
+
+          {/* Gear center */}
+          <circle cx="17" cy="17" r="2" strokeWidth={1.5} />
+
+          {/* Gear teeth */}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M17 13v1M17 20v1M13 17h1M20 17h1M14.5 14.5l.7.7M18.8 18.8l.7.7M14.5 19.5l.7-.7M18.8 15.2l.7-.7"
+          />
         </svg>
       ),
       items: [
@@ -157,7 +207,7 @@ const ServicesPage = () => {
               {services.map((service, index) => (
                 <Link
                   key={service.id}
-                  href={`/services/${service.id}`}
+                  href={`/services/${service.href}`}
                   className={`group block transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
                   style={{ transitionDelay: `${index * 100}ms` }}
                   onMouseEnter={() => setActiveService(service.id)}

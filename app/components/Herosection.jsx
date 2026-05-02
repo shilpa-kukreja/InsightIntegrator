@@ -1,11 +1,11 @@
 // app/components/HeroSection.jsx
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const HeroSection = () => {
-  const [activeTab, setActiveTab] = useState('audit');
+  const [activeTab, setActiveTab] = useState("audit");
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -13,57 +13,150 @@ const HeroSection = () => {
   }, []);
 
   const serviceTabs = [
+    // audit
     {
-      id: 'audit',
-      title: 'Audit & Assurance',
+      id: "audit",
+      title: "Audit & Assurance",
+      href:"/services/audit-and-assurance",
       icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+          />
         </svg>
       ),
-      description: 'Comprehensive audit services that build trust and transparency. Our independent assurance helps you navigate complex regulatory requirements with confidence.',
-     
-      image: '/images/audit-bg.jpg'
+      description:
+        "Comprehensive audit services that build trust and transparency. Our independent assurance helps you navigate complex regulatory requirements with confidence.",
+
+      image: "/images/audit-bg.jpg",
     },
+
+    // advisory
     {
-      id: 'advisory',
-      title: 'Advisory',
+      id: "advisory",
+      title: "Advisory",
+      href:"/services/advisory",
       icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          />
         </svg>
       ),
-      description: 'Strategic advisory services that drive growth and transformation. We help you navigate complex business challenges and seize new opportunities.',
-     
-      image: '/images/advisory-bg.jpg'
+      description:
+        "Strategic advisory services that drive growth and transformation. We help you navigate complex business challenges and seize new opportunities.",
+
+      image: "/images/advisory-bg.jpg",
     },
+
+    // tax
     {
-      id: 'tax',
-      title: 'Tax',
+      id: "tax",
+      title: "Tax",
+      href:"/services/tax",
       icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
         </svg>
       ),
-      description: 'Expert tax solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex tax matters.',
-     
-      image: '/images/tax-bg.jpg'
+      description:
+        "Expert tax solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex tax matters.",
+
+      image: "/images/tax-bg.jpg",
     },
-     {
-      id: 'media',
-      title: 'Media',
+
+    // media
+    {
+      id: "media",
+      title: "Media",
+      href:"/services/media",
       icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+          />
         </svg>
       ),
-      description: 'Expert media solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex media matters.',
-     
-      image: '/images/media-bg.jpg'
-    }
+      description:
+        "Expert media solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex media matters.",
+
+      image: "/images/media-bg.jpg",
+    },
+
+// Industry Expertise
+    {
+      id: "industry-expertise",
+      title: "Industry Expertise",
+      href:"/services/industry-expertise",
+      icon: (
+        <svg
+          className="w-6 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          {/* Factory */}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M4 21V11l5 3V11l5 3V6l6 3v12H4z"
+          />
+
+          {/* Gear center */}
+          <circle cx="17" cy="17" r="2" strokeWidth={1.5} />
+
+          {/* Gear teeth */}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M17 13v1M17 20v1M13 17h1M20 17h1M14.5 14.5l.7.7M18.8 18.8l.7.7M14.5 19.5l.7-.7M18.8 15.2l.7-.7"
+          />
+        </svg>
+      ),
+      description:
+        "Expert media solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex media matters.",
+
+      image: "/images/media-bg.jpg",
+    },
   ];
 
-  const currentService = serviceTabs.find(tab => tab.id === activeTab);
+  const currentService = serviceTabs.find((tab) => tab.id === activeTab);
 
   return (
     <section className="relative min-h-[650px] bg-[#2b144d] overflow-hidden pt-20">
@@ -77,45 +170,54 @@ const HeroSection = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-10 lg:py-12">
         <div className="grid  gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className={`space-y-8 transition-all duration-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+          <div
+            className={`space-y-8 transition-all duration-1000 transform ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}
+          >
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f2d80]/10 rounded-full">
               <span className="w-2 h-2 bg-[#fefff2] rounded-full animate-pulse"></span>
-              <span className="text-[#fefff2] text-sm font-semibold tracking-wide">Global Excellence • Local Expertise</span>
+              <span className="text-[#fefff2] text-sm font-semibold tracking-wide">
+                Global Excellence • Local Expertise
+              </span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold leading-tight">
               <span className="text-[#ffffff]">Driving your ambition in</span>
-              <span className="text-[#fefff2] block mt-2">the UAE and beyond.</span>
+              <span className="text-[#fefff2] block mt-2">
+                the UAE and beyond.
+              </span>
             </h1>
 
             {/* Description */}
             <p className="text-[#ffffff] text-lg leading-relaxed">
-              Expert assurance, advisory, tax and media solutions, powered by global scale 
-              and local market intelligence.
+              Expert assurance, advisory, tax and media solutions, powered by
+              global scale and local market intelligence.
             </p>
 
             {/* Service Tabs */}
             <div className="flex flex-wrap gap-4 pt-2">
               {serviceTabs.map((tab) => (
-                <button
+                <Link
+                  href={tab.href}
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`group relative px-6 py-3 cursor-pointer rounded-full font-semibold transition-all duration-300 flex items-center gap-2 ${
                     activeTab === tab.id
-                      ? 'bg-[#4f2d80] text-white shadow-lg shadow-[#4f2d80]/30'
-                      : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                      ? "bg-[#4f2d80] text-white shadow-lg shadow-[#4f2d80]/30"
+                      : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
                   }`}
                 >
-                  <span className={`transition-transform duration-300 group-hover:scale-110 ${activeTab === tab.id ? 'text-white' : 'text-[#4f2d80]'}`}>
+                  <span
+                    className={`transition-transform duration-300 group-hover:scale-110 ${activeTab === tab.id ? "text-white" : "text-[#4f2d80]"}`}
+                  >
                     {tab.icon}
                   </span>
                   {tab.title}
                   {activeTab === tab.id && (
                     <span className="absolute inset-0 rounded-full bg-[#4f2d80] -z-10 animate-pulse opacity-50"></span>
                   )}
-                </button>
+                </Link>
               ))}
             </div>
 
@@ -126,7 +228,7 @@ const HeroSection = () => {
                   {currentService?.description}
                 </p>
               </div> */}
-{/*               
+              {/*               
               <div className="grid grid-cols-1 gap-3">
                 {currentService?.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-2 group cursor-pointer">
@@ -137,15 +239,9 @@ const HeroSection = () => {
                   </div>
                 ))}
               </div> */}
-
-          
             </div>
           </div>
-
-       
         </div>
-
-       
       </div>
 
       {/* Animation styles */}

@@ -109,103 +109,92 @@ useEffect(() => {
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
-    {
-      id: 'business-process-solutions',
-      name: 'Business Process Solutions',
-      shortDescription: 'Optimize your business processes for efficiency and effectiveness.',
-      description: 'We help organizations streamline operations, reduce costs, and improve service delivery through process optimization, automation, and outsourcing solutions tailored to your specific needs.',
-      detailedDescription: 'Efficient business processes drive competitive advantage. Our team helps you streamline operations, reduce costs, and improve service delivery through process optimization, automation, and strategic outsourcing solutions.',
-      keyFeatures: [
-        'Process mapping and documentation',
-        'Efficiency improvement initiatives',
-        'Financial process outsourcing',
-        'Payroll and accounts payable services',
-        'Working capital optimization',
-        'Automation and digital solutions'
-      ],
-      image: '/services/BusinessProcess.png'
-    },
-    {
-      id: 'regulatory-advisory',
-      name: 'Regulatory Advisory Services',
-      shortDescription: 'Navigate complex regulatory landscapes with confidence.',
-      description: 'Stay ahead of regulatory changes with our advisory services. We help you understand requirements, implement compliance programs, and respond to regulatory inquiries effectively.',
-      detailedDescription: 'Regulatory requirements are constantly evolving across industries. Our regulatory advisory team helps you stay ahead of changes, implement effective compliance programs, and respond confidently to regulatory inquiries and examinations.',
-      keyFeatures: [
-        'Regulatory compliance assessments',
-        'Licensing and registration support',
-        'Regulatory reporting assistance',
-        'Policy and procedure development',
-        'Regulatory change management',
-        'Regulatory audit defense'
-      ],
-      image: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'financial-advisory',
-      name: 'Financial Advisory',
-      shortDescription: 'Strategic financial guidance for growth and transformation.',
-      description: 'Our financial advisory team provides strategic insights, financial analysis, and transaction support to help you achieve your business objectives and maximize shareholder value.',
-      detailedDescription: 'Strategic financial decisions require robust analysis and expert guidance. Our financial advisory team provides sophisticated financial modeling, valuation, and transaction support to help you make informed decisions and maximize shareholder value.',
-      keyFeatures: [
-        'Financial due diligence',
-        'Business valuation',
-        'Capital raising advisory',
-        'Financial modeling and forecasting',
-        'Investment analysis',
-        'Transaction support services'
-      ],
-      image: '/services/FinancialAdvisory.png'
-    },
-    {
-      id: 'technology-advisory',
-      name: 'Technology Advisory & Cybersecurity',
-      shortDescription: 'Protect your digital assets and leverage technology for growth.',
-      description: 'We help organizations navigate digital transformation, implement effective IT controls, and build robust cybersecurity programs to protect against evolving threats.',
-      detailedDescription: 'Digital transformation brings both opportunities and risks. Our technology advisors help you leverage technology for growth while implementing robust cybersecurity measures to protect your digital assets and maintain business continuity.',
-      keyFeatures: [
-        'IT risk assessment',
-        'Cybersecurity maturity evaluation',
-        'Data privacy compliance',
-        'Digital transformation strategy',
-        'IT governance framework',
-        'Incident response planning'
-      ],
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'forensics',
-      name: 'Forensics',
-      shortDescription: 'Investigate and resolve financial irregularities and fraud.',
-      description: 'Our forensic accounting team conducts independent investigations, quantifies financial losses, and provides expert testimony to resolve disputes and uncover fraudulent activities.',
-      detailedDescription: 'Financial irregularities and disputes require specialized investigative expertise. Our forensic accounting team conducts independent investigations, quantifies financial losses, and provides expert testimony to help resolve matters efficiently and effectively.',
-      keyFeatures: [
-        'Fraud investigation',
-        'Asset tracing and recovery',
-        'Forensic data analytics',
-        'Litigation support',
-        'Expert witness services',
-        'Anti-fraud program development'
-      ],
-      image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'esg-services',
-      name: 'ESG Services',
-      shortDescription: 'Develop and implement sustainable environmental, social, and governance strategies.',
-      description: 'We help organizations integrate ESG principles into their operations, measure and report on sustainability metrics, and create long-term value for stakeholders.',
-      detailedDescription: 'Environmental, Social, and Governance (ESG) considerations are increasingly important for stakeholders. Our ESG specialists help you develop and implement sustainable strategies, measure impact, and communicate your commitment to responsible business practices.',
-      keyFeatures: [
-        'ESG strategy development',
-        'Sustainability reporting',
-        'Carbon footprint assessment',
-        'Stakeholder engagement',
-        'ESG due diligence',
-        'Greenhouse gas emissions accounting'
-      ],
-      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    }
   ];
+
+  const industryData = [
+  {
+    id: "outsourcing",
+    title: " Outsourcing and Business Solutions ",
+    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    services: [
+      {
+        id: "accounting",
+        name: "Accounting and Book-keeping  ",
+        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
+        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        keyFeatures: [
+          "Supply chain diagnostics",
+          "Logistics optimization",
+          "Vendor management strategy",
+          "Demand forecasting",
+          "Digital supply chain transformation"
+        ],
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+      },
+      {
+        id: "business-incorporation",
+        name: " Business Incorporation",
+        shortDescription: "Improve productivity using lean methodologies.",
+        description: "Enhance operational performance by eliminating waste and improving processes.",
+        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        keyFeatures: [
+          "Lean transformation",
+          "Process optimization",
+          "Waste reduction",
+          "KPI tracking",
+          "Continuous improvement frameworks"
+        ],
+        image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
+      },
+      {
+        id: "liquidation",
+        name: "Liquidation and de",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+       {
+        id: "stock-asset",
+        name: "Stock & Asset Audit / Count",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+      {
+        id: "hr",
+        name: " HR and Payroll ",
+        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        description: "Improve stock visibility and warehouse operations.",
+        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        keyFeatures: [
+          "Inventory optimization",
+          "Warehouse design",
+          "Stock control systems",
+          "Automation solutions",
+          "Demand planning"
+        ],
+        image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
+      },
+    ]
+  }
+];
 
   const faqs = [
     {
@@ -340,6 +329,7 @@ useEffect(() => {
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-5"></div>
             </div>
 
+            {/* this is only services content  */}
             <div className="space-y-24">
               {serviceItems.map((item, index) => (
                 <div
@@ -422,6 +412,83 @@ useEffect(() => {
                   )}
                 </div>
               ))}
+            </div>
+
+
+{/* this is the services and sub services content  */}
+            <div className="space-y-24 mt-10">
+              {industryData.map((industry, index) => (
+  <div key={industry.id} className="mb-20">
+
+    {/* INDUSTRY HEADING */}
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+        {industry.title}
+      </h2>
+      <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+        {industry.description}
+      </p>
+    </div>
+
+    {/* SERVICES INSIDE INDUSTRY */}
+    <div className="space-y-16">
+      {industry.services.map((service, i) => (
+        <div
+          key={service.id}
+          className="grid lg:grid-cols-2 gap-16 items-center"
+        >
+
+          {/* LEFT CONTENT */}
+          <div>
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-sm text-gray-400">
+                {(i + 1).toString().padStart(2, "0")}
+              </span>
+              <div className="w-10 h-px bg-gray-300"></div>
+              <span className="text-xs uppercase text-gray-400">
+                Service
+              </span>
+            </div>
+
+            <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+              {service.name}
+            </h3>
+
+            <p className="text-gray-500 mb-4">
+              {service.description}
+            </p>
+
+            <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6">
+              {service.detailedDescription}
+            </p>
+
+            {/* FEATURES */}
+            <div className="grid md:grid-cols-2 gap-3">
+              {service.keyFeatures.map((feature, idx) => (
+                <div key={idx} className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#2c154f] rounded-full"></div>
+                  <span className="text-sm text-gray-500">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE (PER SERVICE ✅) */}
+          <div>
+            <div className="overflow-hidden rounded-2xl shadow-lg">
+              <img
+                src={service.image}
+                alt={service.name}
+                className="w-full h-[400px] object-cover hover:scale-105 transition duration-700"
+              />
+            </div>
+          </div>
+
+        </div>
+      ))}
+    </div>
+  </div>
+))}
             </div>
           </div>
         </section>

@@ -105,7 +105,8 @@ const Footer = () => {
         { label: 'Audit & Assurance', href: '/services/audit' },
         { label: 'Advisory', href: '/services/advisory' },
         { label: 'Tax', href: '/services/tax' },
-        { label: 'Media', href: '/services/media' }
+        { label: 'Media', href: '/services/media' },
+        { label: 'Industry Expertise', href: '/services/industry-expertise'}
       ]
     }
   ];
