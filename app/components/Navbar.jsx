@@ -165,7 +165,7 @@ const Navbar = () => {
   const serviceCategories = [
     // audit
     {
-      title: "Audit and Assurance",
+      title: "Audit & Assurance",
       href: "/services/audit-and-assurance",
       icon: (
         <svg
