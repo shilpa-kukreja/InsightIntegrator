@@ -36,47 +36,47 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Bora Incekara',
+      name: 'Ahmed Al Mansoori',
       date: 'August 8, 2025',
       rating: 5,
-      review: 'If you\'re doing business in the UAE and looking for a reliable and highly skilled financial advisory firm for all your tax-related matters, this is the team to trust. Their deep understanding of local regulations and proactive approach made a significant difference for our operations.',
-      initial: 'BI',
+      review: 'Insight Integrators brought clarity to our compliance processes. Their team provided structured guidance and helped us strengthen internal controls with confidence.',
+      initial: 'AA',
       verified: true
     },
     {
       id: 2,
-      name: 'maria belen daya',
+      name: 'Sarah Williams',
       date: 'July 26, 2025',
       rating: 5,
-      review: 'We engaged Insightintegrators to perform statutory audit services for 3 consecutive financial years from 2022. Thanks to Praveen and his team for their exceptional professionalism, attention to detail, and timely delivery. Highly recommended for audit and assurance services.',
-      initial: 'MD',
+      review: ' Their advisory approach is practical and well-organized. We experienced better reporting, improved processes, and greater confidence during regulatory reviews.',
+      initial: 'SW',
       verified: true
     },
     {
       id: 3,
-      name: 'Alex N',
+      name: 'Rohan Mehta',
       date: 'July 24, 2025',
       rating: 5,
-      review: 'Outstanding service from start to finish. The team at Insightintegrators provided invaluable advice on our tax strategy and helped us navigate complex regulatory requirements. Their expertise in the UAE market is unparalleled. Will definitely work with them again.',
-      initial: 'AN',
+      review: 'A highly professional team with strong knowledge of UAE regulations. Their support helped us stay compliant while improving overall operational efficiency.',
+      initial: 'RM',
       verified: true
     },
     {
       id: 4,
-      name: 'Sarah Johnson',
+      name: 'Daniel Carter',
       date: 'August 15, 2025',
       rating: 5,
-      review: 'Insightintegrators has been our trusted partner for over 5 years. Their advisory services have helped us grow our business significantly. The team is responsive, knowledgeable, and always goes the extra mile to ensure client satisfaction.',
-      initial: 'SJ',
+      review: ' We value their clear communication and consistent delivery. Every engagement is well-managed, with defined timelines and actionable insights.',
+      initial: 'DC',
       verified: true
     },
     {
       id: 5,
-      name: 'Michael Chen',
+      name: 'Fatima Al Zahra',
       date: 'July 30, 2025',
       rating: 5,
-      review: 'Exceptional tax consulting services! The team provided clear guidance on corporate tax compliance and helped us optimize our tax position. Their proactive approach and attention to detail are truly commendable.',
-      initial: 'MC',
+      review: ' Working with Insight Integrators feels like having a trusted partner. Their senior-led approach ensures reliable advice and long-term business support.',
+      initial: 'FA',
       verified: true
     }
   ];

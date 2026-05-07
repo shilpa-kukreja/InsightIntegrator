@@ -128,79 +128,79 @@ const CareersPage = () => {
 
   const values = [
     {
-      title: 'Our People Philosophy',
-      description: 'We view our team as long-term partners built on trust, accountability, and performance.'
+      title: 'Professional Approach',
+      description: 'We value responsibility, clarity, and consistency in how work is delivered and managed.',
     },
     {
-      title: 'Professional Growth & Exposure',
-      description: 'Work alongside experts and gain exposure across multiple domains and industries.'
+      title: 'Learning & Exposure',
+      description: 'Gain practical experience across advisory areas while working on real business challenges.'
     },
     {
-      title: 'Structured Delivery Frameworks',
-      description: 'Defined processes and governance ensure clarity and consistent delivery standards.'
+      title: 'Structured Work Environment',
+      description: 'Defined processes and clear expectations support efficient and consistent execution.'
     },
     {
-      title: 'Culture of Ownership',
-      description: 'Take ownership, contribute ideas, and grow in a performance-driven environment.'
+      title: 'Ownership Mindset',
+      description: 'Encouraged to take responsibility, contribute ideas, and develop a strong professional approach.'
     },
     {
-      title: 'Collaboration',
-      description: 'Working together to achieve extraordinary outcomes.'
+      title: 'Collaborative Culture',
+      description: 'Work in an environment that supports communication, coordination, and shared outcomes.'
     },
     {
-      title: 'Excellence',
-      description: 'Committed to the highest standards in everything we do.'
+      title: 'Quality Focus',
+      description: 'A consistent focus on accuracy, discipline, and high standards in every engagement.'
     }
   ];
 
   const verticals = [
     {
-      name: 'Accounting',
-      description: 'Precision-driven financial solutions and advisory with expert guidance for complex financial landscapes.',
-      detail: 'Financial reporting • Tax advisory • Audit support'
+      name: 'Audit & Assurance',
+      description: 'Work on financial reviews, compliance processes, and assurance engagements that support transparency and operational reliability.',
+      detail: 'Financial Reviews • Compliance Support • Assurance Processes'
     },
     {
       name: 'Corporate Services',
-      description: 'End-to-end business setup and support services for companies looking to establish and grow in the region.',
-      detail: 'Company formation • PRO services • Legal compliance'
+      description: 'Support business setup, operational coordination, and administrative processes across diverse business functions.',
+      detail: 'Business Support • Documentation • Operational Coordination'
     },
     {
       name: 'Risk & Compliance',
-      description: 'Comprehensive risk management frameworks to protect your business and ensure regulatory adherence.',
-      detail: 'Risk assessment • Compliance monitoring • Internal audit'
+      description: 'Contribute to risk evaluation, control assessments, and compliance-focused operational support activities.',
+      detail: 'Risk assessment • Compliance Review  • Control Monitoring'
     },
     {
-      name: 'Branding',
-      description: 'Creative excellence and market positioning strategies that differentiate your brand in competitive markets.',
-      detail: 'Brand strategy • Visual identity • Digital presence'
+      name: 'Business Operations',
+      description: 'Assist in managing day-to-day operational workflows, reporting coordination, and process support functions.',
+      detail: 'Process Support • Reporting Coordination • Workflow Management'
     },
     {
-      name: 'Research',
-      description: 'Data-driven insights and market intelligence to support informed decision-making and strategic planning.',
-      detail: 'Market research • Data analysis • Industry reports'
+      name: 'Research & Analysis',
+      description: 'Support data evaluation, market analysis, and business research activities that assist strategic decision-making.',
+      detail: 'Data Analysis • Market Research • Business Insights'
     }
   ];
 
   const howToApplySteps = [
     {
       step: '01',
-      title: 'Review Open Positions',
-      description: 'Browse our current openings and find the role that matches your skills and career aspirations.'
+      title: 'Explore Opportunities',
+      description: 'Review available roles and identify positions that align with your skills, experience, and career goals.'
     },
     {
       step: '02',
       title: 'Prepare Your Application',
-      description: 'Update your CV and write a cover letter highlighting your relevant experience and why you want to join us.'
+      description: 'Ensure your CV is updated and highlights relevant experience, along with a brief introduction outlining your interest.'
     },
     {
       step: '03',
-      title: 'Submit Online',
-      description: 'Fill out the application form below or send your documents to careers@insightintegrators.ae'
+      title: 'Submit Your Application',
+      description: 'Complete the application form or share your profile through the provided contact details.'
     },
     {
       step: '04',
-      title: 'Interview Process',
-      description: 'Selected candidates will go through a structured interview process including technical and cultural fit assessments.'
+      title: 'Evaluation & Discussion',
+      description: 'Shortlisted candidates will be contacted for further discussions to assess suitability and alignment.'
     }
   ];
 
@@ -294,27 +294,27 @@ const CareersPage = () => {
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className={`text-center transition-all duration-700 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
-                <span className="text-white">Build Your Career With</span>
+                <span className="text-white">Grow Your Career with</span>
                 <br />
                 <span className="text-white/90">
-                  Insight Integrators
+                  Purpose and Expertise
                 </span>
               </h1>
 
               <p className="text-white/50 text-lg md:text-lg max-w-2xl mx-auto leading-relaxed px-4">
-                Join a growing multi-vertical advisory firm where clarity, strategy,
-                and execution come together to deliver real impact.
+                Be part of a professional environment focused on learning, accountability, and delivering meaningful outcomes across audit, risk, and advisory.
+
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 px-4">
                 <button className="group px-6 sm:px-8 py-3 bg-white text-[#0a0a0a] font-semibold hover:bg-gray-100 transition-all duration-300 rounded-lg">
-                  Explore Openings
+                  View Opportunities
                   <svg className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
                 <button className="px-6 sm:px-8 py-3 border border-white/20 text-white font-semibold hover:bg-white/5 transition-all duration-300 rounded-lg">
-                  Why Join Us
+                  Learn More
                 </button>
               </div>
             </div>
@@ -338,10 +338,12 @@ const CareersPage = () => {
                   Who We Are
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
-                  Insight Integrators Management Consultancies LLC-FZ is a multi-vertical advisory platform delivering high-quality, structured, and timely solutions across Accounting, Corporate Services, Risk & Compliance, Branding, and Research.
+                  Insight Integrators Management Consultancies LLC-FZ is an advisory firm focused on delivering structured solutions across audit, risk, compliance, and business advisory. Our approach is grounded in clarity, discipline, and a strong understanding of regulatory requirements.
+
                 </p>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed">
-                  We bring together talented professionals, seasoned consultants, and strategic partners to solve complex challenges and help businesses grow with confidence.
+                  We work with organizations to address complex challenges, strengthen internal processes, and support informed decision-making through practical and reliable advisory.
+
                 </p>
               </div>
 
@@ -375,8 +377,8 @@ const CareersPage = () => {
                 Why Work With Us
               </h2>
               <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto px-4">
-                At Insight Integrators, we believe great work is driven by passionate people,
-                strong values, and a culture of continuous improvement.
+                We offer a structured environment focused on learning, accountability, and delivering meaningful professional outcomes.
+
               </p>
             </div>
 
@@ -414,10 +416,11 @@ const CareersPage = () => {
                 <span className="text-[#0a0a0a] text-xs md:text-sm font-semibold uppercase tracking-wider">Our Expertise</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-3 tracking-tight">
-                Five Dynamic Verticals
+                Career Areas &
+ Professional Opportunities
               </h2>
               <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto px-4">
-                Each backed by expert partners, structured methodologies, and a commitment to excellence.
+                Explore diverse career paths across advisory, compliance, operations, and business support functions.
               </p>
             </div>
 
@@ -459,10 +462,11 @@ const CareersPage = () => {
                 <span className="text-[#0a0a0a] text-xs md:text-sm font-semibold uppercase tracking-wider">Join Us</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-3 tracking-tight">
-                How to Apply
+                Application Process
+
               </h2>
               <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto px-4">
-                Our application process is designed to be transparent and straightforward.
+                A straightforward process designed to help you apply with clarity and confidence.
               </p>
             </div>
 

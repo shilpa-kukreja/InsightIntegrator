@@ -519,95 +519,95 @@ const AboutPage = () => {
     {
       id: 1,
       title: 'Audit & Assurance',
-      description: 'Independent, objective assurance that enhances credibility and builds stakeholder confidence.',
+      description: 'Build trust with clear, independent insights that strengthen controls and support regulatory readiness.',
       features: ['External Audits', 'Internal Audits', 'Compliance Reviews', 'Financial Reporting']
     },
     {
       id: 2,
       title: 'Advisory',
-      description: 'Strategic guidance to navigate complexity and unlock sustainable growth opportunities.',
-      features: ['Strategic Planning', 'Business Transformation', 'M&A Advisory', 'Risk Management']
+      description: 'Turn complexity into direction with structured guidance focused on performance, risk, and long-term stability.',
+      features: ['Strategic Planning', 'Business Transformation', 'Transaction Advisory', 'Risk Management']
     },
     {
       id: 3,
       title: 'Tax',
-      description: 'Strategic tax solutions that minimize liability while ensuring full regulatory compliance.',
-      features: ['Corporate Tax', 'VAT Compliance', 'International Tax', 'Tax Planning']
+      description: 'Navigate evolving tax requirements with solutions designed for accuracy, efficiency, and full compliance.',
+      features: ['Corporate Tax', 'VAT Compliance', 'Cross-Border Tax', 'Tax Planning']
     },
     {
       id: 4,
       title: 'Media',
-      description: 'Compelling brand narratives and creative solutions that captivate audiences.',
-      features: ['Brand Strategy', 'Content Creation', 'Digital Marketing', 'Video Production']
+      description: 'Create impactful brand presence with strategies and content designed to engage and deliver measurable results.',
+      features: ['Brand Strategy', 'Content Development', 'Digital Campaigns', 'Video Production']
     }
   ];
 
   const uniqueQualities = [
     {
-      title: 'Multi-Vertical Integration',
-      description: 'Seamless collaboration across all four verticals to provide comprehensive, end-to-end solutions.'
+      title: 'Integrated Service Approach',
+      description: 'Coordinated delivery across key service areas to ensure consistency and seamless execution.'
     },
     {
-      title: 'Client-Centric Approach',
-      description: 'Solutions tailored to your unique challenges, never one-size-fits-all templates.'
+      title: 'Client-Focused Approach',
+      description: 'Solutions designed around specific business needs, not generic frameworks.'
     },
     {
-      title: 'Global Standards, Local Knowledge',
-      description: 'International best practices combined with deep regional market insights.'
+      title: 'Regulatory & Market Understanding',
+      description: 'Combining regulatory knowledge with practical insight into business environments.'
     },
     {
-      title: 'Results-Driven Methodology',
-      description: 'Proven frameworks focused on measurable outcomes and tangible business value.'
+      title: 'Outcome-Oriented Execution',
+      description: 'Focused on delivering clear, structured, and measurable results.'
     },
     {
-      title: 'Absolute Confidentiality',
-      description: 'Your trust is our priority with rigorous data protection and privacy protocols.'
+      title: 'Confidential & Secure',
+      description: 'Maintaining strict standards of confidentiality, data protection, and professional integrity.'
     },
     {
-      title: 'Timely Excellence',
-      description: 'Unwavering commitment to deadlines without compromising quality or attention to detail.'
+      title: 'Reliable Delivery',
+      description: 'Consistent execution with defined timelines and attention to detail.'
     }
   ];
 
   const strategicDirections = [
     {
-      title: 'Digital Transformation',
-      description: 'Leveraging cutting-edge technology to enhance service delivery and client outcomes.',
-      metric: '85%',
-      metricLabel: 'Digital Adoption'
+      title: 'Digital Enablement',
+      description: 'Using modern tools and structured processes to improve efficiency and decision-making.',
+      metric: '',
+      metricLabel: ''
     },
     {
-      title: 'Regional Expansion',
-      description: 'Strategic growth across MENA region to serve clients wherever they operate.',
-      metric: '5+',
-      metricLabel: 'Markets Served'
+      title: 'Regional Understanding',
+      description: 'Applying strong knowledge of local regulations and market dynamics to support businesses effectively.',
+      metric: '',
+      metricLabel: ''
     },
     {
-      title: 'Talent Development',
-      description: 'Investing in exceptional people who drive innovation and service excellence.',
-      metric: '50+',
-      metricLabel: 'Industry Experts'
+      title: 'Practical Expertise',
+      description: 'Delivering solutions that are clear, actionable, and aligned with real business needs.',
+      metric: '',
+      metricLabel: ''
     },
     {
-      title: 'Sustainable Practices',
-      description: 'Integrating ESG principles into our advisory framework for lasting impact.',
-      metric: '100%',
-      metricLabel: 'ESG Compliant'
+      title: 'Sustainable Approach',
+      description: 'Focusing on long-term stability, compliance, and responsible business practices.',
+      metric: '',
+      metricLabel: ''
     }
   ];
 
   const milestones = [
-    { year: '2014', title: 'Founded', description: 'Established in Dubai with a vision for integrated advisory excellence.' },
-    { year: '2016', title: 'Expansion', description: 'Launched Tax and Media verticals to serve diverse client needs.' },
-    { year: '2019', title: 'Regional Presence', description: 'Expanded operations across MENA with strategic partnerships.' },
-    { year: '2024', title: '100+ Clients', description: 'Served over 100 satisfied clients globally with proven results.' }
+    { year: '2014', title: 'Foundation', description: 'Established with a focus on delivering structured advisory solutions across audit, risk, and compliance.' },
+    { year: '2016', title: 'Expansion', description: 'Expanded service capabilities to address a wider range of business and regulatory requirements.' },
+    { year: '2019', title: 'Market Reach', description: 'Extended support to organizations across multiple industries and evolving regulatory environments.' },
+    { year: '2024', title: 'Ongoing Progress', description: 'Continuing to strengthen capabilities and deliver consistent value through practical, client-focused solutions.' }
   ];
 
   const coreValues = [
-    { value: 'Integrity', description: 'We act with honesty, transparency, and ethical rigor in every engagement.' },
-    { value: 'Excellence', description: 'We pursue the highest standards of quality and continuous improvement.' },
-    { value: 'Collaboration', description: 'We work as trusted partners, building lasting relationships.' },
-    { value: 'Innovation', description: 'We embrace new thinking and adaptive solutions for complex challenges.' }
+    { value: 'Integrity', description: 'We operate with transparency, accountability, and a strong commitment to ethical standards.' },
+    { value: 'Excellence', description: 'We focus on delivering high-quality outcomes through precision, consistency, and attention to detail.' },
+    { value: 'Collaboration', description: 'We work closely with clients, ensuring alignment, clarity, and effective communication.' },
+    { value: 'Innovation', description: 'We adopt practical and forward-thinking approaches to address evolving business challenges.' }
   ];
 
   return (
@@ -629,13 +629,14 @@ const AboutPage = () => {
                 Insight Integrators
                 <br />
                 <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent block mt-2">
-                  Where Excellence Meets Integrity
+                  Built on Expertise. Driven by Integrity.
+
                 </span>
               </h1>
 
               <p className="text-white/40 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light px-4">
-                A premier multi-vertical advisory firm committed to delivering exceptional value 
-                through integrity, innovation, and unwavering excellence.
+               An independent advisory firm delivering structured audit, risk, and compliance solutions aligned with UAE regulatory standards.
+
               </p>
             </div>
           </div>
@@ -654,10 +655,10 @@ const AboutPage = () => {
                 <div className="mb-6 md:mb-8">
                   <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
                     <div className="h-px w-8 md:w-10 bg-[#0a0a0a]/15"></div>
-                    <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Philosophy</span>
+                    <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Approach</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 tracking-tight leading-[1.2]">
-                    Your Vision.
+                    Your Objectives.
                     <br />
                     <span className="font-bold relative inline-block mt-2">
                       Our Expertise.
@@ -666,10 +667,10 @@ const AboutPage = () => {
                   </h2>
                 </div>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-4 md:mb-6 font-light">
-                  We bridge the gap between your aspirations and reality. Our integrated approach combines deep industry expertise with strategic thinking to transform challenges into opportunities.
+                  We help organizations translate complex regulatory and business requirements into clear, actionable strategies. Our approach combines deep technical knowledge with practical execution to deliver measurable outcomes.
                 </p>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed font-light">
-                  Whether you need audit assurance, strategic advisory, tax optimization, or creative media solutions — we bring the right expertise to help you succeed.
+                  From audit and risk advisory to tax and compliance, we provide structured support designed to strengthen controls, improve decision-making, and ensure long-term stability.
                 </p>
               </div>
 
@@ -726,10 +727,10 @@ const AboutPage = () => {
                 <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Strategic Direction</span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-tight">
-                Charting the <span className="font-bold">Path Forward</span>
+             Guided by Purpose. <span className="font-bold">Focused on Outcomes.</span>
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-base md:text-lg font-light px-4">
-                Our strategic pillars guide our growth and define how we create lasting value for our clients.
+                Our approach is centered on delivering consistent value through structured execution, regulatory alignment, and client-focused thinking.
               </p>
             </div>
 
@@ -744,8 +745,9 @@ const AboutPage = () => {
                     <div className="text-4xl md:text-5xl font-light text-[#0a0a0a] mb-2">{direction.metric}</div>
                     <div className="text-[10px] text-gray-400 tracking-[0.2em] uppercase">{direction.metricLabel}</div>
                   </div>
-                  <div className="w-12 h-px bg-[#0a0a0a]/10 mx-auto mb-4 group-hover:w-16 transition-all duration-500"></div>
                   <h3 className="text-base font-semibold text-gray-900 mb-2 tracking-wide">{direction.title}</h3>
+                  <div className="w-18 h-px bg-[#0a0a0a]/10 mx-auto mb-4 group-hover:w-16 transition-all duration-500"></div>
+
                   <p className="text-gray-500 text-sm leading-relaxed font-light px-2">{direction.description}</p>
                 </div>
               ))}
@@ -768,15 +770,15 @@ const AboutPage = () => {
                   <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Distinction</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 md:mb-6 tracking-tight leading-tight">
-                  What Makes Us <span className="font-bold">Unique</span>
+                  What Defines Our <span className="font-bold">Approach</span>
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-8 md:mb-12 font-light">
-                  In a crowded marketplace, we stand apart through our unwavering commitment to quality, integrity, and client success.
+                  We stand apart through a disciplined approach to quality, integrity, and client-focused delivery. Every engagement is built on clarity, consistency, and a strong understanding of regulatory expectations.
                 </p>
 
                 {/* Timeline */}
                 <div className="space-y-6 md:space-y-8">
-                  <h3 className="text-xs font-semibold text-gray-500 tracking-[0.2em] uppercase">Our Journey</h3>
+                  <h3 className="text-xs font-semibold text-gray-500 tracking-[0.2em] uppercase">Our Journey (Neutral + Safe)</h3>
                   <div className="relative">
                     <div className="absolute left-[19px] top-3 bottom-3 w-px bg-gradient-to-b from-[#0a0a0a]/40 via-[#0a0a0a]/30 to-[#0a0a0a]/10"></div>
                     {milestones.map((milestone, index) => (
@@ -827,10 +829,10 @@ const AboutPage = () => {
                 <span className="text-white/60 text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">What We Offer</span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 tracking-tight">
-                Comprehensive <span className="font-bold">Solutions</span>
+                Integrated Solutions for <span className="font-bold"> Complex Business Needs</span>
               </h2>
               <p className="text-gray-300 max-w-2xl mx-auto text-base md:text-lg font-light px-4">
-                Integrated professional services designed to meet your evolving business needs.
+                Practical, regulator-aligned services designed to strengthen control, improve clarity, and support confident decision-making.
               </p>
             </div>
 
@@ -881,16 +883,17 @@ const AboutPage = () => {
                   <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Promise</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 md:mb-6 tracking-tight leading-tight">
-                  Built on Trust, <br /><span className="font-bold">Driven by Excellence</span>
+                  Built on Trust, <br /><span className="font-bold">Focused on Regulatory Clarity.</span>
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-6 md:mb-10 font-light">
-                  At Insight Integrators, trust is our currency and excellence is our standard. Every engagement is built on a foundation of transparency, expertise, and unwavering commitment to your success.
+                  We deliver every engagement with a clear focus on compliance, structure, and accountability. Our approach ensures businesses understand their regulatory position, strengthen controls, and make informed decisions with confidence.
+
                 </p>
                 <div className="space-y-4 md:space-y-6">
                   {[
-                    '100% Client Satisfaction Commitment',
-                    'Confidentiality & Data Protection Certified',
-                    'International Standards Compliant'
+                    'Clear and Structured Advisory',
+                    'Confidential & Secure Engagements',
+                    'Aligned with Regulatory Requirements'
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3 md:gap-4 group">
                       <div className="w-px h-5 md:h-6 bg-[#0a0a0a]/15 group-hover:h-6 md:group-hover:h-8 transition-all duration-300"></div>
@@ -913,14 +916,14 @@ const AboutPage = () => {
             <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <div className="inline-flex items-center gap-3 mb-6 md:mb-8">
                 <div className="h-px w-8 md:w-12 bg-white/40"></div>
-                <span className="text-white/40 text-[12px] tracking-[0.3em] uppercase">Get Started</span>
+                <span className="text-white/40 text-[12px] tracking-[0.3em] uppercase">Start the Conversation</span>
                 <div className="h-px w-8 md:w-12 bg-white/40"></div>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 md:mb-5 tracking-tight">
-                Ready to Work <span className="font-bold">With Us?</span>
+                Let’s Discuss Your <span className="font-bold"> Compliance Priorities</span>
               </h2>
               <p className="text-white/25 text-base md:text-lg mb-8 md:mb-10 max-w-xl mx-auto font-light px-4">
-                Let's discuss how Insight Integrators can help your business thrive.
+                Connect with us to explore practical solutions that support your regulatory, risk, and business requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center px-4">
                 <Link href="/contact" className="group px-6 md:px-9 py-3 bg-white text-[#0a0a0a] text-sm font-medium tracking-wide hover:bg-gray-100 transition-all duration-300 rounded-lg">

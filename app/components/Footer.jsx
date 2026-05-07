@@ -76,8 +76,10 @@ const Footer = () => {
         {label: 'Home', href: '/'},
         { label: 'About us', href: '/about' },
         // { label: 'Meet our people', href: '/team' },
+        
+        { label: 'Blogs' , href: '/blogs'},
         { label: 'Careers', href: '/careers' },
-        { label: 'Blogs' , href: '/blogs'}
+        { label: 'Industry Expertise', href: '/services/industry-expertise'}
         // { label: 'Events', href: '/events' },
         // { label: 'Media', href: '/media' },
         // { label: 'Our offices', href: '/offices' }
@@ -90,7 +92,7 @@ const Footer = () => {
         { label: 'Contact us', href: '/contact' },
         // { label: 'China Desk', href: '/china-desk' },
         // { label : 'Consult' , href: '#consult'},
-        { label: 'Global India Growth Hub', href: '/global-india' }
+        { label: 'Consult', href: 'https://wa.me/971526806400?text=Hello%20Insight%20Integrators,%20I%20would%20like%20to%20discuss%20compliance%20advisory.' }
       ]
     },
     {
@@ -106,10 +108,9 @@ const Footer = () => {
       title: 'SERVICES',
       links: [
         { label: 'Audit & Assurance', href: '/services/audit' },
-        { label: 'Advisory', href: '/services/advisory' },
         { label: 'Tax', href: '/services/tax' },
+         { label: 'Advisory', href: '/services/advisory' },
         { label: 'Media', href: '/services/media' },
-        { label: 'Industry Expertise', href: '/services/industry-expertise'}
       ]
     }
   ];

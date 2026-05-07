@@ -29,30 +29,30 @@ const LatestNewsSection = () => {
   const newsArticles = [
     {
       id: 1,
-      title: 'Mastering VAT Audits in UAE: What Triggers FTA Scrutiny and How to Prepare',
+      title: 'VAT Audits in the UAE: Key Triggers and What to Expect',
       slug: 'mastering-vat-audits-uae',
       date: 'November 3, 2025',
-      excerpt: 'The Federal Tax Authority (FTA) conducts periodic VAT audits to ensure accurate tax reporting and compliance. These reviews assess whether businesses are adhering to UAE tax laws and maintaining proper records.',
+      excerpt: ' Understand how VAT audits are initiated, what regulators review, and how businesses can strengthen compliance to avoid risks and penalties.',
       image: '/blog/blog-image1.png',
       category: 'Tax & Compliance',
       link: '#'
     },
     {
       id: 2,
-      title: 'Supply Chain Risk Management & Optimization: Building Resilient Global Supply Networks',
+      title: 'Supply Chain Risk Management: Improving Resilience and Efficiency',
       slug: 'supply-chain-risk-management',
       date: 'November 3, 2025',
-      excerpt: 'Global supply chains are under unprecedented pressure. From geopolitical tensions and inflationary shocks to cyber threats and sustainability concerns, modern supply networks face complex challenges.',
+      excerpt: ' Explore how businesses can identify risks, improve operational efficiency, and build more resilient supply chains in an evolving global landscape.',
       image: '/blog/blog-image2.png',
       category: 'Advisory',
       link: '#'
     },
     {
       id: 3,
-      title: 'UAE E-Invoicing 2026: Is Your Business Ready for the Mandatory Transition?',
+      title: 'UAE E-Invoicing 2026:  Preparing for Regulatory Change',
       slug: 'uae-e-invoicing-2026',
       date: 'November 3, 2025',
-      excerpt: 'The UAE is preparing to transform how businesses issue and process invoices. Under the Federal Tax Authority\'s (FTA) mandate, all businesses will need to adopt e-invoicing standards.',
+      excerpt: ' Learn what upcoming e-invoicing requirements mean for your business and how to prepare systems and processes for a smooth transition.',
       image: '/blog/blog-image3.png',
       category: 'Digital Transformation',
       link: '#'
@@ -83,12 +83,13 @@ const LatestNewsSection = () => {
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
             <span className="text-white">Latest</span>
-            <span className="text-white/80 ml-3">News</span>
+            <span className="text-white/80 ml-3">Insights</span>
           </h2>
           
           <div className="w-20 h-1 bg-white/30 mx-auto mt-5 rounded-full"></div>
           <p className="text-white/60 mt-4 max-w-2xl mx-auto">
-            Insights, updates, and expert perspectives on the latest industry developments
+            Expert perspectives, regulatory updates, and practical insights shaping today’s business environment.
+
           </p>
         </div>
 

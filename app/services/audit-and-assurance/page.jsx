@@ -432,7 +432,7 @@ const AuditAssurancePage = () => {
                         </div>
                       </div>
 
-                      <button
+                      {/* <button
                         onClick={() => scrollToItem(item.id)}
                         className="group inline-flex items-center gap-3 text-[#0a0a0a] text-sm font-medium tracking-wide transition-all"
                       >
@@ -442,7 +442,7 @@ const AuditAssurancePage = () => {
                         <span className="group-hover:translate-x-1 transition-transform">
                           →
                         </span>
-                      </button>
+                      </button> */}
                     </div>
 
                     {/* Right Side - Image */}

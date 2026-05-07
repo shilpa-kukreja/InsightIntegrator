@@ -52,9 +52,9 @@ const HomeAboutUs = () => {
           {/* Left Side - Content with Premium Typography */}
           <div className={`transition-all duration-700 delay-150 ease-out transform ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 tracking-tight leading-[1.2]">
-              Redefining Professional 
+              Delivering Clarity in Complex 
               <span className="relative inline-block ml-2">
-                Services Excellence
+                Regulatory Environments
                 <svg className="absolute -bottom-2 left-0 w-full h-1" viewBox="0 0 200 4" preserveAspectRatio="none">
                   <line x1="0" y1="2" x2="200" y2="2" stroke="#0a0a0a" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.3"/>
                 </svg>
@@ -63,11 +63,12 @@ const HomeAboutUs = () => {
             
             <div className="space-y-5">
               <p className="text-gray-500 text-base md:text-lg leading-relaxed">
-                Insight Integrators is a premier multi-vertical advisory firm delivering high-quality solutions across <span className="font-semibold text-gray-800 border-b border-gray-300">Audit & Assurance, Advisory, Tax, and Media</span>.
+                Insight Integrators is an independent advisory firm focused on audit, risk, and compliance. We support organizations with structured, practical solutions that align with <span className="font-semibold text-gray-800 border-b border-gray-300">UAE regulatory requirements.
+</span>.
               </p>
               
               <p className="text-gray-500 text-base md:text-lg leading-relaxed">
-                We bring together exceptional talent, proven methodologies, and a client-first philosophy to drive real business outcomes.
+                Our senior-led approach ensures clear guidance, stronger controls, and confident decision-making.
               </p>
             </div>
 
@@ -77,7 +78,7 @@ const HomeAboutUs = () => {
                 href="/about" 
                 className="group relative inline-flex items-center gap-3 px-7 py-3.5 bg-[#2c154f] text-white text-sm font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-[#502394]"
               >
-                <span className="relative z-10">Learn More About Us</span>
+                <span className="relative z-10">Learn More </span>
                 <svg className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

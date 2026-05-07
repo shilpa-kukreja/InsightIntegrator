@@ -59,27 +59,27 @@ const BlogsPage = () => {
   const allBlogs = [
     {
       id: 1,
-      title: 'Mastering VAT Audits in UAE: What Triggers FTA Scrutiny and How to Prepare',
+      title: 'Mastering VAT Audits in UAE: Key Triggers and How to Stay Prepared',
       slug: 'mastering-vat-audits-uae', // This should match the slug param
       date: 'November 3, 2025',
       readTime: '8 min read',
-      excerpt: 'The Federal Tax Authority (FTA) conducts periodic VAT audits to ensure accurate tax reporting and compliance. These reviews assess whether businesses are adhering to UAE tax laws and maintaining proper records.',
+      excerpt: 'Understand what leads to VAT audits in the UAE and how businesses can stay compliant, reduce risk, and handle regulatory reviews with confidence.',
       image: '/blog/blog-image1.png',
       category: 'Tax & Compliance',
       author: {
         name: 'Sarah Johnson',
-        role: 'Tax Partner',
+        role: 'Tax Advisor',
         avatar: '/avatars/sarah.jpg'
       },
       featured: true
     },
     {
       id: 2,
-      title: 'Supply Chain Risk Management & Optimization: Building Resilient Global Supply Networks',
+      title: 'Supply Chain Risk Management & Optimization',
       slug: 'supply-chain-risk-management',
       date: 'November 3, 2025',
       readTime: '12 min read',
-      excerpt: 'Global supply chains are under unprecedented pressure. From geopolitical tensions and inflationary shocks to cyber threats and sustainability concerns, modern supply networks face complex challenges.',
+      excerpt: 'Global supply chains are becoming more complex and vulnerable to disruption. From geopolitical shifts to rising costs and operational inefficiencies, businesses must proactively manage risks while improving performance.',
       image: '/blog/blog-image2.png',
       category: 'Advisory',
       author: {
@@ -91,16 +91,16 @@ const BlogsPage = () => {
     },
     {
       id: 3,
-      title: 'UAE E-Invoicing 2026: Is Your Business Ready for the Mandatory Transition?',
+      title: 'UAE E-Invoicing 2026: What Businesses Need to Prepare Today',
       slug: 'uae-e-invoicing-2026',
       date: 'November 3, 2025',
       readTime: '6 min read',
-      excerpt: 'The UAE is preparing to transform how businesses issue and process invoices. Under the Federal Tax Authority\'s (FTA) mandate, all businesses will need to adopt e-invoicing standards.',
+      excerpt: 'Explore upcoming e-invoicing regulations in the UAE and learn how businesses can prepare systems, processes, and compliance frameworks in advance.',
       image: '/blog/blog-image3.png',
       category: 'Digital Transformation',
       author: {
         name: 'David Williams',
-        role: 'Digital Solutions Lead',
+        role: 'Digital Transformation Specialist',
         avatar: '/avatars/david.jpg'
       },
       featured: true
@@ -111,7 +111,7 @@ const BlogsPage = () => {
       slug: 'corporate-tax-uae-2026',
       date: 'October 28, 2025',
       readTime: '10 min read',
-      excerpt: 'With the introduction of corporate tax in the UAE, businesses need to reassess their tax strategies. This comprehensive guide covers compliance requirements, exemptions, and strategic planning opportunities.',
+      excerpt: 'With the introduction of corporate tax in the UAE, businesses must shift from reactive compliance to proactive tax planning. Strategic preparation is essential to manage liabilities and ensure compliance.',
       image: '/blog/blog-image1.png',
       category: 'Tax & Compliance',
       author: {
@@ -127,7 +127,7 @@ const BlogsPage = () => {
       slug: 'esg-reporting-uae',
       date: 'October 25, 2025',
       readTime: '9 min read',
-      excerpt: 'Environmental, Social, and Governance (ESG) criteria are becoming increasingly important for investors and stakeholders. Learn how UAE businesses can implement effective ESG reporting frameworks.',
+      excerpt: 'Environmental, Social, and Governance (ESG) reporting is gaining importance across the UAE. Businesses are increasingly expected to demonstrate sustainability, transparency, and ethical practices.a',
       image: '/blog/blog-image2.png',
       category: 'Business Strategy',
       author: {
@@ -143,7 +143,7 @@ const BlogsPage = () => {
       slug: 'future-remote-work-legal-tax',
       date: 'October 20, 2025',
       readTime: '7 min read',
-      excerpt: 'As remote work becomes permanent for many organizations, understanding the legal and tax implications across jurisdictions is crucial for compliance and risk management.',
+      excerpt: 'Remote work is now a permanent feature of many organizations. However, it introduces legal, compliance, and tax complexities that businesses must address.',
       image: '/blog/blog-image3.png',
       category: 'Market Insights',
       author: {
@@ -229,11 +229,11 @@ const BlogsPage = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 tracking-tight">
-                Insights & <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Perspectives</span>
+                Insights That Keep You <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent"> Ahead of Change</span>
               </h1>
 
               <p className="text-white/50 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light">
-                Expert analysis, industry trends, and strategic insights to help you navigate the evolving business landscape
+                Stay informed with expert perspectives, regulatory developments, and practical insights across compliance, risk, and business strategy.
               </p>
 
               <div className="flex justify-center gap-2 mt-8">
@@ -496,16 +496,17 @@ const BlogsPage = () => {
             <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <div className="inline-flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-white/50"></div>
-                <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">Stay Updated</span>
+                <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">Stay Informed</span>
                 <div className="h-px w-12 bg-white/50"></div>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-light text-white mb-5 tracking-tight">
-                Never Miss an <span className="font-bold">Insight</span>
+                Stay Ahead with <span className="font-bold"> Relevant Insights</span>
               </h2>
 
               <p className="text-white/40 text-sm mb-8 font-light max-w-md mx-auto">
-                Subscribe to our newsletter and receive the latest articles directly in your inbox.
+                Get timely updates on regulatory changes, industry developments, and practical insights delivered directly to your inbox.
+
               </p>
 
               <form onSubmit={handleNewsletterSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
@@ -514,7 +515,7 @@ const BlogsPage = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your email address"
+                    placeholder="Enter your email address"
                     className="w-full px-4 py-3 bg-white/5 border border-white/15 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
                     required
                     disabled={subscribeStatus === 'loading'}

@@ -48,38 +48,38 @@ const TaxPage = () => {
   }, []);
 
   const serviceItems = [
-    // {
-    //   id: 'corporate-tax',
-    //   name: 'Corporate Tax',
-    //   shortDescription: 'Comprehensive corporate tax compliance and planning services.',
-    //   description: 'Our corporate tax team helps organizations navigate the complex corporate tax landscape in the UAE and internationally. We provide strategic planning, compliance support, and advisory services to optimize your tax position.',
-    //   detailedDescription: 'With the introduction of Corporate Tax in the UAE, businesses need expert guidance to ensure compliance while optimizing their tax position. Our team provides end-to-end support including registration, return filing, and strategic planning to minimize your effective tax rate within legal frameworks.',
-    //   keyFeatures: [
-    //     'Corporate tax registration and filing',
-    //     'Tax impact assessment for new regulations',
-    //     'Tax provision calculations under IFRS',
-    //     'Tax authority correspondence and audit support',
-    //     'Strategic tax planning and structuring',
-    //     'Loss utilization and relief optimization'
-    //   ],
-    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    // },
-    // {
-    //   id: 'vat',
-    //   name: 'VAT',
-    //   shortDescription: 'Value Added Tax registration, filing, and advisory services.',
-    //   description: 'We provide comprehensive VAT services to ensure compliance with UAE VAT regulations. Our team helps with registration, return filing, refund applications, and complex VAT matters.',
-    //   detailedDescription: 'Since the introduction of VAT in the UAE, businesses have faced numerous challenges in implementation and ongoing compliance. Our VAT specialists provide practical solutions to ensure accurate reporting, timely filing, and optimization of VAT positions.',
-    //   keyFeatures: [
-    //     'VAT registration and deregistration',
-    //     'VAT return preparation and filing',
-    //     'VAT refund applications for tourists and businesses',
-    //     'VAT health checks and compliance reviews',
-    //     'VAT training and awareness programs',
-    //     'Cross-border VAT advisory'
-    //   ],
-    //   image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-    // },
+    {
+      id: 'corporate-tax',
+      name: 'Corporate Tax',
+      shortDescription: 'Comprehensive corporate tax compliance and planning services.',
+      description: 'Our corporate tax team helps organizations navigate the complex corporate tax landscape in the UAE and internationally. We provide strategic planning, compliance support, and advisory services to optimize your tax position.',
+      detailedDescription: 'With the introduction of Corporate Tax in the UAE, businesses need expert guidance to ensure compliance while optimizing their tax position. Our team provides end-to-end support including registration, return filing, and strategic planning to minimize your effective tax rate within legal frameworks.',
+      keyFeatures: [
+        'Corporate tax registration and filing',
+        'Tax impact assessment for new regulations',
+        'Tax provision calculations under IFRS',
+        'Tax authority correspondence and audit support',
+        'Strategic tax planning and structuring',
+        'Loss utilization and relief optimization'
+      ],
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 'vat',
+      name: 'VAT',
+      shortDescription: 'Value Added Tax registration, filing, and advisory services.',
+      description: 'We provide comprehensive VAT services to ensure compliance with UAE VAT regulations. Our team helps with registration, return filing, refund applications, and complex VAT matters.',
+      detailedDescription: 'Since the introduction of VAT in the UAE, businesses have faced numerous challenges in implementation and ongoing compliance. Our VAT specialists provide practical solutions to ensure accurate reporting, timely filing, and optimization of VAT positions.',
+      keyFeatures: [
+        'VAT registration and deregistration',
+        'VAT return preparation and filing',
+        'VAT refund applications for tourists and businesses',
+        'VAT health checks and compliance reviews',
+        'VAT training and awareness programs',
+        'Cross-border VAT advisory'
+      ],
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    },
     // {
     //   id: 'transfer-pricing',
     //   name: 'Transfer Pricing',
@@ -346,13 +346,13 @@ const TaxPage = () => {
                         </div>
                       </div>
                       
-                      <button
+                      {/* <button
                         onClick={() => scrollToItem(item.id)}
                         className="group inline-flex items-center gap-3 text-[#0a0a0a] text-sm font-medium tracking-wide transition-all"
                       >
                         <span className="border-b border-[#0a0a0a]/50 group-hover:border-[#0a0a0a] pb-0.5 transition-all">Learn More</span>
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
-                      </button>
+                      </button> */}
                     </div>
                     
                     {/* Right Side - Image */}

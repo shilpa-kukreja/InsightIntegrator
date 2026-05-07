@@ -151,12 +151,12 @@ const handleSubmit = async (e) => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-light text-white mb-4 tracking-tight leading-[1.1]">
-                Let's <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Connect</span>
+                Connect  <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">with Us</span>
               </h1>
 
               <p className="text-white/50  text-lg md:text-shadow-lg max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Have a question or need support? Reach out – our team is ready to assist you
-                with timely, clear and reliable guidance.
+                Reach out for clear, reliable support on your audit, compliance, and advisory requirements. We’re here to assist with practical guidance.
+
               </p>
 
               <div className="flex items-center justify-center gap-3 mt-8">
@@ -389,7 +389,7 @@ const handleSubmit = async (e) => {
                         </p>
                         <p className="text-gray-500 text-sm font-light">
                           <a href="tel:+971508896810" className="hover:text-[#0a0a0a] transition-colors duration-300">
-                            +971 50 889 6810
+                            +971526806400
                           </a>
                         </p>
                       </div>

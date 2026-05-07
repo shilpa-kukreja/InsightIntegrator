@@ -126,52 +126,7 @@ const ServicesPage = () => {
       color: 'from-gray-800 to-gray-600',
       bgLight: 'bg-gray-50'
     },
-     {
-      id: 'industry-expertise',
-      href:'industry-expertise',
-      title: 'Industry Expertise',
-      shortDescription: 'Compelling brand narratives and creative solutions that captivate audiences and drive engagement.',
-      description: 'Our Media practice delivers compelling brand narratives and creative solutions that captivate audiences and drive meaningful engagement. We blend creativity with strategy to tell your story in ways that resonate and inspire action.',
-      icon: (
-         <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          {/* Factory */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M4 21V11l5 3V11l5 3V6l6 3v12H4z"
-          />
-
-          {/* Gear center */}
-          <circle cx="17" cy="17" r="2" strokeWidth={1.5} />
-
-          {/* Gear teeth */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M17 13v1M17 20v1M13 17h1M20 17h1M14.5 14.5l.7.7M18.8 18.8l.7.7M14.5 19.5l.7-.7M18.8 15.2l.7-.7"
-          />
-        </svg>
-      ),
-      items: [
-        'Press Releases',
-        'News & Events',
-        'Media Coverage',
-        'Annual Reports',
-        'Thought Leadership',
-        'Podcasts',
-        'Webinars',
-        'Case Studies',
-      ],
-      color: 'from-gray-800 to-gray-600',
-      bgLight: 'bg-gray-50'
-    }
+  
   ];
 
   return (

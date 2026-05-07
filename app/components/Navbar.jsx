@@ -69,6 +69,12 @@ const Navbar = () => {
     { name: "Home", href: "/", key: "home" },
     { name: "About us", href: "/about", key: "about" },
     { name: "Services", href: "/services", key: "services", hasDropdown: true },
+    {
+      name: "Industry Expertise",
+      href: "/services/industry-expertise",
+      key: "industry-expertise",
+      hasDropdown: true,
+    },
     { name: "Blogs", href: "/blogs", key: "blogs" },
     { name: "Careers", href: "/careers", key: "careers" },
     { name: "Contact us", href: "/contact", key: "contact" },
@@ -482,6 +488,7 @@ const Navbar = () => {
       ],
     },
     // media
+
     {
       title: "Media",
       href: "/services/media",
@@ -502,48 +509,58 @@ const Navbar = () => {
       ),
       items: [
         {
-          name: "Press Releases",
-          href: "/services/media#press-releases",
-          sectionId: "press-releases",
+          name: "Graphic Designing",
+          href: "/services/media#graphic-designing",
+          sectionId: "graphic-designing",
+          hasSubmenu: true,
+          subItems: [
+            {
+              name: "Logo Design",
+              href: "/services/media#logo-design",
+            },
+            {
+              name: "Packaging Design",
+              href: "/services/media#packaging-design",
+            },
+            {
+              name: "Catelogue & Brocheers Design",
+              href: "/services/media#catelogue-brocheers",
+            },
+          ],
+        },
+         {
+          name: "Web Designing",
+          href: "/services/media#web-designing",
+          sectionId: "web-designing",
+          hasSubmenu: true,
+          subItems: [
+            {
+              name: "Ecommerce Development",
+              href: "/services/media#ecommerce-development",
+            },
+            {
+              name: "Web Development",
+              href: "/services/media#web-development",
+            },
+          ],
         },
         {
-          name: "News & Events",
-          href: "/services/media#news-events",
-          sectionId: "news-events",
+          name: "Digital Marketing",
+          href: "/services/media#digital-marketing",
+          sectionId: "digital-marketing",
         },
         {
-          name: "Media Coverage",
-          href: "/services/media#media-coverage",
-          sectionId: "media-coverage",
+          name: "Photoshoot",
+          href: "/services/media#photoshoot",
+          sectionId: "photoshoot",
         },
-        {
-          name: "Annual Reports",
-          href: "/services/media#annual-reports",
-          sectionId: "annual-reports",
-        },
-        {
-          name: "Thought Leadership",
-          href: "/services/media#thought-leadership",
-          sectionId: "thought-leadership",
-        },
-        {
-          name: "Podcasts",
-          href: "/services/media#podcasts",
-          sectionId: "podcasts",
-        },
-        {
-          name: "Webinars",
-          href: "/services/media#webinars",
-          sectionId: "webinars",
-        },
-        {
-          name: "Case Studies",
-          href: "/services/media#case-studies",
-          sectionId: "case-studies",
-        },
+
       ],
     },
-    // industry expertise
+   
+  ];
+
+  const industryExpertiseCategories = [
     {
       title: "Industry Expertise ",
       href: "/services/industry-expertise",
@@ -734,6 +751,37 @@ const Navbar = () => {
     },
   ];
 
+  const getDropdownCategories = (linkName) => {
+    if (linkName === "Services") return serviceCategories;
+    if (linkName === "Industry Expertise") return industryExpertiseCategories;
+    return [];
+  };
+
+  const getDropdownContainerProps = (linkName) => {
+    if (linkName === "Industry Expertise") {
+      return {
+        className:
+          "absolute top-full left-1/2 w-[400px] max-w-[92vw] h-[360px] max-h-[380vw] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-visible animate-fadeIn",
+        style: {
+          left: "50%",
+          right: "auto",
+          transform: "translateX(-50%)",
+        },
+      };
+    }
+
+    // Default: Services mega-dropdown
+    return {
+      className:
+        "absolute top-full left-1/2  w-screen max-w-[1400px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-visible animate-fadeIn",
+      style: {
+        left: "50%",
+        right: "auto",
+        transform: "translateX(-40%)",
+      },
+    };
+  };
+
   // Also update the Link components in the dropdown to handle smooth scrolling
   // Add onClick handler to the links in both desktop and mobile dropdowns:
 
@@ -836,21 +884,23 @@ const Navbar = () => {
                     </Link>
 
                     {/* Services Mega Dropdown */}
-                    {link.hasDropdown && activeDropdown === "Services" && (
+                    {link.hasDropdown && activeDropdown === link.name && (
                       <div
-                        className="absolute top-full left-1/2  w-screen max-w-[1400px] bg-white rounded-xl shadow-2xl border border-gray-100 overflow-visible animate-fadeIn"
-                        style={{
-                          left: "50%",
-                          right: "auto",
-                          transform: "translateX(-40%)",
-                        }}
-                        onMouseEnter={() => handleMouseEnter("Services")}
+                        className={getDropdownContainerProps(link.name).className}
+                        style={getDropdownContainerProps(link.name).style}
+                        onMouseEnter={() => handleMouseEnter(link.name)}
                         onMouseLeave={handleMouseLeave}
                       >
                         <div className="h-0.5 bg-gradient-to-r from-[#4f2d80] via-[#6b4ca8] to-[#4f2d80]"></div>
 
-                        <div className="grid grid-cols-5 gap-6 p-8">
-                          {serviceCategories.map((category, idx) => (
+                        <div
+                          className={`grid ${
+                            getDropdownCategories(link.name).length === 1
+                              ? "grid-cols-1"
+                              : "grid-cols-4"
+                          } gap-6 p-8`}
+                        >
+                          {getDropdownCategories(link.name).map((category, idx) => (
                             <div key={idx} className="group">
                               <Link href={category.href}>
                                 <div className="flex items-center gap-2 mb-4 border-b border-[#4f2d80]/20 pb-2 transition-all duration-300 group-hover:border-[#4f2d80]/40">
@@ -940,28 +990,30 @@ const Navbar = () => {
                           ))}
                         </div>
 
-                        <div className="bg-gradient-to-r from-[#4f2d80] to-[#6b4ca8] px-8 py-4 mt-25">
-                          <Link
-                            href="/services"
-                            className="text-white font-medium text-sm hover:underline flex items-center gap-2 justify-center group"
-                            onClick={() => setActiveDropdown(null)}
-                          >
-                            <span>View all services</span>
-                            <svg
-                              className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
+                        {link.name === "Services" && (
+                          <div className="bg-gradient-to-r from-[#4f2d80] to-[#6b4ca8] px-8 py-4 mt-25">
+                            <Link
+                              href="/services"
+                              className="text-white font-medium text-sm hover:underline flex items-center gap-2 justify-center group"
+                              onClick={() => setActiveDropdown(null)}
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                              />
-                            </svg>
-                          </Link>
-                        </div>
+                              <span>View all services</span>
+                              <svg
+                                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                />
+                              </svg>
+                            </Link>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -980,7 +1032,7 @@ const Navbar = () => {
               </button>
             </div>
 
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <button
                 onClick={() =>
                   window.open("https://wa.me/1234567890", "_blank")
@@ -1001,7 +1053,7 @@ const Navbar = () => {
                 </span>
                 <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               </button>
-            </div>
+            </div> */}
 
             {/* Mobile Menu Button */}
             <button
@@ -1093,7 +1145,7 @@ const Navbar = () => {
                         }`}
                       >
                         <div className="pt-4 pb-2 space-y-6 px-2">
-                          {serviceCategories.map((category, idx) => (
+                          {getDropdownCategories(link.name).map((category, idx) => (
                             <div key={idx}>
                               <Link
                                 href={category.href}
@@ -1184,26 +1236,28 @@ const Navbar = () => {
                               </ul>
                             </div>
                           ))}
-                          <Link
-                            href="/services"
-                            className="text-[#4f2d80] font-medium text-sm hover:underline flex items-center gap-1 pt-2 group"
-                            onClick={closeMobileMenu}
-                          >
-                            <span>View all services</span>
-                            <svg
-                              className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
+                          {link.name === "Services" && (
+                            <Link
+                              href="/services"
+                              className="text-[#4f2d80] font-medium text-sm hover:underline flex items-center gap-1 pt-2 group"
+                              onClick={closeMobileMenu}
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 5l7 7-7 7"
-                              />
-                            </svg>
-                          </Link>
+                              <span>View all services</span>
+                              <svg
+                                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 5l7 7-7 7"
+                                />
+                              </svg>
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -1238,7 +1292,7 @@ const Navbar = () => {
               <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
           </div>
-
+{/* 
           <div className="mt-4">
             <button
               onClick={() => window.open("https://wa.me/1234567890", "_blank")}
@@ -1258,7 +1312,7 @@ const Navbar = () => {
               </span>
               <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 

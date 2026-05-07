@@ -39,6 +39,32 @@ const HeroSection = () => {
       image: "/images/audit-bg.jpg",
     },
 
+    // tax
+    {
+      id: "tax",
+      title: " Tax",
+      href:"/services/tax",
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      ),
+      description:
+        "Expert tax solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex tax matters.",
+
+      image: "/images/tax-bg.jpg",
+    },
+
     // advisory
     {
       id: "advisory",
@@ -65,31 +91,7 @@ const HeroSection = () => {
       image: "/images/advisory-bg.jpg",
     },
 
-    // tax
-    {
-      id: "tax",
-      title: "Tax",
-      href:"/services/tax",
-      icon: (
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
-      description:
-        "Expert tax solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex tax matters.",
-
-      image: "/images/tax-bg.jpg",
-    },
+    
 
     // media
     {
@@ -117,43 +119,6 @@ const HeroSection = () => {
       image: "/images/media-bg.jpg",
     },
 
-// Industry Expertise
-    {
-      id: "industry-expertise",
-      title: "Industry Expertise",
-      href:"/services/industry-expertise",
-      icon: (
-        <svg
-          className="w-6 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          {/* Factory */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M4 21V11l5 3V11l5 3V6l6 3v12H4z"
-          />
-
-          {/* Gear center */}
-          <circle cx="17" cy="17" r="2" strokeWidth={1.5} />
-
-          {/* Gear teeth */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M17 13v1M17 20v1M13 17h1M20 17h1M14.5 14.5l.7.7M18.8 18.8l.7.7M14.5 19.5l.7-.7M18.8 15.2l.7-.7"
-          />
-        </svg>
-      ),
-      description:
-        "Expert media solutions that optimize your position and ensure compliance. Our global network delivers local expertise for complex media matters.",
-
-      image: "/images/media-bg.jpg",
-    },
   ];
 
   const currentService = serviceTabs.find((tab) => tab.id === activeTab);
@@ -177,22 +142,22 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f2d80]/10 rounded-full">
               <span className="w-2 h-2 bg-[#fefff2] rounded-full animate-pulse"></span>
               <span className="text-[#fefff2] text-sm font-semibold tracking-wide">
-                Global Excellence • Local Expertise
+                Independent • Senior-Led • Regulator-Focused
               </span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold leading-tight">
-              <span className="text-[#ffffff]">Driving your ambition in</span>
+              <span className="text-[#ffffff]">Strengthening Compliance.</span>
               <span className="text-[#fefff2] block mt-2">
-                the UAE and beyond.
+                 Enabling Confident Decisions.
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-[#ffffff] text-lg leading-relaxed">
-              Expert assurance, advisory, tax and media solutions, powered by
-              global scale and local market intelligence.
+              We help organizations navigate regulatory complexity through structured audit, risk, and compliance solutions led by experienced professionals with deep UAE expertise.
+
             </p>
 
             {/* Service Tabs */}
