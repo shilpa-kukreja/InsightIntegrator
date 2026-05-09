@@ -107,7 +107,7 @@ const CommitmentSection = () => {
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-gray-900 text-lg md:text-xl font-semibold mb-3 tracking-tight">
+                <h3 className="text-[#4f2e80] text-lg md:text-xl font-semibold mb-3 tracking-tight">
                   {item.title}
                 </h3>
                 

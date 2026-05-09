@@ -233,33 +233,7 @@ const MediaPage = () => {
      
       ],
     }, 
-     {
-      id: "photoshoot",
-      title: "Photoshoot",
-      description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
-      services: [
-        {
-          id: "ecommerce-development",
-          name: "Photoshoot",
-          shortDescription:
-            "Optimize supply chain for efficiency and resilience.",
-          description:
-            "Capture your brand with high-quality professional photography that enhances visual identity, strengthens marketing campaigns, and creates lasting audience impact.",
-          detailedDescription:
-            "Our photoshoot services are designed to deliver visually compelling content for brands, products, businesses, and campaigns through creative direction, professional equipment, and modern editing techniques.",
-          keyFeatures: [
-            "Product photography",
-            "Corporate and business shoots",
-            "Fashion and lifestyle photography",
-            "Ecommerce product shoots",
-            "Social media content photography",
-            "Studio and outdoor shoots"
-          ],
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
-        },
-      ],
-    },
+    
   ];
 
   const faqs = [

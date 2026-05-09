@@ -163,6 +163,7 @@ const Navbar = () => {
   // In your Navbar.jsx, update the serviceCategories items to include hash links:
 
   const serviceCategories = [
+    
     // audit
     {
       title: "Audit & Assurance",
@@ -223,6 +224,7 @@ const Navbar = () => {
         }
       ],
     },
+
     // tax
     {
       title: "Tax",
@@ -281,6 +283,7 @@ const Navbar = () => {
         // },
       ],
     },
+
     // advisory
     {
       title: "Advisory",
@@ -487,8 +490,8 @@ const Navbar = () => {
         // },
       ],
     },
-    // media
 
+    // media
     {
       title: "Media",
       href: "/services/media",
@@ -542,6 +545,10 @@ const Navbar = () => {
               name: "Web Development",
               href: "/services/media#web-development",
             },
+             {
+              name: "UI/UX Design",
+              href: "/services/media#ui-ux",
+            },
           ],
         },
         {
@@ -549,11 +556,7 @@ const Navbar = () => {
           href: "/services/media#digital-marketing",
           sectionId: "digital-marketing",
         },
-        {
-          name: "Photoshoot",
-          href: "/services/media#photoshoot",
-          sectionId: "photoshoot",
-        },
+        
 
       ],
     },
@@ -582,169 +585,169 @@ const Navbar = () => {
       items: [
         {
           name: "Manufacturing",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/industry-expertise#manufacturing",
+          sectionId: "manufacturing",
           hasSubmenu: true,
           subItems: [
             {
               name: "Supply Chain & Logistics Strategy",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#supply-chain",
             },
             {
               name: "Operational Efficiency (Lean Management)",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#operational-efficiency",
             },
             {
               name: "Inventory & Warehouse Management",
-              href: "/services/advisory#erm",
+              href: "/services/industry-expertise#inventory",
             },
             {
               name: "Sustainability & ESG Advisory",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#sustainability",
             },
             {
               name: "Cost & Profitability Analysis",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#cost",
             },
           ],
         },
 
         {
           name: "Real Estate ",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/industry-expertise#real-estate",
+          sectionId: "real-estate",
           hasSubmenu: true,
           subItems: [
             {
               name: "Market Feasibility Studies",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#market",
             },
             {
               name: "Property Portfolio Strategy",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#property",
             },
             {
               name: "Tenant Retention & Experience",
-              href: "/services/advisory#erm",
+              href: "/services/industry-expertise#tenant",
             },
             {
               name: "Sales & Marketing Positioning",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#sales-marketing",
             },
             {
               name: "Property Management Optimization",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#property-management",
             },
           ],
         },
 
         {
           name: " Hospitality (Hotels, F&B, Tourism) ",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/industry-expertise#hospitality",
+          sectionId: "hospitality",
           hasSubmenu: true,
           subItems: [
             {
               name: "Guest Experience Mapping",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#guest-experience",
             },
             {
               name: "Revenue Management Strategy",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#revenue-management",
             },
             {
               name: "Franchise & Expansion Advisory",
-              href: "/services/advisory#erm",
+              href: "/services/industry-expertise#franchise-expansion",
             },
             {
               name: "Menu & Service Profitability Analysis",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#menu-service",
             },
             {
               name: "Staff Retention & Culture Building",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#staff-retention",
             },
           ],
         },
 
         {
           name: "Education (Schools, Universities, EdTech) ",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/industry-expertise#education",
+          sectionId: "education",
           hasSubmenu: true,
           subItems: [
             {
               name: "Enrollment & Admissions Strategy",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#enrollment",
             },
             {
               name: "Operational Cost Review",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#operational-cost",
             },
             {
               name: "Student Experience & Retention",
-              href: "/services/advisory#erm",
+              href: "/services/industry-expertise#student-experience",
             },
             {
               name: "Accreditation & Regulatory Readiness",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#accreditation-regulatory",
             },
-            { name: "Corporate Partnerships", href: "/services/advisory#icfr" },
+            { name: "Corporate Partnerships", href: "/services/industry-expertise#corporate-patnerships" },
           ],
         },
 
         {
           name: " Healthcare (Clinics, Hospitals, Wellness Centers) ",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/industry-expertise#healthcare",
+          sectionId: "healthcare",
           hasSubmenu: true,
           subItems: [
             {
               name: "Patient Flow Optimization",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#patient-flow",
             },
             {
               name: "Revenue Cycle Management",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#revenue-cycle",
             },
             {
               name: "Healthcare Marketing & Brand Trust",
-              href: "/services/advisory#erm",
+              href: "/services/industry-expertise#healthcare-marketing",
             },
             {
               name: "Service Expansion Feasibility",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#service-expansion",
             },
             {
               name: "Administrative Compliance Readiness",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#administrative-compliance",
             },
           ],
         },
 
         {
           name: "Financial Services (DNFBPs Only) ",
-          href: "/services/advisory#forensic-advisory",
-          sectionId: "forensic-advisory",
+          href: "/services/industry-expertise#financial-services",
+          sectionId: "financial-services",
           hasSubmenu: true,
           subItems: [
             {
               name: "AML & CFT Policy Development",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#aml-cft",
             },
             {
               name: "KYC (Know Your Customer) Process Design",
-              href: "/services/advisory#icfr",
+              href: "/services/industry-expertise#kyc",
             },
             {
               name: "GoAML Registration & Reporting Support",
-              href: "/services/advisory#erm",
+              href: "/services/industry-expertise#goaml",
             },
             {
               name: "Risk Profiling",
-              href: "/services/advisory#internal-audit",
+              href: "/services/industry-expertise#risk-profiling",
             },
-            { name: "Training", href: "/services/advisory#icfr" },
+            { name: "Training", href: "/services/industry-expertise#training" },
           ],
         },
       ],

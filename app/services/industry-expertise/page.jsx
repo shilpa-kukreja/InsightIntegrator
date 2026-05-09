@@ -145,12 +145,12 @@ const IndustryExpertisePage = () => {
 
   //  Real Estate 
    {
-    id: "realestate",
+    id: "real-estate",
     title: " Real Estate ",
     description: "Helping real estate businesses make smarter investment decisions, improve asset performance, and create sustainable long-term growth opportunities.",
     services: [
       {
-        id: "supply-chain",
+        id: "market",
         name: "Market Feasibility Studies",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We provide in-depth market analysis and feasibility assessments to help developers, investors, and real estate firms evaluate project potential and minimize investment risks.",
@@ -166,7 +166,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "operational-efficiency",
+        id: "property",
         name: "Property Portfolio Strategy",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "We help real estate businesses optimize property portfolios by identifying high-performing assets, improving investment allocation, and creating strategies for long-term value growth.",
@@ -183,7 +183,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "inventory",
+        id: "tenant",
         name: "Tenant Retention & Experience",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help property owners and real estate businesses improve tenant satisfaction, strengthen long-term occupancy, and create better customer experiences across residential and commercial properties.",
@@ -199,7 +199,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
        {
-        id: "sustainability",
+        id: "sales-marketing",
         name: "Sales & Marketing Positioning",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help real estate brands strengthen market presence, attract the right audience, and create impactful sales and marketing strategies that drive visibility and conversions.",
@@ -215,7 +215,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "cost",
+        id: "property-management",
         name: "Property Management Optimization",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help real estate businesses streamline property operations, improve asset maintenance, and enhance management efficiency to deliver better performance and tenant satisfaction.",
@@ -240,7 +240,7 @@ const IndustryExpertisePage = () => {
     description: "Helping hospitality brands elevate guest satisfaction, strengthen operations, and create memorable customer experiences that drive long-term growth.",
     services: [
       {
-        id: "supply-chain",
+        id: "guest-experience",
         name: "Guest Experience Mapping",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help hotels, restaurants, and tourism businesses understand customer journeys, improve service quality, and create seamless guest experiences across every touchpoint.",
@@ -256,7 +256,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "operational-efficiency",
+        id: "revenue-management",
         name: "Revenue Management Strategy",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "We help hospitality businesses maximize revenue opportunities through smart pricing strategies, demand forecasting, and performance-driven operational planning.",
@@ -272,7 +272,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "inventory",
+        id: "franchise-expansion",
         name: "Franchise & Expansion Advisory",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help hospitality brands plan successful expansion strategies, strengthen franchise models, and identify growth opportunities across new markets and locations.",
@@ -288,7 +288,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
        {
-        id: "sustainability",
+        id: "menu-service",
         name: "Menu & Service Profitability Analysis",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help restaurants, cafés, and hospitality businesses improve profitability by analyzing menu performance, service efficiency, and customer purchasing behavior.",
@@ -304,7 +304,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "cost",
+        id: "staff-retention",
         name: "Staff Retention & Culture Building",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help hospitality businesses create strong workplace cultures, improve employee satisfaction, and develop retention strategies that support long-term team stability and service excellence.",
@@ -329,7 +329,7 @@ const IndustryExpertisePage = () => {
     description: "Helping educational institutions strengthen student engagement, improve operational performance, and create future-ready learning environments.",
     services: [
       {
-        id: "supply-chain",
+        id: "enrollment",
         name: "Enrollment & Admissions Strategy",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
         description: "We help schools, universities, and EdTech brands improve enrollment performance through strategic admissions planning, student outreach, and data-driven growth initiatives.",
@@ -345,7 +345,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "operational-efficiency",
+        id: "operational-cost",
         name: "Operational Cost Review",
         shortDescription: "Improve productivity using lean methodologies.",
         description: "We help educational institutions evaluate operational spending, streamline resource allocation, and improve financial efficiency without compromising academic quality or student experience.",
@@ -361,7 +361,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "inventory",
+        id: "student-experience",
         name: "Student Experience & Retention",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help educational institutions create engaging student journeys that improve satisfaction, strengthen campus experience, and increase long-term student retention.",
@@ -377,7 +377,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
        {
-        id: "sustainability",
+        id: "accreditation-regulatory",
         name: "Accreditation & Regulatory Readiness",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help educational institutions strengthen compliance frameworks, improve operational standards, and prepare confidently for accreditation and regulatory evaluations.",
@@ -393,7 +393,7 @@ const IndustryExpertisePage = () => {
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "cost",
+        id: "corporate-patnerships",
         name: "Corporate Partnerships",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
         description: "We help educational institutions build strategic industry collaborations that create stronger academic value, improve career opportunities, and enhance institutional growth.",
@@ -415,80 +415,85 @@ const IndustryExpertisePage = () => {
    {
     id: "healthcare",
     title: " Healthcare (Clinics, Hospitals, Wellness Centers)",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    description: "Helping healthcare providers improve operational efficiency, patient care experiences, and sustainable organizational growth.",
     services: [
       {
-        id: "supply-chain",
+        id: "patient-flow",
         name: "Patient Flow Optimization",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        description: "We help healthcare organizations streamline patient movement, reduce wait times, and improve service coordination for a smoother and more efficient care experience.",
+        detailedDescription: "Our strategies focus on workflow improvement, appointment management, resource utilization, and operational planning to enhance both patient satisfaction and staff productivity.",
         keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
+          "Patient journey optimization",
+          "Appointment scheduling efficiency",
+          "Clinical workflow improvement",
+          "Waiting time reduction strategies",
+          "Resource utilization planning",
+          "Service coordination enhancement"
         ],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "operational-efficiency",
+        id: "revenue-cycle",
         name: "Revenue Cycle Management",
         shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        description: "We help healthcare organizations strengthen financial operations by improving billing efficiency, reducing revenue leakage, and optimizing reimbursement processes.",
+        detailedDescription: "Our approach focuses on streamlining revenue workflows, enhancing financial visibility, and improving operational accuracy to support long-term financial stability.",
         keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
+          "Billing process optimization",
+          "Revenue leakage reduction",
+          "Claims management support",
+          "Financial workflow improvement",
+          "Payment cycle efficiency",
+          "Revenue performance tracking"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "inventory",
+        id: "healthcare-marketing",
         name: "Healthcare Marketing & Brand Trust",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help healthcare organizations strengthen brand credibility, improve patient engagement, and build a trusted presence in highly competitive healthcare markets.",
+        detailedDescription: "Our strategies combine patient-focused communication, reputation management, and growth-driven marketing initiatives to enhance visibility and long-term trust.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Healthcare brand positioning",
+          "Patient engagement strategies",
+          "Reputation management support",
+          "Digital marketing optimization",
+          "Community trust building",
+          "Patient communication enhancement"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
        {
-        id: "sustainability",
+        id: "service-expansion",
         name: "Service Expansion Feasibility",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help healthcare providers evaluate growth opportunities, assess operational readiness, and plan successful service expansions aligned with market demand.",
+        detailedDescription: "Our feasibility strategies focus on market analysis, operational capacity, financial planning, and patient demand insights to support confident and sustainable expansion decisions.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Healthcare market assessment",
+          "Service expansion planning",
+          "Operational readiness evaluation",
+          "Demand and location analysis",
+          "Financial feasibility review",
+          "Growth opportunity identification"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "cost",
+        id: "administrative-compliance",
         name: "Administrative Compliance Readiness",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help healthcare organizations strengthen administrative systems, maintain regulatory compliance, and improve operational accountability across departments.",
+        detailedDescription: "Our approach focuses on documentation standards, process alignment, compliance monitoring, and governance support to ensure smooth and efficient healthcare administration.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Compliance process assessment",
+          "Administrative workflow improvement",
+          "Documentation standardization",
+          "Regulatory readiness planning",
+          "Governance and policy support",
+          "Operational accountability systems"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       }
@@ -499,80 +504,85 @@ const IndustryExpertisePage = () => {
    {
     id: "financial-services",
     title: "  Financial Services (DNFBPs Only)",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    description: "Helping DNFBPs strengthen compliance frameworks, manage operational risks, and build sustainable financial governance systems.",
     services: [
       {
-        id: "supply-chain",
+        id: "aml-cft",
         name: "AML & CFT Policy Development",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        description: "We help DNFBPs develop strong AML and CFT policies that support regulatory compliance, risk mitigation, and responsible business operations.",
+        detailedDescription: "Our approach focuses on building structured compliance frameworks, improving internal controls, and aligning operational practices with evolving regulatory expectations.",
         keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
+          "AML policy framework development",
+          "CFT compliance planning",
+          "Risk assessment strategies",
+          "Internal control enhancement",
+          "Compliance monitoring systems",
+          "Regulatory alignment support"
         ],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
       {
-        id: "operational-efficiency",
+        id: "kyc",
         name: "KYC (Know Your Customer) Process Design",
         shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        description: "We help DNFBPs build structured KYC processes that improve customer verification, strengthen compliance controls, and reduce operational risks.",
+        detailedDescription: "Our strategies focus on customer due diligence, onboarding workflows, identity verification standards, and compliance monitoring for secure and efficient operations.",
         keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
+          "Customer due diligence frameworks",
+          "KYC workflow optimization",
+          "Identity verification processes",
+          "Risk-based customer assessment",
+          "Compliance documentation support",
+          "Client onboarding enhancement"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
       {
-        id: "inventory",
+        id: "goaml",
         name: "GoAML Registration & Reporting Support",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help organizations streamline GoAML registration, reporting procedures, and compliance reporting processes to meet regulatory obligations efficiently.",
+        detailedDescription: "Our support includes reporting structure guidance, documentation alignment, operational readiness, and process management for accurate and timely regulatory submissions.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "GoAML registration assistance",
+          "Reporting workflow support",
+          "Compliance documentation review",
+          "Suspicious activity reporting guidance",
+          "Regulatory process alignment",
+          "Operational compliance readiness"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
        {
-        id: "sustainability",
+        id: "risk-profiling",
         name: "Risk Profiling",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help DNFBPs identify, assess, and manage operational and compliance risks through structured risk profiling frameworks and strategic monitoring processes.",
+        detailedDescription: "Our approach focuses on evaluating customer, transaction, and business risks to strengthen decision-making, improve compliance readiness, and minimize exposure.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Customer risk assessment",
+          "Transaction risk evaluation",
+          "Compliance risk monitoring",
+          "Risk categorization frameworks",
+          "Operational risk analysis",
+          "Ongoing risk review processes"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
       {
-        id: "cost",
+        id: "training",
         name: "Training",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We provide compliance-focused training programs that help teams understand regulatory responsibilities, strengthen internal practices, and improve operational awareness.",
+        detailedDescription: "Our training sessions are designed to build practical knowledge around AML, CFT, KYC, reporting obligations, and compliance best practices for day-to-day operations.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "AML and CFT training",
+          "KYC process education",
+          "Compliance awareness programs",
+          "Regulatory best practice guidance",
+          "Internal policy training",
+          "Operational compliance workshops"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       }
@@ -583,28 +593,28 @@ const IndustryExpertisePage = () => {
 
   const faqs = [
     {
-      question: 'What is In-Country Value (ICV) and why is it important?',
-      answer: 'In-Country Value (ICV) is a UAE government initiative that measures the contribution of businesses to the local economy. A higher ICV score increases competitiveness for government contracts and tenders, demonstrating commitment to local economic development through local spending, Emiratization, and investment.'
+      question: 'What industries do you provide advisory services for?',
+      answer: 'We work with businesses across multiple industries including manufacturing, hospitality, healthcare, education, real estate, financial services, and retail. Our solutions are customized according to operational needs, growth goals, and market challenges.'
     },
     {
-      question: 'How can advisory services help my business grow?',
-      answer: 'Advisory services provide strategic guidance, expert analysis, and practical solutions to help you overcome challenges and seize opportunities. Whether you need help with strategy development, financial analysis, risk management, or transaction support, our experts bring specialized knowledge and experience to accelerate your growth.'
+      question: 'How do your consulting services help businesses grow?',
+      answer: 'Our advisory approach focuses on improving operational efficiency, identifying growth opportunities, strengthening business strategy, and optimizing processes to support long-term profitability and sustainable expansion.'
     },
     {
-      question: 'What is the difference between financial advisory and deal advisory?',
-      answer: 'Financial advisory focuses on financial analysis, modeling, valuation, and capital raising. Deal advisory is a subset focused specifically on mergers, acquisitions, divestitures, and other transactions, including due diligence, integration planning, and transaction support.'
+      question: 'Do you offer customized business solutions?',
+      answer: 'Yes, every business has different goals and challenges. We provide tailored strategies and practical recommendations designed specifically around your industry, business model, and operational structure.'
     },
     {
-      question: 'When should a company consider restructuring services?',
-      answer: 'Companies should consider restructuring when facing financial distress, declining profitability, liquidity challenges, or significant operational inefficiencies. Early intervention often leads to better outcomes, so seeking advisory support at the first signs of trouble is recommended.'
+      question: 'Can you help businesses improve operational efficiency?',
+      answer: 'Absolutely. We help organizations streamline workflows, reduce inefficiencies, improve productivity, optimize costs, and build stronger operational systems that support better performance.'
     },
     {
-      question: 'What is the difference between internal audit and risk advisory?',
-      answer: 'Internal audit focuses on evaluating and improving the effectiveness of governance, risk management, and control processes. Risk advisory is broader, encompassing enterprise risk management, risk assessment, control design, and strategic risk planning, often working alongside internal audit functions.'
+      question: 'Do you support compliance and regulatory readiness?',
+      answer: 'Yes, we assist businesses with process reviews, documentation support, compliance frameworks, and operational assessments to help organizations stay aligned with industry and regulatory standards.'
     },
     {
-      question: 'How do valuation services support financial reporting?',
-      answer: 'Valuation services support financial reporting under IFRS and other standards for purchase price allocation (PPA), impairment testing of goodwill and intangible assets, fair value measurement of financial instruments, share-based payment valuations, and other accounting requirements requiring fair value estimates.'
+      question: 'How can we get started with your advisory services?',
+      answer: 'You can connect with our team to discuss your business requirements, current challenges, and growth objectives. After understanding your needs, we create a strategic roadmap tailored to your business goals.'
     }
   ];
 
@@ -750,11 +760,11 @@ Empowering businesses with industry-specific strategies, operational excellence,
               {service.name}
             </h3>
 
-            <p className="text-gray-500 mb-4">
+            <p className="text-gray-500 mb-4 text-justify">
               {service.description}
             </p>
 
-            <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6">
+            <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6 text-justify">
               {service.detailedDescription}
             </p>
 
@@ -809,14 +819,14 @@ Empowering businesses with industry-specific strategies, operational excellence,
                 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
-                    'Strategic clarity and actionable direction',
-                    'Data-driven decision making and insights',
-                    'Risk identification and mitigation strategies',
-                    'Transaction success and value optimization',
-                    'Sustainable growth and value creation',
-                    'Expert guidance through business complexity',
-                    'Industry-leading methodologies and frameworks',
-                    'Cross-functional expertise and integrated solutions'
+                    'Tailored strategies aligned with your industry goals',
+                    'Practical solutions focused on measurable business impact',
+                    'Strong operational and compliance-driven approach',
+                    'Scalable frameworks designed for long-term growth',
+                    'Market-focused insights backed by strategic analysis',
+                    'Efficient process optimization and performance improvement',
+                    'Experienced advisory support across diverse industries',
+                    'Commitment to sustainable growth and business excellence'
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
                       <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
@@ -969,16 +979,16 @@ Empowering businesses with industry-specific strategies, operational excellence,
             <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <div className="inline-flex items-center gap-3 mb-5">
                 <div className="h-px w-12 bg-white/50"></div>
-                <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">Get Started</span>
+                <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">GET IN TOUCH</span>
                 <div className="h-px w-12 bg-white/50"></div>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
-                Ready to <span className="font-bold">Transform Your Business?</span>
+                Ready to <span className="font-bold">Take the Next Step Toward Smarter Business Growth</span>
               </h2>
               
               <p className="text-white/50 text-base mb-10 font-light max-w-md mx-auto">
-                Contact our Advisory experts to discuss how we can help you achieve your strategic goals.
+Partner with experienced advisors who help businesses improve performance, strengthen strategy, and unlock new opportunities for long-term success.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -987,7 +997,7 @@ Empowering businesses with industry-specific strategies, operational excellence,
                   className="group relative px-9 py-3.5 bg-white text-[#0a0a0a] text-sm font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-gray-100"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
-                    Contact Our Team
+                    Schedule a Consultation
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </span>
                 </Link>
@@ -995,7 +1005,10 @@ Empowering businesses with industry-specific strategies, operational excellence,
                   href="/services" 
                   className="px-9 py-3.5 border border-white/15 text-white text-sm font-medium tracking-wide hover:bg-white/5 transition-all duration-300"
                 >
-                  View All Services
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    Explore Our Expertise
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </span>
                 </Link>
               </div>
             </div>
