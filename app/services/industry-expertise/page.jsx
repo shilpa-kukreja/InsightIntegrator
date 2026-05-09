@@ -58,13 +58,13 @@ const IndustryExpertisePage = () => {
   {
     id: "manufacturing",
     title: "Manufacturing",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    description: "Helping manufacturers optimize operations, improve productivity, and build resilient systems for sustainable industrial growth.",
     services: [
       {
         id: "supply-chain",
         name: "Supply Chain & Logistics Strategy",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
+        description: "We help manufacturing businesses streamline sourcing, inventory movement, warehousing, and distribution processes to improve efficiency, reduce delays, and strengthen operational performance.",
         detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
         keyFeatures: [
           "Supply chain diagnostics",
@@ -632,8 +632,7 @@ const IndustryExpertisePage = () => {
               </h1>
               
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Strategic guidance to navigate complexity and unlock sustainable growth opportunities.
-              </p>
+Empowering industry leaders with tailored strategies, market-focused insights, and scalable solutions designed for long-term business growth.              </p>
               
               {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
                 <div className="flex flex-col items-center gap-2">
@@ -653,19 +652,18 @@ const IndustryExpertisePage = () => {
           data-observe="true"
           className="py-12 md:py-12 bg-gray-200 border-b border-gray-50"
         >
-          <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
+          <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
             <div className={`text-center transition-all duration-800 transform ${visibleSections.overview ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="h-px w-10 bg-[#0a0a0a]/50"></div>
                 <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">Overview</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 leading-tight">
-                Strategic. <span className="font-bold">Forward-thinking.</span> Results-driven.
+                 Industry-focused.  <span className="font-bold">Visionary.</span> Growth-oriented.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto my-4"></div>
               <p className="text-gray-500 text-lg leading-relaxed font-light">
-                Our Advisory practice delivers strategic guidance to help you navigate complexity and unlock sustainable growth opportunities. 
-                We combine deep industry expertise with analytical rigor to solve your most pressing business challenges.
+                We help businesses across diverse industries overcome challenges, strengthen operations, and unlock new growth opportunities through tailored strategies, market expertise, and practical business solutions designed for long-term success.
               </p>
             </div>
           </div>
@@ -678,13 +676,13 @@ const IndustryExpertisePage = () => {
           className="py-12 md:py-12 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className={`text-center mb-12 transition-all duration-800 transform ${visibleSections.services ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div className={`text-center mb-12 transition-all duration-800 transform`}>
               <div className="inline-flex items-center gap-3 mb-6">
                 <div className="h-px w-10 bg-[#0a0a0a]/50"></div>
                 <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">Our Services</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">
-                Comprehensive <span className="font-bold">Advisory Services</span>
+                Comprehensive <span className="font-bold">Industry Expertise</span>
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-base font-light">
                 Strategic guidance to help you navigate complexity and unlock sustainable growth opportunities

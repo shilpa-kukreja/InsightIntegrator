@@ -83,16 +83,16 @@ const AuditAssurancePage = () => {
       shortDescription:
         "Expert guidance on financial reporting standards and compliance requirements.",
       description:
-        "Our FRAS team provides comprehensive support for financial reporting under IFRS, US GAAP, and other major accounting frameworks. We help organizations navigate complex accounting standards, implement new requirements, and ensure accurate financial statement presentation.",
+        "Our Financial Reporting Advisory Services help organizations manage evolving accounting and reporting requirements with greater accuracy and consistency. We support businesses in strengthening financial reporting practices, improving disclosure quality, and aligning with applicable reporting standards.",
       detailedDescription:
-        "Financial reporting requires specialized expertise to ensure compliance with evolving standards. Our FRAS specialists provide tailored guidance on IFRS implementation, technical accounting matters, and complex financial transactions to help you present accurate and transparent financial statements.",
+        "Our approach focuses on practical guidance, structured implementation, and reliable support across complex financial reporting and accounting matters.",
       keyFeatures: [
-        "IFRS implementation and transition support",
-        "Technical accounting position papers",
-        "Financial statement preparation and review",
-        "Accounting policy development",
-        "Complex transaction accounting guidance",
-        "New standard adoption assistance",
+        "Financial reporting support",
+        "Accounting framework guidance",
+        " Financial statement review",
+        "Technical accounting advisory",
+        "Reporting process improvement",
+        "Regulatory reporting assistance",
       ],
       image:
         "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -103,16 +103,16 @@ const AuditAssurancePage = () => {
       shortDescription:
         "Identify, assess, and mitigate business risks across your organization.",
       description:
-        "Our risk professionals help organizations build resilient risk management frameworks. We identify emerging risks, assess control effectiveness, and develop strategies to mitigate operational, financial, and compliance risks.",
+        "Our risk advisory services help organizations identify operational, financial, and compliance-related risks through structured evaluation and control-focused assessments. We support businesses in strengthening governance practices, improving internal oversight, and building more resilient operational frameworks.",
       detailedDescription:
-        "In today's volatile business environment, proactive risk management is essential. Our risk specialists work with you to identify vulnerabilities, strengthen controls, and build resilience against operational, financial, and compliance risks.",
+        "By combining practical analysis with regulatory awareness, we help organizations address vulnerabilities, improve control effectiveness, and support informed decision-making.",
       keyFeatures: [
-        "Enterprise risk management (ERM) framework development",
-        "Risk assessment and prioritization",
-        "Internal control evaluation",
+        "Enterprise risk assessment",
+        " Internal control evaluation",
+        " Compliance risk review",
         "Fraud risk assessment",
+        "Risk monitoring support",
         "Business continuity planning",
-        "Risk monitoring and reporting",
       ],
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -124,7 +124,7 @@ const AuditAssurancePage = () => {
       id: "outsourcing-business",
       title: " Outsourcing and Business Solutions ",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Helping businesses improve operational coordination, process efficiency, and workflow management through structured support solutions.",
       services: [
         {
           id: "accounting",
@@ -132,15 +132,15 @@ const AuditAssurancePage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "We provide accounting and bookkeeping support designed to maintain organized financial operations and improve day-to-day process efficiency. Our services help businesses manage financial activities with better accuracy, consistency, and operational visibility.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "Through structured financial management and streamlined support processes, organizations can reduce administrative gaps and maintain smoother business operations. Our specialists work closely with businesses to improve reporting workflows, maintain financial records, and support better coordination across operational functions while ensuring consistency and process reliability.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            " Financial operations support",
+            "Accounts coordination management",
+            "Business process documentation",
+            "Reporting workflow assistance",
+            " Operational record tracking",
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -149,32 +149,32 @@ const AuditAssurancePage = () => {
           name: " Business Incorporation",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "We assist businesses with structured company incorporation and setup support designed to simplify registration processes and ensure smoother business establishment. Our approach focuses on regulatory alignment, documentation support, and operational readiness for new and expanding businesses.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "From initial setup procedures to compliance-related coordination, we help organizations establish a strong operational foundation with greater clarity and efficiency.We work closely with businesses to streamline incorporation processes, reduce administrative complexity, and support timely business setup across required operational and regulatory stages.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Company formation support",
+            " Business registration assistance",
+            " Documentation coordination",
+            " Regulatory process guidance",
+            "Operational setup support",
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
         {
           id: "liquidation",
-          name: "Liquidation and de",
+          name: "Liquidation and De-registration",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "We support businesses through structured liquidation and de-registration processes with a focus on compliance, documentation management, and operational closure support. Our services are designed to help organizations manage transitions efficiently while reducing procedural complexity.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "From regulatory coordination to closure-related documentation, we assist businesses in completing the process with greater clarity, control, and administrative accuracy.We help organizations manage closure procedures through organized process handling, compliance coordination, and structured operational support.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Business closure support",
+            "De-registration assistance",
+            "Compliance documentation handling",
+            "Regulatory coordination",
+            "Operational transition support",
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -183,15 +183,15 @@ const AuditAssurancePage = () => {
           name: "Stock & Asset Audit / Count",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our stock and asset audit services help businesses maintain accurate inventory visibility, strengthen asset tracking, and improve operational accountability. We support organizations in verifying stock records and identifying discrepancies through structured audit procedures.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "By improving inventory accuracy and reporting reliability, businesses can maintain better operational control and support informed planning decisions.We assist organizations with physical verification processes, stock reviews, and asset monitoring to improve visibility and operational consistency.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            " Inventory verification",
+            "Asset count support",
+            " Stock reconciliation",
+            "Warehouse inventory review",
+            "Asset tracking assistance",
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -200,15 +200,15 @@ const AuditAssurancePage = () => {
           name: " HR and Payroll ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "We provide HR and payroll support services designed to help businesses manage workforce operations with greater accuracy, consistency, and administrative efficiency. Our solutions support smooth employee record management, payroll processing, and routine HR coordination.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "By streamlining HR operations and payroll-related processes, organizations can improve compliance handling, reduce administrative workload, and maintain organized workforce management.We assist businesses in managing employee-related processes through structured coordination, accurate documentation, and reliable payroll administration support.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Payroll processing support",
+            " Employee record management",
+            "HR documentation assistance",
+            "Attendance and leave coordination",
+            " Workforce administration support",
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -219,35 +219,35 @@ const AuditAssurancePage = () => {
   const faqs = [
     {
       question:
-        "What is the difference between an audit and an assurance engagement?",
+        "What is included in an audit and assurance service?",
       answer:
-        "An audit is a specific type of assurance engagement that provides a reasonable level of assurance on historical financial information. Assurance engagements encompass a broader range of services, including reviews, agreed-upon procedures, and other attestation services that may provide different levels of assurance (reasonable or limited).",
+        "Audit and assurance services typically include financial review procedures, risk assessments, internal control evaluations, and compliance-focused examinations designed to improve reporting accuracy and operational transparency.",
     },
     {
-      question: "How often should my company undergo an audit?",
+      question: "How often should a business conduct an audit?",
       answer:
-        "The frequency of audits depends on your regulatory requirements, stakeholder needs, and internal policies. Publicly traded companies typically require annual audits. Private companies may choose annual, bi-annual, or periodic audits based on shareholder requirements, lender covenants, or risk management considerations.",
+        "The frequency of audits depends on regulatory requirements, business size, operational complexity, and internal governance needs. Many organizations conduct audits annually to maintain compliance and strengthen financial oversight.",
     },
     {
-      question: "What is the typical timeline for completing an audit?",
+      question: "How can audit services help improve business operations?",
       answer:
-        "Audit timelines vary based on company size, complexity, and readiness. Generally, audits take 4-8 weeks from commencement to completion, though larger organizations may require 8-12 weeks. We work with you to establish realistic timelines that meet your reporting deadlines.",
+        "Audit services help identify reporting gaps, control weaknesses, and process inefficiencies, allowing businesses to improve accuracy, strengthen controls, and support better operational decision-making.",
     },
     {
       question:
-        "How do you ensure independence and objectivity in your audits?",
+        "Are audit and assurance services only for large companies?",
       answer:
-        "We strictly adhere to international ethical standards and independence requirements. We maintain robust internal policies, rotating audit partners periodically, and conduct regular independence assessments to ensure our objectivity remains uncompromised.",
+        "No. Businesses of all sizes can benefit from structured audit and assurance services to improve compliance management, financial visibility, and operational reliability.",
     },
     {
-      question: "What information do you need to begin an audit engagement?",
+      question: "What is the difference between internal controls and compliance reviews?",
       answer:
-        "We typically require financial statements, general ledgers, trial balances, supporting documentation for significant transactions, internal control documentation, prior year audit reports, and access to key personnel for inquiries. We provide a detailed information request list at engagement commencement.",
+        "Internal controls focus on improving operational and financial process reliability, while compliance reviews assess whether business activities align with applicable regulatory and policy requirements.",
     },
     {
-      question: "How do you handle confidential client information?",
+      question: "How do assurance services support stakeholder confidence?",
       answer:
-        "Client confidentiality is paramount. We maintain strict data protection protocols, including secure data transfer methods, access controls, confidentiality agreements for all personnel, and compliance with relevant data protection regulations including GDPR and UAE data protection laws.",
+        "Independent evaluations and structured reporting processes help improve transparency, strengthen credibility, and provide stakeholders with greater confidence in financial and operational information.",
     },
   ];
 
@@ -302,8 +302,8 @@ const AuditAssurancePage = () => {
               </h1>
 
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Independent, objective assurance that enhances credibility and
-                builds stakeholder confidence.
+                Structured assurance services designed to strengthen financial transparency, improve compliance oversight, and support confident business decisions.
+
               </p>
               {/*               
               <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
@@ -335,15 +335,11 @@ const AuditAssurancePage = () => {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
-                Precision. <span className="font-bold">Integrity.</span> Trust.
+                Clarity. <span className="font-bold">Compliance.</span> Confidence.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto my-4"></div>
               <p className="text-gray-500 text-lg leading-relaxed font-light">
-                Our Audit & Assurance services provide independent, objective
-                assurance that enhances credibility and builds stakeholder
-                confidence. We deliver thorough examinations of financial
-                records, internal controls, and operational processes to ensure
-                accuracy, compliance, and transparency.
+                Our Audit & Assurance services are designed to help organizations maintain financial accuracy, strengthen internal oversight, and meet evolving regulatory expectations. Through structured evaluations and risk-focused reviews, we support better transparency, informed decision-making, and operational reliability.
               </p>
             </div>
           </div>
@@ -366,11 +362,10 @@ const AuditAssurancePage = () => {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-5">
-                Comprehensive <span className="font-bold">Audit Solutions</span>
+                Strategic Audit & <span className="font-bold"> Assurance Services</span>
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-base font-light">
-                Tailored assurance services to meet your organization's unique
-                needs
+                Structured assurance solutions designed to support financial clarity, compliance, and operational confidence
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-5"></div>
             </div>
@@ -405,11 +400,11 @@ const AuditAssurancePage = () => {
                         {item.name}
                       </h3>
 
-                      <p className="text-gray-500 text-base leading-relaxed mb-6">
+                      <p className="text-gray-500 text-base leading-relaxed mb-6 text-justify">
                         {item.description}
                       </p>
 
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4">
+                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
                         {item.detailedDescription}
                       </p>
 
@@ -514,11 +509,11 @@ const AuditAssurancePage = () => {
                             {service.name}
                           </h3>
 
-                          <p className="text-gray-500 mb-4">
-                            {service.description}
-                          </p>
+                          <p className="text-gray-500 mb-4 text-justify">
+                             {service.description}
+                           </p>
 
-                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6">
+                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6 text-justify">
                             {service.detailedDescription}
                           </p>
 
@@ -575,20 +570,20 @@ const AuditAssurancePage = () => {
                   </span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-light text-[#ffffff] mb-4 leading-tight">
-                  Key <span className="font-bold">Benefits</span>
+                  Core <span className="font-bold">Advantages</span>
                 </h2>
                 <div className="w-16 h-px bg-[#ffffff]/50 mx-auto mb-12"></div>
 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
-                    "Enhanced stakeholder confidence and trust",
-                    "Improved internal control environment",
-                    "Regulatory compliance assurance",
-                    "Risk identification and mitigation strategies",
-                    "Operational efficiency gains",
-                    "Independent objective perspective",
-                    "Real-time issue identification",
-                    "Actionable recommendations for improvement",
+                    "Stronger financial transparency and reporting clarity",
+                    "Improved process control and compliance oversight",
+                    "Better operational consistency and accountability",
+                    "Early identification of reporting and control gaps",
+                    "Structured risk evaluation and monitoring support",
+                    "Independent and objective assessment approach",
+                    "Practical recommendations for process improvement",
+                    "Support for informed business decision-making",
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
                       <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
@@ -767,7 +762,7 @@ const AuditAssurancePage = () => {
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/50 rounded-full blur-3xl animate-pulse delay-1000"></div>
           </div> */}
 
-          <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div
               className={`transition-all duration-800 transform ${visibleSections.cta ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
@@ -779,15 +774,14 @@ const AuditAssurancePage = () => {
                 <div className="h-px w-12 bg-white/50"></div>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
-                Ready for a{" "}
-                <span className="font-bold">Trusted Audit Partner?</span>
+              <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight ">
+                Looking for Reliable{" "}
+                <span className="font-bold"> Audit & Assurance Support?</span>
               </h2>
 
-              <p className="text-white/40 text-base mb-10 font-light max-w-md mx-auto">
-                Contact our Audit & Assurance experts to discuss how we can help
-                your organization achieve excellence in financial reporting and
-                compliance.
+              <p className="text-white/40 text-base mb-10 font-light max-w-lg mx-auto">
+                Connect with our professionals to discuss your reporting, compliance, and assurance requirements with clarity and confidence.
+
               </p>
 
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -806,7 +800,12 @@ const AuditAssurancePage = () => {
                   href="/services"
                   className="px-9 py-3.5 border border-white/15 text-white text-sm font-medium tracking-wide hover:bg-white/5 transition-all duration-300"
                 >
-                  View All Services
+                 <span className="relative z-10 flex items-center justify-center gap-2">
+                    Explore All Services
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </span>
                 </Link>
               </div>
             </div>

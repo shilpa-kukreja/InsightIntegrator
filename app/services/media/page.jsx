@@ -82,7 +82,7 @@ const MediaPage = () => {
       id: "graphic-designing",
       title: " Graphic Designing",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Creative visuals and brand-focused designs that help businesses communicate with clarity, consistency, and impact across digital and print platforms.",
       services: [
         {
           id: "logo-design",
@@ -90,15 +90,16 @@ const MediaPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Create distinctive brand identities with professionally crafted logos designed to reflect your business vision, values, and market presence.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "We design memorable and versatile logos that strengthen brand recognition and establish a strong visual foundation for businesses across industries.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Custom brand identity design",
+            "Modern and timeless logo concepts",
+            "Typography and color selection",
+            "Brand consistency guidelines",
+            "Scalable vector design",
+            "Rebranding and logo refresh solutions"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -107,15 +108,16 @@ const MediaPage = () => {
           name: " Packaging Design",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "Create visually appealing and market-ready packaging solutions that enhance product presentation, strengthen brand identity, and attract customer attention.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "Our packaging design services combine creativity, branding, and functionality to deliver packaging that not only looks premium but also communicates product value effectively across retail and digital markets.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Product packaging concepts",
+            "Label and box design",
+            "Brand-focused packaging visuals",
+            "Print-ready packaging layouts",
+            "Minimal and premium design styles",
+            "Retail and e-commerce packaging solutions"
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -124,15 +126,16 @@ const MediaPage = () => {
           name: "Catelogue & Brocheers Design",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Present your products, services, and brand story through professionally designed catalogues and brochures that leave a lasting impression.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We create visually engaging and well-structured marketing materials that help businesses communicate information clearly while maintaining a strong and consistent brand identity.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Corporate brochure design",
+            "Product catalogue layouts",
+            "Company profile design",
+            "Creative print and digital formats",
+            "Brand-aligned visual presentation",
+            "Clean and professional content structuring"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -140,9 +143,9 @@ const MediaPage = () => {
     },
      {
       id: "web-designing",
-      title: " Web Designing",
+      title: "Web Designing",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Modern, responsive, and performance-focused websites designed to strengthen your online presence and deliver seamless user experiences across all devices.",
       services: [
         {
           id: "ecommerce-development",
@@ -150,15 +153,16 @@ const MediaPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Build scalable and user-friendly eCommerce platforms designed to enhance customer experience, streamline online sales, and support business growth.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "We develop visually engaging and conversion-focused eCommerce websites with secure functionality, responsive layouts, and smooth navigation tailored to your business goals.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Custom eCommerce website development",
+            "Mobile-responsive online stores",
+            "Secure payment gateway integration",
+            "Product and inventory management",
+            "User-friendly shopping experience",
+            "Performance and speed optimization"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -167,32 +171,34 @@ const MediaPage = () => {
           name: "Web Development",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "Develop high-performance and scalable websites tailored to your business needs with seamless functionality, responsive layouts, and modern technologies.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "Our web development solutions focus on creating secure, fast, and user-centric websites that improve engagement, strengthen digital presence, and support long-term business growth.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Custom website development",
+            "Responsive and mobile-friendly layouts",
+            "CMS integration and management",
+            "Secure and scalable web architecture",
+            "API and third-party integrations",
+            "Website speed and performance optimization"
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
         {
-          id: "catelogue-brocheers",
-          name: "Catelogue & Brocheers Design",
+          id: "ui-ux",
+          name: "UI/UX Design",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Design intuitive and visually engaging digital experiences that improve user interaction, strengthen brand perception, and increase customer satisfaction.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "Our UI/UX design services focus on creating user-centered interfaces with seamless navigation, modern aesthetics, and optimized functionality across websites and digital platforms.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "User interface design",
+            "User experience optimization",
+            "Wireframing and prototyping",
+            "Responsive design systems",
+            "Interactive user journeys",
+            "Conversion-focused design strategy"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -210,15 +216,16 @@ const MediaPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Build a strong online presence with result-driven digital marketing strategies designed to increase visibility, generate qualified leads, and accelerate business growth.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "Our digital marketing services combine creativity, analytics, and performance-focused strategies to help brands connect with the right audience across search engines, social media, and digital platforms.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Search Engine Optimization (SEO)",
+            "Social Media Marketing (SMM/SMO)",
+            "Pay-Per-Click Advertising (PPC)",
+            "Content Writing & Marketing",
+            "Google Ads & Meta Ads management",
+            "Brand strategy and online positioning"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -238,15 +245,16 @@ const MediaPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Capture your brand with high-quality professional photography that enhances visual identity, strengthens marketing campaigns, and creates lasting audience impact.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "Our photoshoot services are designed to deliver visually compelling content for brands, products, businesses, and campaigns through creative direction, professional equipment, and modern editing techniques.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Product photography",
+            "Corporate and business shoots",
+            "Fashion and lifestyle photography",
+            "Ecommerce product shoots",
+            "Social media content photography",
+            "Studio and outdoor shoots"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -257,35 +265,40 @@ const MediaPage = () => {
   const faqs = [
     {
       question:
-        "What is the difference between an audit and an assurance engagement?",
+        "What media services do you provide?",
       answer:
-        "An audit is a specific type of assurance engagement that provides a reasonable level of assurance on historical financial information. Assurance engagements encompass a broader range of services, including reviews, agreed-upon procedures, and other attestation services that may provide different levels of assurance (reasonable or limited).",
+        "We offer complete media solutions including graphic designing, web designing, digital marketing, branding, content creation, photography, video editing, social media management, and advertising campaigns.",
     },
     {
-      question: "How often should my company undergo an audit?",
+      question: "Do you create custom graphic designs for businesses?",
       answer:
-        "The frequency of audits depends on your regulatory requirements, stakeholder needs, and internal policies. Publicly traded companies typically require annual audits. Private companies may choose annual, bi-annual, or periodic audits based on shareholder requirements, lender covenants, or risk management considerations.",
+        "Yes, we design custom logos, brand identities, packaging, brochures, social media creatives, catalogs, banners, and marketing materials tailored to your brand image and business goals.",
     },
     {
-      question: "What is the typical timeline for completing an audit?",
+      question: "Can you design and develop websites?",
       answer:
-        "Audit timelines vary based on company size, complexity, and readiness. Generally, audits take 4-8 weeks from commencement to completion, though larger organizations may require 8-12 weeks. We work with you to establish realistic timelines that meet your reporting deadlines.",
+        "Absolutely. We create responsive, user-friendly, and modern websites including corporate websites, ecommerce stores, landing pages, portfolio sites, and custom web solutions.",
     },
     {
       question:
-        "How do you ensure independence and objectivity in your audits?",
+        "What digital marketing services do you offer?",
       answer:
-        "We strictly adhere to international ethical standards and independence requirements. We maintain robust internal policies, rotating audit partners periodically, and conduct regular independence assessments to ensure our objectivity remains uncompromised.",
+        "Our digital marketing services include SEO, social media marketing, PPC advertising, content marketing, email campaigns, lead generation, online branding, and performance marketing strategies.",
     },
     {
-      question: "What information do you need to begin an audit engagement?",
+      question: "Can you help improve our Google rankings?",
       answer:
-        "We typically require financial statements, general ledgers, trial balances, supporting documentation for significant transactions, internal control documentation, prior year audit reports, and access to key personnel for inquiries. We provide a detailed information request list at engagement commencement.",
+        "Yes, our SEO strategies focus on improving website visibility, keyword rankings, organic traffic, technical optimization, and long-term online growth.",
     },
     {
-      question: "How do you handle confidential client information?",
+      question: "Do you provide product and corporate photoshoots?",
       answer:
-        "Client confidentiality is paramount. We maintain strict data protection protocols, including secure data transfer methods, access controls, confidentiality agreements for all personnel, and compliance with relevant data protection regulations including GDPR and UAE data protection laws.",
+        "Yes, we offer professional photoshoots for products, corporate branding, events, ecommerce listings, social media campaigns, and promotional materials.",
+    },
+    {
+      question: "How do you ensure branding consistency across all platforms?",
+      answer:
+        "We follow a strategic brand approach that maintains consistency in design, messaging, tone, colors, and visual identity across digital and offline platforms.",
     },
   ];
 
@@ -335,13 +348,12 @@ const MediaPage = () => {
               <h1 className="text-5xl md:text-6xl lg:text-6xl font-light text-white mb-8 tracking-tight leading-[1.1]">
                 
                 <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">
-                  Media
+                  Creative Media Solutions
                 </span>
               </h1>
 
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Independent, objective assurance that enhances credibility and
-                builds stakeholder confidence.
+                Building impactful digital experiences through strategic design, branding, content creation, and performance-driven marketing solutions.
               </p>
               {/*               
               <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
@@ -373,15 +385,11 @@ const MediaPage = () => {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
-                Precision. <span className="font-bold">Integrity.</span> Trust.
+                Creative.   <span className="font-bold">Results-Focused.</span> Engaging.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto my-4"></div>
               <p className="text-gray-500 text-lg leading-relaxed font-light">
-                Our Audit & Assurance services provide independent, objective
-                assurance that enhances credibility and builds stakeholder
-                confidence. We deliver thorough examinations of financial
-                records, internal controls, and operational processes to ensure
-                accuracy, compliance, and transparency.
+                Our media services are designed to help businesses strengthen their digital presence, connect with their audience, and build lasting brand value. From graphic design and website development to digital marketing and professional shoots, we combine creativity with strategy to deliver visually powerful and business-focused solutions.
               </p>
             </div>
           </div>
@@ -404,10 +412,10 @@ const MediaPage = () => {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-5">
-                Comprehensive <span className="font-bold">Audit Solutions</span>
+                Comprehensive <span className="font-bold">Media Solutions</span>
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-base font-light">
-                Tailored assurance services to meet your organization's unique
+                Tailored media services to meet your organization's need
                 needs
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-5"></div>
@@ -453,11 +461,11 @@ const MediaPage = () => {
                             {service.name}
                           </h3>
 
-                          <p className="text-gray-500 mb-4">
+                          <p className="text-gray-500 mb-4 text-justify">
                             {service.description}
                           </p>
 
-                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6">
+                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6 text-justify">
                             {service.detailedDescription}
                           </p>
 
@@ -522,14 +530,14 @@ const MediaPage = () => {
 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
-                    "Enhanced stakeholder confidence and trust",
-                    "Improved internal control environment",
-                    "Regulatory compliance assurance",
-                    "Risk identification and mitigation strategies",
-                    "Operational efficiency gains",
-                    "Independent objective perspective",
-                    "Real-time issue identification",
-                    "Actionable recommendations for improvement",
+                    "Increased brand visibility and online reach",
+                    "Higher quality lead generation",
+                    "Improved search engine rankings",
+                    "Stronger social media engagement",
+                    "Better conversion and sales performance",
+                    "Data-driven marketing insights",
+                    "Targeted audience acquisition strategies",
+                    "Consistent brand positioning across platforms",
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
                       <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
@@ -569,8 +577,7 @@ const MediaPage = () => {
                 </span>
               </h2>
               <p className="text-gray-400 text-base font-light max-w-2xl mx-auto">
-                Everything you need to know about our audit and assurance
-                services
+                Explore answers to the most common questions about our media, branding, web design, and digital marketing services.
               </p>
               <div className="w-20 h-0.5 bg-gradient-to-r from-[#2c154f]/20 via-[#2c154f]/60 to-[#2c154f]/20 mx-auto mt-8 rounded-full"></div>
             </div>

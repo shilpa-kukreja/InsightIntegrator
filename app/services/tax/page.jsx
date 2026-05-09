@@ -1,10 +1,10 @@
 // app/services/tax/page.jsx
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const TaxPage = () => {
   const [visibleSections, setVisibleSections] = useState({});
@@ -22,23 +22,23 @@ const TaxPage = () => {
         entries.forEach((entry) => {
           const id = entry.target.id;
           if (entry.isIntersecting) {
-            setVisibleSections(prev => ({ ...prev, [id]: true }));
+            setVisibleSections((prev) => ({ ...prev, [id]: true }));
           }
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
     );
 
     // Observe all sections with IDs
     const sections = document.querySelectorAll('[data-observe="true"]');
-    sections.forEach(section => {
+    sections.forEach((section) => {
       if (section.id) {
         observerRef.current.observe(section);
       }
     });
 
     // Set initial visible for hero
-    setVisibleSections(prev => ({ ...prev, hero: true }));
+    setVisibleSections((prev) => ({ ...prev, hero: true }));
 
     return () => {
       if (observerRef.current) {
@@ -49,36 +49,44 @@ const TaxPage = () => {
 
   const serviceItems = [
     {
-      id: 'corporate-tax',
-      name: 'Corporate Tax',
-      shortDescription: 'Comprehensive corporate tax compliance and planning services.',
-      description: 'Our corporate tax team helps organizations navigate the complex corporate tax landscape in the UAE and internationally. We provide strategic planning, compliance support, and advisory services to optimize your tax position.',
-      detailedDescription: 'With the introduction of Corporate Tax in the UAE, businesses need expert guidance to ensure compliance while optimizing their tax position. Our team provides end-to-end support including registration, return filing, and strategic planning to minimize your effective tax rate within legal frameworks.',
+      id: "corporate-tax",
+      name: "Corporate Tax",
+      shortDescription:
+        "Comprehensive corporate tax compliance and planning services.",
+      description:
+        "Our corporate tax services help businesses manage evolving tax obligations with greater clarity, compliance, and operational confidence. We support organizations in understanding regulatory requirements, improving tax processes, and maintaining accurate tax reporting practices.",
+      detailedDescription:
+        "Through a structured and practical approach, we assist businesses in managing tax-related responsibilities while supporting informed financial and operational decision-making. We work with organizations to address corporate tax requirements through compliance-focused support, reporting coordination, and strategic tax process management aligned with applicable regulations.",
       keyFeatures: [
-        'Corporate tax registration and filing',
-        'Tax impact assessment for new regulations',
-        'Tax provision calculations under IFRS',
-        'Tax authority correspondence and audit support',
-        'Strategic tax planning and structuring',
-        'Loss utilization and relief optimization'
+        "Corporate tax compliance support",
+        "Tax registration assistance",
+        "Tax return preparation support",
+        "Tax impact assessment",
+        "Regulatory reporting coordination",
+        "Tax process advisory",
       ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image:
+        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
-      id: 'vat',
-      name: 'VAT',
-      shortDescription: 'Value Added Tax registration, filing, and advisory services.',
-      description: 'We provide comprehensive VAT services to ensure compliance with UAE VAT regulations. Our team helps with registration, return filing, refund applications, and complex VAT matters.',
-      detailedDescription: 'Since the introduction of VAT in the UAE, businesses have faced numerous challenges in implementation and ongoing compliance. Our VAT specialists provide practical solutions to ensure accurate reporting, timely filing, and optimization of VAT positions.',
+      id: "vat",
+      name: "VAT",
+      shortDescription:
+        "Value Added Tax registration, filing, and advisory services.",
+      description:
+        "Our VAT services are designed to help businesses manage regulatory obligations efficiently while maintaining accurate reporting and compliance standards. We assist organizations with VAT-related processes, documentation, and ongoing compliance requirements across various business activities. ",
+      detailedDescription:
+        "From registration support to return management, our approach focuses on reducing compliance risks and improving reporting accuracy through structured VAT practices.Our specialists support businesses in handling VAT procedures, maintaining proper documentation, and addressing operational VAT matters with practical and compliance-focused guidance.",
       keyFeatures: [
-        'VAT registration and deregistration',
-        'VAT return preparation and filing',
-        'VAT refund applications for tourists and businesses',
-        'VAT health checks and compliance reviews',
-        'VAT training and awareness programs',
-        'Cross-border VAT advisory'
+        "VAT registration support",
+        "VAT return filing assistance",
+        "VAT compliance reviews",
+        " VAT documentation management",
+        " Input and output VAT assessment",
+        "VAT advisory for business transactions",
       ],
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image:
+        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     // {
     //   id: 'transfer-pricing',
@@ -180,35 +188,43 @@ const TaxPage = () => {
 
   const faqs = [
     {
-      question: 'When is the deadline for Corporate Tax registration in the UAE?',
-      answer: 'The deadline for Corporate Tax registration depends on your license issuance date. Companies with licenses issued in January or February had deadlines in May 2024. The Federal Tax Authority has published a schedule based on license issuance months. We recommend registering as soon as possible to avoid penalties.'
+      question:
+        "When is the deadline for Corporate Tax registration in the UAE?",
+      answer:
+        "Corporate Tax registration deadlines are generally assigned based on the company’s license issuance date. Businesses should complete registration within the timeline announced by the Federal Tax Authority to avoid administrative penalties and compliance issues.",
     },
     {
-      question: 'What is the current Corporate Tax rate in the UAE?',
-      answer: 'The UAE Corporate Tax rate is 0% for taxable income up to AED 375,000, and 9% for taxable income exceeding AED 375,000. A different rate applies to large multinationals meeting specific criteria under the Pillar Two framework.'
+      question: "Who is required to register for Corporate Tax in the UAE?",
+      answer:
+        "Most businesses and commercial entities operating in the UAE are required to register for Corporate Tax, including mainland companies and certain free zone entities, depending on their activities and taxable income.",
     },
     {
-      question: 'Do small businesses qualify for any tax relief?',
-      answer: 'Yes, small businesses with revenue below AED 3 million can elect for the Small Business Relief, which treats them as having no taxable income. This relief is available for tax periods ending on or before December 31, 2026.'
+      question: "What documents are required for Corporate Tax registration?",
+      answer:
+        "Businesses typically need trade license details, Emirates ID or passport copies of authorized signatories, company incorporation documents, and relevant contact information during the registration process.",
     },
     {
-      question: 'What is VAT and who needs to register?',
-      answer: 'VAT (Value Added Tax) is a consumption tax of 5% applied to most goods and services in the UAE. Businesses with taxable supplies exceeding AED 375,000 annually must register for VAT. Those with supplies between AED 187,500 and AED 375,000 may register voluntarily.'
+      question: "Are free zone companies subject to Corporate Tax?",
+      answer:
+        "Free zone companies may qualify for tax benefits if they meet the conditions defined under UAE Corporate Tax regulations. However, registration and compliance requirements may still apply depending on business activities.",
     },
     {
-      question: 'What is Transfer Pricing and does it apply to my business?',
-      answer: 'Transfer Pricing refers to the pricing of transactions between related parties (e.g., parent company and subsidiary). UAE Transfer Pricing rules apply to all businesses with related party transactions, requiring maintenance of contemporaneous documentation and disclosure in tax returns.'
+      question: "What happens if a company fails to register on time?",
+      answer:
+        "Late registration may result in penalties, compliance complications, and delays in fulfilling tax obligations. Timely registration helps businesses maintain smooth regulatory operations.",
     },
     {
-      question: 'What are the penalties for non-compliance with tax regulations?',
-      answer: 'Penalties vary by violation type. Late registration penalties start at AED 10,000 for Corporate Tax and AED 20,000 for VAT. Late filing penalties can range from AED 500 to 50% of the tax due. Our team can help you maintain compliance and address any historical issues through voluntary disclosure programs.'
-    }
+      question:
+        "Can businesses get professional support for Corporate Tax compliance?",
+      answer:
+        "Yes, professional tax advisors can assist with registration, return filing, compliance reviews, documentation management, and ongoing tax-related support to help businesses meet regulatory requirements efficiently.",
+    },
   ];
 
   const scrollToItem = (itemId) => {
     const element = sectionRefs.current[itemId];
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
       setActiveItem(itemId);
       setTimeout(() => setActiveItem(null), 3000);
     }
@@ -222,29 +238,37 @@ const TaxPage = () => {
     <>
       <Navbar />
       <div ref={pageRef} className="min-h-screen bg-white mt-16">
-        
         {/* Hero Section */}
-        <section 
+        <section
           id="hero"
           data-observe="true"
           className="relative py-12 md:py-16 lg:py-16 flex items-center justify-center overflow-hidden bg-[#2c154f]"
         >
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center z-10">
-            <div className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+            <div
+              className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
+            >
               <div className="inline-flex items-center gap-4 mb-8">
                 <div className="h-px w-12 bg-white/50"></div>
-                <span className="text-white/50 text-[11px] font-light tracking-[0.3em] uppercase">Tax Services</span>
+                <span className="text-white/50 text-[11px] font-light tracking-[0.3em] uppercase">
+                  Tax Services
+                </span>
                 <div className="h-px w-12 bg-white/50"></div>
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl lg:text-6xl font-light text-white mb-8 tracking-tight leading-[1.1]">
-                Strategic <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Tax Solutions</span>
+                Strategic{" "}
+                <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">
+                  Tax Solutions
+                </span>
               </h1>
-              
+
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Minimize liability while ensuring full regulatory compliance with our expert tax advisory.
+                Structured tax advisory services focused on regulatory
+                alignment, financial clarity, and efficient tax management for
+                businesses.
               </p>
-              
+
               {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
                 <div className="flex flex-col items-center gap-2">
                   <span className="text-white/15 text-[10px] tracking-[0.2em] uppercase">Scroll</span>
@@ -258,46 +282,56 @@ const TaxPage = () => {
         </section>
 
         {/* Overview Section */}
-        <section 
+        <section
           id="overview"
           data-observe="true"
           className="py-12 md:py-12 bg-gray-200 border-b border-gray-50"
         >
           <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className={`text-center transition-all duration-800 transform ${visibleSections.overview ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div
+              className={`text-center transition-all duration-800 transform ${visibleSections.overview ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
               <div className="inline-flex items-center gap-3 mb-3">
                 <div className="h-px w-10 bg-[#0a0a0a]/40"></div>
-                <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">Overview</span>
+                <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">
+                  Overview
+                </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
-                Compliance. <span className="font-bold">Optimization.</span> Peace of Mind.
+                Accuracy.
+                <span className="font-bold"> Compliance.</span> Tax Efficiency.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/40 mx-auto my-4"></div>
               <p className="text-gray-500 text-lg leading-relaxed font-light">
-                Our Tax practice provides strategic solutions that minimize liability while ensuring full regulatory compliance. 
-                We help you navigate complex tax landscapes, identify opportunities, and implement effective tax strategies.
+              Our tax services help businesses manage regulatory obligations, improve tax planning processes, and maintain greater financial clarity. We support organizations with structured advisory solutions designed to address evolving tax requirements while improving operational confidence and compliance readiness.
+
               </p>
             </div>
           </div>
         </section>
 
         {/* Services Items Section */}
-        <section 
+        <section
           id="services"
           data-observe="true"
           className="py-12 md:py-12 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className={`text-center mb-20 transition-all duration-800 transform ${visibleSections.services ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div
+              className={`text-center mb-20 transition-all duration-800 transform ${visibleSections.services ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
               <div className="inline-flex items-center gap-3 mb-6">
                 <div className="h-px w-10 bg-[#0a0a0a]/40"></div>
-                <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">Our Services</span>
+                <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">
+                  Our Services
+                </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-5">
                 Comprehensive <span className="font-bold">Tax Services</span>
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-base font-light">
-                Tailored tax solutions to optimize your position and ensure compliance
+               Structured tax advisory solutions designed to support compliance, reporting accuracy, and effective tax management.
+
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/40 mx-auto mt-6"></div>
             </div>
@@ -306,46 +340,58 @@ const TaxPage = () => {
               {serviceItems.map((item, index) => (
                 <div
                   key={item.id}
-                  ref={el => sectionRefs.current[item.id] = el}
+                  ref={(el) => (sectionRefs.current[item.id] = el)}
                   id={item.id}
                   data-observe="true"
-                  className={`scroll-mt-24 transition-all duration-700 transform ${visibleSections[item.id] ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+                  className={`scroll-mt-24 transition-all duration-700 transform ${visibleSections[item.id] ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
                   style={{ transitionDelay: `${Math.min(index * 100, 500)}ms` }}
                 >
-                  <div className={`grid lg:grid-cols-2 gap-16 items-center transition-all duration-500 ${activeItem === item.id ? 'bg-gray-50 p-10 rounded-2xl -m-6' : ''}`}>
-                    
+                  <div
+                    className={`grid lg:grid-cols-2 gap-16 items-center transition-all duration-500 ${activeItem === item.id ? "bg-gray-50 p-10 rounded-2xl -m-6" : ""}`}
+                  >
                     {/* Left Side - Content */}
                     <div className="order-2 lg:order-1">
                       <div className="flex items-center gap-4 mb-4">
-                        <span className="text-sm font-light text-gray-500 tracking-wider">{(index + 1).toString().padStart(2, '0')}</span>
+                        <span className="text-sm font-light text-gray-500 tracking-wider">
+                          {(index + 1).toString().padStart(2, "0")}
+                        </span>
                         <div className="w-12 h-px bg-gray-400"></div>
-                        <span className="text-[12px] text-gray-500 font-light uppercase tracking-wider">Tax Service</span>
+                        <span className="text-[12px] text-gray-500 font-light uppercase tracking-wider">
+                          Tax Service
+                        </span>
                       </div>
-                      
+
                       <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-5 leading-tight">
                         {item.name}
                       </h3>
-                      
-                      <p className="text-gray-500 text-base leading-relaxed mb-4">
+
+                      <p className="text-gray-500 text-base leading-relaxed mb-4 text-justify">
                         {item.description}
                       </p>
-                      
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4">
+
+                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
                         {item.detailedDescription}
                       </p>
-                      
+
                       <div className="mb-8">
-                        <h4 className="text-xs font-semibold text-gray-600 mb-4 tracking-wide uppercase">Key Capabilities</h4>
+                        <h4 className="text-xs font-semibold text-gray-600 mb-4 tracking-wide uppercase">
+                          Key Capabilities
+                        </h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {item.keyFeatures.map((feature, idx) => (
-                            <div key={idx} className="flex items-center gap-2 group">
+                            <div
+                              key={idx}
+                              className="flex items-center gap-2 group"
+                            >
                               <div className="w-1.5 h-1.5 rounded-full bg-[#0a0a0a]/40 group-hover:bg-[#0a0a0a] transition-all"></div>
-                              <span className="text-sm text-gray-500 font-light group-hover:text-gray-700 transition-colors">{feature}</span>
+                              <span className="text-sm text-gray-500 font-light group-hover:text-gray-700 transition-colors">
+                                {feature}
+                              </span>
                             </div>
                           ))}
                         </div>
                       </div>
-                      
+
                       {/* <button
                         onClick={() => scrollToItem(item.id)}
                         className="group inline-flex items-center gap-3 text-[#0a0a0a] text-sm font-medium tracking-wide transition-all"
@@ -354,7 +400,7 @@ const TaxPage = () => {
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
                       </button> */}
                     </div>
-                    
+
                     {/* Right Side - Image */}
                     <div className="order-1 lg:order-2">
                       <div className="relative group/image">
@@ -372,7 +418,7 @@ const TaxPage = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Divider */}
                   {index < serviceItems.length - 1 && (
                     <div className="relative mt-12">
@@ -389,37 +435,43 @@ const TaxPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section 
+        <section
           id="benefits"
           data-observe="true"
           className="py-12 md:py-12 bg-[#2c154f]"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="max-w-4xl mx-auto text-center">
-              <div className={`transition-all duration-800 transform ${visibleSections.benefits ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              <div
+                className={`transition-all duration-800 transform ${visibleSections.benefits ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+              >
                 <div className="inline-flex items-center gap-3 mb-6">
                   <div className="h-px w-10 bg-[#ffffff]/50"></div>
-                  <span className="text-[#ffffff] text-[12px] font-light tracking-[0.2em] uppercase">Why Choose Us</span>
+                  <span className="text-[#ffffff] text-[12px] font-light tracking-[0.2em] uppercase">
+                    Why Choose Us
+                  </span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-light text-[#ffffff] mb-4 leading-tight">
                   Key <span className="font-bold">Benefits</span>
                 </h2>
                 <div className="w-16 h-px bg-[#ffffff]/50 mx-auto mb-8"></div>
-                
+
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
-                    'Tax liability minimization and optimization',
-                    'Full regulatory compliance assurance',
-                    'Proactive tax planning strategies',
-                    'Cross-border tax expertise',
-                    'Risk mitigation and audit support',
-                    'Peace of mind with expert guidance',
-                    'Real-time regulatory updates and alerts',
-                    'Dedicated tax specialists for your business'
+                    "Structured tax planning and compliance support",
+                    "Improved accuracy in tax reporting and filings",
+                    "Better visibility into tax obligations and timelines",
+                    "Support for regulatory and documentation requirements",
+                    "Reduced compliance risks and reporting gaps",
+                    "Practical guidance for evolving tax regulations",
+                    "Streamlined tax processes and operational efficiency",
+                    "Reliable support for business and transaction-related tax matters",
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
                       <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
-                      <span className="text-[#ffffff] text-base font-light group-hover:text-[#ffffff] transition-colors">{benefit}</span>
+                      <span className="text-[#ffffff] text-base font-light group-hover:text-[#ffffff] transition-colors">
+                        {benefit}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -492,7 +544,7 @@ const TaxPage = () => {
             
 
             {/* Additional Contact for FAQ */}
-            {/* <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
               <p className="text-gray-400 text-sm font-light mb-4">
                 Still have questions about tax compliance or planning?
               </p>
@@ -507,24 +559,31 @@ const TaxPage = () => {
           </div>
         </section>  */}
 
-
-         <section 
+        <section
           id="faq"
           data-observe="true"
           className="py-10 md:py-12 bg-gradient-to-b from-gray-50 to-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className={`text-center mb-16 transition-all duration-800 transform ${visibleSections.faq ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div
+              className={`text-center mb-16 transition-all duration-800 transform ${visibleSections.faq ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="h-px w-10 bg-gradient-to-r from-transparent to-[#2c154f]/50"></div>
-                <span className="text-[#2c154f] text-[11px] font-semibold tracking-[0.2em] uppercase">Knowledge Base</span>
+                <span className="text-[#2c154f] text-[11px] font-semibold tracking-[0.2em] uppercase">
+                  Knowledge Base
+                </span>
                 <div className="h-px w-10 bg-gradient-to-l from-transparent to-[#2c154f]/30"></div>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-5 tracking-tight">
-                Frequently Asked <span className="font-bold bg-gradient-to-r from-[#2c154f] to-[#4a2a7a] bg-clip-text text-transparent">Questions</span>
+                Frequently Asked{" "}
+                <span className="font-bold bg-gradient-to-r from-[#2c154f] to-[#4a2a7a] bg-clip-text text-transparent">
+                  Questions
+                </span>
               </h2>
               <p className="text-gray-400 text-base font-light max-w-2xl mx-auto">
-                Everything you need to know about our audit and assurance services
+                Everything you need to know about our audit and assurance
+                services
               </p>
               <div className="w-20 h-0.5 bg-gradient-to-r from-[#2c154f]/20 via-[#2c154f]/60 to-[#2c154f]/20 mx-auto mt-8 rounded-full"></div>
             </div>
@@ -534,19 +593,19 @@ const TaxPage = () => {
                 <div
                   key={index}
                   className={`group transition-all duration-500 ease-out ${
-                    openFaq === index ? 'lg:row-span-1' : ''
+                    openFaq === index ? "lg:row-span-1" : ""
                   }`}
                 >
-                  <div 
+                  <div
                     className={`relative bg-white rounded-2xl overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl ${
-                      openFaq === index 
-                        ? 'shadow-2xl ring-2 ring-[#2c154f]/20 ring-offset-0' 
-                        : 'hover:shadow-lg hover:border-gray-100'
+                      openFaq === index
+                        ? "shadow-2xl ring-2 ring-[#2c154f]/20 ring-offset-0"
+                        : "hover:shadow-lg hover:border-gray-100"
                     }`}
                   >
                     {/* Premium gradient border accent */}
                     <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#2c154f] via-[#6b3fa0] to-[#2c154f] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
-                    
+
                     {/* Question Button */}
                     <button
                       onClick={() => toggleFaq(index)}
@@ -564,26 +623,35 @@ const TaxPage = () => {
                           {faq.question}
                         </span>
                       </div>
-                      <div className={`relative flex-shrink-0 w-10 h-10 rounded-full border transition-all duration-400 flex items-center justify-center ${
-                        openFaq === index 
-                          ? 'border-[#2c154f] bg-[#2c154f] text-white shadow-md shadow-[#2c154f]/20' 
-                          : 'border-gray-200 bg-gray-50 text-gray-400 group-hover/btn:border-[#2c154f]/30 group-hover/btn:bg-[#2c154f]/5'
-                      }`}>
-                        <svg 
-                          className={`w-4 h-4 transition-all duration-400 ${openFaq === index ? 'rotate-180' : ''}`} 
-                          fill="none" 
-                          stroke="currentColor" 
+                      <div
+                        className={`relative flex-shrink-0 w-10 h-10 rounded-full border transition-all duration-400 flex items-center justify-center ${
+                          openFaq === index
+                            ? "border-[#2c154f] bg-[#2c154f] text-white shadow-md shadow-[#2c154f]/20"
+                            : "border-gray-200 bg-gray-50 text-gray-400 group-hover/btn:border-[#2c154f]/30 group-hover/btn:bg-[#2c154f]/5"
+                        }`}
+                      >
+                        <svg
+                          className={`w-4 h-4 transition-all duration-400 ${openFaq === index ? "rotate-180" : ""}`}
+                          fill="none"
+                          stroke="currentColor"
                           viewBox="0 0 24 24"
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M19 9l-7 7-7-7" />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={1.8}
+                            d="M19 9l-7 7-7-7"
+                          />
                         </svg>
                       </div>
                     </button>
-                    
+
                     {/* Answer Panel */}
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                        openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        openFaq === index
+                          ? "max-h-96 opacity-100"
+                          : "max-h-0 opacity-0"
                       }`}
                     >
                       <div className="px-6 pb-6 lg:px-7 lg:pb-7 pt-0">
@@ -591,8 +659,18 @@ const TaxPage = () => {
                         <div className="flex gap-4">
                           <div className="flex-shrink-0">
                             <div className="w-8 h-8 rounded-full bg-[#2c154f]/5 flex items-center justify-center">
-                              <svg className="w-3.5 h-3.5 text-[#2c154f]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              <svg
+                                className="w-3.5 h-3.5 text-[#2c154f]/40"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={1.5}
+                                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
                               </svg>
                             </div>
                           </div>
@@ -633,42 +711,53 @@ const TaxPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section 
+        <section
           id="cta"
           data-observe="true"
           className="py-12 bg-[#2c154f] relative overflow-hidden"
         >
-          <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
-            <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+          <div className="relative max-w-6xl mx-auto px-6 md:px-8 lg:px-12 text-center">
+            <div
+              className={`transition-all duration-800 transform ${visibleSections.cta ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            >
               <div className="inline-flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-white/50"></div>
-                <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">Get Started</span>
+                <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">
+                  Get Started
+                </span>
                 <div className="h-px w-12 bg-white/50"></div>
               </div>
-              
+
               <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
                 Need <span className="font-bold">Tax Expertise?</span>
               </h2>
-              
-              <p className="text-white/40 text-base mb-8 font-light max-w-md mx-auto">
-                Contact our Tax experts to discuss your tax planning and compliance needs.
+
+              <p className="text-white/40 text-base mb-8 font-light max-w-2xl mx-auto">
+                Get professional guidance for tax compliance, reporting, and regulatory requirements tailored to your business operations. Our team helps simplify complex tax processes with practical and structured support.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact"
                   className="group relative px-9 py-3.5 bg-white text-[#0a0a0a] text-sm font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-gray-100"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     Contact Our Team
-                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
                   </span>
                 </Link>
-                <Link 
-                  href="/services" 
+                <Link
+                  href="/services"
                   className="px-9 py-3.5 border border-white/15 text-white text-sm font-medium tracking-wide hover:bg-white/5 transition-all duration-300"
                 >
-                  View All Services
+                 <span className="relative z-10 flex items-center justify-center gap-2">
+                    View All Services
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </span>
                 </Link>
               </div>
             </div>
@@ -677,12 +766,26 @@ const TaxPage = () => {
 
         <style jsx global>{`
           @keyframes scroll {
-            0%, 100% { transform: translateY(0); opacity: 0.3; }
-            50% { transform: translateY(8px); opacity: 1; }
+            0%,
+            100% {
+              transform: translateY(0);
+              opacity: 0.3;
+            }
+            50% {
+              transform: translateY(8px);
+              opacity: 1;
+            }
           }
           @keyframes pulse {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.05); }
+            0%,
+            100% {
+              opacity: 0.3;
+              transform: scale(1);
+            }
+            50% {
+              opacity: 0.6;
+              transform: scale(1.05);
+            }
           }
           .animate-pulse {
             animation: pulse 4s ease-in-out infinite;

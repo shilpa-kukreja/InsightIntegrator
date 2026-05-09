@@ -59,16 +59,16 @@ const AdvisoryPage = () => {
       shortDescription:
         "Strategic planning and business transformation services.",
       description:
-        "Our strategy and transformation team helps organizations define their strategic direction, identify growth opportunities, and execute transformative initiatives.",
+        "We help businesses build stronger strategies, improve operational direction, and adapt to changing market conditions with structured transformation initiatives focused on long-term business growth.",
       detailedDescription:
-        "In today's rapidly evolving business landscape, organizations must constantly adapt and transform. Our strategy experts work with you to define clear strategic direction, identify growth opportunities, and execute transformative initiatives that drive sustainable value creation.",
+        "Organizations today require agile planning, smarter execution, and clear operational alignment to remain competitive. Our advisory approach focuses on identifying improvement areas, enhancing business efficiency, and supporting transformation initiatives that create measurable business value.",
       keyFeatures: [
-        "Strategic planning and roadmap development",
-        "Operating model design and optimization",
-        "Digital transformation strategy",
-        "Change management and organizational alignment",
-        "Performance improvement and cost optimization",
-        "M&A integration and separation management",
+        "Business strategy development",
+        "Organizational restructuring support",
+        "Process improvement planning",
+        "Business performance evaluation",
+        "Operational efficiency enhancement",
+        "Change implementation support",
       ],
       image:
         "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -81,7 +81,7 @@ const AdvisoryPage = () => {
       id: "business-risk",
       title: "Business Risk  ",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Strengthening business resilience through structured risk assessment, internal controls, and operational governance support.",
       services: [
         {
           id: "internal-audit",
@@ -89,15 +89,16 @@ const AdvisoryPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Our internal audit services help businesses evaluate operational processes, strengthen internal controls, and improve compliance visibility across key business functions.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "We work with organizations to identify process gaps, assess control effectiveness, and support better decision-making through practical risk-focused evaluations. Our approach is designed to improve accountability, operational transparency, and long-term business stability.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Internal control assessment",
+            "Operational risk evaluation",
+            "Process and compliance reviews",
+            "Governance support services",
+            "Risk monitoring and reporting",
+            "Business control improvement recommendations",
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -106,15 +107,16 @@ const AdvisoryPage = () => {
           name: "Internal Controls over Financial Reporting (ICFR) ",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "Our ICFR services help organizations strengthen financial reporting processes, improve control environments, and support accurate and reliable financial information management.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "We assist businesses in evaluating financial controls, identifying reporting gaps, and enhancing process efficiency through structured control assessments and compliance-focused methodologies.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Financial control framework assessment",
+            "Reporting process evaluation",
+            "Control gap identification",
+            "Financial compliance support",
+            "Process documentation review",
+            "Control monitoring and improvement recommendations",
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -123,15 +125,16 @@ const AdvisoryPage = () => {
           name: "Enterprise Risk Management (ERM) ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our ERM services help businesses identify, assess, and manage enterprise-level risks through structured frameworks that support operational resilience and informed decision-making.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We work with organizations to build risk-aware processes, strengthen governance structures, and improve visibility across operational, financial, and compliance-related risk areas.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Enterprise risk assessment",
+            "Risk governance framework support",
+            "Risk monitoring and reporting",
+            "Operational risk evaluation",
+            "Compliance and control reviews",
+            "Business continuity risk planning",
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -140,15 +143,16 @@ const AdvisoryPage = () => {
           name: "Corporate Governance Assessment",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our corporate governance assessment services help organizations evaluate governance structures, strengthen accountability, and improve oversight across key business functions.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We assist businesses in reviewing governance practices, identifying structural gaps, and enhancing decision-making frameworks to support transparency, compliance, and operational effectiveness. ",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Governance framework evaluation",
+            "Board and management process review",
+            "Policy and control assessment",
+            "Compliance structure analysis",
+            "Accountability and reporting review",
+            "Governance improvement recommendations",
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -160,7 +164,7 @@ const AdvisoryPage = () => {
       id: "regulatory",
       title: "Regulatory & Compliance ",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Helping businesses strengthen compliance frameworks, manage regulatory obligations, and maintain operational transparency across evolving business environments.",
       services: [
         {
           id: "aml-cft",
@@ -168,15 +172,16 @@ const AdvisoryPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Our AML & CFT compliance services help organizations establish structured compliance practices to identify, monitor, and manage financial crime and regulatory risks effectively.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "We support businesses in strengthening internal compliance processes, improving monitoring mechanisms, and aligning operational practices with applicable anti-money laundering and counter-terrorism financing requirements.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "AML & CFT compliance assessment",
+            "Risk-based compliance reviews",
+            "Customer due diligence support",
+            "Compliance policy evaluation",
+            "Transaction monitoring guidance",
+            "Regulatory reporting assistance",
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -185,15 +190,16 @@ const AdvisoryPage = () => {
           name: "Regulatory compliance advisory ",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "Our regulatory compliance advisory services help businesses understand regulatory expectations, strengthen internal compliance practices, and improve operational readiness across evolving compliance environments.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "We assist organizations in reviewing compliance structures, identifying process gaps, and implementing practical measures that support regulatory alignment and long-term operational stability.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Regulatory compliance assessments",
+            "Compliance framework review",
+            "Policy and procedure evaluation",
+            "Operational compliance support",
+            "Regulatory gap analysis",
+            "Compliance process improvement guidance",
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -202,15 +208,16 @@ const AdvisoryPage = () => {
           name: "Compliance monitoring & assurance ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our compliance monitoring and assurance services help organizations maintain ongoing regulatory alignment, strengthen oversight mechanisms, and improve confidence in internal compliance practices.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We support businesses with structured monitoring processes, periodic compliance evaluations, and assurance reviews that help identify gaps early and maintain consistent regulatory readiness.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Compliance monitoring programs",
+            "Regulatory assurance reviews",
+            "Internal compliance reporting",
+            "Risk-based compliance evaluations",
+            "Ongoing compliance tracking",
+            "Control testing and validation"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -219,15 +226,16 @@ const AdvisoryPage = () => {
           name: "Training and development ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our training and development solutions empower teams with the practical knowledge, regulatory awareness, and operational skills needed to improve performance and strengthen organizational capabilities.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We design customized learning programs, workshops, and professional development initiatives that help employees stay updated with industry standards, compliance expectations, and evolving business requirements.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Corporate compliance training",
+            "Leadership development programs",
+            "Regulatory awareness workshops",
+            "Technical skill enhancement sessions",
+            "Employee capability assessments",
+            "Customized learning frameworks"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -236,15 +244,16 @@ const AdvisoryPage = () => {
           name: "Independent third-party reviews ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our independent third-party review services provide objective evaluations that help organizations strengthen transparency, validate controls, and build stakeholder confidence across critical business functions.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We conduct structured independent assessments to identify operational gaps, evaluate compliance readiness, and provide unbiased recommendations that support informed decision-making and continuous improvement.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Independent compliance assessments",
+            "Process review and evaluation",
+            "Operational control validation",
+            "Governance effectiveness reviews",
+            "Risk and gap analysis",
+            "Third-party assurance reporting"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -253,15 +262,16 @@ const AdvisoryPage = () => {
           name: "Islamic finance advisory and shari’ah compliance ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our Islamic finance advisory and Shari’ah compliance services help organizations align financial practices with ethical principles, regulatory expectations, and Shari’ah governance requirements.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We support businesses and financial institutions with structured advisory, compliance assessments, and governance frameworks that ensure transparency, operational integrity, and adherence to Islamic finance standards.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Shari’ah compliance reviews",
+            "Islamic finance structuring support",
+            "Shari’ah governance advisory",
+            "Product and transaction assessments",
+            "Compliance monitoring frameworks",
+            "Regulatory and ethical guidance"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -281,15 +291,16 @@ const AdvisoryPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Our feasibility study services help businesses evaluate opportunities, assess financial viability, and make informed strategic decisions before launching new projects or investments.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "We conduct detailed operational, financial, and market assessments to identify potential risks, estimate resource requirements, and determine the practicality and long-term sustainability of proposed initiatives.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Financial viability assessment",
+            "Market demand evaluation",
+            "Investment and cost analysis",
+            "Operational feasibility review",
+            "Risk and opportunity analysis",
+            "Business model evaluation"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -298,15 +309,16 @@ const AdvisoryPage = () => {
           name: "Due Diligence",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "Our due diligence services provide detailed financial, operational, and compliance assessments that help businesses make confident investment, acquisition, and partnership decisions.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "We evaluate critical business areas to identify potential risks, uncover hidden liabilities, and provide clear insights that support strategic transactions and informed decision-making.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Financial due diligence reviews",
+            "Operational risk assessments",
+            "Compliance and legal evaluations",
+            "Transaction support services",
+            "Business performance analysis",
+            "Risk identification and reporting"
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -315,15 +327,16 @@ const AdvisoryPage = () => {
           name: "Valuations and Financial Modelling  ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our valuation and financial modelling services help organizations assess business worth, evaluate investment opportunities, and support strategic financial planning with data-driven insights.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We develop reliable financial models and valuation frameworks that support mergers, acquisitions, fundraising, restructuring, and long-term business decision-making.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Business valuation services",
+            "Financial forecasting models",
+            "Investment and transaction analysis",
+            "Cash flow and scenario modelling",
+            "M&A valuation support",
+            "Strategic financial planning"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -335,7 +348,7 @@ const AdvisoryPage = () => {
       id: "technology-cybersecurity",
       title: " Technology & Cybersecurity ",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Empowering organizations with secure digital ecosystems, resilient infrastructure, and technology-driven operational excellence.",
       services: [
         {
           id: "cybersecurity",
@@ -343,15 +356,16 @@ const AdvisoryPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Our cybersecurity services help organizations protect critical systems, secure sensitive data, and reduce exposure to evolving digital threats across their business environment.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "We assist businesses in strengthening their security posture through proactive risk assessments, security monitoring, and governance frameworks designed to improve resilience and ensure operational continuity.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Cyber risk assessments",
+            "Security governance frameworks",
+            "Network and infrastructure security",
+            "Threat monitoring and response",
+            "Vulnerability and penetration testing",
+            "Data protection and access control"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -360,15 +374,16 @@ const AdvisoryPage = () => {
           name: "Digital strategy ",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "Our digital strategy services help organizations align technology initiatives with business objectives to improve efficiency, customer engagement, and long-term digital growth.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "We work with businesses to design scalable digital roadmaps, modernize operations, and implement technology-driven strategies that enhance agility, innovation, and competitive advantage.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Digital transformation planning",
+            "Technology roadmap development",
+            "Business process digitization",
+            "Customer experience optimization",
+            "Digital innovation strategy",
+            "Data-driven decision frameworks"
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -377,15 +392,16 @@ const AdvisoryPage = () => {
           name: "Implementation Support ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our implementation support services help organizations execute strategic initiatives smoothly, ensuring operational alignment, efficient deployment, and measurable business outcomes.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We assist businesses throughout the implementation lifecycle by coordinating processes, managing execution challenges, and supporting teams to achieve successful and sustainable project delivery.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Project implementation planning",
+            "Process execution support",
+            "Operational transition management",
+            "Technology deployment coordination",
+            "Performance monitoring assistance",
+            "Change management support"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -394,15 +410,16 @@ const AdvisoryPage = () => {
           name: "Post Implementation Review ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our post implementation review services help organizations evaluate project outcomes, measure operational effectiveness, and identify opportunities for continuous improvement after execution.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We assess implemented systems, processes, and strategic initiatives to ensure objectives are achieved, risks are minimized, and long-term performance improvements are sustained.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Performance and outcome evaluation",
+            "Process effectiveness reviews",
+            "Operational improvement analysis",
+            "Risk and issue identification",
+            "Compliance and control assessment",
+            "Recommendations for optimization"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -411,15 +428,16 @@ const AdvisoryPage = () => {
           name: "Technology Advisory  ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our technology advisory services help organizations make informed technology decisions, optimize digital investments, and align IT strategies with long-term business objectives.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We guide businesses in evaluating technology environments, improving operational efficiency, and implementing scalable solutions that support innovation, security, and sustainable growth.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "IT strategy and roadmap advisory",
+            "Technology infrastructure assessment",
+            "Digital transformation consulting",
+            "System selection and optimization",
+            "IT governance and risk advisory",
+            "Technology performance evaluation"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -428,15 +446,16 @@ const AdvisoryPage = () => {
           name: "Training and change management ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our training and change management services help organizations successfully adapt to transformation initiatives by strengthening employee readiness, engagement, and operational alignment.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We support businesses in managing organizational change through structured communication, workforce training, and strategic transition planning that encourages long-term adoption and performance improvement.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Employee training and development programs",
+            "Organizational change planning",
+            "Leadership alignment and communication support",
+            "Process adoption and implementation guidance",
+            "Workforce readiness assessments",
+            "Performance and transition management"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -456,15 +475,16 @@ const AdvisoryPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "Our forensic specialists help businesses identify, investigate, and respond to financial misconduct, fraud risks, and regulatory violations with complete confidentiality and professional integrity.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "In today’s complex regulatory environment, organizations require proactive forensic support to protect financial assets, maintain stakeholder trust, and ensure compliance with UAE laws and corporate governance standards. We conduct detailed investigations, analyze financial irregularities, and provide clear reporting to support informed decision-making and legal proceedings when required.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "Financial fraud investigations",
+            "Employee misconduct reviews",
+            "Asset tracing and recovery support",
+            "Anti-bribery and corruption assessments",
+            "Evidence collection and forensic analysis",
+            "Litigation and dispute support services"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -473,15 +493,16 @@ const AdvisoryPage = () => {
           name: "Anti-fraud program and controls ",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "We help organizations design and strengthen anti-fraud frameworks that reduce financial risk, improve governance, and protect business operations from internal and external threats.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "Our experts assess existing control environments, identify vulnerabilities, and implement preventive measures aligned with UAE regulatory expectations and international best practices. We support businesses in building robust fraud risk management systems that enhance transparency, accountability, and operational resilience.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "Fraud risk assessment and gap analysis",
+            "Internal control framework development",
+            "Anti-fraud policy and procedure design",
+            "Whistleblower mechanism advisory",
+            "Fraud detection and monitoring systems",
+            "Employee awareness and ethics training"
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -490,15 +511,16 @@ const AdvisoryPage = () => {
           name: "Digital forensics ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our digital forensic services help organizations investigate cyber incidents, recover critical evidence, and strengthen digital security against evolving threats.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We assist businesses in identifying unauthorized activities, analyzing digital evidence, and responding to cybersecurity breaches with accuracy and confidentiality. Our specialists use advanced forensic techniques to support legal proceedings, internal investigations, and regulatory compliance requirements within the UAE business environment.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Cyber incident investigation and response",
+            "Digital evidence collection and preservation",
+            "Email and device forensic analysis",
+            "Data breach and unauthorized access reviews",
+            "Network activity and log analysis",
+            "Litigation support and forensic reporting"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -507,15 +529,16 @@ const AdvisoryPage = () => {
           name: "Dispute advisory services ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "Our digital forensic services help organizations investigate cyber incidents, recover critical evidence, and strengthen digital security against evolving threats.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "We work closely with legal teams, stakeholders, and management to evaluate financial impacts, review supporting evidence, and prepare clear expert reports. Our services are designed to support arbitration, litigation, settlement negotiations, and regulatory matters while protecting business interests and maintaining compliance with UAE legal frameworks.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Commercial dispute assessment and analysis",
+            "Arbitration and litigation support",
+            "Financial loss quantification",
+            "Expert witness and reporting support",
+            "Contractual claim evaluation",
+            "Settlement negotiation assistance"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -527,7 +550,7 @@ const AdvisoryPage = () => {
       id: "esg-services",
       title: " ESG Services",
       description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
+        "Empowering sustainable growth through responsible business practices and transparent reporting.",
       services: [
         {
           id: "esg-reporting",
@@ -535,15 +558,16 @@ const AdvisoryPage = () => {
           shortDescription:
             "Optimize supply chain for efficiency and resilience.",
           description:
-            "We help streamline procurement, logistics, and distribution for cost efficiency.",
+            "We help organizations develop effective ESG frameworks, strengthen sustainability reporting, and align business operations with evolving environmental, social, and governance expectations.",
           detailedDescription:
-            "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+            "Our ESG specialists support businesses in meeting regulatory requirements, improving stakeholder transparency, and building long-term sustainable value. We assist with ESG strategy development, reporting standards, governance assessments, and sustainability initiatives aligned with UAE regulations and international best practices.",
           keyFeatures: [
-            "Supply chain diagnostics",
-            "Logistics optimization",
-            "Vendor management strategy",
-            "Demand forecasting",
-            "Digital supply chain transformation",
+            "ESG reporting and disclosure support",
+            "Sustainability strategy development",
+            "ESG compliance and governance assessments",
+            "Carbon footprint and environmental reporting",
+            "Materiality assessment and stakeholder engagement",
+            "ESG policy and framework implementation"
           ],
           image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         },
@@ -552,15 +576,16 @@ const AdvisoryPage = () => {
           name: "Benchmarking & Gap Analysis ",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
-            "Enhance operational performance by eliminating waste and improving processes.",
+            "We help organizations evaluate current ESG performance, identify operational gaps, and align sustainability practices with industry standards and regulatory expectations.",
           detailedDescription:
-            "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+            "Our specialists conduct detailed assessments to compare your existing ESG framework against regional requirements, global benchmarks, and leading market practices. We provide actionable insights that help strengthen governance, improve sustainability performance, and support long-term business resilience.",
           keyFeatures: [
-            "Lean transformation",
-            "Process optimization",
-            "Waste reduction",
-            "KPI tracking",
-            "Continuous improvement frameworks",
+            "ESG maturity and performance assessment",
+            "Industry benchmarking and comparative analysis",
+            "Regulatory and compliance gap reviews",
+            "Sustainability risk identification",
+            "Governance and policy evaluation",
+            "Strategic improvement recommendations"
           ],
           image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
         },
@@ -569,15 +594,16 @@ const AdvisoryPage = () => {
           name: "Materiality Assessment ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "We help organizations identify and prioritize the ESG topics that matter most to stakeholders, business performance, and long-term sustainability objectives.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "Our team conducts structured materiality assessments to evaluate environmental, social, and governance factors impacting your organization. By engaging stakeholders and analyzing industry trends, we help businesses build focused ESG strategies, improve reporting transparency, and align with evolving regulatory and investor expectations.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Stakeholder engagement and surveys",
+            "ESG priority identification and mapping",
+            "Double materiality assessment support",
+            "Industry and peer analysis",
+            "Sustainability risk and opportunity evaluation",
+            "ESG strategy alignment and reporting insights"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -586,15 +612,16 @@ const AdvisoryPage = () => {
           name: "Post Implementation Review ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "We help organizations evaluate the effectiveness of implemented ESG initiatives, governance frameworks, and sustainability strategies to ensure measurable impact and continuous improvement.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "Our specialists conduct independent post implementation reviews to assess whether ESG objectives, compliance requirements, and operational targets have been successfully achieved. We identify improvement opportunities, strengthen accountability, and provide actionable recommendations that support long-term sustainability performance.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "ESG program performance evaluation",
+            "Compliance and governance effectiveness review",
+            "Sustainability KPI assessment",
+            "Operational improvement recommendations",
+            "Risk and control effectiveness analysis",
+            "Continuous monitoring and reporting support"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -603,15 +630,16 @@ const AdvisoryPage = () => {
           name: "Technology Advisory  ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "We help organizations leverage technology to improve operational efficiency, strengthen governance, and accelerate sustainable business transformation.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "Our technology advisory specialists support businesses in evaluating digital capabilities, modernizing systems, and implementing scalable technology solutions aligned with strategic objectives and regulatory expectations. We assist organizations in navigating digital transformation while managing operational, cybersecurity, and compliance risks effectively.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "Digital transformation strategy and planning",
+            "IT governance and risk advisory",
+            "Business process automation support",
+            "Technology infrastructure assessment",
+            "ERP and system implementation advisory",
+            "Cybersecurity and data protection guidance"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -620,15 +648,16 @@ const AdvisoryPage = () => {
           name: "Training and change management ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
-          description: "Improve stock visibility and warehouse operations.",
+          description: "We help organizations build ESG awareness, strengthen workforce engagement, and successfully manage organizational change during sustainability and transformation initiatives.",
           detailedDescription:
-            "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+            "Our specialists design tailored training and change management programs that support the adoption of ESG frameworks, governance practices, and sustainability objectives across all levels of the organization. We help businesses create a culture of accountability, adaptability, and long-term sustainable growth.",
           keyFeatures: [
-            "Inventory optimization",
-            "Warehouse design",
-            "Stock control systems",
-            "Automation solutions",
-            "Demand planning",
+            "ESG awareness and employee training programs",
+            "Change management strategy development",
+            "Leadership and stakeholder engagement",
+            "Sustainability culture transformation support",
+            "Communication and adoption planning",
+            "Workforce readiness and capability building"
           ],
           image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
         },
@@ -638,36 +667,36 @@ const AdvisoryPage = () => {
 
   const faqs = [
     {
-      question: "What is In-Country Value (ICV) and why is it important?",
+      question: "What advisory services do you provide for businesses in the UAE?",
       answer:
-        "In-Country Value (ICV) is a UAE government initiative that measures the contribution of businesses to the local economy. A higher ICV score increases competitiveness for government contracts and tenders, demonstrating commitment to local economic development through local spending, Emiratization, and investment.",
+        "We provide a wide range of advisory solutions including strategy consulting, regulatory compliance, risk management, financial advisory, ESG consulting, cybersecurity, forensic investigations, and business transformation services tailored to UAE market requirements.",
     },
     {
-      question: "How can advisory services help my business grow?",
+      question: "How can strategic advisory improve business performance and growth?",
       answer:
-        "Advisory services provide strategic guidance, expert analysis, and practical solutions to help you overcome challenges and seize opportunities. Whether you need help with strategy development, financial analysis, risk management, or transaction support, our experts bring specialized knowledge and experience to accelerate your growth.",
-    },
-    {
-      question:
-        "What is the difference between financial advisory and deal advisory?",
-      answer:
-        "Financial advisory focuses on financial analysis, modeling, valuation, and capital raising. Deal advisory is a subset focused specifically on mergers, acquisitions, divestitures, and other transactions, including due diligence, integration planning, and transaction support.",
-    },
-    {
-      question: "When should a company consider restructuring services?",
-      answer:
-        "Companies should consider restructuring when facing financial distress, declining profitability, liquidity challenges, or significant operational inefficiencies. Early intervention often leads to better outcomes, so seeking advisory support at the first signs of trouble is recommended.",
+        "Strategic advisory helps organizations identify growth opportunities, improve operational efficiency, strengthen decision-making, and align business objectives with long-term market goals for sustainable success.",
     },
     {
       question:
-        "What is the difference between internal audit and risk advisory?",
+        "Why is regulatory compliance important for companies operating in Dubai and the UAE?",
       answer:
-        "Internal audit focuses on evaluating and improving the effectiveness of governance, risk management, and control processes. Risk advisory is broader, encompassing enterprise risk management, risk assessment, control design, and strategic risk planning, often working alongside internal audit functions.",
+        "Regulatory compliance helps businesses operate with confidence while reducing legal, financial, and reputational risks. It also strengthens corporate governance and supports alignment with evolving UAE laws and industry standards.",
     },
     {
-      question: "How do valuation services support financial reporting?",
+      question: "How do risk management services help organizations reduce operational exposure?",
       answer:
-        "Valuation services support financial reporting under IFRS and other standards for purchase price allocation (PPA), impairment testing of goodwill and intangible assets, fair value measurement of financial instruments, share-based payment valuations, and other accounting requirements requiring fair value estimates.",
+        "Risk management services help businesses identify vulnerabilities, assess potential threats, and implement effective control measures to improve resilience, business continuity, and overall operational stability.",
+    },
+    {
+      question:
+        "What are the benefits of technology and cybersecurity advisory for modern businesses?",
+      answer:
+        "Technology and cybersecurity advisory helps organizations strengthen digital security, improve IT governance, protect sensitive information, and reduce the risk of cyber threats and operational disruptions.",
+    },
+    {
+      question: "How can ESG advisory support long-term sustainability and corporate reputation?",
+      answer:
+        "ESG advisory helps businesses develop responsible environmental, social, and governance practices that improve stakeholder trust, support sustainable growth, and align with global and regional sustainability expectations.",
     },
   ];
 
@@ -722,8 +751,8 @@ const AdvisoryPage = () => {
               </h1>
 
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Strategic guidance to navigate complexity and unlock sustainable
-                growth opportunities.
+               Practical advisory solutions designed to help businesses improve decision-making, strengthen operations, manage risk, and adapt confidently to evolving market demands.
+
               </p>
 
               {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
@@ -755,15 +784,12 @@ const AdvisoryPage = () => {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 leading-tight">
-                Strategic. <span className="font-bold">Forward-thinking.</span>{" "}
-                Results-driven.
+                Clarity.   <span className="font-bold">Sustainable Growth.</span>{" "}
+                Strategy.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto my-4"></div>
               <p className="text-gray-500 text-lg leading-relaxed font-light">
-                Our Advisory practice delivers strategic guidance to help you
-                navigate complexity and unlock sustainable growth opportunities.
-                We combine deep industry expertise with analytical rigor to
-                solve your most pressing business challenges.
+               Our advisory services focus on helping organizations address operational challenges, improve business performance, and build stronger foundations for long-term success. From business transformation and financial advisory to risk management, compliance, cybersecurity, and ESG support, we provide structured guidance tailored to evolving business needs.
               </p>
             </div>
           </div>
@@ -776,7 +802,7 @@ const AdvisoryPage = () => {
           className="py-12 md:py-12 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div
+            {/* <div
               className={`text-center mb-12 transition-all duration-800 transform ${visibleSections.services ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
               <div className="inline-flex items-center gap-3 mb-6">
@@ -794,6 +820,24 @@ const AdvisoryPage = () => {
                 sustainable growth opportunities
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-6"></div>
+            </div> */}
+             <div
+              className={`text-center mb-20 transition-all duration-800 transform `}
+            >
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="h-px w-10 bg-[#0a0a0a]/40"></div>
+                <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">
+                  Our Services
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-5">
+                Comprehensive <span className="font-bold">Advisory</span>
+              </h2>
+              <p className="text-gray-500 max-w-2xl mx-auto text-base font-light">
+               Structured advisory solutions designed to support compliance, reporting accuracy, and effective  management.
+
+              </p>
+              <div className="w-16 h-px bg-[#0a0a0a]/40 mx-auto mt-6"></div>
             </div>
 
             <div className="space-y-12">
@@ -825,11 +869,11 @@ const AdvisoryPage = () => {
                         {item.name}
                       </h3>
 
-                      <p className="text-gray-500 text-base leading-relaxed mb-6">
+                      <p className="text-gray-500 text-base leading-relaxed mb-6 text-justify">
                         {item.description}
                       </p>
 
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4">
+                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
                         {item.detailedDescription}
                       </p>
 
@@ -897,6 +941,7 @@ const AdvisoryPage = () => {
             </div>
 
             {/* this is servies with sub-servies */}
+            
             <div className="space-y-12 mt-10">
               {industryData.map((industry, index) => (
                 <div key={industry.id} id={industry.id} className="mb-20">
@@ -934,11 +979,11 @@ const AdvisoryPage = () => {
                             {service.name}
                           </h3>
 
-                          <p className="text-gray-500 mb-4">
+                          <p className="text-gray-500 mb-4 text-justify">
                             {service.description}
                           </p>
 
-                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6">
+                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6 text-justify">
                             {service.detailedDescription}
                           </p>
 
@@ -1001,14 +1046,14 @@ const AdvisoryPage = () => {
 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
-                    "Strategic clarity and actionable direction",
-                    "Data-driven decision making and insights",
-                    "Risk identification and mitigation strategies",
-                    "Transaction success and value optimization",
-                    "Sustainable growth and value creation",
-                    "Expert guidance through business complexity",
-                    "Industry-leading methodologies and frameworks",
-                    "Cross-functional expertise and integrated solutions",
+                    "Strategic business insights and measurable outcomes",
+                    "Data-driven decision making and performance visibility",
+                    "Stronger governance, risk, and compliance management",
+                    "Tailored solutions aligned with business objectives ",
+                    "Sustainable growth and long-term value creation",
+                    "Expert support across complex business challenges",
+                    "Enhanced operational efficiency and transformation readiness",
+                    "Industry-focused expertise with practical implementation guidance",
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
                       <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
@@ -1185,7 +1230,7 @@ const AdvisoryPage = () => {
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           </div> */}
 
-          <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div
               className={`transition-all duration-800 transform ${visibleSections.cta ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
@@ -1198,13 +1243,12 @@ const AdvisoryPage = () => {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
-                Ready to{" "}
-                <span className="font-bold">Transform Your Business?</span>
+                Ready to {" "}
+                <span className="font-bold">Strengthen Your Business for the Future?</span>
               </h2>
 
-              <p className="text-white/50 text-base mb-10 font-light max-w-md mx-auto">
-                Contact our Advisory experts to discuss how we can help you
-                achieve your strategic goals.
+              <p className="text-white/50 text-base mb-10 font-light max-w-2xl mx-auto">
+                Connect with our advisory specialists to explore strategic solutions that drive growth, strengthen compliance, and create long-term business value across the UAE.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -1213,7 +1257,7 @@ const AdvisoryPage = () => {
                   className="group relative px-9 py-3.5 bg-white text-[#0a0a0a] text-sm font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-gray-100"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
-                    Contact Our Team
+                    Speak With Our Experts
                     <span className="group-hover:translate-x-1 transition-transform">
                       →
                     </span>
@@ -1223,7 +1267,12 @@ const AdvisoryPage = () => {
                   href="/services"
                   className="px-9 py-3.5 border border-white/15 text-white text-sm font-medium tracking-wide hover:bg-white/5 transition-all duration-300"
                 >
-                  View All Services
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    Explore Advisory Services
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </span>
                 </Link>
               </div>
             </div>
