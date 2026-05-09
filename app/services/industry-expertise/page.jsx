@@ -58,20 +58,21 @@ const IndustryExpertisePage = () => {
   {
     id: "manufacturing",
     title: "Manufacturing",
-    description: "Helping manufacturers optimize operations, improve productivity, and build resilient systems for sustainable industrial growth.",
+    description: "Supporting manufacturers with practical strategies, process improvement, and scalable operational solutions designed to drive efficiency, quality, and sustainable growth.",
     services: [
       {
         id: "supply-chain",
         name: "Supply Chain & Logistics Strategy",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help manufacturing businesses streamline sourcing, inventory movement, warehousing, and distribution processes to improve efficiency, reduce delays, and strengthen operational performance.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        description: "We help manufacturing businesses build agile and efficient supply chain systems that improve operational flow, reduce disruptions, and support scalable production growth.",
+        detailedDescription: "Our strategic approach focuses on optimizing procurement, warehousing, transportation, and distribution networks to enhance productivity, control costs, and strengthen supply chain resilience.",
         keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
+          "Supply chain performance analysis",
+          "Procurement and sourcing strategy",
+          "Logistics and distribution planning",
+          "Inventory flow optimization",
+          "Demand and production alignment",
+          "Operational risk management"
         ],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
@@ -79,14 +80,15 @@ const IndustryExpertisePage = () => {
         id: "operational-efficiency",
         name: "Operational Efficiency (Lean Management)",
         shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        description: "We help manufacturing businesses streamline workflows, improve productivity, and reduce operational inefficiencies through practical lean management strategies and process optimization.",
+        detailedDescription: "Our approach focuses on building efficient production systems that minimize waste, strengthen operational control, and improve overall business performance across manufacturing operations.",
         keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
+          "Lean process improvement",
+          "Production workflow optimization",
+          "Operational waste reduction",
+          "Performance monitoring systems",
+          "Resource utilization enhancement",
+          "Continuous improvement strategies"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
@@ -94,14 +96,15 @@ const IndustryExpertisePage = () => {
         id: "inventory",
         name: "Inventory & Warehouse Management",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help manufacturing businesses improve inventory accuracy, optimize warehouse operations, and create efficient storage and distribution systems that support smooth business operations.",
+        detailedDescription: "Our solutions focus on enhancing inventory visibility, reducing stock-related inefficiencies, and improving warehouse productivity through smarter operational planning and process control.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Inventory planning and control",
+          "Warehouse space optimization",
+          "Stock movement management",
+          "Demand and supply coordination",
+          "Storage and distribution efficiency",
+          "Inventory tracking systems"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -109,14 +112,15 @@ const IndustryExpertisePage = () => {
         id: "sustainability",
         name: "Sustainability & ESG Advisory",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help businesses build sustainable operational strategies that align with environmental, social, and governance goals while supporting long-term growth and responsible business practices.",
+        detailedDescription: "Our advisory approach focuses on improving sustainability performance, strengthening ESG reporting standards, and creating practical frameworks that enhance business value and corporate responsibility.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "ESG strategy development",
+          "Sustainability reporting support",
+          "Environmental impact assessment",
+          "Energy and resource efficiency",
+          "Corporate governance planning",
+          "Responsible business practices"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -124,14 +128,15 @@ const IndustryExpertisePage = () => {
         id: "cost",
         name: "Cost & Profitability Analysis",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help businesses identify cost-saving opportunities, improve financial efficiency, and maximize profitability through data-driven operational and financial analysis.",
+        detailedDescription: "Our team evaluates business expenses, revenue performance, and operational workflows to uncover areas for improvement, strengthen margins, and support smarter financial decision-making.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Cost structure evaluation",
+          "Profit margin analysis",
+          "Budget planning support",
+          "Operational cost optimization",
+          "Revenue performance tracking",
+          "Financial efficiency strategies"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       }
@@ -142,20 +147,21 @@ const IndustryExpertisePage = () => {
    {
     id: "realestate",
     title: " Real Estate ",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    description: "Helping real estate businesses make smarter investment decisions, improve asset performance, and create sustainable long-term growth opportunities.",
     services: [
       {
         id: "supply-chain",
         name: "Market Feasibility Studies",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        description: "We provide in-depth market analysis and feasibility assessments to help developers, investors, and real estate firms evaluate project potential and minimize investment risks.",
+        detailedDescription: "Our experts study market demand, competitor positioning, customer behavior, and location potential to deliver actionable insights that support confident and profitable real estate decisions.",
         keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
+          "Market demand analysis",
+          "Investment risk assessment",
+          "Competitor benchmarking",
+          "Site and location evaluation",
+          "Revenue potential forecasting",
+          "Project viability planning"
         ],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
@@ -163,14 +169,16 @@ const IndustryExpertisePage = () => {
         id: "operational-efficiency",
         name: "Property Portfolio Strategy",
         shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        description: "We help real estate businesses optimize property portfolios by identifying high-performing assets, improving investment allocation, and creating strategies for long-term value growth.",
+        detailedDescription: "Our strategic advisory approach focuses on portfolio diversification, asset performance evaluation, and market positioning to maximize returns while reducing operational and investment risks.",
         keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
+          "Asset performance analysis",
+          "Portfolio diversification planning",
+          "Investment allocation strategy",
+          "Property value enhancement",
+          "Risk and return assessment",
+          "Risk and return assessment",
+          "Long-term growth planning"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
@@ -178,14 +186,15 @@ const IndustryExpertisePage = () => {
         id: "inventory",
         name: "Tenant Retention & Experience",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help property owners and real estate businesses improve tenant satisfaction, strengthen long-term occupancy, and create better customer experiences across residential and commercial properties.",
+        detailedDescription: "Our strategies focus on enhancing tenant engagement, improving property services, and building positive experiences that increase retention rates and strengthen brand reputation.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Tenant satisfaction strategies",
+          "Occupancy retention planning",
+          "Customer experience enhancement",
+          "Service quality improvement",
+          "Community engagement initiatives",
+          "Feedback and performance analysis"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -193,14 +202,15 @@ const IndustryExpertisePage = () => {
         id: "sustainability",
         name: "Sales & Marketing Positioning",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help real estate brands strengthen market presence, attract the right audience, and create impactful sales and marketing strategies that drive visibility and conversions.",
+        detailedDescription: "Our team develops data-backed positioning strategies, branding initiatives, and customer-focused campaigns that help projects stand out in competitive real estate markets.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Brand positioning strategy",
+          "Real estate marketing campaigns",
+          "Lead generation planning",
+          "Customer targeting insights",
+          "Sales performance optimization",
+          "Competitive market analysis"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -208,14 +218,15 @@ const IndustryExpertisePage = () => {
         id: "cost",
         name: "Property Management Optimization",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help real estate businesses streamline property operations, improve asset maintenance, and enhance management efficiency to deliver better performance and tenant satisfaction.",
+        detailedDescription: "Our solutions focus on operational improvements, resource planning, and technology-driven management practices that reduce inefficiencies and strengthen overall property performance.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Property operations improvement",
+          "Maintenance management planning",
+          "Resource allocation strategies",
+          "Tenant service enhancement",
+          "Performance monitoring systems",
+          "Process and workflow optimization"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       }
@@ -226,20 +237,21 @@ const IndustryExpertisePage = () => {
    {
     id: "hospitality",
     title: " Hospitality (Hotels, F&B, Tourism) ",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    description: "Helping hospitality brands elevate guest satisfaction, strengthen operations, and create memorable customer experiences that drive long-term growth.",
     services: [
       {
         id: "supply-chain",
         name: "Guest Experience Mapping",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        description: "We help hotels, restaurants, and tourism businesses understand customer journeys, improve service quality, and create seamless guest experiences across every touchpoint.",
+        detailedDescription: "Our strategies focus on enhancing customer engagement, identifying service gaps, and optimizing hospitality operations to improve satisfaction, loyalty, and brand reputation.",
         keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
+          "Customer journey analysis",
+          "Service experience improvement",
+          "Guest satisfaction strategies",
+          "Brand experience enhancement",
+          "Hospitality process optimization",
+          "Customer feedback evaluation"
         ],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
@@ -247,14 +259,15 @@ const IndustryExpertisePage = () => {
         id: "operational-efficiency",
         name: "Revenue Management Strategy",
         shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        description: "We help hospitality businesses maximize revenue opportunities through smart pricing strategies, demand forecasting, and performance-driven operational planning.",
+        detailedDescription: "Our approach focuses on analyzing customer behavior, booking trends, and market demand to improve profitability, occupancy rates, and overall business performance.",
         keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
+          "Dynamic pricing strategies",
+          "Revenue performance analysis",
+          "Occupancy optimization planning",
+          "Demand forecasting insights",
+          "Market trend evaluation",
+          "Profitability improvement strategies"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
@@ -262,14 +275,15 @@ const IndustryExpertisePage = () => {
         id: "inventory",
         name: "Franchise & Expansion Advisory",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help hospitality brands plan successful expansion strategies, strengthen franchise models, and identify growth opportunities across new markets and locations.",
+        detailedDescription: "Our advisory services focus on business scalability, operational consistency, and market expansion planning to support sustainable brand growth and stronger market presence.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Franchise growth planning",
+          "Market expansion strategy",
+          "Location feasibility analysis",
+          "Brand scalability support",
+          "Operational standardization",
+          "Expansion risk assessment"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -277,14 +291,15 @@ const IndustryExpertisePage = () => {
         id: "sustainability",
         name: "Menu & Service Profitability Analysis",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help restaurants, cafés, and hospitality businesses improve profitability by analyzing menu performance, service efficiency, and customer purchasing behavior.",
+        detailedDescription: "Our team evaluates pricing structures, high-performing offerings, and operational costs to help businesses increase margins, enhance customer value, and improve overall revenue performance.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Menu performance analysis",
+          "Pricing optimization strategies",
+          "Service cost evaluation",
+          "Revenue improvement planning",
+          "Customer preference insights",
+          "Profit margin enhancement"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -292,14 +307,15 @@ const IndustryExpertisePage = () => {
         id: "cost",
         name: "Staff Retention & Culture Building",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help hospitality businesses create strong workplace cultures, improve employee satisfaction, and develop retention strategies that support long-term team stability and service excellence.",
+        detailedDescription: "Our approach focuses on employee engagement, leadership alignment, and positive workplace experiences that strengthen team performance, reduce turnover, and enhance customer service quality.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Employee engagement strategies",
+          "Staff retention planning",
+          "Workplace culture development",
+          "Team performance improvement",
+          "Leadership and communication support",
+          "Training and growth initiatives"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       }
@@ -310,20 +326,21 @@ const IndustryExpertisePage = () => {
    {
     id: "education",
     title: "  Education (Schools, Universities, EdTech)  ",
-    description: "Driving operational excellence and efficiency across manufacturing value chains.",
+    description: "Helping educational institutions strengthen student engagement, improve operational performance, and create future-ready learning environments.",
     services: [
       {
         id: "supply-chain",
         name: "Enrollment & Admissions Strategy",
         shortDescription: "Optimize supply chain for efficiency and resilience.",
-        description: "We help streamline procurement, logistics, and distribution for cost efficiency.",
-        detailedDescription: "Our experts analyze your end-to-end supply chain to eliminate bottlenecks, improve delivery timelines, and reduce operational costs while increasing resilience.",
+        description: "We help schools, universities, and EdTech brands improve enrollment performance through strategic admissions planning, student outreach, and data-driven growth initiatives.",
+        detailedDescription: "Our team develops customized enrollment strategies focused on increasing student acquisition, improving admission processes, and enhancing institutional visibility in competitive education markets.",
         keyFeatures: [
-          "Supply chain diagnostics",
-          "Logistics optimization",
-          "Vendor management strategy",
-          "Demand forecasting",
-          "Digital supply chain transformation"
+          "Student enrollment planning",
+          "Admissions process optimization",
+          "Lead nurturing strategies",
+          "Education market analysis",
+          "Brand positioning for institutions",
+          "Student acquisition campaigns"
         ],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
       },
@@ -331,14 +348,15 @@ const IndustryExpertisePage = () => {
         id: "operational-efficiency",
         name: "Operational Cost Review",
         shortDescription: "Improve productivity using lean methodologies.",
-        description: "Enhance operational performance by eliminating waste and improving processes.",
-        detailedDescription: "We implement lean frameworks to improve production cycles, reduce inefficiencies, and enhance overall productivity across manufacturing operations.",
+        description: "We help educational institutions evaluate operational spending, streamline resource allocation, and improve financial efficiency without compromising academic quality or student experience.",
+        detailedDescription: "Our experts identify cost-saving opportunities across administration, infrastructure, staffing, and technology to help institutions build sustainable and scalable operational models.",
         keyFeatures: [
-          "Lean transformation",
-          "Process optimization",
-          "Waste reduction",
-          "KPI tracking",
-          "Continuous improvement frameworks"
+          "Budget efficiency analysis",
+          "Resource allocation planning",
+          "Administrative cost optimization",
+          "Infrastructure expense review",
+          "Operational performance tracking",
+          "Financial sustainability strategies"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
       },
@@ -346,14 +364,15 @@ const IndustryExpertisePage = () => {
         id: "inventory",
         name: "Student Experience & Retention",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help educational institutions create engaging student journeys that improve satisfaction, strengthen campus experience, and increase long-term student retention.",
+        detailedDescription: "Our strategies focus on academic support, student engagement, communication systems, and experience enhancement to build stronger relationships between institutions and learners.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Student engagement strategies",
+          "Retention improvement planning",
+          "Campus experience enhancement",
+          "Feedback and support systems",
+          "Student communication optimization",
+          "Academic experience analysis"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -361,14 +380,15 @@ const IndustryExpertisePage = () => {
         id: "sustainability",
         name: "Accreditation & Regulatory Readiness",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help educational institutions strengthen compliance frameworks, improve operational standards, and prepare confidently for accreditation and regulatory evaluations.",
+        detailedDescription: "Our team supports institutions with policy alignment, documentation processes, governance practices, and quality benchmarks to ensure smooth regulatory readiness and institutional credibility.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Accreditation preparation support",
+          "Compliance framework assessment",
+          "Documentation and policy review",
+          "Academic quality standards",
+          "Governance and process alignment",
+          "Regulatory readiness planning"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       },
@@ -376,14 +396,15 @@ const IndustryExpertisePage = () => {
         id: "cost",
         name: "Corporate Partnerships",
         shortDescription: "Optimize inventory levels and warehouse efficiency.",
-        description: "Improve stock visibility and warehouse operations.",
-        detailedDescription: "We help design inventory systems that balance cost with availability while improving warehouse layout and automation.",
+        description: "We help educational institutions build strategic industry collaborations that create stronger academic value, improve career opportunities, and enhance institutional growth.",
+        detailedDescription: "Our partnership strategies focus on connecting institutions with corporate leaders, training partners, and industry networks to support innovation, internships, placements, and long-term collaboration.",
         keyFeatures: [
-          "Inventory optimization",
-          "Warehouse design",
-          "Stock control systems",
-          "Automation solutions",
-          "Demand planning"
+          "Industry partnership development",
+          "Internship and placement strategies",
+          "Corporate collaboration planning",
+          "Skill development initiatives",
+          "Employer engagement programs",
+          "Academic-industry alignment"
         ],
         image: "https://images.unsplash.com/photo-1553413077-190dd305871c"
       }
@@ -632,7 +653,7 @@ const IndustryExpertisePage = () => {
               </h1>
               
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-Empowering industry leaders with tailored strategies, market-focused insights, and scalable solutions designed for long-term business growth.              </p>
+Empowering businesses with industry-specific strategies, operational excellence, and scalable solutions tailored for sustainable growth in competitive markets.             </p>
               
               {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
                 <div className="flex flex-col items-center gap-2">
