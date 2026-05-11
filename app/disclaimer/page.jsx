@@ -50,43 +50,43 @@ const DisclaimerPage = () => {
     {
       id: 'general',
       title: 'General Information',
-      content: 'The information contained on this website is for general information purposes only. Insight Integrators Management Consultancies LLC-FZ assumes no responsibility for errors or omissions in the contents of this website. In no event shall Insight Integrators Management Consultancies LLC-FZ be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of this website or the contents of this website.'
+      content: 'All advisory services, recommendations, insights, and strategies shared through this website or during consultations are based on available information, business objectives, and industry understanding at the time of engagement. Business outcomes may vary depending on market conditions, operational execution, regulatory changes, and other external factors beyond our control.'
     },
     {
       id: 'professional',
       title: 'Professional Advice Disclaimer',
-      content: 'The information provided on this website does not constitute professional advice. While we strive to provide accurate and up-to-date information, you should not act upon the information contained on this website without seeking appropriate professional advice. Insight Integrators Management Consultancies LLC-FZ expressly disclaims all liability in respect of actions taken or not taken based on any or all of the contents of this website.'
+      content: 'Nothing on this website should be considered legal, financial, tax, investment, or regulatory advice unless explicitly stated through a formal professional engagement. Users are encouraged to seek independent professional guidance before making business, financial, or operational decisions.'
     },
     {
       id: 'external',
       title: 'External Links Disclaimer',
-      content: 'This website may contain links to external websites that are not provided or maintained by Insight Integrators Management Consultancies LLC-FZ. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.'
+      content: 'We are not liable for any direct, indirect, incidental, or consequential loss or damages arising from the use of this website, reliance on its content, or implementation of recommendations provided through our services.'
     },
     {
       id: 'testimonials',
       title: 'Testimonials Disclaimer',
-      content: 'Testimonials appearing on this website are received via text, audio, or video submission. They are individual experiences, reflecting real-life experiences of those who have used our services. However, individual results may vary. We do not claim that they are typical results that consumers will generally achieve.'
+      content: 'This website may include links to third-party websites or external resources for informational convenience. We do not endorse or assume responsibility for the content, availability, or practices of any third-party platforms.'
     },
     {
       id: 'financial',
       title: 'Financial Information Disclaimer',
-      content: 'Any financial information, projections, or forecasts provided on this website are for illustrative purposes only and do not constitute financial advice. Past performance does not guarantee future results. You should consult with a qualified financial professional before making any investment or financial decisions.'
+      content: 'All intellectual property, branding, content, graphics, and materials displayed on this website remain the property of their respective owners unless otherwise stated. Unauthorized reproduction, distribution, or use of website content is prohibited without prior written permission.'
     },
     {
       id: 'tax',
       title: 'Tax Information Disclaimer',
-      content: 'Tax information provided on this website is based on current laws and regulations, which are subject to change. We recommend consulting with a qualified tax professional for advice specific to your situation. Insight Integrators Management Consultancies LLC-FZ is not responsible for any penalties or liabilities arising from reliance on the tax information provided on this website.'
+      content: 'By using this website, you acknowledge and agree to the terms outlined in this Disclaimer.'
     },
-    {
-      id: 'accuracy',
-      title: 'Accuracy of Information',
-      content: 'We strive to ensure that all information on this website is accurate and current. However, we cannot guarantee that the information is free from errors or omissions. We reserve the right to modify the contents of this website at any time without prior notice.'
-    },
-    {
-      id: 'copyright',
-      title: 'Copyright and Intellectual Property',
-      content: 'All content on this website, including text, graphics, logos, images, and software, is the property of Insight Integrators Management Consultancies LLC-FZ and is protected by copyright and intellectual property laws. You may not reproduce, distribute, or transmit any content without our prior written permission.'
-    }
+    // {
+    //   id: 'accuracy',
+    //   title: 'Accuracy of Information',
+    //   content: 'We strive to ensure that all information on this website is accurate and current. However, we cannot guarantee that the information is free from errors or omissions. We reserve the right to modify the contents of this website at any time without prior notice.'
+    // },
+    // {
+    //   id: 'copyright',
+    //   title: 'Copyright and Intellectual Property',
+    //   content: 'All content on this website, including text, graphics, logos, images, and software, is the property of Insight Integrators Management Consultancies LLC-FZ and is protected by copyright and intellectual property laws. You may not reproduce, distribute, or transmit any content without our prior written permission.'
+    // }
   ];
 
   return (
@@ -155,9 +155,7 @@ const DisclaimerPage = () => {
               </div>
               <div className="bg-gray-50 border-l-4 border-[#2c154f] p-6 md:p-8">
                 <p className="text-gray-600 text-base leading-relaxed font-light">
-                  By accessing and using this website, you acknowledge that you have read, understood, 
-                  and agree to be bound by the terms of this disclaimer. If you do not agree with any 
-                  part of this disclaimer, please do not use our website.
+                 The information provided on this website is intended for general informational and business advisory purposes only. While we strive to ensure the accuracy, reliability, and relevance of the content, we do not guarantee that all information is complete, current, or free from errors.
                 </p>
               </div>
             </div>
@@ -172,12 +170,12 @@ const DisclaimerPage = () => {
                   className={`transition-all duration-700 transform ${visibleSections[section.id] ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
                   style={{ transitionDelay: `${Math.min(index * 50, 400)}ms` }}
                 >
-                  <div className="border-b border-gray-200 pb-4 mb-5">
+                  {/* <div className="border-b border-gray-200 pb-4 mb-5">
                     <h2 className="text-xl md:text-2xl font-semibold text-gray-900">
                       {section.title}
                     </h2>
                     <div className="w-12 h-px text-justify bg-[#0a0a0a]/50 mt-3"></div>
-                  </div>
+                  </div> */}
                   <p className="text-gray-500 text-base leading-relaxed font-light">
                     {section.content}
                   </p>

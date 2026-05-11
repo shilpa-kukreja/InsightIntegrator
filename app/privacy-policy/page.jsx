@@ -65,60 +65,61 @@ const PrivacyPolicyPage = () => {
 
   const privacySections = [
     {
-      id: 'information',
+      id: 'introduction',
+      title: 'Introduction',
+      content: 'Your privacy is important to us. This Privacy Policy explains how we collect, use, store, and protect your information when you interact with our website, advisory services, and business solutions. By using our services, you agree to the practices described in this policy.'
+    },
+     {
+      id: 'information-we-collect',
       title: 'Information We Collect',
-      content: 'We collect information you provide directly to us, such as when you create an account, fill out a form, subscribe to our newsletter, or contact us for support. This may include your name, email address, phone number, company name, and any other information you choose to provide.'
+      content: 'We may collect personal information such as your name, email address, phone number, and company details, along with business information shared during consultations or inquiries. We may also collect website usage data including IP address, browser type, pages visited, interaction behavior, and communication records from emails, contact forms, or support requests.'
     },
-    {
-      id: 'usage',
-      title: 'Usage Information',
-      content: 'When you visit our website, we automatically collect certain information about your device and usage patterns. This includes your IP address, browser type, operating system, pages visited, time and date of访问, referring URLs, and other analytical data.'
-    },
-    {
-      id: 'cookies',
-      title: 'Cookies and Similar Technologies',
-      content: 'We use cookies and similar tracking technologies to enhance your experience on our website. Cookies are small text files stored on your device that help us remember your preferences, understand how you use our site, and improve our services.'
-    },
-    {
-      id: 'how-we-use',
+     {
+      id: 'how-we-use-your-information',
       title: 'How We Use Your Information',
-      content: 'We use the information we collect to provide, maintain, and improve our services; to communicate with you; to personalize your experience; to analyze usage patterns; to detect and prevent fraud; and to comply with legal obligations.'
+      content: 'The information collected may be used to provide and improve our advisory services, respond to inquiries and consultation requests, communicate important updates and business information, analyze website performance and user experience, maintain security and prevent unauthorized access, and comply with legal and regulatory obligations.'
+    },
+     {
+      id: 'data-protection-and security',
+      title: 'Data Protection & Security',
+      content: 'We implement appropriate technical and organizational measures to safeguard your information against unauthorized access, misuse, disclosure, or loss. While we strive to protect all data, no digital platform can guarantee complete security.'
     },
     {
-      id: 'sharing',
-      title: 'Information Sharing',
-      content: 'We do not sell your personal information. We may share your information with service providers who perform services on our behalf, with your consent, or as required by law. All third-party service providers are contractually obligated to protect your information.'
+      id: 'sharing-of-information',
+      title: 'Sharing of Information',
+      content: 'We do not sell, rent, or trade personal information to third parties. Information may only be shared with trusted service providers, legal authorities, or regulatory bodies when required for business operations or compliance purposes.'
     },
     {
-      id: 'data-security',
-      title: 'Data Security',
-      content: 'We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes encryption, access controls, and regular security assessments.'
+      id: 'cookies-and-website-tracking',
+      title: 'Cookies & Website Tracking',
+      content: 'Our website may use cookies and similar technologies to improve browsing experience, analyze traffic, and understand user preferences. Users can modify browser settings to disable cookies if preferred.'
+    },
+    {
+      id: 'third-party-links',
+      title: 'Third-Party Links',
+      content: 'Our website may contain links to external websites or third-party platforms. We are not responsible for the privacy practices or content of those external sites.'
     },
     {
       id: 'data-retention',
       title: 'Data Retention',
-      content: 'We retain your personal information for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements.'
+      content: 'We retain information only for as long as necessary to fulfill business, legal, operational, or compliance requirements.'
     },
     {
-      id: 'your-rights',
-      title: 'Your Rights',
-      content: 'Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, delete, or restrict processing of your data. To exercise these rights, please contact us at privacy@insightintegrators.ae.'
+      id: 'user-rights',
+      title: 'User Rights',
+      content: 'Depending on applicable laws and regulations, users may have the right to request access to their personal information, request correction or deletion of data, withdraw consent for communications, and request clarification regarding data usage.'
     },
     {
-      id: 'children',
-      title: 'Children\'s Privacy',
-      content: 'Our website is not intended for children under 16 years of age. We do not knowingly collect personal information from children under 16. If you believe we have collected information from a child under 16, please contact us immediately.'
+      id: 'policy-updates',
+      title: 'Policy Updates',
+      content: 'We may update this Privacy Policy periodically to reflect changes in business practices, legal requirements, or service improvements. Updated versions will be posted on this page.'
     },
-    {
-      id: 'changes',
-      title: 'Changes to This Policy',
-      content: 'We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date. We encourage you to review this policy periodically.'
+     {
+      id: 'contact-information',
+      title: 'Contact Information',
+      content: 'If you have any questions regarding this Privacy Policy or the handling of your information, please contact us through our official communication channels.'
     },
-    {
-      id: 'contact',
-      title: 'Contact Us',
-      content: 'If you have any questions about this privacy policy or our data practices, please contact us at:'
-    }
+   
   ];
 
   const cookieTypes = [
@@ -244,10 +245,6 @@ const PrivacyPolicyPage = () => {
                 </div>
               ))}
             </div>
-
-          
-
-         
           </div>
         </section>
 
