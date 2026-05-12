@@ -59,6 +59,31 @@ const IndustryExpertisePage = () => {
     id: "manufacturing",
     title: "Manufacturing",
     description: "Supporting manufacturers with practical strategies, process improvement, and scalable operational solutions designed to drive efficiency, quality, and sustainable growth.",
+    // Problem section
+    problem: {
+      title: "Navigating Complexity in a Competitive Landscape",
+      description: "Manufacturers today face mounting pressure from global supply chain disruptions, rising operational costs, quality control challenges, and the urgent need for digital transformation. Many struggle to balance production efficiency with sustainability goals while maintaining profitability in a volatile market.",
+      bulletPoints: [
+        "Supply chain volatility causing production delays and increased costs",
+        "Rising material and energy expenses compressing profit margins",
+        "Inefficient workflows leading to waste and reduced throughput",
+        "Difficulty implementing lean practices across legacy systems",
+        "Sustainability compliance demands outpacing current capabilities",
+        "Talent shortages affecting operational continuity and innovation"
+      ]
+    },
+    // Solution section
+    solution: {
+      title: "Your Path to Operational Excellence",
+      description: "We help manufacturers transform challenges into opportunities through data-driven strategies, process optimization, and scalable frameworks designed for sustainable growth.",
+      bulletPoints: [
+        "Implement resilient, agile supply chain networks",
+        "Reduce operational costs by 15-25% through lean methodologies",
+        "Achieve real-time production visibility and quality control",
+        "Build compliant, future-ready sustainability programs",
+        "Develop workforce capabilities for continuous improvement"
+      ]
+    },
     services: [
       {
         id: "supply-chain",
@@ -111,7 +136,7 @@ const IndustryExpertisePage = () => {
        {
         id: "sustainability",
         name: "Sustainability & ESG Advisory",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Build sustainable operational strategies.",
         description: "We help businesses build sustainable operational strategies that align with environmental, social, and governance goals while supporting long-term growth and responsible business practices.",
         detailedDescription: "Our advisory approach focuses on improving sustainability performance, strengthening ESG reporting standards, and creating practical frameworks that enhance business value and corporate responsibility.",
         keyFeatures: [
@@ -127,7 +152,7 @@ const IndustryExpertisePage = () => {
       {
         id: "cost",
         name: "Cost & Profitability Analysis",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Maximize financial efficiency and margins.",
         description: "We help businesses identify cost-saving opportunities, improve financial efficiency, and maximize profitability through data-driven operational and financial analysis.",
         detailedDescription: "Our team evaluates business expenses, revenue performance, and operational workflows to uncover areas for improvement, strengthen margins, and support smarter financial decision-making.",
         keyFeatures: [
@@ -143,16 +168,39 @@ const IndustryExpertisePage = () => {
     ]
   },
 
-  //  Real Estate 
+  // Real Estate 
    {
     id: "real-estate",
-    title: " Real Estate ",
+    title: "Real Estate",
     description: "Helping real estate businesses make smarter investment decisions, improve asset performance, and create sustainable long-term growth opportunities.",
+    problem: {
+      title: "Navigating Market Volatility and Asset Performance Challenges",
+      description: "Real estate investors and developers face unprecedented market shifts, changing tenant expectations, regulatory pressures, and the need for data-driven decision-making. Maximizing returns while managing risk requires sophisticated strategies and operational excellence.",
+      bulletPoints: [
+        "Market uncertainty making investment decisions increasingly complex",
+        "Difficulty identifying high-potential properties and development sites",
+        "Rising construction and maintenance costs eroding profit margins",
+        "Tenant retention challenges in competitive commercial and residential markets",
+        "Legacy property management systems limiting operational efficiency",
+        "Sustainability requirements reshaping building standards and valuations"
+      ]
+    },
+    solution: {
+      title: "Unlocking Property Value and Portfolio Growth",
+      description: "We equip real estate businesses with market intelligence, strategic frameworks, and operational tools to optimize asset performance and maximize returns.",
+      bulletPoints: [
+        "Data-backed investment decisions with reduced risk exposure",
+        "Enhanced property valuations through strategic positioning",
+        "Improved tenant satisfaction and long-term occupancy rates",
+        "Streamlined property operations and maintenance efficiency",
+        "Sustainable asset management aligned with market trends"
+      ]
+    },
     services: [
       {
         id: "market",
         name: "Market Feasibility Studies",
-        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        shortDescription: "Evaluate project potential and minimize risks.",
         description: "We provide in-depth market analysis and feasibility assessments to help developers, investors, and real estate firms evaluate project potential and minimize investment risks.",
         detailedDescription: "Our experts study market demand, competitor positioning, customer behavior, and location potential to deliver actionable insights that support confident and profitable real estate decisions.",
         keyFeatures: [
@@ -168,7 +216,7 @@ const IndustryExpertisePage = () => {
       {
         id: "property",
         name: "Property Portfolio Strategy",
-        shortDescription: "Improve productivity using lean methodologies.",
+        shortDescription: "Optimize asset allocation and value growth.",
         description: "We help real estate businesses optimize property portfolios by identifying high-performing assets, improving investment allocation, and creating strategies for long-term value growth.",
         detailedDescription: "Our strategic advisory approach focuses on portfolio diversification, asset performance evaluation, and market positioning to maximize returns while reducing operational and investment risks.",
         keyFeatures: [
@@ -177,7 +225,6 @@ const IndustryExpertisePage = () => {
           "Investment allocation strategy",
           "Property value enhancement",
           "Risk and return assessment",
-          "Risk and return assessment",
           "Long-term growth planning"
         ],
         image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d"
@@ -185,7 +232,7 @@ const IndustryExpertisePage = () => {
       {
         id: "tenant",
         name: "Tenant Retention & Experience",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Improve satisfaction and occupancy rates.",
         description: "We help property owners and real estate businesses improve tenant satisfaction, strengthen long-term occupancy, and create better customer experiences across residential and commercial properties.",
         detailedDescription: "Our strategies focus on enhancing tenant engagement, improving property services, and building positive experiences that increase retention rates and strengthen brand reputation.",
         keyFeatures: [
@@ -201,7 +248,7 @@ const IndustryExpertisePage = () => {
        {
         id: "sales-marketing",
         name: "Sales & Marketing Positioning",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Strengthen market presence and drive conversions.",
         description: "We help real estate brands strengthen market presence, attract the right audience, and create impactful sales and marketing strategies that drive visibility and conversions.",
         detailedDescription: "Our team develops data-backed positioning strategies, branding initiatives, and customer-focused campaigns that help projects stand out in competitive real estate markets.",
         keyFeatures: [
@@ -217,7 +264,7 @@ const IndustryExpertisePage = () => {
       {
         id: "property-management",
         name: "Property Management Optimization",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Streamline operations and asset maintenance.",
         description: "We help real estate businesses streamline property operations, improve asset maintenance, and enhance management efficiency to deliver better performance and tenant satisfaction.",
         detailedDescription: "Our solutions focus on operational improvements, resource planning, and technology-driven management practices that reduce inefficiencies and strengthen overall property performance.",
         keyFeatures: [
@@ -236,13 +283,36 @@ const IndustryExpertisePage = () => {
   // Hospitality
    {
     id: "hospitality",
-    title: " Hospitality (Hotels, F&B, Tourism) ",
+    title: "Hospitality (Hotels, F&B, Tourism)",
     description: "Helping hospitality brands elevate guest satisfaction, strengthen operations, and create memorable customer experiences that drive long-term growth.",
+    problem: {
+      title: "Elevating Guest Experience While Driving Profitability",
+      description: "Hotels, restaurants, and tourism operators must balance exceptional guest experiences with operational efficiency and revenue growth. Rapidly changing consumer preferences, labor shortages, and intense competition demand innovative approaches to service delivery and business management.",
+      bulletPoints: [
+        "Inconsistent guest experiences damaging brand reputation and reviews",
+        "Labor shortages affecting service quality and operational capacity",
+        "Pricing strategy gaps leading to revenue leakage during peak periods",
+        "Outdated technology systems hindering personalization and efficiency",
+        "High customer acquisition costs with declining repeat visitation",
+        "Balancing cost control with premium guest experience expectations"
+      ]
+    },
+    solution: {
+      title: "Creating Memorable Experiences That Drive Loyalty and Revenue",
+      description: "We help hospitality brands design exceptional guest journeys, optimize revenue streams, and build operational systems that deliver consistent excellence.",
+      bulletPoints: [
+        "Seamless, personalized guest experiences across all touchpoints",
+        "Dynamic pricing strategies that maximize revenue per available room",
+        "Enhanced operational efficiency without compromising service quality",
+        "Data-driven insights for targeted marketing and customer retention",
+        "Scalable training and culture programs for workforce excellence"
+      ]
+    },
     services: [
       {
         id: "guest-experience",
         name: "Guest Experience Mapping",
-        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        shortDescription: "Optimize customer journeys and service quality.",
         description: "We help hotels, restaurants, and tourism businesses understand customer journeys, improve service quality, and create seamless guest experiences across every touchpoint.",
         detailedDescription: "Our strategies focus on enhancing customer engagement, identifying service gaps, and optimizing hospitality operations to improve satisfaction, loyalty, and brand reputation.",
         keyFeatures: [
@@ -258,7 +328,7 @@ const IndustryExpertisePage = () => {
       {
         id: "revenue-management",
         name: "Revenue Management Strategy",
-        shortDescription: "Improve productivity using lean methodologies.",
+        shortDescription: "Maximize revenue through smart pricing.",
         description: "We help hospitality businesses maximize revenue opportunities through smart pricing strategies, demand forecasting, and performance-driven operational planning.",
         detailedDescription: "Our approach focuses on analyzing customer behavior, booking trends, and market demand to improve profitability, occupancy rates, and overall business performance.",
         keyFeatures: [
@@ -274,7 +344,7 @@ const IndustryExpertisePage = () => {
       {
         id: "franchise-expansion",
         name: "Franchise & Expansion Advisory",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Plan successful growth strategies.",
         description: "We help hospitality brands plan successful expansion strategies, strengthen franchise models, and identify growth opportunities across new markets and locations.",
         detailedDescription: "Our advisory services focus on business scalability, operational consistency, and market expansion planning to support sustainable brand growth and stronger market presence.",
         keyFeatures: [
@@ -290,7 +360,7 @@ const IndustryExpertisePage = () => {
        {
         id: "menu-service",
         name: "Menu & Service Profitability Analysis",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Improve margins through performance analysis.",
         description: "We help restaurants, cafés, and hospitality businesses improve profitability by analyzing menu performance, service efficiency, and customer purchasing behavior.",
         detailedDescription: "Our team evaluates pricing structures, high-performing offerings, and operational costs to help businesses increase margins, enhance customer value, and improve overall revenue performance.",
         keyFeatures: [
@@ -306,7 +376,7 @@ const IndustryExpertisePage = () => {
       {
         id: "staff-retention",
         name: "Staff Retention & Culture Building",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Build strong teams and reduce turnover.",
         description: "We help hospitality businesses create strong workplace cultures, improve employee satisfaction, and develop retention strategies that support long-term team stability and service excellence.",
         detailedDescription: "Our approach focuses on employee engagement, leadership alignment, and positive workplace experiences that strengthen team performance, reduce turnover, and enhance customer service quality.",
         keyFeatures: [
@@ -325,13 +395,36 @@ const IndustryExpertisePage = () => {
   // Education
    {
     id: "education",
-    title: "  Education (Schools, Universities, EdTech)  ",
+    title: "Education (Schools, Universities, EdTech)",
     description: "Helping educational institutions strengthen student engagement, improve operational performance, and create future-ready learning environments.",
+    problem: {
+      title: "Adapting to New Learning Paradigms and Financial Pressures",
+      description: "Educational institutions face declining enrollment in traditional programs, rising operational costs, technology integration challenges, and increased expectations for student outcomes and career preparation. Staying relevant requires strategic transformation across academic and administrative functions.",
+      bulletPoints: [
+        "Declining enrollment and retention in competitive education markets",
+        "Rising operational costs straining institutional budgets",
+        "Outdated curriculum not meeting industry and student expectations",
+        "Technology gaps limiting personalized and hybrid learning options",
+        "Accreditation and compliance requirements becoming more rigorous",
+        "Difficulty demonstrating student outcomes and ROI to stakeholders"
+      ]
+    },
+    solution: {
+      title: "Building Future-Ready Learning Environments",
+      description: "We help educational institutions enhance student engagement, optimize operations, and create compelling value propositions for modern learners.",
+      bulletPoints: [
+        "Increased student enrollment through strategic admissions and marketing",
+        "Improved retention with engaging, supportive learning experiences",
+        "Operational cost optimization without compromising academic quality",
+        "Technology integration enabling personalized and hybrid education",
+        "Stronger industry partnerships enhancing career outcomes"
+      ]
+    },
     services: [
       {
         id: "enrollment",
         name: "Enrollment & Admissions Strategy",
-        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        shortDescription: "Improve student acquisition and admissions.",
         description: "We help schools, universities, and EdTech brands improve enrollment performance through strategic admissions planning, student outreach, and data-driven growth initiatives.",
         detailedDescription: "Our team develops customized enrollment strategies focused on increasing student acquisition, improving admission processes, and enhancing institutional visibility in competitive education markets.",
         keyFeatures: [
@@ -347,7 +440,7 @@ const IndustryExpertisePage = () => {
       {
         id: "operational-cost",
         name: "Operational Cost Review",
-        shortDescription: "Improve productivity using lean methodologies.",
+        shortDescription: "Optimize spending and resource allocation.",
         description: "We help educational institutions evaluate operational spending, streamline resource allocation, and improve financial efficiency without compromising academic quality or student experience.",
         detailedDescription: "Our experts identify cost-saving opportunities across administration, infrastructure, staffing, and technology to help institutions build sustainable and scalable operational models.",
         keyFeatures: [
@@ -363,7 +456,7 @@ const IndustryExpertisePage = () => {
       {
         id: "student-experience",
         name: "Student Experience & Retention",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Boost satisfaction and long-term retention.",
         description: "We help educational institutions create engaging student journeys that improve satisfaction, strengthen campus experience, and increase long-term student retention.",
         detailedDescription: "Our strategies focus on academic support, student engagement, communication systems, and experience enhancement to build stronger relationships between institutions and learners.",
         keyFeatures: [
@@ -379,7 +472,7 @@ const IndustryExpertisePage = () => {
        {
         id: "accreditation-regulatory",
         name: "Accreditation & Regulatory Readiness",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Prepare for compliance evaluations.",
         description: "We help educational institutions strengthen compliance frameworks, improve operational standards, and prepare confidently for accreditation and regulatory evaluations.",
         detailedDescription: "Our team supports institutions with policy alignment, documentation processes, governance practices, and quality benchmarks to ensure smooth regulatory readiness and institutional credibility.",
         keyFeatures: [
@@ -395,7 +488,7 @@ const IndustryExpertisePage = () => {
       {
         id: "corporate-patnerships",
         name: "Corporate Partnerships",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Build strategic industry collaborations.",
         description: "We help educational institutions build strategic industry collaborations that create stronger academic value, improve career opportunities, and enhance institutional growth.",
         detailedDescription: "Our partnership strategies focus on connecting institutions with corporate leaders, training partners, and industry networks to support innovation, internships, placements, and long-term collaboration.",
         keyFeatures: [
@@ -414,13 +507,36 @@ const IndustryExpertisePage = () => {
    // healthcare
    {
     id: "healthcare",
-    title: " Healthcare (Clinics, Hospitals, Wellness Centers)",
+    title: "Healthcare (Clinics, Hospitals, Wellness Centers)",
     description: "Helping healthcare providers improve operational efficiency, patient care experiences, and sustainable organizational growth.",
+    problem: {
+      title: "Delivering Quality Care Amid Operational Complexity",
+      description: "Healthcare providers navigate increasing patient volumes, regulatory requirements, staffing shortages, and financial pressures while maintaining clinical excellence. Optimizing operations without compromising patient outcomes requires integrated solutions and strategic foresight.",
+      bulletPoints: [
+        "Patient wait times and bottlenecks affecting satisfaction and outcomes",
+        "Revenue cycle inefficiencies causing cash flow and billing problems",
+        "Staff burnout and turnover impacting continuity of care",
+        "Compliance and documentation burdens reducing clinical time",
+        "Outdated systems limiting care coordination and data access",
+        "Balancing cost reduction with investment in quality improvement"
+      ]
+    },
+    solution: {
+      title: "Optimizing Care Delivery and Financial Health",
+      description: "We help healthcare providers streamline operations, enhance patient experiences, and build resilient financial and compliance systems.",
+      bulletPoints: [
+        "Reduced patient wait times and improved care coordination",
+        "Accelerated revenue cycles with reduced billing errors",
+        "Enhanced staff satisfaction and reduced turnover rates",
+        "Simplified compliance processes freeing up clinical resources",
+        "Data-driven insights for continuous quality improvement"
+      ]
+    },
     services: [
       {
         id: "patient-flow",
         name: "Patient Flow Optimization",
-        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        shortDescription: "Streamline patient movement and reduce wait times.",
         description: "We help healthcare organizations streamline patient movement, reduce wait times, and improve service coordination for a smoother and more efficient care experience.",
         detailedDescription: "Our strategies focus on workflow improvement, appointment management, resource utilization, and operational planning to enhance both patient satisfaction and staff productivity.",
         keyFeatures: [
@@ -436,7 +552,7 @@ const IndustryExpertisePage = () => {
       {
         id: "revenue-cycle",
         name: "Revenue Cycle Management",
-        shortDescription: "Improve productivity using lean methodologies.",
+        shortDescription: "Strengthen financial operations and billing.",
         description: "We help healthcare organizations strengthen financial operations by improving billing efficiency, reducing revenue leakage, and optimizing reimbursement processes.",
         detailedDescription: "Our approach focuses on streamlining revenue workflows, enhancing financial visibility, and improving operational accuracy to support long-term financial stability.",
         keyFeatures: [
@@ -452,7 +568,7 @@ const IndustryExpertisePage = () => {
       {
         id: "healthcare-marketing",
         name: "Healthcare Marketing & Brand Trust",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Build credibility and patient engagement.",
         description: "We help healthcare organizations strengthen brand credibility, improve patient engagement, and build a trusted presence in highly competitive healthcare markets.",
         detailedDescription: "Our strategies combine patient-focused communication, reputation management, and growth-driven marketing initiatives to enhance visibility and long-term trust.",
         keyFeatures: [
@@ -468,7 +584,7 @@ const IndustryExpertisePage = () => {
        {
         id: "service-expansion",
         name: "Service Expansion Feasibility",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Plan successful service growth.",
         description: "We help healthcare providers evaluate growth opportunities, assess operational readiness, and plan successful service expansions aligned with market demand.",
         detailedDescription: "Our feasibility strategies focus on market analysis, operational capacity, financial planning, and patient demand insights to support confident and sustainable expansion decisions.",
         keyFeatures: [
@@ -484,7 +600,7 @@ const IndustryExpertisePage = () => {
       {
         id: "administrative-compliance",
         name: "Administrative Compliance Readiness",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Strengthen compliance and governance.",
         description: "We help healthcare organizations strengthen administrative systems, maintain regulatory compliance, and improve operational accountability across departments.",
         detailedDescription: "Our approach focuses on documentation standards, process alignment, compliance monitoring, and governance support to ensure smooth and efficient healthcare administration.",
         keyFeatures: [
@@ -503,13 +619,36 @@ const IndustryExpertisePage = () => {
    // financial services
    {
     id: "financial-services",
-    title: "  Financial Services (DNFBPs Only)",
+    title: "Financial Services (DNFBPs Only)",
     description: "Helping DNFBPs strengthen compliance frameworks, manage operational risks, and build sustainable financial governance systems.",
+    problem: {
+      title: "Managing Regulatory Complexity and Financial Crime Risk",
+      description: "Designated Non-Financial Businesses and Professions face increasing scrutiny from regulators, evolving AML/CFT requirements, and sophisticated financial crime methodologies. Building robust compliance programs while maintaining operational efficiency is a critical challenge.",
+      bulletPoints: [
+        "Evolving AML/CFT regulations creating compliance uncertainty",
+        "Inadequate KYC processes exposing firms to regulatory penalties",
+        "GoAML reporting complexities and submission errors",
+        "Difficulty conducting effective customer and transaction risk profiling",
+        "Staff training gaps leading to inadvertent compliance violations",
+        "Balancing customer experience with rigorous due diligence requirements"
+      ]
+    },
+    solution: {
+      title: "Building Robust Compliance Frameworks",
+      description: "We help DNFBPs establish comprehensive AML/CFT programs, streamline reporting processes, and build a culture of compliance awareness.",
+      bulletPoints: [
+        "Regulatory-ready AML/CFT policies and procedures",
+        "Streamlined KYC processes balancing compliance and customer experience",
+        "Accurate and timely GoAML reporting with reduced errors",
+        "Effective risk profiling for customers and transactions",
+        "Well-trained staff confident in compliance responsibilities"
+      ]
+    },
     services: [
       {
         id: "aml-cft",
         name: "AML & CFT Policy Development",
-        shortDescription: "Optimize supply chain for efficiency and resilience.",
+        shortDescription: "Build strong compliance frameworks.",
         description: "We help DNFBPs develop strong AML and CFT policies that support regulatory compliance, risk mitigation, and responsible business operations.",
         detailedDescription: "Our approach focuses on building structured compliance frameworks, improving internal controls, and aligning operational practices with evolving regulatory expectations.",
         keyFeatures: [
@@ -525,7 +664,7 @@ const IndustryExpertisePage = () => {
       {
         id: "kyc",
         name: "KYC (Know Your Customer) Process Design",
-        shortDescription: "Improve productivity using lean methodologies.",
+        shortDescription: "Streamline customer verification and due diligence.",
         description: "We help DNFBPs build structured KYC processes that improve customer verification, strengthen compliance controls, and reduce operational risks.",
         detailedDescription: "Our strategies focus on customer due diligence, onboarding workflows, identity verification standards, and compliance monitoring for secure and efficient operations.",
         keyFeatures: [
@@ -541,7 +680,7 @@ const IndustryExpertisePage = () => {
       {
         id: "goaml",
         name: "GoAML Registration & Reporting Support",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Simplify regulatory reporting processes.",
         description: "We help organizations streamline GoAML registration, reporting procedures, and compliance reporting processes to meet regulatory obligations efficiently.",
         detailedDescription: "Our support includes reporting structure guidance, documentation alignment, operational readiness, and process management for accurate and timely regulatory submissions.",
         keyFeatures: [
@@ -557,7 +696,7 @@ const IndustryExpertisePage = () => {
        {
         id: "risk-profiling",
         name: "Risk Profiling",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Identify and manage operational risks.",
         description: "We help DNFBPs identify, assess, and manage operational and compliance risks through structured risk profiling frameworks and strategic monitoring processes.",
         detailedDescription: "Our approach focuses on evaluating customer, transaction, and business risks to strengthen decision-making, improve compliance readiness, and minimize exposure.",
         keyFeatures: [
@@ -573,7 +712,7 @@ const IndustryExpertisePage = () => {
       {
         id: "training",
         name: "Training",
-        shortDescription: "Optimize inventory levels and warehouse efficiency.",
+        shortDescription: "Build compliance awareness and capabilities.",
         description: "We provide compliance-focused training programs that help teams understand regulatory responsibilities, strengthen internal practices, and improve operational awareness.",
         detailedDescription: "Our training sessions are designed to build practical knowledge around AML, CFT, KYC, reporting obligations, and compliance best practices for day-to-day operations.",
         keyFeatures: [
@@ -664,15 +803,6 @@ const IndustryExpertisePage = () => {
               
               <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
 Empowering businesses with industry-specific strategies, operational excellence, and scalable solutions tailored for sustainable growth in competitive markets.             </p>
-              
-              {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
-                <div className="flex flex-col items-center gap-2">
-                  <span className="text-white/15 text-[10px] tracking-[0.2em] uppercase">Scroll</span>
-                  <div className="w-6 h-10 border border-white/10 rounded-full flex justify-center">
-                    <div className="w-0.5 h-2 bg-white/20 rounded-full mt-2 animate-[scroll_2s_ease-in-out_infinite]"></div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </section>
@@ -721,7 +851,7 @@ Empowering businesses with industry-specific strategies, operational excellence,
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-6"></div>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-24">
             {industryData.map((industry, index) => (
   <div key={industry.id} id={industry.id} className="mb-20">
 
@@ -735,23 +865,99 @@ Empowering businesses with industry-specific strategies, operational excellence,
       </p>
     </div>
 
+    {/* ===== STEP 1: PROBLEM SECTION ===== */}
+    {industry.problem && (
+      <div className="mb-16 bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-6 md:p-8 border border-red-100 shadow-sm">
+        <div className="flex flex-col md:flex-row gap-6 items-start">
+          <div className="flex-shrink-0">
+            <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center">
+              <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-xs font-semibold text-red-600 tracking-wider uppercase">The Challenge</span>
+              <div className="w-8 h-px bg-red-200"></div>
+            </div>
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-3">{industry.problem.title}</h3>
+            <p className="text-gray-600 mb-4 leading-relaxed">{industry.problem.description}</p>
+            <div className="grid md:grid-cols-2 gap-3">
+              {industry.problem.bulletPoints.map((point, idx) => (
+                <div key={idx} className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm text-gray-500">{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* ===== STEP 2: SOLUTION SECTION ===== */}
+    {industry.solution && (
+      <div className="mb-16 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm">
+        <div className="flex flex-col md:flex-row gap-6 items-start">
+          <div className="flex-shrink-0">
+            <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center">
+              <svg className="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-xs font-semibold text-green-600 tracking-wider uppercase">Our Solution</span>
+              <div className="w-8 h-px bg-green-200"></div>
+            </div>
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-3">{industry.solution.title}</h3>
+            <p className="text-gray-600 mb-4 leading-relaxed">{industry.solution.description}</p>
+            <div className="grid md:grid-cols-2 gap-3">
+              {industry.solution.bulletPoints.map((point, idx) => (
+                <div key={idx} className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-500">{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* ===== STEP 3: DIVIDER / TRANSITION ===== */}
+    <div className="relative mb-12">
+      <div className="absolute inset-0 flex items-center">
+        <div className="w-full border-t border-gray-200"></div>
+      </div>
+      <div className="relative flex justify-center">
+        <span className="bg-white px-4 text-sm text-gray-400">How We Help</span>
+      </div>
+    </div>
+
     {/* SERVICES INSIDE INDUSTRY */}
-    <div className="space-y-16">
+    <div className="space-y-20">
       {industry.services.map((service, i) => (
         <div
           key={service.id}
           id={service.id}
-          className="grid lg:grid-cols-2 gap-16 items-center"
+          className="grid lg:grid-cols-2 gap-12 items-start"
         >
 
           {/* LEFT CONTENT */}
-          <div>
+          <div className="order-2 lg:order-1">
             <div className="flex items-center gap-4 mb-4">
-              <span className="text-sm text-gray-400">
+              <span className="text-sm text-gray-400 font-mono">
                 {(i + 1).toString().padStart(2, "0")}
               </span>
               <div className="w-10 h-px bg-gray-300"></div>
-              <span className="text-xs uppercase text-gray-400">
+              <span className="text-xs uppercase text-gray-400 tracking-wider">
                 Service
               </span>
             </div>
@@ -760,32 +966,37 @@ Empowering businesses with industry-specific strategies, operational excellence,
               {service.name}
             </h3>
 
-            <p className="text-gray-500 mb-4 text-justify">
+            <p className="text-gray-500 mb-4 text-justify leading-relaxed">
               {service.description}
             </p>
 
-            <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6 text-justify">
-              {service.detailedDescription}
-            </p>
+            <div className="bg-gray-50 p-4 rounded-lg mb-6 border-l-4 border-[#2c154f]">
+              <p className="text-sm text-gray-600 italic">
+                {service.detailedDescription}
+              </p>
+            </div>
 
             {/* FEATURES */}
-            <div className="grid md:grid-cols-2 gap-3">
-              {service.keyFeatures.map((feature, idx) => (
-                <div key={idx} className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-[#2c154f] rounded-full"></div>
-                  <span className="text-sm text-gray-500">{feature}</span>
-                </div>
-              ))}
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">Key Capabilities</h4>
+              <div className="grid md:grid-cols-2 gap-3">
+                {service.keyFeatures.map((feature, idx) => (
+                  <div key={idx} className="flex items-center gap-2 group">
+                    <div className="w-1.5 h-1.5 bg-[#2c154f] rounded-full group-hover:scale-150 transition-transform"></div>
+                    <span className="text-sm text-gray-500 group-hover:text-gray-700 transition-colors">{feature}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* RIGHT IMAGE (PER SERVICE ✅) */}
-          <div>
-            <div className="overflow-hidden rounded-2xl shadow-lg">
+          {/* RIGHT IMAGE */}
+          <div className="order-1 lg:order-2">
+            <div className="overflow-hidden rounded-2xl shadow-lg group">
               <img
                 src={service.image}
                 alt={service.name}
-                className="w-full h-[400px] object-cover hover:scale-105 transition duration-700"
+                className="w-full h-[320px] object-cover group-hover:scale-105 transition duration-700"
               />
             </div>
           </div>
@@ -938,29 +1149,6 @@ Empowering businesses with industry-specific strategies, operational excellence,
                 </div>
               ))}
             </div>
-
-            {/* Premium contact card */}
-            {/* <div className="mt-20 text-center">
-              <div className="inline-block">
-                <div className="relative bg-gradient-to-r from-[#2c154f]/5 via-white to-[#2c154f]/5 rounded-2xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
-                  <div className="absolute inset-0 rounded-2xl border border-[#2c154f]/10 pointer-events-none"></div>
-                  <p className="text-gray-500 text-sm font-light mb-5">
-                    Still have questions? We're here to help you find answers.
-                  </p>
-                  <Link 
-                    href="/contact" 
-                    className="group inline-flex items-center gap-3 text-[#2c154f] text-sm font-medium transition-all duration-300"
-                  >
-                    <span className="relative pb-0.5 after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#2c154f] after:scale-x-0 after:origin-right after:transition-transform after:duration-300 group-hover:after:scale-x-100 group-hover:after:origin-left">
-                      Contact Our Audit Experts
-                    </span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div> */}
           </div>
         </section>
 
@@ -970,11 +1158,6 @@ Empowering businesses with industry-specific strategies, operational excellence,
           data-observe="true"
           className="py-12 bg-[#2c154f] relative overflow-hidden"
         >
-          {/* <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          </div> */}
-
           <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <div className="inline-flex items-center gap-3 mb-5">
@@ -984,11 +1167,11 @@ Empowering businesses with industry-specific strategies, operational excellence,
               </div>
               
               <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
-                Ready to <span className="font-bold">Take the Next Step Toward Smarter Business Growth</span>
+                Ready to <span className="font-bold">Take the Next Step</span>
               </h2>
               
               <p className="text-white/50 text-base mb-10 font-light max-w-md mx-auto">
-Partner with experienced advisors who help businesses improve performance, strengthen strategy, and unlock new opportunities for long-term success.
+                Partner with experienced advisors who help businesses improve performance, strengthen strategy, and unlock new opportunities for long-term success.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-5 justify-center">

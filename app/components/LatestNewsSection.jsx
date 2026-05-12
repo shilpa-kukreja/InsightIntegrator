@@ -33,7 +33,7 @@ const LatestNewsSection = () => {
       slug: 'mastering-vat-audits-uae',
       date: 'November 3, 2025',
       excerpt: ' Understand how VAT audits are initiated, what regulators review, and how businesses can strengthen compliance to avoid risks and penalties.',
-      image: '/blog/blog-image1.png',
+      image: '/home/VATAuditsintheUAEKeyTriggersandWhattoExpect.jpg',
       category: 'Tax & Compliance',
       link: '#'
     },
@@ -43,7 +43,7 @@ const LatestNewsSection = () => {
       slug: 'supply-chain-risk-management',
       date: 'November 3, 2025',
       excerpt: ' Explore how businesses can identify risks, improve operational efficiency, and build more resilient supply chains in an evolving global landscape.',
-      image: '/blog/blog-image2.png',
+      image: '/home/SupplyChainRiskManagementImprovingResilience.jpg',
       category: 'Advisory',
       link: '#'
     },
@@ -53,7 +53,7 @@ const LatestNewsSection = () => {
       slug: 'uae-e-invoicing-2026',
       date: 'November 3, 2025',
       excerpt: ' Learn what upcoming e-invoicing requirements mean for your business and how to prepare systems and processes for a smooth transition.',
-      image: '/blog/blog-image3.png',
+      image: '/home/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg',
       category: 'Digital Transformation',
       link: '#'
     }

@@ -680,7 +680,7 @@ const AboutPage = () => {
                   <div className="relative overflow-hidden shadow-2xl rounded-lg">
                     <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent"></div>
                     <img
-                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                      src="/aboutus/YourObjectivesOurExpertise.jpg"
                       alt="Insight Integrators Team"
                       className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                     />
@@ -871,7 +871,7 @@ const AboutPage = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent"></div>
                   <img
-                    src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                    src="/aboutus/BuiltonTrust.jpg"
                     alt="Leadership Principles"
                     className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover shadow-2xl rounded-lg"
                   />
