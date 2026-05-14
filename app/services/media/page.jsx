@@ -101,7 +101,7 @@ const MediaPage = () => {
             "Scalable vector design",
             "Rebranding and logo refresh solutions"
           ],
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+          image: "/media/LogoDesign.jpg",
         },
         {
           id: "packaging-design",
@@ -119,7 +119,7 @@ const MediaPage = () => {
             "Minimal and premium design styles",
             "Retail and e-commerce packaging solutions"
           ],
-          image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
+          image: "/media/PackagingDesign.jpg",
         },
         {
           id: "catelogue-brocheers",
@@ -137,7 +137,7 @@ const MediaPage = () => {
             "Brand-aligned visual presentation",
             "Clean and professional content structuring"
           ],
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
+          image: "/media/Catelogue&BrocheersDesign.jpg",
         },
       ],
     },
@@ -164,7 +164,7 @@ const MediaPage = () => {
             "User-friendly shopping experience",
             "Performance and speed optimization"
           ],
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+          image: "/media/EcommerceDevelopment.jpg",
         },
         {
           id: "web-development",
@@ -182,7 +182,7 @@ const MediaPage = () => {
             "API and third-party integrations",
             "Website speed and performance optimization"
           ],
-          image: "https://images.unsplash.com/photo-1581091012184-5c7f1b9d5b6d",
+          image: "/media/WebDevelopment.jpg",
         },
         {
           id: "ui-ux",
@@ -200,7 +200,7 @@ const MediaPage = () => {
             "Interactive user journeys",
             "Conversion-focused design strategy"
           ],
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c",
+          image: "/media/UIUXDesign.jpg",
         },
       ],
     },
@@ -227,7 +227,7 @@ const MediaPage = () => {
             "Google Ads & Meta Ads management",
             "Brand strategy and online positioning"
           ],
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+          image: "/media/DigitalMarketing.jpg",
         },
        
      

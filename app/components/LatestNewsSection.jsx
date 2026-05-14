@@ -43,7 +43,7 @@ const LatestNewsSection = () => {
       slug: 'supply-chain-risk-management',
       date: 'November 3, 2025',
       excerpt: ' Explore how businesses can identify risks, improve operational efficiency, and build more resilient supply chains in an evolving global landscape.',
-      image: '/home/SupplyChainRiskManagementImprovingResilience.jpg',
+      image: '/blog/SupplyChainRiskManagementImprovingResilience.jpg',
       category: 'Advisory',
       link: '#'
     },

@@ -30,43 +30,43 @@ const CommitmentSection = () => {
       id: 1,
       title: 'Multi-Domain Expertise',
       description: 'We combine multiple advisory disciplines into a unified approach, ensuring your business receives complete, well-aligned solutions without gaps or overlaps.',
-      icon:<img src="/icon/icon4.png" alt="Multi-Vertical Expertise" className="w-8 h-8" />,
-      gradient: 'from-indigo-500 to-purple-500'
+      icon:<img src="/iconlogo/Multi-DomainExprtise.png" alt="Multi-Vertical Expertise" className="w-8 h-8 text-white" />,
+      gradient: 'from-blue-900 to-blue-900'
     },
     {
       id: 2,
       title: 'Dedicated Engagement Lead',
       description: 'Every engagement is managed by a single senior professional, giving you clear communication, faster decisions, and full accountability at every stage.',
-      icon: <img src="/icon/icon5.png" alt="Single Point of Contact" className="w-8 h-8" />,
-      gradient: 'from-cyan-500 to-blue-500'
+      icon: <img src="/iconlogo/DedicatedEngagementLead.png" alt="Single Point of Contact" className="w-8 h-8" />,
+      gradient: 'from-blue-900 to-blue-900'
     },
     {
       id: 3,
       title: 'Governance-Led Delivery',
       description: 'Our work follows defined frameworks and structured methodologies, ensuring transparency, consistency, and outcomes that stand up to regulatory expectations.',
-      icon: <img src="/icon/icon1.png" alt="Enterprise-Grade Governance" className="w-8 h-8" />,
-      gradient: 'from-emerald-500 to-teal-500'
+      icon: <img src="/iconlogo/Governance-LedDelivery.png" alt="Enterprise-Grade Governance" className="w-8 h-8" />,
+      gradient: 'from-blue-900 to-blue-900'
     },
     {
       id: 4,
       title: 'Partnership Approach',
       description: 'We focus on long-term relationships, working closely with your team to support stability, compliance, and sustainable business growth.',
-      icon: <img src="/icon/icon6.png" alt="Relationship-Driven Approach" className="w-8 h-8" />,
-      gradient: 'from-rose-500 to-pink-500'
+      icon: <img src="/iconlogo/PartnershipApproach.png" alt="Relationship-Driven Approach" className="w-8 h-8" />,
+      gradient: 'from-blue-900 to-blue-900'
     },
     {
       id: 5,
       title: 'Structured Execution',
       description: 'With clearly defined scope, timelines, and reporting, we ensure smooth execution, minimal disruption, and predictable outcomes.',
-      icon: <img src="/icon/icon3.png" alt="Structured & Timely Delivery" className="w-8 h-8" />,
-      gradient: 'from-amber-500 to-orange-500'
+      icon: <img src="/iconlogo/StructuredExecution.png" alt="Structured & Timely Delivery" className="w-8 h-8" />,
+      gradient: 'from-blue-900 to-blue-900'
     },
     {
       id: 6,
       title: 'Scalable for Growth',
       description: 'Our solutions are designed to evolve with your business, supporting both growing companies and established organizations with equal effectiveness.',
-      icon: <img src="/icon/icon2.png" alt="Built for Growing Businesses" className="w-8 h-8" />,
-      gradient: 'from-violet-500 to-purple-500'
+      icon: <img src="/iconlogo/growth.png" alt="Built for Growing Businesses" className="w-8 h-8" />,
+      gradient: 'from-blue-900 to-blue-900'
     }
   ];
 
