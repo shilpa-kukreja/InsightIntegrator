@@ -413,17 +413,17 @@ const ContactPage = () => {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-3">UAE Office</h3>
                       <div className="space-y-2">
-                        <p className="text-gray-500 text-sm leading-relaxed font-light">
+                        <p className="text-gray-600 text-[12px] leading-relaxed font-light">
                           Meydan Grandstand, Nad Al Sheba
                           <br />
                           Dubai, United Arab Emirates
                         </p>
-                        <p className="text-gray-500 text-sm font-light">
+                        <p className="text-gray-600 text-[12px] font-light">
                           <a href="mailto:info@insightintegrators.ae" className="hover:text-[#0a0a0a] transition-colors duration-300">
                             info@insightintegrators.ae
                           </a>
                         </p>
-                        <p className="text-gray-500 text-sm font-light">
+                        <p className="text-gray-600 text-[12px] font-light">
                           <a href="tel:+971508896810" className="hover:text-[#0a0a0a] transition-colors duration-300">
                             +971526806400
                           </a>
@@ -441,7 +441,7 @@ const ContactPage = () => {
                   <h3 className="text-sm font-light text-gray-500 uppercase tracking-wide mb-5">Business Hours</h3>
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span className="text-gray-400 font-light">Monday - Thursday</span>
+                      <span className="text-gray-400 font-light">Monday - Friday</span>
                       <span className="text-gray-500 font-light">9:00 AM - 6:00 PM</span>
                     </div>
                     {/* <div className="flex justify-between text-sm">
