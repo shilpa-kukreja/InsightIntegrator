@@ -17,7 +17,8 @@ const ContactPage = () => {
     phone: '',
     company: '',
     industry: '',
-    message: ''
+    message: '',
+    file: null
   });
   const pageRef = useRef(null);
 
@@ -65,49 +66,61 @@ const ContactPage = () => {
 
 
   // Update this function in your contact page
-// In your /app/contact/page.jsx, update the handleSubmit:
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-  setSubmitStatus(null);
+  // In your /app/contact/page.jsx, update the handleSubmit:
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ...formData,
-        source: 'contact-page' 
-      }),
-    });
+    setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    const data = await response.json();
+    try {
+      const submitData = new FormData();
 
-    if (response.ok) {
-      setSubmitStatus('success');
-      setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        company: '',
-        industry: '',
-        message: ''
+      submitData.append('fullName', formData.fullName);
+      submitData.append('email', formData.email);
+      submitData.append('phone', formData.phone);
+      submitData.append('company', formData.company);
+      submitData.append('industry', formData.industry);
+      submitData.append('message', formData.message);
+      submitData.append('source', 'contact-page');
+
+      // Optional File
+      if (formData.file) {
+        submitData.append('file', formData.file);
+      }
+
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        body: submitData,
       });
-      setTimeout(() => setSubmitStatus(null), 5000);
-    } else {
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          company: '',
+          industry: '',
+          message: '',
+          file: null
+        });
+
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        setSubmitStatus('error');
+        console.error(data.error);
+      }
+    } catch (error) {
+      console.error(error);
       setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus(null), 5000);
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    console.error('Error submitting form:', error);
-    setSubmitStatus('error');
-    setTimeout(() => setSubmitStatus(null), 5000);
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
 
   const industries = [
     'Select Industry',
@@ -189,7 +202,7 @@ const handleSubmit = async (e) => {
                   {/* Name & Email */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="relative">
-                      <label htmlFor="fullName" className={`block text-[10px] font-light text-gray-500 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'fullName' ? 'text-[#0a0a0a]' : ''}`}>
+                      <label htmlFor="fullName" className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'fullName' ? 'text-[#0a0a0a]' : ''}`}>
                         Full Name
                       </label>
                       <input
@@ -206,7 +219,7 @@ const handleSubmit = async (e) => {
                       />
                     </div>
                     <div className="relative">
-                      <label htmlFor="email" className={`block text-[10px] font-light text-gray-500 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'email' ? 'text-[#0a0a0a]' : ''}`}>
+                      <label htmlFor="email" className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'email' ? 'text-[#0a0a0a]' : ''}`}>
                         Email Address
                       </label>
                       <input
@@ -227,7 +240,7 @@ const handleSubmit = async (e) => {
                   {/* Phone & Company */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="relative">
-                      <label htmlFor="phone" className={`block text-[10px] font-light text-gray-500 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'phone' ? 'text-[#0a0a0a]' : ''}`}>
+                      <label htmlFor="phone" className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'phone' ? 'text-[#0a0a0a]' : ''}`}>
                         Phone Number
                       </label>
                       <input
@@ -244,7 +257,7 @@ const handleSubmit = async (e) => {
                       />
                     </div>
                     <div className="relative">
-                      <label htmlFor="company" className={`block text-[10px] font-light text-gray-500 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'company' ? 'text-[#0a0a0a]' : ''}`}>
+                      <label htmlFor="company" className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'company' ? 'text-[#0a0a0a]' : ''}`}>
                         Company Name
                       </label>
                       <input
@@ -263,7 +276,7 @@ const handleSubmit = async (e) => {
 
                   {/* Industry */}
                   <div className="relative">
-                    <label htmlFor="industry" className={`block text-[10px] font-light text-gray-500 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'industry' ? 'text-[#0a0a0a]' : ''}`}>
+                    <label htmlFor="industry" className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'industry' ? 'text-[#0a0a0a]' : ''}`}>
                       Industry
                     </label>
                     <select
@@ -290,7 +303,7 @@ const handleSubmit = async (e) => {
 
                   {/* Message */}
                   <div className="relative">
-                    <label htmlFor="message" className={`block text-[10px] font-light text-gray-500 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'message' ? 'text-[#0a0a0a]' : ''}`}>
+                    <label htmlFor="message" className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${focusedField === 'message' ? 'text-[#0a0a0a]' : ''}`}>
                       Your Message
                     </label>
                     <textarea
@@ -301,10 +314,33 @@ const handleSubmit = async (e) => {
                       onFocus={() => setFocusedField('message')}
                       onBlur={() => setFocusedField(null)}
                       rows="4"
-                      required
+
                       className="w-full px-0 py-3 bg-transparent border-b border-gray-400 focus:border-[#0a0a0a] focus:outline-none transition-all duration-300 text-gray-800 text-base font-light placeholder:text-gray-300 resize-none"
                       placeholder="Please describe your inquiry or project requirements in detail..."
                     ></textarea>
+                  </div>
+
+                  {/* File Upload */}
+                  <div className="relative">
+                    <label
+                      htmlFor="file"
+                      className="block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2"
+                    >
+                      Upload Rfc (Optional)
+                    </label>
+
+                    <input
+                      type="file"
+                      id="file"
+                      name="file"
+                      onChange={(e) =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          file: e.target.files[0]
+                        }))
+                      }
+                      className="w-full py-3 text-sm text-gray-600 border-b border-gray-400 focus:outline-none"
+                    />
                   </div>
 
                   {/* Submit Button */}
@@ -408,10 +444,10 @@ const handleSubmit = async (e) => {
                       <span className="text-gray-400 font-light">Monday - Thursday</span>
                       <span className="text-gray-500 font-light">9:00 AM - 6:00 PM</span>
                     </div>
-                    <div className="flex justify-between text-sm">
+                    {/* <div className="flex justify-between text-sm">
                       <span className="text-gray-400 font-light">Friday</span>
                       <span className="text-gray-500 font-light">9:00 AM - 1:00 PM</span>
-                    </div>
+                    </div> */}
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-400 font-light">Saturday - Sunday</span>
                       <span className="text-gray-500 font-light">Closed</span>

@@ -3,7 +3,7 @@
 
 // export async function POST(request) {
 //   console.log('API route called'); // Debug log
-  
+
 //   try {
 //     const { fullName, email, phone, company, industry, message } = await request.json();
 //     console.log('Form data received:', { fullName, email, phone }); // Debug log
@@ -156,7 +156,7 @@
 //     console.log('Sending admin email...');
 //     await transporter.sendMail(adminMailOptions);
 //     console.log('Admin email sent successfully');
-    
+
 //     console.log('Sending user auto-reply...');
 //     await transporter.sendMail(userMailOptions);
 //     console.log('User auto-reply sent successfully');
@@ -172,7 +172,7 @@
 //       command: error.command,
 //       response: error.response
 //     });
-    
+
 //     return new Response(
 //       JSON.stringify({ 
 //         error: 'Failed to send email. Please try again later.',
@@ -189,7 +189,7 @@
 
 // export async function POST(request) {
 //   console.log('API route called');
-  
+
 //   try {
 //     const body = await request.json();
 //     const { 
@@ -202,7 +202,7 @@
 //       designation,
 //       source = 'contact-page' // 'contact-page' or 'consult-popup'
 //     } = body;
-    
+
 //     console.log('Form data received:', { fullName, email, phone, source });
 
 //     // Validate required fields
@@ -417,7 +417,7 @@
 //     console.log('Sending admin email...');
 //     await transporter.sendMail(adminMailOptions);
 //     console.log('Admin email sent successfully');
-    
+
 //     console.log('Sending user auto-reply...');
 //     await transporter.sendMail(userMailOptions);
 //     console.log('User auto-reply sent successfully');
@@ -433,7 +433,7 @@
 //       command: error.command,
 //       response: error.response
 //     });
-    
+
 //     return new Response(
 //       JSON.stringify({ 
 //         error: 'Failed to send email. Please try again later.',
@@ -464,11 +464,11 @@ import path from 'path';
 
 export async function POST(request) {
   console.log('API route called');
-  
+
   try {
     const formData = await request.formData();
     const source = formData.get('source') || 'contact-page';
-    
+
     console.log('Form source:', source);
 
     // Check if environment variables are set
@@ -522,13 +522,13 @@ export async function POST(request) {
         const bytes = await resume.arrayBuffer();
         const buffer = Buffer.from(bytes);
         resumeBuffer = buffer;
-        
+
         // Create filename with timestamp
         const timestamp = Date.now();
         const originalName = resume.name;
         const extension = path.extname(originalName);
         resumeFilename = `${timestamp}_${name.replace(/\s/g, '_')}${extension}`;
-        
+
         // Save file temporarily (optional - for local storage)
         try {
           const uploadDir = path.join(process.cwd(), 'public', 'uploads', 'resumes');
@@ -672,7 +672,7 @@ export async function POST(request) {
       console.log('Sending admin email with application...');
       await transporter.sendMail(adminMailOptions);
       console.log('Admin email sent successfully');
-      
+
       console.log('Sending auto-reply to applicant...');
       await transporter.sendMail(userMailOptions);
       console.log('Auto-reply sent successfully');
@@ -684,21 +684,19 @@ export async function POST(request) {
     }
 
     // Handle Contact Page and Consultation Popup (existing code)
-    const body = await request.json();
-    const { 
-      fullName, 
-      email, 
-      phone, 
-      company, 
-      industry, 
-      message,
-      designation
-    } = body;
-    
+    const fullName = formData.get('fullName');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const company = formData.get('company');
+    const industry = formData.get('industry');
+    const message = formData.get('message');
+    const designation = formData.get('designation');
+    const file = formData.get('file');
+
     console.log('Form data received:', { fullName, email, phone, source });
 
     // Validate required fields
-    if (!fullName || !email || !phone || !message) {
+    if (!fullName || !email || !phone ) {
       return new Response(
         JSON.stringify({ error: 'Please fill in all required fields' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
@@ -706,7 +704,7 @@ export async function POST(request) {
     }
 
     // Determine email subject based on source
-    const emailSubject = source === 'consult-popup' 
+    const emailSubject = source === 'consult-popup'
       ? `New Consultation Request from ${fullName}`
       : `New Contact Form Submission from ${fullName}`;
 
@@ -760,6 +758,19 @@ export async function POST(request) {
       </div>
     `;
 
+    let attachments = [];
+
+    if (file && file.size > 0) {
+      const bytes = await file.arrayBuffer();
+      const buffer = Buffer.from(bytes);
+
+      attachments.push({
+        filename: file.name,
+        content: buffer,
+        contentType: file.type,
+      });
+    }
+
     // Email content for admin
     const adminMailOptions = {
       from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
@@ -806,6 +817,7 @@ export async function POST(request) {
         </body>
         </html>
       `,
+      attachments,
     };
 
     // Auto-reply to user
@@ -826,7 +838,7 @@ export async function POST(request) {
     const userMailOptions = {
       from: `"Insight Integrators" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: source === 'consult-popup' 
+      subject: source === 'consult-popup'
         ? 'Consultation Request Received - Insight Integrators'
         : 'Thank you for contacting Insight Integrators',
       html: `
@@ -877,7 +889,7 @@ export async function POST(request) {
     console.log('Sending admin email...');
     await transporter.sendMail(adminMailOptions);
     console.log('Admin email sent successfully');
-    
+
     console.log('Sending user auto-reply...');
     await transporter.sendMail(userMailOptions);
     console.log('User auto-reply sent successfully');
@@ -893,11 +905,11 @@ export async function POST(request) {
       command: error.command,
       response: error.response
     });
-    
+
     return new Response(
-      JSON.stringify({ 
+      JSON.stringify({
         error: 'Failed to send email. Please try again later.',
-        details: error.message 
+        details: error.message
       }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
