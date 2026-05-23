@@ -351,14 +351,14 @@ const BlogsPage = () => {
                               {blog.readTime}
                             </span>
                           </div>
-                          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 group-hover:text-[#0a0a0a] transition-colors line-clamp-2">
+                          <h3 className="text-xl  md:text-2xl font-semibold text-gray-900 mb-4 group-hover:text-[#0a0a0a] transition-colors line-clamp-2">
                             {blog.title}
                           </h3>
-                          <p className="text-gray-500 mb-6 line-clamp-3 font-light">
+                          <p className="text-gray-500 line-clamp-2 mb-6  font-light">
                             {blog.excerpt}
                           </p>
                           <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-3">
+                            {/* <div className="flex items-center gap-3">
                               <div className="w-10 h-10 rounded-full bg-[#0a0a0a] flex items-center justify-center text-white font-medium text-sm shadow-sm">
                                 {blog.author.name.charAt(0)}
                               </div>
@@ -366,7 +366,7 @@ const BlogsPage = () => {
                                 <p className="text-sm font-medium text-gray-900">{blog.author.name}</p>
                                 <p className="text-xs text-gray-400">{blog.author.role}</p>
                               </div>
-                            </div>
+                            </div> */}
                             <span className="text-[#0a0a0a] font-medium text-sm group-hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-1">
                               Read More
                               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -448,7 +448,7 @@ const BlogsPage = () => {
                           </div>
                           <div className="px-6 pb-6 pt-3">
                             <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2">
+                              {/* <div className="flex items-center gap-2">
                                 <div className="w-8 h-8 rounded-full bg-[#0a0a0a] flex items-center justify-center text-white text-xs font-medium shadow-sm">
                                   {blog.author.name.charAt(0)}
                                 </div>
@@ -456,7 +456,7 @@ const BlogsPage = () => {
                                   <p className="text-xs font-medium text-gray-900">{blog.author.name}</p>
                                   <p className="text-xs text-gray-400">{blog.author.role}</p>
                                 </div>
-                              </div>
+                              </div> */}
                               <span className="text-[#0a0a0a] font-medium text-xs group-hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-1">
                                 Read
                                 <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

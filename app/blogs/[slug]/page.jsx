@@ -742,7 +742,7 @@ const BlogDetailPage = () => {
                 className={`sticky top-24 transition-all duration-800 delay-200 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               >
                 {/* Author Card */}
-                <div className="border border-gray-100 p-6 bg-white shadow-sm text-center">
+                {/* <div className="border border-gray-100 p-6 bg-white shadow-sm text-center">
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#2c154f] to-gray-700 flex items-center justify-center text-white text-2xl font-light">
                     {blog.author.name.charAt(0)}
                   </div>
@@ -799,7 +799,7 @@ const BlogDetailPage = () => {
                       </svg>
                     </a>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Newsletter Signup */}
                 {/* Newsletter Signup */}
