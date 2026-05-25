@@ -337,14 +337,15 @@ const CareersPage = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
                   Who We Are
                 </h2>
-                <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
-                  Insight Integrators Management Consultancies LLC-FZ is an advisory firm focused on delivering structured solutions across audit, risk, compliance, and business advisory. Our approach is grounded in clarity, discipline, and a strong understanding of regulatory requirements.
+                <p className="text-gray-500 text-base md:text-lg text-justify leading-relaxed mb-4 md:mb-6">
+                  Join Our Team at Insight Integrators
+At Insight Integrators, we believe our people are our greatest asset. We are passionate about building a culture where integrity, innovation, and collaboration drive everything we do. If you are seeking a rewarding career where your skills can make a real impact, we want to hear from you.
 
                 </p>
-                <p className="text-gray-500 text-base md:text-lg leading-relaxed">
+                {/* <p className="text-gray-500 text-base md:text-lg leading-relaxed">
                   We work with organizations to address complex challenges, strengthen internal processes, and support informed decision-making through practical and reliable advisory.
 
-                </p>
+                </p> */}
               </div>
 
               <div className={`relative transition-all duration-700 delay-200 transform ${visibleSections.about ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}>
@@ -369,10 +370,10 @@ const CareersPage = () => {
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="text-center mb-8 md:mb-10">
-              <div className="inline-flex items-center gap-2 mb-3 md:mb-4">
+              {/* <div className="inline-flex items-center gap-2 mb-3 md:mb-4">
                 <div className="h-px w-5 md:w-6 bg-[#0a0a0a]"></div>
                 <span className="text-[#0a0a0a] text-xs md:text-sm font-semibold uppercase tracking-wider">Our Foundation</span>
-              </div>
+              </div> */}
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4 tracking-tight">
                 Why Work With Us
               </h2>
@@ -502,7 +503,7 @@ const CareersPage = () => {
         </section> */}
 
         {/* Open Positions Section */}
-        <section
+        {/* <section
           id="openings"
           data-observe="true"
           className="py-12 md:py-16 bg-white"
@@ -521,7 +522,7 @@ const CareersPage = () => {
               </p>
             </div>
 
-            {/* Department Filters */}
+          
             <div className={`flex flex-wrap justify-center gap-2 mb-8 md:mb-12 transition-all duration-700 transform ${visibleSections.openings ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               {departments.map((dept) => (
                 <button
@@ -538,7 +539,7 @@ const CareersPage = () => {
               ))}
             </div>
 
-            {/* Job Listings */}
+          
             <div className="grid md:grid-cols-2 gap-4 md:gap-6">
               {filteredPositions.map((position, index) => (
                 <div
@@ -604,7 +605,39 @@ const CareersPage = () => {
               </div>
             )}
           </div>
-        </section>
+        </section> */}
+
+        {/* How to Apply Section */}
+<section className="py-12 md:py-16 bg-white">
+  <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
+    
+    <div className="text-center mb-8">
+      {/* <div className="inline-flex items-center gap-2 mb-3">
+        <div className="h-px w-6 bg-[#2c154f]"></div>
+        <span className="text-[#2c154f] text-sm font-semibold uppercase tracking-wider">
+          Careers
+        </span>
+      </div> */}
+
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        How to Apply
+      </h2>
+
+      <p className="text-gray-500 text-base md:text-lg leading-relaxed">
+        Please send your CV to{" "}
+        <a
+          href="mailto:jobs@insightintegrators.ae"
+          className="text-[#2c154f] font-medium hover:underline"
+        >
+          jobs@insightintegrators.ae
+        </a>
+        , or use the application form below to upload. Our recruitment team
+        will review your application and get back.
+      </p>
+    </div>
+
+  </div>
+</section>
 
         {/* Application Form Section */}
         <section
