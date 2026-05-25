@@ -128,28 +128,28 @@ const CareersPage = () => {
 
   const values = [
     {
-      title: 'Professional Approach',
-      description: 'We value responsibility, clarity, and consistency in how work is delivered and managed.',
+      title: 'Integrity and Transparency',
+      description: 'Promote honesty, ethical behavior, and openness in all business dealings. Trust is the cornerstone of client relationships and internal teamwork.',
     },
     {
-      title: 'Learning & Exposure',
-      description: 'Gain practical experience across advisory areas while working on real business challenges.'
+      title: 'Client-Centric Excellence',
+      description: 'Commit to delivering exceptional value and service to clients. Understand their needs deeply and tailor solutions that exceed expectations consistently.'
     },
     {
-      title: 'Structured Work Environment',
-      description: 'Defined processes and clear expectations support efficient and consistent execution.'
+      title: 'Continuous Learning and Innovation',
+      description: 'Encourage ongoing professional development, knowledge sharing, and embracing new ideas. Foster a culture where innovation drives growth and improvement.'
     },
     {
-      title: 'Ownership Mindset',
-      description: 'Encouraged to take responsibility, contribute ideas, and develop a strong professional approach.'
+      title: 'Collaboration and Teamwork',
+      description: 'Build an environment where teamwork thrives through mutual respect, open communication, and support. Celebrate diverse perspectives to achieve common goals.'
     },
     {
-      title: 'Collaborative Culture',
-      description: 'Work in an environment that supports communication, coordination, and shared outcomes.'
+      title: 'Accountability and Responsibility',
+      description: 'Empower employees to take ownership of their work and decisions. Recognize and reward those who demonstrate reliability and a proactive approach.'
     },
     {
-      title: 'Quality Focus',
-      description: 'A consistent focus on accuracy, discipline, and high standards in every engagement.'
+      title: 'Respect and Inclusion',
+      description: 'Create a workplace that values diversity and inclusion. Ensure every team member feels respected, valued, and has equal opportunities to contribute and succeed.'
     }
   ];
 
@@ -306,7 +306,7 @@ const CareersPage = () => {
 
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 px-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 px-4">
                 <button className="group px-6 sm:px-8 py-3 bg-white text-[#0a0a0a] font-semibold hover:bg-gray-100 transition-all duration-300 rounded-lg">
                   View Opportunities
                   <svg className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -316,7 +316,7 @@ const CareersPage = () => {
                 <button className="px-6 sm:px-8 py-3 border border-white/20 text-white font-semibold hover:bg-white/5 transition-all duration-300 rounded-lg">
                   Learn More
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -404,7 +404,7 @@ const CareersPage = () => {
         </section>
 
         {/* Our Expertise Section */}
-        <section
+        {/* <section
           id="expertise"
           data-observe="true"
           className="py-12 md:py-16 bg-white"
@@ -447,10 +447,10 @@ const CareersPage = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* How to Apply Section */}
-        <section
+        {/* <section
           id="howToApply"
           data-observe="true"
           className="py-12 md:py-16 bg-gray-200"
@@ -499,7 +499,7 @@ const CareersPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Open Positions Section */}
         <section
@@ -683,7 +683,7 @@ const CareersPage = () => {
                     </div>
                     <div>
                       <label htmlFor="position" className="block text-sm font-medium text-gray-700 mb-2">
-                        Position Interested In
+                        Service Interested In
                       </label>
                       <select
                         id="position"

@@ -222,25 +222,25 @@ const BlogsPage = () => {
 
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className={`text-center transition-all duration-1000 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}>
-              <div className="inline-flex items-center gap-4 mb-4">
+              {/* <div className="inline-flex items-center gap-4 mb-4">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white/50 text-[12px] font-light tracking-[0.3em] uppercase">Our Blog</span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
+              </div> */}
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 tracking-tight">
-                Insights That Keep You <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent"> Ahead of Change</span>
+                Insights That Keep You <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent"> Ahead of Game</span>
               </h1>
 
               <p className="text-white/50 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light">
                 Stay informed with expert perspectives, regulatory developments, and practical insights across compliance, risk, and business strategy.
               </p>
 
-              <div className="flex justify-center gap-2 mt-8">
+              {/* <div className="flex justify-center gap-2 mt-8">
                 <div className="w-16 h-px bg-gradient-to-r from-transparent via-white/40 to-white/20"></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-white/50"></div>
                 <div className="w-16 h-px bg-gradient-to-l from-transparent via-white/40 to-white/20"></div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
