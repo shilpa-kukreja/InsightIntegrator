@@ -330,15 +330,15 @@ const CareersPage = () => {
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className={`transition-all duration-700 delay-100 transform ${visibleSections.about ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}`}>
-                <div className="inline-flex items-center gap-2 mb-4 md:mb-6">
+                {/* <div className="inline-flex items-center gap-2 mb-4 md:mb-6">
                   <div className="h-px w-6 md:w-8 bg-[#0a0a0a]"></div>
                   <span className="text-[#0a0a0a] text-xs md:text-sm font-semibold uppercase tracking-wider">About Us</span>
-                </div>
+                </div> */}
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
-                  Who We Are
+                  Join Our Team
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg text-justify leading-relaxed mb-4 md:mb-6">
-                  Join Our Team at Insight Integrators
+                  
 At Insight Integrators, we believe our people are our greatest asset. We are passionate about building a culture where integrity, innovation, and collaboration drive everything we do. If you are seeking a rewarding career where your skills can make a real impact, we want to hear from you.
 
                 </p>

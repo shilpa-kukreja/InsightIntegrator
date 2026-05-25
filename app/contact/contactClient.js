@@ -326,7 +326,7 @@ const ContactPage = () => {
                       htmlFor="file"
                       className="block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2"
                     >
-                      Upload Rfc (Optional)
+                      Upload Rfp (Optional)
                     </label>
 
                     <input
