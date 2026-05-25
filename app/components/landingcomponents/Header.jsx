@@ -15,6 +15,7 @@ import {
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactPopup from "./ContactPopup";
+import Link from "next/link";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -133,9 +134,9 @@ export default function Header() {
                   <Building2 className="w-6 h-6 text-white" />
                 </div>
               </div> */}
-              <div>
+         <Link href="/" className="flex items-center gap-3"><div>
                 <img src="/landingimages/image/logos.png" alt="CA Firm" className="w-32" />
-              </div>
+              </div></Link>
             </motion.div>
 
             {/* Desktop Navigation */}
