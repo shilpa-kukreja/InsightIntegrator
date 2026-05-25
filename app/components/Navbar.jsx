@@ -1297,11 +1297,22 @@ const Navbar = () => {
                 handleConsultClick();
                 closeMobileMenu();
               }}
-              className="relative w-full py-3 bg-[#4f2d80] text-white cursor-pointer text-center font-semibold text-[#4f2d80] border-2 border-[#4f2d80] rounded-lg overflow-hidden group transition-all duration-300 hover:bg-[#4f2d80] hover:text-white"
+              className="relative w-full py-3 bg-[#4f2d80] text-white cursor-pointer text-center font-semibold  border-2 border-[#4f2d80] rounded-lg overflow-hidden group transition-all duration-300 hover:bg-[#4f2d80] hover:text-white"
             >
               <span className="relative z-10">Consult</span>
               <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
+
+             <Link href="/landing" className=""><button
+                onClick={() => {
+                  
+                  closeMobileMenu();
+                }}
+               className="relative  w-full py-3 text-center cursor-pointer font-semibold text-[#4f2d80] border-2 border-[#4f2d80] rounded-lg overflow-hidden group transition-all duration-300 hover:bg-white hover:text-[#4f2d80]"
+              >
+                <span className="relative z-10">Book Now</span>
+                <span className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              </button></Link>
           </div>
 {/* 
           <div className="mt-4">
