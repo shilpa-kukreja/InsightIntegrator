@@ -9,8 +9,10 @@ import Footer from '../components/Footer';
 
 const CareersPage = () => {
   const [resumeFile, setResumeFile] = useState(null);
+   
   const fileInputRef = useRef(null);
   const [visibleSections, setVisibleSections] = useState({});
+   const [focusedField, setFocusedField] = useState(null);
   const [hoveredCard, setHoveredCard] = useState(null);
   const [selectedDepartment, setSelectedDepartment] = useState('All');
   const [formData, setFormData] = useState({
@@ -18,7 +20,7 @@ const CareersPage = () => {
     email: '',
     phone: '',
     position: '',
-    message: ''
+  
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -221,7 +223,7 @@ const CareersPage = () => {
       formDataToSend.append('email', formData.email);
       formDataToSend.append('phone', formData.phone);
       formDataToSend.append('position', formData.position);
-      formDataToSend.append('message', formData.message);
+      
 
       if (resumeFile) {
         formDataToSend.append('resume', resumeFile);
@@ -241,7 +243,7 @@ const CareersPage = () => {
           email: '',
           phone: '',
           position: '',
-          message: ''
+         
         });
         setResumeFile(null);
         if (fileInputRef.current) {
@@ -338,8 +340,8 @@ const CareersPage = () => {
                   Join Our Team
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg text-justify leading-relaxed mb-4 md:mb-6">
-                  
-At Insight Integrators, we believe our people are our greatest asset. We are passionate about building a culture where integrity, innovation, and collaboration drive everything we do. If you are seeking a rewarding career where your skills can make a real impact, we want to hear from you.
+
+                  At Insight Integrators, we believe our people are our greatest asset. We are passionate about building a culture where integrity, innovation, and collaboration drive everything we do. If you are seeking a rewarding career where your skills can make a real impact, we want to hear from you.
 
                 </p>
                 {/* <p className="text-gray-500 text-base md:text-lg leading-relaxed">
@@ -608,215 +610,389 @@ At Insight Integrators, we believe our people are our greatest asset. We are pas
         </section> */}
 
         {/* How to Apply Section */}
-<section className="py-12 md:py-16 bg-white">
-  <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
-    
-    <div className="text-center mb-8">
-      {/* <div className="inline-flex items-center gap-2 mb-3">
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
+
+            <div className="text-center mb-8">
+              {/* <div className="inline-flex items-center gap-2 mb-3">
         <div className="h-px w-6 bg-[#2c154f]"></div>
         <span className="text-[#2c154f] text-sm font-semibold uppercase tracking-wider">
           Careers
         </span>
       </div> */}
 
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        How to Apply
-      </h2>
-
-      <p className="text-gray-500 text-base md:text-lg leading-relaxed">
-        Please send your CV to{" "}
-        <a
-          href="mailto:jobs@insightintegrators.ae"
-          className="text-[#2c154f] font-medium hover:underline"
-        >
-          jobs@insightintegrators.ae
-        </a>
-        , or use the application form below to upload. Our recruitment team
-        will review your application and get back.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-        {/* Application Form Section */}
-        <section
-          id="form"
-          data-observe="true"
-          className="py-12 md:py-16 bg-[#2c154f]"
-        >
-          <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className="text-center mb-8 md:mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 md:mb-3 tracking-tight">
-                Career Application Form
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                How to Apply
               </h2>
+
+              <p className="text-gray-500 text-base md:text-lg leading-relaxed">
+                Please send your CV to{" "}
+                <a
+                  href="mailto:jobs@insightintegrators.ae"
+                  className="text-[#2c154f] font-medium hover:underline"
+                >
+                  jobs@insightintegrators.ae
+                </a>
+                , or use the application form below to upload. Our recruitment team
+                will review your application and get back.
+              </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-0 bg-white shadow-sm rounded-lg overflow-hidden">
-              {/* Left Side - Image */}
-              <div className="relative h-[300px] sm:h-[500px] lg:min-h-[720px]">
-                <img
-                  src="/career/CareerAplicationForm.jpg"
-                  alt="Submit your application"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#2c154f]/40 to-transparent"></div>
-              </div>
+          </div>
+        </section>
 
-              {/* Right Side - Form */}
-              <div className="p-6 md:p-8 lg:p-10">
-                <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                        Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#2c154f] focus:bg-white focus:outline-none transition-all rounded-lg"
-                        placeholder="John Doe"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#2c154f] focus:bg-white focus:outline-none transition-all rounded-lg"
-                        placeholder="john@example.com"
-                      />
-                    </div>
-                  </div>
+        {/* Application Form Section */}
+        {/* Application Form Section */}
+<section
+  id="form"
+  data-observe="true"
+  className="py-12 md:py-16 bg-[#2c154f]"
+>
+  <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+    <div className="text-center mb-8 md:mb-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 md:mb-3 tracking-tight">
+        Career Application Form
+      </h2>
+    </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#2c154f] focus:bg-white focus:outline-none transition-all rounded-lg"
-                        placeholder="+971 XX XXX XXXX"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="position" className="block text-sm font-medium text-gray-700 mb-2">
-                        Service Interested In
-                      </label>
-                      <select
-                        id="position"
-                        name="position"
-                        value={formData.position}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#2c154f] focus:bg-white focus:outline-none transition-all rounded-lg"
-                      >
-                        <option value="">Select a position</option>
-                        <option value="Senior Accountant">Senior Accountant</option>
-                        <option value="Corporate Services Manager">Corporate Services Manager</option>
-                        <option value="Risk Analyst">Risk Analyst</option>
-                        <option value="Brand Strategist">Brand Strategist</option>
-                        <option value="Research Associate">Research Associate</option>
-                        <option value="Tax Consultant">Tax Consultant</option>
-                        <option value="Speculative Application">Speculative Application</option>
-                      </select>
-                    </div>
-                  </div>
+    <div className="grid lg:grid-cols-2 gap-0 bg-white shadow-sm rounded-lg overflow-hidden">
+      
+      {/* Left Side - Image */}
+      <div className="relative h-[300px] sm:h-[500px] lg:min-h-[720px]">
+        <img
+          src="/career/CareerAplicationForm.jpg"
+          alt="Submit your application"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2c154f]/40 to-transparent"></div>
+      </div>
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Cover Letter / Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows="4"
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#2c154f] focus:bg-white focus:outline-none transition-all resize-none rounded-lg"
-                      placeholder="Tell us why you'd be a great fit for Insight Integrators..."
-                    ></textarea>
-                  </div>
+      {/* Right Side - Form */}
+      <div
+        className={`p-8 md:p-10 lg:p-12 transition-all duration-700 transform ${
+          visibleSections.form
+            ? "translate-x-0 opacity-100"
+            : "-translate-x-12 opacity-0"
+        }`}
+      >
+        <div className="mb-10">
+          <div className="inline-flex items-center gap-3 mb-5">
+            <div className="h-px w-8 bg-[#0a0a0a]/15"></div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Upload CV/Resume *
-                    </label>
-                    <div className="border-2 border-dashed border-gray-200 bg-gray-50 p-4 md:p-6 text-center hover:border-gray-300 transition-all cursor-pointer rounded-lg">
-                      <input
-                        type="file"
-                        id="resume"
-                        name="resume"
-                        ref={fileInputRef}
-                        onChange={handleFileChange}
-                        accept=".pdf,.doc,.docx"
-                        className="hidden"
-                        required
-                      />
-                      <label htmlFor="resume" className="cursor-pointer block">
-                        <svg className="w-8 h-8 md:w-10 md:h-10 mx-auto text-gray-400 mb-2 md:mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                        </svg>
-                        <p className="text-sm text-gray-500 truncate max-w-[200px] mx-auto">{resumeFile ? resumeFile.name : 'Click to upload or drag and drop'}</p>
-                        <p className="text-xs text-gray-400 mt-1">PDF, DOC, DOCX (Max 5MB)</p>
-                      </label>
-                    </div>
-                  </div>
+            <span className="text-[#0a0a0a] text-[11px] font-light tracking-[0.2em] uppercase">
+              Career Opportunities
+            </span>
+          </div>
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full py-3 bg-[#2c154f] text-white font-medium hover:bg-[#2c154f]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded-lg"
-                  >
-                    {isSubmitting ? 'Submitting Application...' : 'Submit Application'}
-                  </button>
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 leading-tight">
+            Apply and become part of our{" "}
+            <span className="font-bold">expert team</span>
+          </h2>
+        </div>
 
-                  {submitStatus === 'success' && (
-                    <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                      <div className="flex items-start gap-3">
-                        <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <div>
-                          <p className="text-green-800 font-medium text-sm">Application Submitted Successfully!</p>
-                          <p className="text-green-600 text-sm">Thank you for applying. We'll review your application and get back to you soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
+        <form onSubmit={handleSubmit} className="space-y-8">
 
-                  {submitStatus === 'error' && (
-                    <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-                      <div className="flex items-start gap-3">
-                        <svg className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <div>
-                          <p className="text-red-800 font-medium text-sm">Submission Failed</p>
-                          <p className="text-red-600 text-sm">Please try again later or email your application to careers@insightintegrators.ae</p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </form>
+          {/* Name & Email */}
+          <div className="grid md:grid-cols-2 gap-6">
+
+            {/* Name */}
+            <div className="relative">
+              <label
+                htmlFor="name"
+                className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${
+                  focusedField === "name" ? "text-[#0a0a0a]" : ""
+                }`}
+              >
+                Full Name *
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedField("name")}
+                onBlur={() => setFocusedField(null)}
+                required
+                placeholder="John Doe"
+                className="w-full px-0 py-3 bg-transparent border-b border-gray-400 focus:border-[#0a0a0a] focus:outline-none transition-all duration-300 text-gray-800 text-base font-light placeholder:text-gray-300"
+              />
+            </div>
+
+            {/* Email */}
+            <div className="relative">
+              <label
+                htmlFor="email"
+                className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${
+                  focusedField === "email" ? "text-[#0a0a0a]" : ""
+                }`}
+              >
+                Email Address *
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedField("email")}
+                onBlur={() => setFocusedField(null)}
+                required
+                placeholder="john@example.com"
+                className="w-full px-0 py-3 bg-transparent border-b border-gray-400 focus:border-[#0a0a0a] focus:outline-none transition-all duration-300 text-gray-800 text-base font-light placeholder:text-gray-300"
+              />
+            </div>
+          </div>
+
+          {/* Phone & Position */}
+          <div className="grid md:grid-cols-2 gap-6">
+
+            {/* Phone */}
+            <div className="relative">
+              <label
+                htmlFor="phone"
+                className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${
+                  focusedField === "phone" ? "text-[#0a0a0a]" : ""
+                }`}
+              >
+                Phone Number
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedField("phone")}
+                onBlur={() => setFocusedField(null)}
+                placeholder="+971 XX XXX XXXX"
+                className="w-full px-0 py-3 bg-transparent border-b border-gray-400 focus:border-[#0a0a0a] focus:outline-none transition-all duration-300 text-gray-800 text-base font-light placeholder:text-gray-300"
+              />
+            </div>
+
+            {/* Position */}
+            <div className="relative">
+              <label
+                htmlFor="position"
+                className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${
+                  focusedField === "position" ? "text-[#0a0a0a]" : ""
+                }`}
+              >
+                Service Interested In
+              </label>
+
+              <select
+                id="position"
+                name="position"
+                value={formData.position}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedField("position")}
+                onBlur={() => setFocusedField(null)}
+                className="w-full px-0 py-3 bg-transparent border-b border-gray-400 focus:border-[#0a0a0a] focus:outline-none transition-all duration-300 text-gray-800 text-base font-light appearance-none cursor-pointer"
+              >
+                <option value="">Select a Service</option>
+               
+                <option value="Risk Analyst">Audit & Assurance</option>
+                <option value="Brand Strategist">Tax</option>
+                <option value="Research Associate">Advisory</option>
+                <option value="Tax Consultant">Media</option>
+              </select>
+
+              <div className="absolute right-0 bottom-3 pointer-events-none">
+                <svg
+                  className="w-4 h-4 text-gray-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
               </div>
             </div>
           </div>
-        </section>
+
+          {/* Message */}
+          {/* <div className="relative">
+            <label
+              htmlFor="message"
+              className={`block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2 transition-all duration-300 ${
+                focusedField === "message" ? "text-[#0a0a0a]" : ""
+              }`}
+            >
+              Cover Letter / Message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              onFocus={() => setFocusedField("message")}
+              onBlur={() => setFocusedField(null)}
+              rows="4"
+              placeholder="Tell us why you'd be a great fit for Insight Integrators..."
+              className="w-full px-0 py-3 bg-transparent border-b border-gray-400 focus:border-[#0a0a0a] focus:outline-none transition-all duration-300 text-gray-800 text-base font-light placeholder:text-gray-300 resize-none"
+            ></textarea>
+          </div> */}
+
+          {/* Resume Upload */}
+          <div className="relative">
+            <label
+              htmlFor="resume"
+              className="block text-[12px] font-light text-gray-600 uppercase tracking-wide mb-2"
+            >
+              Upload CV / Resume *
+            </label>
+
+            <div className="border-b border-gray-400 pb-4">
+              <input
+                type="file"
+                id="resume"
+                name="resume"
+                ref={fileInputRef}
+                onChange={handleFileChange}
+                accept=".pdf,.doc,.docx"
+                required
+                className="w-full text-sm text-gray-600 focus:outline-none"
+              />
+
+              <p className="text-xs text-gray-400 mt-2">
+                PDF, DOC, DOCX (Max 5MB)
+              </p>
+
+              {resumeFile && (
+                <p className="text-sm text-gray-700 mt-2 truncate">
+                  {resumeFile.name}
+                </p>
+              )}
+            </div>
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="group relative w-full py-4 bg-[#2c154f] text-white text-sm font-light tracking-wide overflow-hidden transition-all duration-300 hover:bg-[#45207d] disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <span className="relative z-10 flex items-center justify-center gap-2">
+              {isSubmitting ? (
+                <>
+                  <svg
+                    className="animate-spin h-4 w-4 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 
+                      0 0 5.373 0 12h4zm2 5.291A7.962 
+                      7.962 0 014 12H0c0 3.042 1.135 
+                      5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+
+                  Submitting Application...
+                </>
+              ) : (
+                <>
+                  Submit Application
+
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">
+                    →
+                  </span>
+                </>
+              )}
+            </span>
+
+            <div className="absolute inset-0 bg-white/5 translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+          </button>
+
+          {/* Success Message */}
+          {submitStatus === "success" && (
+            <div className="p-5 bg-green-50 border-l-2 border-green-500 animate-fadeIn">
+              <div className="flex items-start gap-3">
+                <svg
+                  className="w-5 h-5 text-green-500 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <div>
+                  <p className="text-green-800 font-medium text-sm">
+                    Application Submitted Successfully!
+                  </p>
+
+                  <p className="text-green-600 text-sm font-light">
+                    Thank you for applying. We'll review your application and
+                    get back to you soon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Error Message */}
+          {submitStatus === "error" && (
+            <div className="p-5 bg-red-50 border-l-2 border-red-500 animate-fadeIn">
+              <div className="flex items-start gap-3">
+                <svg
+                  className="w-5 h-5 text-red-500 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <div>
+                  <p className="text-red-800 font-medium text-sm">
+                    Submission Failed
+                  </p>
+
+                  <p className="text-red-600 text-sm font-light">
+                    Please try again later or email your application directly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
         <style jsx global>{`
           @keyframes slideUp {
