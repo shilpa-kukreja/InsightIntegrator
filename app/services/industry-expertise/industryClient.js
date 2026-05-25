@@ -797,11 +797,11 @@ const IndustryExpertisePage = () => {
           
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center z-10">
             <div className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-              <div className="inline-flex items-center gap-4 mb-8">
+              {/* <div className="inline-flex items-center gap-4 mb-8">
                 <div className="h-px w-12 bg-white/40"></div>
                 <span className="text-white/50 text-[12px] font-light tracking-[0.3em] uppercase">Advisory Services</span>
                 <div className="h-px w-12 bg-white/40"></div>
-              </div>
+              </div> */}
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 tracking-tight leading-[1.1]">
                 Industry <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Expertise</span>
@@ -821,10 +821,10 @@ Empowering businesses with industry-specific strategies, operational excellence,
         >
           <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
             <div className={`text-center transition-all duration-800 transform ${visibleSections.overview ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <div className="inline-flex items-center gap-3 mb-4">
+              {/* <div className="inline-flex items-center gap-3 mb-4">
                 <div className="h-px w-10 bg-[#0a0a0a]/50"></div>
                 <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">Overview</span>
-              </div>
+              </div> */}
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 leading-tight">
                  Industry-focused.  <span className="font-bold">Visionary.</span> Growth-oriented.
               </h2>
@@ -843,7 +843,7 @@ Empowering businesses with industry-specific strategies, operational excellence,
           className="py-12 md:py-12 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className={`text-center mb-12 transition-all duration-800 transform`}>
+            {/* <div className={`text-center mb-12 transition-all duration-800 transform`}>
               <div className="inline-flex items-center gap-3 mb-6">
                 <div className="h-px w-10 bg-[#0a0a0a]/50"></div>
                 <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">Our Services</span>
@@ -855,7 +855,7 @@ Empowering businesses with industry-specific strategies, operational excellence,
                 Strategic guidance to help you navigate complexity and unlock sustainable growth opportunities
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-6"></div>
-            </div>
+            </div> */}
 
             <div className="space-y-24">
             {industryData.map((industry, index) => (

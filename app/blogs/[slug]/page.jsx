@@ -538,7 +538,7 @@ const BlogDetailPage = () => {
       <div className="min-h-screen bg-white pt-16">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-[#2c154f] py-10 md:py-12">
-          <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+          <div className="relative max-w-8xl mx-auto px-6 md:px-8 lg:px-12">
             <div
               className={`max-w-3xl mx-auto text-center transition-all duration-800 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
             >
@@ -599,34 +599,53 @@ const BlogDetailPage = () => {
         </section>
 
         {/* Main Content */}
-        <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-4 lg:px-6 py-12 md:py-16">
           <div className="grid lg:grid-cols-12 gap-12">
             {/* Table of Contents - Desktop */}
             {tableOfContents.length > 0 && (
-              <aside className="hidden lg:block lg:col-span-3">
+              <aside className="hidden lg:block lg:col-span-4">
                 <div
                   className={`sticky top-24 transition-all duration-800 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
                 >
-                  <div className="border border-gray-100 p-6 bg-white shadow-sm">
-                    <div className="mb-5">
-                      <div className="w-8 h-px bg-[#0a0a0a]/40 mb-3"></div>
-                      <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                        Table of Contents
-                      </h3>
-                    </div>
-                    <ul className="space-y-3">
-                      {tableOfContents.map((item, index) => (
-                        <li key={index}>
-                          <a
-                            href={`#${item.id}`}
-                            className="text-sm text-gray-500 hover:text-[#0a0a0a] transition-colors font-light block py-1 border-l-2 border-transparent hover:border-[#0a0a0a] pl-3"
-                          >
-                            {item.title}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+               <div className="mt-8 bg-[#2c154f] p-8 rounded-2xl overflow-hidden relative">
+        <div className="relative z-10">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="h-px w-10 bg-white/40"></div>
+            <span className="text-white/50 text-[11px] tracking-[0.25em] uppercase">
+              Need Expert Advice?
+            </span>
+          </div>
+
+          <h3 className="text-2xl font-light text-white leading-snug mb-4">
+            Have Questions About{" "}
+            <span className="font-semibold">{blog.category}?</span>
+          </h3>
+
+          <p className="text-white/60 text-sm leading-relaxed mb-6">
+            Our experts are here to help you navigate complex
+            regulations and ensure compliance.
+          </p>
+
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/contact"
+              className="group inline-flex items-center justify-center px-5 py-3 bg-white text-[#2c154f] text-sm font-medium hover:bg-gray-100 transition-all duration-300 rounded-lg"
+            >
+              Contact Our Team
+              <span className="ml-2 transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
+
+            <Link
+              href="/services/tax"
+              className="inline-flex items-center justify-center px-5 py-3 border border-white/20 text-white text-sm hover:bg-white/10 transition-all duration-300 rounded-lg"
+            >
+              Explore Services
+            </Link>
+          </div>
+        </div>
+      </div>
 
                   {/* Share Section */}
                   <div className="mt-8 border border-gray-100 p-6 bg-white shadow-sm">
@@ -704,7 +723,7 @@ const BlogDetailPage = () => {
 
             {/* Main Content Area */}
             <article
-              className={`lg:col-span-6 transition-all duration-800 delay-100 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+              className={`lg:col-span-5 transition-all duration-800 delay-100 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
               {/* Featured Image */}
               <div className="mb-10 overflow-hidden bg-gray-100">
@@ -741,65 +760,7 @@ const BlogDetailPage = () => {
               <div
                 className={`sticky top-24 transition-all duration-800 delay-200 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               >
-                {/* Author Card */}
-                {/* <div className="border border-gray-100 p-6 bg-white shadow-sm text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#2c154f] to-gray-700 flex items-center justify-center text-white text-2xl font-light">
-                    {blog.author.name.charAt(0)}
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                    {blog.author.name}
-                  </h3>
-                  <p className="text-sm text-gray-500 mb-3">
-                    {blog.author.role}
-                  </p>
-                  <p className="text-sm text-gray-400 leading-relaxed mb-5">
-                    {blog.author.bio}
-                  </p>
-                  <div className="flex justify-center gap-3 pt-3 border-t border-gray-100">
-                    <a
-                      href={blog.author.linkedin}
-                      className="text-gray-400 hover:text-[#0a0a0a] transition-colors"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={blog.author.twitter}
-                      className="text-gray-400 hover:text-[#0a0a0a] transition-colors"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0021.68-11.802c0-.273-.005-.545-.015-.817a9.94 9.94 0 002.446-2.542z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`mailto:${blog.author.email}`}
-                      className="text-gray-400 hover:text-[#0a0a0a] transition-colors"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={1.5}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div> */}
+                
 
                 {/* Newsletter Signup */}
                 {/* Newsletter Signup */}
@@ -907,7 +868,7 @@ const BlogDetailPage = () => {
         )}
 
         {/* CTA Section */}
-        <section className="py-10 bg-[#2c154f] relative overflow-hidden">
+        {/* <section className="py-10 bg-[#2c154f] relative overflow-hidden">
           <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div
               className={`transition-all duration-800 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
@@ -945,7 +906,7 @@ const BlogDetailPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <style jsx global>{`
           @keyframes pulse {
