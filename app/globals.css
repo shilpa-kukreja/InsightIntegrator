@@ -32,3 +32,334 @@
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-call-pulse {
+    background: #1d304f;
+    color: white;
+    position: fixed;
+    bottom: 140px;
+    right: 50px;
+    font-size: 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: call-pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  
+  }
+  .btn-call-pulse .icon{color: #fff;} 
+
+  .btn-call-pulse img{ color: #fff!important; font-size: 12px!important; }
+  
+  
+  @keyframes call-pulse {
+    0% {
+      box-shadow: 0 0 0 0 #1d304f;
+    }
+  
+    80% {
+      box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+  }
+
+
+
+  .btn-whatsapp-pulse {
+    background: #25d366;
+    color: white;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+  
+    80% {
+      box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+  }
+  
+  .btn-whatsapp-pulse-border {
+    bottom: 200px;
+    right: 200px;
+    animation-play-state: paused;
+  }
+  
+  .btn-whatsapp-pulse-border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      padding: 25px;
+      opacity: 0.75;
+    }
+  
+    75% {
+      padding: 50px;
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CALENDAR WRAPPER */
+.custom-calendar {
+  width: 100%;
+}
+
+/* MAIN CALENDAR */
+.custom-calendar .react-calendar {
+  width: 100%;
+  border: none !important;
+  background: transparent;
+  font-family: inherit;
+  padding: 0;
+}
+
+/* NAVIGATION */
+.custom-calendar .react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* MONTH TEXT */
+.custom-calendar .react-calendar__navigation__label {
+  flex-grow: 0 !important;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  pointer-events: none;
+}
+
+/* ARROW BUTTONS */
+.custom-calendar .react-calendar__navigation button {
+  min-width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: none;
+  margin: 2px;
+
+  color: #7a16cc;
+  font-size: 28px;
+  transition: all 0.2s ease;
+}
+
+
+.custom-calendar .react-calendar__navigation button span {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+
+.custom-calendar .react-calendar__navigation button:hover {
+  background: #7a16cc !important;
+  color: white !important;
+}
+
+/* REMOVE DOUBLE ARROWS */
+.custom-calendar .react-calendar__navigation__prev2-button,
+.custom-calendar .react-calendar__navigation__next2-button {
+  display: none;
+}
+
+/* WEEK DAYS */
+.custom-calendar .react-calendar__month-view__weekdays {
+  margin-bottom: 20px;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays__weekday {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.custom-calendar
+  .react-calendar__month-view__weekdays__weekday
+  abbr {
+  text-decoration: none;
+}
+
+/* DAYS GRID */
+.custom-calendar .react-calendar__month-view__days {
+  gap: 12px 0;
+}
+
+/* EACH DATE TILE */
+.custom-calendar .react-calendar__tile {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  max-width: 62px;
+  border-radius: 999px;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin: auto;
+}
+
+/* HOVER */
+.custom-calendar .react-calendar__tile:hover {
+  background: #f3f7eb !important;
+  color: #7a16cc !important;
+}
+
+/* TODAY */
+.custom-calendar .react-calendar__tile--now {
+  background: #f3f7eb !important;
+  color: #7a16cc !important;
+  font-weight: 700;
+}
+
+/* SELECTED DATE */
+.custom-calendar .react-calendar__tile--active {
+  background: #7a16cc !important;
+  color: white !important;
+  font-weight: 700;
+}
+
+/* DISABLED DATES */
+.custom-calendar .react-calendar__tile:disabled {
+  background: transparent !important;
+  color: #d1d5db !important;
+}
+
+/* REMOVE BLUE FOCUS */
+.custom-calendar .react-calendar__tile:focus {
+  background: #7a16cc !important;
+  color: white !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .custom-calendar .react-calendar__navigation__label {
+    font-size: 22px;
+  }
+
+  .custom-calendar .react-calendar__tile {
+    height: 50px;
+    width: 50px;
+    max-width: 50px;
+    font-size: 15px;
+  }
+
+  .custom-calendar .react-calendar__navigation button {
+    min-width: 42px;
+    height: 42px;
+    font-size: 22px;
+  }
+}
+
+
+/* CUSTOM SCROLLBAR */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4f2e80;
+  border-radius: 999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #43256e;
+}

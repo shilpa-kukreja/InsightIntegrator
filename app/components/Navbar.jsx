@@ -1033,6 +1033,14 @@ const Navbar = () => {
                 <span className="relative z-10">Consult</span>
                 <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               </button>
+
+              <Link href="/landing" className="ml-4"><button
+
+               className="relative px-6 py-2 text-sm cursor-pointer bg-[#4f2d80] text-white font-semibold text-[#4f2d80] border-2 border-[#4f2d80] rounded-lg overflow-hidden group transition-all duration-300 hover:bg-[#4f2d80] hover:text-white hover:shadow-lg"
+              >
+                <span className="relative z-10">Book Now</span>
+                <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              </button></Link>
             </div>
 
             {/* <div className="hidden lg:block">
