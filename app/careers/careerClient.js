@@ -294,14 +294,14 @@ const CareersPage = () => {
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className={`text-center transition-all duration-700 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
-                <span className="text-white">Grow Your Career with</span>
+                <span className="text-white font-light">Grow Your Career with</span>
                 <br />
                 <span className="text-white/90">
                   Purpose and Expertise
                 </span>
               </h1>
 
-              <p className="text-white/50 text-lg md:text-lg max-w-2xl mx-auto leading-relaxed px-4">
+              <p className="text-white/50 font-light text-lg md:text-lg max-w-2xl mx-auto leading-relaxed px-4">
                 Be part of a professional environment focused on learning, accountability, and delivering meaningful outcomes across audit, risk, and advisory.
 
               </p>
