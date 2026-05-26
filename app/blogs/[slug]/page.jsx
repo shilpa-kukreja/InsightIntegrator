@@ -435,44 +435,60 @@ const BlogDetailPage = () => {
     }
     return headings;
   };
+const GOOGLE_SHEET_URL =
+"https://script.google.com/macros/s/AKfycbxAhWNPFf_xLhDY2j-CRa3WgOQMVvb9NHKmoS4JZmFrvHhK90oqmnl6JK7t-vR4GRrK/exec";
 
-  const handleNewsletterSubscribe = async (e) => {
-    e.preventDefault();
-    if (!subscribeEmail || !subscribeEmail.includes("@")) {
-      alert("Please enter a valid email address");
-      return;
-    }
+const handleNewsletterSubscribe = async (e) => {
+e.preventDefault();
 
-    setSubscribeStatus("loading");
+if (!subscribeEmail || !subscribeEmail.includes("@")) {
+alert("Please enter a valid email address");
+return;
+}
 
-    try {
-      const response = await fetch("/api/subscribe-newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: subscribeEmail,
-          source: "blog-detail-page",
-        }),
-      });
+setSubscribeStatus("loading");
 
-      const data = await response.json();
+try {
+const response = await fetch(GOOGLE_SHEET_URL, {
+method: "POST",
+body: JSON.stringify({
+formType: "newsletter",
+email: subscribeEmail,
+}),
+});
 
-      if (response.ok) {
-        setSubscribeStatus("success");
-        setSubscribeEmail("");
-        setTimeout(() => setSubscribeStatus(null), 5000);
-      } else {
-        setSubscribeStatus("error");
-        setTimeout(() => setSubscribeStatus(null), 5000);
-      }
-    } catch (error) {
-      console.error("Error subscribing:", error);
-      setSubscribeStatus("error");
-      setTimeout(() => setSubscribeStatus(null), 5000);
-    }
-  };
+
+const data = await response.json();
+
+if (data.success) {
+  setSubscribeStatus("success");
+} else if (data.alreadySubscribed) {
+  setSubscribeStatus("already");
+} else {
+  setSubscribeStatus("error");
+}
+
+setSubscribeEmail("");
+
+setTimeout(() => {
+  setSubscribeStatus(null);
+}, 5000);
+
+
+} catch (error) {
+console.error(error);
+setSubscribeStatus("error");
+
+
+setTimeout(() => {
+  setSubscribeStatus(null);
+}, 5000);
+
+
+}
+};
+
+  
 
   if (loading) {
     return (
@@ -607,45 +623,45 @@ const BlogDetailPage = () => {
                 <div
                   className={`sticky top-24 transition-all duration-800 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
                 >
-               <div className="mt-8 bg-[#2c154f] p-8 rounded-2xl overflow-hidden relative">
-        <div className="relative z-10">
-          <div className="inline-flex items-center gap-3 mb-6">
-            <div className="h-px w-10 bg-white/40"></div>
-            <span className="text-white/50 text-[11px] tracking-[0.25em] uppercase">
-              Need Expert Advice?
-            </span>
-          </div>
+                  <div className="mt-8 bg-[#2c154f] p-8 rounded-2xl overflow-hidden relative">
+                    <div className="relative z-10">
+                      <div className="inline-flex items-center gap-3 mb-6">
+                        <div className="h-px w-10 bg-white/40"></div>
+                        <span className="text-white/50 text-[11px] tracking-[0.25em] uppercase">
+                          Need Expert Advice?
+                        </span>
+                      </div>
 
-          <h3 className="text-2xl font-light text-white leading-snug mb-4">
-            Have Questions About{" "}
-            <span className="font-semibold">{blog.category}?</span>
-          </h3>
+                      <h3 className="text-2xl font-light text-white leading-snug mb-4">
+                        Have Questions About{" "}
+                        <span className="font-semibold">{blog.category}?</span>
+                      </h3>
 
-          <p className="text-white/60 text-sm leading-relaxed mb-6">
-            Our experts are here to help you navigate complex
-            regulations and ensure compliance.
-          </p>
+                      <p className="text-white/60 text-sm leading-relaxed mb-6">
+                        Our experts are here to help you navigate complex
+                        regulations and ensure compliance.
+                      </p>
 
-          <div className="flex flex-col gap-3">
-            <Link
-              href="/contact"
-              className="group inline-flex items-center justify-center px-5 py-3 bg-white text-[#2c154f] text-sm font-medium hover:bg-gray-100 transition-all duration-300 rounded-lg"
-            >
-              Contact Our Team
-              <span className="ml-2 transition-transform group-hover:translate-x-1">
-                →
-              </span>
-            </Link>
+                      <div className="flex flex-col gap-3">
+                        <Link
+                          href="/contact"
+                          className="group inline-flex items-center justify-center px-5 py-3 bg-white text-[#2c154f] text-sm font-medium hover:bg-gray-100 transition-all duration-300 rounded-lg"
+                        >
+                          Contact Our Team
+                          <span className="ml-2 transition-transform group-hover:translate-x-1">
+                            →
+                          </span>
+                        </Link>
 
-            <Link
-              href="/services/tax"
-              className="inline-flex items-center justify-center px-5 py-3 border border-white/20 text-white text-sm hover:bg-white/10 transition-all duration-300 rounded-lg"
-            >
-              Explore Services
-            </Link>
-          </div>
-        </div>
-      </div>
+                        <Link
+                          href="/services/tax"
+                          className="inline-flex items-center justify-center px-5 py-3 border border-white/20 text-white text-sm hover:bg-white/10 transition-all duration-300 rounded-lg"
+                        >
+                          Explore Services
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
 
                   {/* Share Section */}
                   <div className="mt-8 border border-gray-100 p-6 bg-white shadow-sm">
@@ -760,7 +776,7 @@ const BlogDetailPage = () => {
               <div
                 className={`sticky top-24 transition-all duration-800 delay-200 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               >
-                
+
 
                 {/* Newsletter Signup */}
                 {/* Newsletter Signup */}
@@ -805,6 +821,13 @@ const BlogDetailPage = () => {
                     <div className="mt-3 p-2 bg-red-500/20 border border-red-500/30 rounded animate-fadeIn">
                       <p className="text-red-300 text-xs">
                         ✗ Failed. Please try again.
+                      </p>
+                    </div>
+                  )}
+                  {subscribeStatus === "already" && (
+                    <div className="mt-3 p-2 bg-yellow-500/20 border border-yellow-500/30 rounded">
+                      <p className="text-yellow-300 text-xs">
+                        ✓ You have already subscribed.
                       </p>
                     </div>
                   )}

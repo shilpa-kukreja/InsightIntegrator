@@ -23,7 +23,7 @@ export default function HeroBanner() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     const GOOGLE_SHEET_URL =
-        "https://script.google.com/macros/s/AKfycbycC_dHrLGFYzldh9FBiIgcVWYkEkEH618Qh4yJn55pUUYoMY-fOA3aE_AHMoWYKhdw/exec";
+        "https://script.google.com/macros/s/AKfycbxAhWNPFf_xLhDY2j-CRa3WgOQMVvb9NHKmoS4JZmFrvHhK90oqmnl6JK7t-vR4GRrK/exec";
 
 
     const [isSubmitted, setIsSubmitted] = useState(false);
