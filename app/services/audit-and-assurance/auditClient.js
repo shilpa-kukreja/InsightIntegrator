@@ -352,7 +352,7 @@ const AuditAssurancePage = () => {
           className="py-12 md:py-12 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div
+            {/* <div
               className={`text-center mb-20 transition-all duration-800 transform ${visibleSections.services ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
               <div className="inline-flex items-center gap-3 mb-6">
@@ -368,7 +368,7 @@ const AuditAssurancePage = () => {
                 Structured assurance solutions designed to support financial clarity, compliance, and operational confidence
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-5"></div>
-            </div>
+            </div> */}
 
             {/* this is only services content  */}
             <div className="space-y-24">
