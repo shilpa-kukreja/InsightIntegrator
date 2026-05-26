@@ -79,7 +79,7 @@ const AuditAssurancePage = () => {
   const serviceItems = [
     {
       id: "financial-reporting-advisory",
-      name: "Financial Reporting Advisory Services (FRAS)",
+      name: "Financial Reporting ",
       shortDescription:
         "Expert guidance on financial reporting standards and compliance requirements.",
       description:
@@ -386,7 +386,7 @@ const AuditAssurancePage = () => {
                   >
                     {/* Left Side - Content */}
                     <div className="order-2 lg:order-1">
-                      <div className="flex items-center gap-4 mb-6">
+                      {/* <div className="flex items-center gap-4 mb-6">
                         <span className="text-sm font-light text-gray-500 tracking-wider">
                           {(index + 1).toString().padStart(2, "0")}
                         </span>
@@ -394,7 +394,7 @@ const AuditAssurancePage = () => {
                         <span className="text-[10px] text-gray-500 font-light uppercase tracking-wider">
                           Service
                         </span>
-                      </div>
+                      </div> */}
 
                       <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-5 leading-tight">
                         {item.name}
@@ -495,7 +495,7 @@ const AuditAssurancePage = () => {
                       >
                         {/* LEFT CONTENT */}
                         <div>
-                          <div className="flex items-center gap-4 mb-4">
+                          {/* <div className="flex items-center gap-4 mb-4">
                             <span className="text-sm text-gray-400">
                               {(i + 1).toString().padStart(2, "0")}
                             </span>
@@ -503,7 +503,7 @@ const AuditAssurancePage = () => {
                             <span className="text-xs uppercase text-gray-400">
                               Service
                             </span>
-                          </div>
+                          </div> */}
 
                           <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
                             {service.name}
