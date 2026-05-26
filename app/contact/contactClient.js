@@ -157,11 +157,11 @@ const ContactPage = () => {
 
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center z-10">
             <div className={`transition-all duration-1000 delay-200 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-              <div className="inline-flex items-center gap-4 mb-4">
+              {/* <div className="inline-flex items-center gap-4 mb-4">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white/50 text-[12px] font-light tracking-[0.3em] uppercase">Get in Touch</span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
+              </div> */}
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-light text-white mb-4 tracking-tight leading-[1.1]">
                 Connect  <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">with Us</span>
