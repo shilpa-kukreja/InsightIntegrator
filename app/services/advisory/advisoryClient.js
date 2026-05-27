@@ -93,12 +93,12 @@ const AdvisoryPage = () => {
           detailedDescription:
             "We work with organizations to identify process gaps, assess control effectiveness, and support better decision-making through practical risk-focused evaluations. Our approach is designed to improve accountability, operational transparency, and long-term business stability.",
           keyFeatures: [
-            "Internal control assessment",
-            "Operational risk evaluation",
-            "Process and compliance reviews",
-            "Governance support services",
-            "Risk monitoring and reporting",
-            "Business control improvement recommendations",
+            "Develop Risk Framework",
+            "Operational Audit",
+            "Efficiency Audit",
+            "Independent third-party Audit",
+            "IT Audit",
+            "Compliance Audit",
           ],
           image: "/advisory/InternalAudit.jpg",
         },
@@ -111,12 +111,12 @@ const AdvisoryPage = () => {
           detailedDescription:
             "We assist businesses in evaluating financial controls, identifying reporting gaps, and enhancing process efficiency through structured control assessments and compliance-focused methodologies.",
           keyFeatures: [
-            "Financial control framework assessment",
-            "Reporting process evaluation",
-            "Control gap identification",
-            "Financial compliance support",
-            "Process documentation review",
-            "Control monitoring and improvement recommendations",
+            "Develop risk framework",
+            "Control Testing",
+            "Training and Awareness",
+            "Continuous Monitoring and Reporting",
+            "Independent Review and Assurance",
+           
           ],
           image: "/advisory/InternalControlsoverFinancialReporting.jpg",
         },
@@ -129,12 +129,12 @@ const AdvisoryPage = () => {
           detailedDescription:
             "We work with organizations to build risk-aware processes, strengthen governance structures, and improve visibility across operational, financial, and compliance-related risk areas.",
           keyFeatures: [
-            "Enterprise risk assessment",
-            "Risk governance framework support",
-            "Risk monitoring and reporting",
-            "Operational risk evaluation",
-            "Compliance and control reviews",
-            "Business continuity risk planning",
+            "ERM Framework - Design and Implementation",
+            "Develop Risk Registers",
+            "Risk Monitoring and Reporting",
+            "Business Continuity and Crisis Management Planning",
+            "Regulatory and Compliance Risk Management",
+            "Risk Training and Awareness",
           ],
           image: "/advisory/EnterpriseRiskManagement.jpg",
         },
@@ -147,12 +147,12 @@ const AdvisoryPage = () => {
           detailedDescription:
             "We assist businesses in reviewing governance practices, identifying structural gaps, and enhancing decision-making frameworks to support transparency, compliance, and operational effectiveness. ",
           keyFeatures: [
-            "Governance framework evaluation",
-            "Board and management process review",
-            "Policy and control assessment",
-            "Compliance structure analysis",
-            "Accountability and reporting review",
-            "Governance improvement recommendations",
+            "Governance Framework - Design and Implementation",
+            "Policies & Procedures",
+            "Authority Matrix ",
+            "Delegation of Authority Matrix",
+            "Succession Planning",
+            "Training and Awareness",
           ],
           image: "/advisory/CorporateGovernanceAssessment.jpg",
         },
@@ -463,206 +463,206 @@ const AdvisoryPage = () => {
     },
 
     //   Forensics
-    {
-      id: "forensics",
-      title: "Forensics ",
-      description:
-        "Driving operational excellence and efficiency across manufacturing value chains.",
-      services: [
-        {
-          id: "fraud-investigations",
-          name: "Fraud investigations",
-          shortDescription:
-            "Optimize supply chain for efficiency and resilience.",
-          description:
-            "Our forensic specialists help businesses identify, investigate, and respond to financial misconduct, fraud risks, and regulatory violations with complete confidentiality and professional integrity.",
-          detailedDescription:
-            "In today’s complex regulatory environment, organizations require proactive forensic support to protect financial assets, maintain stakeholder trust, and ensure compliance with UAE laws and corporate governance standards. We conduct detailed investigations, analyze financial irregularities, and provide clear reporting to support informed decision-making and legal proceedings when required.",
-          keyFeatures: [
-            "Financial fraud investigations",
-            "Employee misconduct reviews",
-            "Asset tracing and recovery support",
-            "Anti-bribery and corruption assessments",
-            "Evidence collection and forensic analysis",
-            "Litigation and dispute support services"
-          ],
-          image: "/advisory/FraudInvestigations.jpg",
-        },
-        {
-          id: "anti-fraud",
-          name: "Anti-fraud program and controls ",
-          shortDescription: "Improve productivity using lean methodologies.",
-          description:
-            "We help organizations design and strengthen anti-fraud frameworks that reduce financial risk, improve governance, and protect business operations from internal and external threats.",
-          detailedDescription:
-            "Our experts assess existing control environments, identify vulnerabilities, and implement preventive measures aligned with UAE regulatory expectations and international best practices. We support businesses in building robust fraud risk management systems that enhance transparency, accountability, and operational resilience.",
-          keyFeatures: [
-            "Fraud risk assessment and gap analysis",
-            "Internal control framework development",
-            "Anti-fraud policy and procedure design",
-            "Whistleblower mechanism advisory",
-            "Fraud detection and monitoring systems",
-            "Employee awareness and ethics training"
-          ],
-          image: "/advisory/Anti-fraudprogramandcontrols.jpg",
-        },
-        {
-          id: "digital-forensics",
-          name: "Digital forensics ",
-          shortDescription:
-            "Optimize inventory levels and warehouse efficiency.",
-          description: "Our digital forensic services help organizations investigate cyber incidents, recover critical evidence, and strengthen digital security against evolving threats.",
-          detailedDescription:
-            "We assist businesses in identifying unauthorized activities, analyzing digital evidence, and responding to cybersecurity breaches with accuracy and confidentiality. Our specialists use advanced forensic techniques to support legal proceedings, internal investigations, and regulatory compliance requirements within the UAE business environment.",
-          keyFeatures: [
-            "Cyber incident investigation and response",
-            "Digital evidence collection and preservation",
-            "Email and device forensic analysis",
-            "Data breach and unauthorized access reviews",
-            "Network activity and log analysis",
-            "Litigation support and forensic reporting"
-          ],
-          image: "/advisory/Digitalforensics.jpg",
-        },
-        {
-          id: "dispute-advisory",
-          name: "Dispute advisory services ",
-          shortDescription:
-            "Optimize inventory levels and warehouse efficiency.",
-          description: "Our digital forensic services help organizations investigate cyber incidents, recover critical evidence, and strengthen digital security against evolving threats.",
-          detailedDescription:
-            "We work closely with legal teams, stakeholders, and management to evaluate financial impacts, review supporting evidence, and prepare clear expert reports. Our services are designed to support arbitration, litigation, settlement negotiations, and regulatory matters while protecting business interests and maintaining compliance with UAE legal frameworks.",
-          keyFeatures: [
-            "Commercial dispute assessment and analysis",
-            "Arbitration and litigation support",
-            "Financial loss quantification",
-            "Expert witness and reporting support",
-            "Contractual claim evaluation",
-            "Settlement negotiation assistance"
-          ],
-          image: "/advisory/DisputeAdvisoryServices.jpg",
-        },
-      ],
-    },
+    // {
+    //   id: "forensics",
+    //   title: "Forensics ",
+    //   description:
+    //     "Driving operational excellence and efficiency across manufacturing value chains.",
+    //   services: [
+    //     {
+    //       id: "fraud-investigations",
+    //       name: "Fraud investigations",
+    //       shortDescription:
+    //         "Optimize supply chain for efficiency and resilience.",
+    //       description:
+    //         "Our forensic specialists help businesses identify, investigate, and respond to financial misconduct, fraud risks, and regulatory violations with complete confidentiality and professional integrity.",
+    //       detailedDescription:
+    //         "In today’s complex regulatory environment, organizations require proactive forensic support to protect financial assets, maintain stakeholder trust, and ensure compliance with UAE laws and corporate governance standards. We conduct detailed investigations, analyze financial irregularities, and provide clear reporting to support informed decision-making and legal proceedings when required.",
+    //       keyFeatures: [
+    //         "Financial fraud investigations",
+    //         "Employee misconduct reviews",
+    //         "Asset tracing and recovery support",
+    //         "Anti-bribery and corruption assessments",
+    //         "Evidence collection and forensic analysis",
+    //         "Litigation and dispute support services"
+    //       ],
+    //       image: "/advisory/FraudInvestigations.jpg",
+    //     },
+    //     {
+    //       id: "anti-fraud",
+    //       name: "Anti-fraud program and controls ",
+    //       shortDescription: "Improve productivity using lean methodologies.",
+    //       description:
+    //         "We help organizations design and strengthen anti-fraud frameworks that reduce financial risk, improve governance, and protect business operations from internal and external threats.",
+    //       detailedDescription:
+    //         "Our experts assess existing control environments, identify vulnerabilities, and implement preventive measures aligned with UAE regulatory expectations and international best practices. We support businesses in building robust fraud risk management systems that enhance transparency, accountability, and operational resilience.",
+    //       keyFeatures: [
+    //         "Fraud risk assessment and gap analysis",
+    //         "Internal control framework development",
+    //         "Anti-fraud policy and procedure design",
+    //         "Whistleblower mechanism advisory",
+    //         "Fraud detection and monitoring systems",
+    //         "Employee awareness and ethics training"
+    //       ],
+    //       image: "/advisory/Anti-fraudprogramandcontrols.jpg",
+    //     },
+    //     {
+    //       id: "digital-forensics",
+    //       name: "Digital forensics ",
+    //       shortDescription:
+    //         "Optimize inventory levels and warehouse efficiency.",
+    //       description: "Our digital forensic services help organizations investigate cyber incidents, recover critical evidence, and strengthen digital security against evolving threats.",
+    //       detailedDescription:
+    //         "We assist businesses in identifying unauthorized activities, analyzing digital evidence, and responding to cybersecurity breaches with accuracy and confidentiality. Our specialists use advanced forensic techniques to support legal proceedings, internal investigations, and regulatory compliance requirements within the UAE business environment.",
+    //       keyFeatures: [
+    //         "Cyber incident investigation and response",
+    //         "Digital evidence collection and preservation",
+    //         "Email and device forensic analysis",
+    //         "Data breach and unauthorized access reviews",
+    //         "Network activity and log analysis",
+    //         "Litigation support and forensic reporting"
+    //       ],
+    //       image: "/advisory/Digitalforensics.jpg",
+    //     },
+    //     {
+    //       id: "dispute-advisory",
+    //       name: "Dispute advisory services ",
+    //       shortDescription:
+    //         "Optimize inventory levels and warehouse efficiency.",
+    //       description: "Our digital forensic services help organizations investigate cyber incidents, recover critical evidence, and strengthen digital security against evolving threats.",
+    //       detailedDescription:
+    //         "We work closely with legal teams, stakeholders, and management to evaluate financial impacts, review supporting evidence, and prepare clear expert reports. Our services are designed to support arbitration, litigation, settlement negotiations, and regulatory matters while protecting business interests and maintaining compliance with UAE legal frameworks.",
+    //       keyFeatures: [
+    //         "Commercial dispute assessment and analysis",
+    //         "Arbitration and litigation support",
+    //         "Financial loss quantification",
+    //         "Expert witness and reporting support",
+    //         "Contractual claim evaluation",
+    //         "Settlement negotiation assistance"
+    //       ],
+    //       image: "/advisory/DisputeAdvisoryServices.jpg",
+    //     },
+    //   ],
+    // },
 
     // ESG Services
-    {
-      id: "esg-services",
-      title: " ESG Services",
-      description:
-        "Empowering sustainable growth through responsible business practices and transparent reporting.",
-      services: [
-        {
-          id: "esg-reporting",
-          name: "ESG Reporting & Compliance ",
-          shortDescription:
-            "Optimize supply chain for efficiency and resilience.",
-          description:
-            "We help organizations develop effective ESG frameworks, strengthen sustainability reporting, and align business operations with evolving environmental, social, and governance expectations.",
-          detailedDescription:
-            "Our ESG specialists support businesses in meeting regulatory requirements, improving stakeholder transparency, and building long-term sustainable value. We assist with ESG strategy development, reporting standards, governance assessments, and sustainability initiatives aligned with UAE regulations and international best practices.",
-          keyFeatures: [
-            "ESG reporting and disclosure support",
-            "Sustainability strategy development",
-            "ESG compliance and governance assessments",
-            "Carbon footprint and environmental reporting",
-            "Materiality assessment and stakeholder engagement",
-            "ESG policy and framework implementation"
-          ],
-          image: "/advisory/ESGReporting&Compliance.jpg",
-        },
-        {
-          id: "benchmarking-gap",
-          name: "Benchmarking & Gap Analysis ",
-          shortDescription: "Improve productivity using lean methodologies.",
-          description:
-            "We help organizations evaluate current ESG performance, identify operational gaps, and align sustainability practices with industry standards and regulatory expectations.",
-          detailedDescription:
-            "Our specialists conduct detailed assessments to compare your existing ESG framework against regional requirements, global benchmarks, and leading market practices. We provide actionable insights that help strengthen governance, improve sustainability performance, and support long-term business resilience.",
-          keyFeatures: [
-            "ESG maturity and performance assessment",
-            "Industry benchmarking and comparative analysis",
-            "Regulatory and compliance gap reviews",
-            "Sustainability risk identification",
-            "Governance and policy evaluation",
-            "Strategic improvement recommendations"
-          ],
-          image: "/advisory/Benchmarking&GapAnalysis.jpg",
-        },
-        {
-          id: "materiality-assessment",
-          name: "Materiality Assessment ",
-          shortDescription:
-            "Optimize inventory levels and warehouse efficiency.",
-          description: "We help organizations identify and prioritize the ESG topics that matter most to stakeholders, business performance, and long-term sustainability objectives.",
-          detailedDescription:
-            "Our team conducts structured materiality assessments to evaluate environmental, social, and governance factors impacting your organization. By engaging stakeholders and analyzing industry trends, we help businesses build focused ESG strategies, improve reporting transparency, and align with evolving regulatory and investor expectations.",
-          keyFeatures: [
-            "Stakeholder engagement and surveys",
-            "ESG priority identification and mapping",
-            "Double materiality assessment support",
-            "Industry and peer analysis",
-            "Sustainability risk and opportunity evaluation",
-            "ESG strategy alignment and reporting insights"
-          ],
-          image: "/advisory/MaterialityAssessment.jpg",
-        },
-        {
-          id: "post-implementation",
-          name: "Post Implementation Review ",
-          shortDescription:
-            "Optimize inventory levels and warehouse efficiency.",
-          description: "We help organizations evaluate the effectiveness of implemented ESG initiatives, governance frameworks, and sustainability strategies to ensure measurable impact and continuous improvement.",
-          detailedDescription:
-            "Our specialists conduct independent post implementation reviews to assess whether ESG objectives, compliance requirements, and operational targets have been successfully achieved. We identify improvement opportunities, strengthen accountability, and provide actionable recommendations that support long-term sustainability performance.",
-          keyFeatures: [
-            "ESG program performance evaluation",
-            "Compliance and governance effectiveness review",
-            "Sustainability KPI assessment",
-            "Operational improvement recommendations",
-            "Risk and control effectiveness analysis",
-            "Continuous monitoring and reporting support"
-          ],
-          image: "/advisory/PostImplementationReview(2).jpg",
-        },
-        {
-          id: "technology-advisory",
-          name: "Technology Advisory  ",
-          shortDescription:
-            "Optimize inventory levels and warehouse efficiency.",
-          description: "We help organizations leverage technology to improve operational efficiency, strengthen governance, and accelerate sustainable business transformation.",
-          detailedDescription:
-            "Our technology advisory specialists support businesses in evaluating digital capabilities, modernizing systems, and implementing scalable technology solutions aligned with strategic objectives and regulatory expectations. We assist organizations in navigating digital transformation while managing operational, cybersecurity, and compliance risks effectively.",
-          keyFeatures: [
-            "Digital transformation strategy and planning",
-            "IT governance and risk advisory",
-            "Business process automation support",
-            "Technology infrastructure assessment",
-            "ERP and system implementation advisory",
-            "Cybersecurity and data protection guidance"
-          ],
-          image: "/advisory/TechnologyAdvisory(2).jpg",
-        },
-        {
-          id: "training-change",
-          name: "Training and change management ",
-          shortDescription:
-            "Optimize inventory levels and warehouse efficiency.",
-          description: "We help organizations build ESG awareness, strengthen workforce engagement, and successfully manage organizational change during sustainability and transformation initiatives.",
-          detailedDescription:
-            "Our specialists design tailored training and change management programs that support the adoption of ESG frameworks, governance practices, and sustainability objectives across all levels of the organization. We help businesses create a culture of accountability, adaptability, and long-term sustainable growth.",
-          keyFeatures: [
-            "ESG awareness and employee training programs",
-            "Change management strategy development",
-            "Leadership and stakeholder engagement",
-            "Sustainability culture transformation support",
-            "Communication and adoption planning",
-            "Workforce readiness and capability building"
-          ],
-          image: "/advisory/Trainingandchangemanagement (2).jpg",
-        },
-      ],
-    },
+    // {
+    //   id: "esg-services",
+    //   title: " ESG Services",
+    //   description:
+    //     "Empowering sustainable growth through responsible business practices and transparent reporting.",
+    //   services: [
+    //     {
+    //       id: "esg-reporting",
+    //       name: "ESG Reporting & Compliance ",
+    //       shortDescription:
+    //         "Optimize supply chain for efficiency and resilience.",
+    //       description:
+    //         "We help organizations develop effective ESG frameworks, strengthen sustainability reporting, and align business operations with evolving environmental, social, and governance expectations.",
+    //       detailedDescription:
+    //         "Our ESG specialists support businesses in meeting regulatory requirements, improving stakeholder transparency, and building long-term sustainable value. We assist with ESG strategy development, reporting standards, governance assessments, and sustainability initiatives aligned with UAE regulations and international best practices.",
+    //       keyFeatures: [
+    //         "ESG reporting and disclosure support",
+    //         "Sustainability strategy development",
+    //         "ESG compliance and governance assessments",
+    //         "Carbon footprint and environmental reporting",
+    //         "Materiality assessment and stakeholder engagement",
+    //         "ESG policy and framework implementation"
+    //       ],
+    //       image: "/advisory/ESGReporting&Compliance.jpg",
+    //     },
+    //     {
+    //       id: "benchmarking-gap",
+    //       name: "Benchmarking & Gap Analysis ",
+    //       shortDescription: "Improve productivity using lean methodologies.",
+    //       description:
+    //         "We help organizations evaluate current ESG performance, identify operational gaps, and align sustainability practices with industry standards and regulatory expectations.",
+    //       detailedDescription:
+    //         "Our specialists conduct detailed assessments to compare your existing ESG framework against regional requirements, global benchmarks, and leading market practices. We provide actionable insights that help strengthen governance, improve sustainability performance, and support long-term business resilience.",
+    //       keyFeatures: [
+    //         "ESG maturity and performance assessment",
+    //         "Industry benchmarking and comparative analysis",
+    //         "Regulatory and compliance gap reviews",
+    //         "Sustainability risk identification",
+    //         "Governance and policy evaluation",
+    //         "Strategic improvement recommendations"
+    //       ],
+    //       image: "/advisory/Benchmarking&GapAnalysis.jpg",
+    //     },
+    //     {
+    //       id: "materiality-assessment",
+    //       name: "Materiality Assessment ",
+    //       shortDescription:
+    //         "Optimize inventory levels and warehouse efficiency.",
+    //       description: "We help organizations identify and prioritize the ESG topics that matter most to stakeholders, business performance, and long-term sustainability objectives.",
+    //       detailedDescription:
+    //         "Our team conducts structured materiality assessments to evaluate environmental, social, and governance factors impacting your organization. By engaging stakeholders and analyzing industry trends, we help businesses build focused ESG strategies, improve reporting transparency, and align with evolving regulatory and investor expectations.",
+    //       keyFeatures: [
+    //         "Stakeholder engagement and surveys",
+    //         "ESG priority identification and mapping",
+    //         "Double materiality assessment support",
+    //         "Industry and peer analysis",
+    //         "Sustainability risk and opportunity evaluation",
+    //         "ESG strategy alignment and reporting insights"
+    //       ],
+    //       image: "/advisory/MaterialityAssessment.jpg",
+    //     },
+    //     {
+    //       id: "post-implementation",
+    //       name: "Post Implementation Review ",
+    //       shortDescription:
+    //         "Optimize inventory levels and warehouse efficiency.",
+    //       description: "We help organizations evaluate the effectiveness of implemented ESG initiatives, governance frameworks, and sustainability strategies to ensure measurable impact and continuous improvement.",
+    //       detailedDescription:
+    //         "Our specialists conduct independent post implementation reviews to assess whether ESG objectives, compliance requirements, and operational targets have been successfully achieved. We identify improvement opportunities, strengthen accountability, and provide actionable recommendations that support long-term sustainability performance.",
+    //       keyFeatures: [
+    //         "ESG program performance evaluation",
+    //         "Compliance and governance effectiveness review",
+    //         "Sustainability KPI assessment",
+    //         "Operational improvement recommendations",
+    //         "Risk and control effectiveness analysis",
+    //         "Continuous monitoring and reporting support"
+    //       ],
+    //       image: "/advisory/PostImplementationReview(2).jpg",
+    //     },
+    //     {
+    //       id: "technology-advisory",
+    //       name: "Technology Advisory  ",
+    //       shortDescription:
+    //         "Optimize inventory levels and warehouse efficiency.",
+    //       description: "We help organizations leverage technology to improve operational efficiency, strengthen governance, and accelerate sustainable business transformation.",
+    //       detailedDescription:
+    //         "Our technology advisory specialists support businesses in evaluating digital capabilities, modernizing systems, and implementing scalable technology solutions aligned with strategic objectives and regulatory expectations. We assist organizations in navigating digital transformation while managing operational, cybersecurity, and compliance risks effectively.",
+    //       keyFeatures: [
+    //         "Digital transformation strategy and planning",
+    //         "IT governance and risk advisory",
+    //         "Business process automation support",
+    //         "Technology infrastructure assessment",
+    //         "ERP and system implementation advisory",
+    //         "Cybersecurity and data protection guidance"
+    //       ],
+    //       image: "/advisory/TechnologyAdvisory(2).jpg",
+    //     },
+    //     {
+    //       id: "training-change",
+    //       name: "Training and change management ",
+    //       shortDescription:
+    //         "Optimize inventory levels and warehouse efficiency.",
+    //       description: "We help organizations build ESG awareness, strengthen workforce engagement, and successfully manage organizational change during sustainability and transformation initiatives.",
+    //       detailedDescription:
+    //         "Our specialists design tailored training and change management programs that support the adoption of ESG frameworks, governance practices, and sustainability objectives across all levels of the organization. We help businesses create a culture of accountability, adaptability, and long-term sustainable growth.",
+    //       keyFeatures: [
+    //         "ESG awareness and employee training programs",
+    //         "Change management strategy development",
+    //         "Leadership and stakeholder engagement",
+    //         "Sustainability culture transformation support",
+    //         "Communication and adoption planning",
+    //         "Workforce readiness and capability building"
+    //       ],
+    //       image: "/advisory/Trainingandchangemanagement (2).jpg",
+    //     },
+    //   ],
+    // },
   ];
 
   const faqs = [

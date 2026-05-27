@@ -69,12 +69,12 @@ const Navbar = () => {
     { name: "Home", href: "/", key: "home" },
     { name: "About us", href: "/about", key: "about" },
     { name: "Services", href: "/services", key: "services", hasDropdown: true },
-    {
-      name: "Industry Expertise",
-      href: "/services/industry-expertise",
-      key: "industry-expertise",
-      hasDropdown: true,
-    },
+    // {
+    //   name: "Industry Expertise",
+    //   href: "/services/industry-expertise",
+    //   key: "industry-expertise",
+    //   hasDropdown: true,
+    // },
     { name: "Blogs", href: "/blogs", key: "blogs" },
     { name: "Careers", href: "/careers", key: "careers" },
     { name: "Contact us", href: "/contact", key: "contact" },
