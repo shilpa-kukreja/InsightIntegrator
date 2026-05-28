@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://insight-integrator.vercel.app/sitemap.xml
+# Host
+Host: https://insightintegrators.ae
+
+# Sitemaps
+Sitemap: https://insightintegrators.ae/sitemap.xml

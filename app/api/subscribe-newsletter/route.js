@@ -129,7 +129,7 @@
 //             <div class="content">
 //               <p class="welcome">Dear Subscriber,</p>
 //               <p>Thank you for subscribing to our newsletter! We're excited to have you join our community of forward-thinking professionals.</p>
-              
+
 //               <p>As a subscriber, you'll receive:</p>
 //               <ul class="features">
 //                 <li>✓ Latest industry insights and trends</li>
@@ -138,17 +138,17 @@
 //                 <li>✓ Upcoming events and webinars</li>
 //                 <li>✓ Special offers and announcements</li>
 //               </ul>
-              
+
 //               <p>We send newsletters bi-weekly, ensuring you stay informed without overwhelming your inbox.</p>
-              
+
 //               <center>
 //                 <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://insightintegrators.ae'}/blogs" class="button">
 //                   Explore Our Latest Insights
 //                 </a>
 //               </center>
-              
+
 //               <p>If you ever wish to unsubscribe, you can click the unsubscribe link at the bottom of any newsletter email.</p>
-              
+
 //               <p>Best regards,<br>
 //               <strong>The Insight Integrators Team</strong><br>
 //               Meydan Grandstand, Nad Al Sheba, Dubai, UAE</p>
@@ -167,7 +167,7 @@
 //     console.log('Sending admin notification...');
 //     await transporter.sendMail(adminMailOptions);
 //     console.log('Admin notification sent successfully');
-    
+
 //     console.log('Sending welcome email to subscriber...');
 //     await transporter.sendMail(subscriberMailOptions);
 //     console.log('Welcome email sent successfully');
@@ -181,7 +181,7 @@
 //     );
 //   } catch (error) {
 //     console.error('Error sending subscription email:', error);
-    
+
 //     return new Response(
 //       JSON.stringify({ 
 //         error: 'Failed to subscribe. Please try again later.',
@@ -607,10 +607,9 @@ export async function POST(request) {
 
     // Transporter
     const transporter = nodemailer.createTransport({
-      service: "gmail",
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT),
+      secure: process.env.SMTP_SECURE === 'true',
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -631,8 +630,7 @@ export async function POST(request) {
 
         <p><strong>Source:</strong> ${source}</p>
 
-        <p><strong>Consent:</strong> ${
-          consent ? "Authorized ✅" : "Not Authorized ❌"
+        <p><strong>Consent:</strong> ${consent ? "Authorized ✅" : "Not Authorized ❌"
         }</p>
 
         <p><strong>Subscribed At:</strong> ${subscribedAt}</p>

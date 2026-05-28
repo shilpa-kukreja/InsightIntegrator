@@ -5,7 +5,7 @@ import nodemailer from 'nodemailer';
 export async function POST(request) {
   try {
     const formData = await request.formData();
-    
+
     const categories = JSON.parse(formData.get('categories') || '[]');
     const relationship = formData.get('relationship');
     const awareness = formData.get('awareness');
@@ -15,18 +15,17 @@ export async function POST(request) {
 
     // Configure email transporter
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        host: 'smtp.gmail.com',
-        port: 587,
-        secure: false,
-        auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS,
-        },
-      });
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT),
+      secure: process.env.SMTP_SECURE === 'true',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
 
     // Prepare email content
-    const categoriesList = categories.length > 0 
+    const categoriesList = categories.length > 0
       ? categories.map(cat => `• ${cat}`).join('\n')
       : 'No categories selected';
 
@@ -85,21 +84,21 @@ export async function POST(request) {
     // Generate a unique password-protected link (simplified version)
     const reportId = Date.now().toString(36) + Math.random().toString(36).substr(2, 8);
     const accessToken = Math.random().toString(36).substr(2, 16);
-    
+
     // In a real implementation, store this in a database
     // const reportLink = `${process.env.NEXT_PUBLIC_BASE_URL}/whistleblowing/report/${reportId}?token=${accessToken}`;
 
-    return NextResponse.json({ 
-      success: true, 
+    return NextResponse.json({
+      success: true,
       message: 'Report submitted successfully',
       reportId: reportId
     }, { status: 200 });
 
   } catch (error) {
     console.error('Error sending whistleblowing email:', error);
-    return NextResponse.json({ 
-      success: false, 
-      message: 'Failed to submit report' 
+    return NextResponse.json({
+      success: false,
+      message: 'Failed to submit report'
     }, { status: 500 });
   }
 }
