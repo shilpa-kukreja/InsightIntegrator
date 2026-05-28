@@ -96,7 +96,7 @@ const BlogsPage = () => {
       date: 'November 3, 2025',
       readTime: '6 min read',
       excerpt: 'Explore upcoming e-invoicing regulations in the UAE and learn how businesses can prepare systems, processes, and compliance frameworks in advance.',
-      image: '/home/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg',
+      image: '/blog/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg',
       category: 'Digital Transformation',
       author: {
         name: 'David Williams',
@@ -128,7 +128,7 @@ const BlogsPage = () => {
       date: 'October 25, 2025',
       readTime: '9 min read',
       excerpt: 'Environmental, Social, and Governance (ESG) reporting is gaining importance across the UAE. Businesses are increasingly expected to demonstrate sustainability, transparency, and ethical practices.a',
-      image: '/home/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg',
+      image: '/blog/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg',
       category: 'Business Strategy',
       author: {
         name: 'Lisa Thompson',
@@ -137,22 +137,22 @@ const BlogsPage = () => {
       },
       featured: false
     },
-    {
-      id: 6,
-      title: 'The Future of Remote Work: Legal and Tax Implications',
-      slug: 'future-remote-work-legal-tax',
-      date: 'October 20, 2025',
-      readTime: '7 min read',
-      excerpt: 'Remote work is now a permanent feature of many organizations. However, it introduces legal, compliance, and tax complexities that businesses must address.',
-      image: '/blog/blog-image3.png',
-      category: 'Market Insights',
-      author: {
-        name: 'James Wilson',
-        role: 'Employment Law Specialist',
-        avatar: '/avatars/james.jpg'
-      },
-      featured: false
-    }
+    // {
+    //   id: 6,
+    //   title: 'The Future of Remote Work: Legal and Tax Implications',
+    //   slug: 'future-remote-work-legal-tax',
+    //   date: 'October 20, 2025',
+    //   readTime: '7 min read',
+    //   excerpt: 'Remote work is now a permanent feature of many organizations. However, it introduces legal, compliance, and tax complexities that businesses must address.',
+    //   image: '/blog/blog-image3.png',
+    //   category: 'Market Insights',
+    //   author: {
+    //     name: 'James Wilson',
+    //     role: 'Employment Law Specialist',
+    //     avatar: '/avatars/james.jpg'
+    //   },
+    //   featured: false
+    // }
   ];
 
   const filteredBlogs = allBlogs.filter(blog => {

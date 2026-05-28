@@ -715,7 +715,7 @@ const AboutPage = () => {
                   <div className="relative overflow-hidden shadow-2xl rounded-lg">
                     <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent"></div>
                     <img
-                      src="/aboutus/YourObjectivesOurExpertise.jpg"
+                      src="/aboutus/YourObjectivesOurExpertise1.jpg"
                       alt="Insight Integrators Team"
                       className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                     />
@@ -915,7 +915,7 @@ const AboutPage = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent"></div>
                   <img
-                    src="/aboutus/BuiltonTrust.jpg"
+                    src="/aboutus/BuiltonTrust1.jpg"
                     alt="Leadership Principles"
                     className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover shadow-2xl rounded-lg"
                   />
