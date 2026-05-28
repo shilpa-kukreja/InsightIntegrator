@@ -6,6 +6,7 @@ import LatestNewsSection from './components/LatestNewsSection'
 import TestimonialsSection from './components/TestimonialsSection'
 import Footer from './components/Footer'
 import HomeAboutUs from './components/HomeAboutUs'
+import StatsSection from './components/StatsSection'
 
 
 
@@ -29,6 +30,7 @@ const page = () => {
     <Navbar />
     <HeroSection />
     <HomeAboutUs />
+    <StatsSection/>
     <CommitmentSection />
     <LatestNewsSection />
     <TestimonialsSection />

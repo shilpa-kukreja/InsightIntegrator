@@ -92,7 +92,7 @@ const Footer = () => {
         { label: 'Contact us', href: '/contact' },
         // { label: 'China Desk', href: '/china-desk' },
         // { label : 'Consult' , href: '#consult'},
-        { label: 'Consult', href: 'https://wa.me/971526806400?text=Hello%20Insight%20Integrators,%20I%20would%20like%20to%20discuss%20compliance%20advisory.' }
+        // { label: 'Consult', href: 'https://wa.me/971526806400?text=Hello%20Insight%20Integrators,%20I%20would%20like%20to%20discuss%20compliance%20advisory.' }
       ]
     },
     {
@@ -150,7 +150,7 @@ const Footer = () => {
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
         </svg>
       ),
-      href: '#'
+      href: 'https://www.instagram.com/insightintegrators_?igsh=N3F6azJrZW9vbnd4'
     },
     {
       name: 'YouTube',
@@ -256,7 +256,7 @@ const Footer = () => {
               <div className="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
                 {/* Newsletter Signup - Enhanced */}
                 {/* Newsletter Signup - Enhanced */}
-                <form onSubmit={handleSubscribe} className="relative">
+                {/* <form onSubmit={handleSubscribe} className="relative">
                   <div className={`flex items-center gap-2 bg-white/5 rounded-full pl-4 pr-1.5 py-1 border backdrop-blur-sm transition-all duration-300 ${subscribeStatus === 'success' ? 'border-emerald-400/50 bg-emerald-400/10' :
                       subscribeStatus === 'error' ? 'border-red-400/50 bg-red-400/10' :
                         'border-white/10 hover:border-white/20'
@@ -282,20 +282,20 @@ const Footer = () => {
                     </button>
                   </div>
 
-                  {/* Success Message */}
+                
                   {subscribeStatus === 'success' && (
                     <div className="absolute -top-8 left-0 text-emerald-400/80 text-xs whitespace-nowrap animate-fadeIn">
                       ✓ Subscribed successfully! Check your email.
                     </div>
                   )}
 
-                  {/* Error Message */}
+             
                   {subscribeStatus === 'error' && (
                     <div className="absolute -top-8 left-0 text-red-400/80 text-xs whitespace-nowrap animate-fadeIn">
                       ✗ Subscription failed. Please try again.
                     </div>
                   )}
-                </form>
+                </form> */}
 
                 <button
                   onClick={handleBackToTop}
@@ -316,7 +316,7 @@ const Footer = () => {
               <p className="text-white/25 text-[11px] tracking-wide">
                 © {year} Insight Integrators UAE. All rights reserved.
               </p>
-              <div className="flex gap-6">
+              {/* <div className="flex gap-6">
                 <Link href="/legal/terms" className="text-white/25 hover:text-white/40 text-[11px] tracking-wide transition-colors duration-200">
                   Terms of Service
                 </Link>
@@ -326,7 +326,7 @@ const Footer = () => {
                 <Link href="/accessibility" className="text-white/25 hover:text-white/40 text-[11px] tracking-wide transition-colors duration-200">
                   Accessibility
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

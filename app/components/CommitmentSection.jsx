@@ -44,7 +44,7 @@ const CommitmentSection = () => {
       id: 3,
       title: 'Governance-Led Delivery',
       description: 'Our work follows defined frameworks and structured methodologies, ensuring transparency, consistency, and outcomes that stand up to regulatory expectations.',
-      icon: <img src="/iconlogo/Governance-LedDelivery1.png" alt="Enterprise-Grade Governance" className="w-8 h-8" />,
+      icon: <img src="/iconlogo/group-businessmen_30883.png" alt="Enterprise-Grade Governance" className="w-8 h-8" />,
       gradient: 'from-blue-900 to-blue-900'
     },
     {

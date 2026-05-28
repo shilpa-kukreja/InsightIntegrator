@@ -224,6 +224,10 @@ const Navbar = () => {
               href: "/services/advisory#enterprise-risk",
             },
             {
+              name: "Fraud Risk Management (FRM)",
+              href: "/services/advisory#fraud-investigations",
+            },
+            {
               name: "Corporate Governance Assessment",
               href: "/services/advisory#corporate-governance",
             },
@@ -321,59 +325,59 @@ const Navbar = () => {
         //   href: "/services/advisory#restructuring",
         //   sectionId: "restructuring",
         // },
-        {
-          name: "Forensic",
-          href: "/services/advisory#forensics",
-          sectionId: "forensics",
-          hasSubmenu: true,
-          subItems: [
-            {
-              name: "Fraud investigations ",
-              href: "/services/advisory#fraud-investigations",
-            },
-            {
-              name: "Anti-fraud program and controls  ",
-              href: "/services/advisory#anti-fraud",
-            },
-            { name: "Digital forensics ", href: "/services/advisory#digital-forensics" },
-            {
-              name: "Dispute advisory services ",
-              href: "/services/advisory#dispute-advisory",
-            },
-          ],
-        },
+        // {
+        //   name: "Forensic",
+        //   href: "/services/advisory#forensics",
+        //   sectionId: "forensics",
+        //   hasSubmenu: true,
+        //   subItems: [
+        //     {
+        //       name: "Fraud investigations ",
+        //       href: "/services/advisory#fraud-investigations",
+        //     },
+        //     {
+        //       name: "Anti-fraud program and controls  ",
+        //       href: "/services/advisory#anti-fraud",
+        //     },
+        //     { name: "Digital forensics ", href: "/services/advisory#digital-forensics" },
+        //     {
+        //       name: "Dispute advisory services ",
+        //       href: "/services/advisory#dispute-advisory",
+        //     },
+        //   ],
+        // },
 
-        {
-          name: "ESG Services",
-          href: "/services/advisory#esg-services",
-          sectionId: "esg-services",
-          hasSubmenu: true,
-          subItems: [
-            {
-              name: "ESG Reporting & Compliance ",
-              href: "/services/advisory#esg-reporting",
-            },
-            {
-              name: "Benchmarking & Gap Analysis  ",
-              href: "/services/advisory#benchmarking-gap",
-            },
-            {
-              name: "Materiality Assessment  ",
-              href: "/services/advisory#materiality-assessment",
-            },
-            {
-              name: "Post Implementation Review  ",
-              href: "/services/advisory#post-implementation",
-            }, {
-              name: "Technology Advisory  ",
-              href: "/services/advisory#technology-advisory",
-            },
-            {
-              name: "Training and change management",
-              href: "/services/advisory#training-change",
-            },
-          ],
-        },
+        // {
+        //   name: "ESG Services",
+        //   href: "/services/advisory#esg-services",
+        //   sectionId: "esg-services",
+        //   hasSubmenu: true,
+        //   subItems: [
+        //     {
+        //       name: "ESG Reporting & Compliance ",
+        //       href: "/services/advisory#esg-reporting",
+        //     },
+        //     {
+        //       name: "Benchmarking & Gap Analysis  ",
+        //       href: "/services/advisory#benchmarking-gap",
+        //     },
+        //     {
+        //       name: "Materiality Assessment  ",
+        //       href: "/services/advisory#materiality-assessment",
+        //     },
+        //     {
+        //       name: "Post Implementation Review  ",
+        //       href: "/services/advisory#post-implementation",
+        //     }, {
+        //       name: "Technology Advisory  ",
+        //       href: "/services/advisory#technology-advisory",
+        //     },
+        //     {
+        //       name: "Training and change management",
+        //       href: "/services/advisory#training-change",
+        //     },
+        //   ],
+        // },
         // {
         //   name: "Valuation Services",
         //   href: "/services/advisory#valuation",

@@ -46,7 +46,7 @@ const WhistleblowingPage = () => {
     };
 
     const timer = setTimeout(observeElements, 100);
-    
+
     return () => {
       if (observerRef.current) {
         observerRef.current.disconnect();
@@ -103,7 +103,7 @@ const WhistleblowingPage = () => {
 
     try {
       const formDataToSend = new FormData();
-      
+
       // Add all form fields to FormData
       formDataToSend.append('categories', JSON.stringify(selectedCategories));
       formDataToSend.append('relationship', formData.relationship);
@@ -111,7 +111,7 @@ const WhistleblowingPage = () => {
       formDataToSend.append('location', formData.location);
       formDataToSend.append('description', formData.description);
       formDataToSend.append('source', 'whistleblowing');
-      
+
       if (file) {
         formDataToSend.append('attachment', file);
       }
@@ -151,41 +151,41 @@ const WhistleblowingPage = () => {
     <>
       <Navbar />
       <div className="min-h-screen bg-white mt-16">
-        
+
         {/* Hero Section */}
-        <section 
+        <section
           id="hero"
           data-observe="true"
           className="relative overflow-hidden bg-[#2c154f] py-10 md:py-12 lg:py-12"
         >
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center z-10">
             <div className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-              <div className="inline-flex items-center gap-4 mb-6">
+              {/* <div className="inline-flex items-center gap-4 mb-6">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white/40 text-[12px] font-light tracking-[0.3em] uppercase">Confidential Reporting</span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
-              
+              </div> */}
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 tracking-tight leading-[1.1]">
-                Whistleblowing <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">Service</span>
+                Whistleblowing
               </h1>
-              
+
               <p className="text-white/40 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-                Speak up with confidence. Your voice matters, and we're here to listen.
+                Speak up with confidence. Your voice matters, and we're here to act.
               </p>
             </div>
           </div>
         </section>
 
         {/* Main Content - Two Column Layout */}
-        <section className="py-12 md:py-10 lg:py-12 bg-white">
+        <section className="py-12 md:py-10 lg:py-12 bg-white ">
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20">
-              
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20  items-stretch">
+
               {/* Left Side - Content */}
-              <div className="space-y-10">
+              <div className="space-y-15 mt-4 flex flex-col">
                 {/* Info Box */}
-                <div 
+                {/* <div 
                   id="info"
                   data-observe="true"
                   className={`transition-all duration-800 delay-100 transform ${visibleSections.info ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
@@ -199,35 +199,35 @@ const WhistleblowingPage = () => {
                       whistleblower submissions.
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Introduction */}
-                <div 
+                <div
                   id="intro"
                   data-observe="true"
                   className={`transition-all duration-800 delay-200 transform ${visibleSections.intro ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                 >
-                  <div className="inline-flex items-center gap-3 mb-5">
+                  {/* <div className="inline-flex items-center gap-3 mb-5">
                     <div className="h-px w-8 bg-[#0a0a0a]/50"></div>
                     <span className="text-[#0a0a0a] text-[10px] font-light tracking-[0.2em] uppercase">Our Commitment</span>
-                  </div>
+                  </div> */}
                   <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-5 leading-tight">
                     Confidential <span className="font-bold">Whistleblowing Service</span>
                   </h2>
                   <p className="text-gray-500 text-base leading-relaxed text-justify mb-5 font-light">
-                    We have established a confidential whistle-blowing service which ensures that anyone 
-                    who has concerns about how team members are behaving has a means of raising their 
+                    We have established a confidential whistle-blowing service which ensures that anyone
+                    who has concerns about how team members are behaving has a means of raising their
                     concerns confidentially.
                   </p>
                   <p className="text-gray-500 text-base leading-relaxed text-justify font-light">
-                    If you do not wish to discuss a matter of concern with your people manager, practice 
-                    leader or alternatively raise the concern to People & Culture in accordance with the 
+                    If you do not wish to discuss a matter of concern with your people manager, practice
+                    leader or alternatively raise the concern to People & Culture in accordance with the
                     internal grievance process, you can use this confidential whistleblowing service.
                   </p>
                 </div>
 
                 {/* Key Features */}
-                <div 
+                <div
                   id="features"
                   data-observe="true"
                   className={`transition-all duration-800 delay-300 transform ${visibleSections.features ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
@@ -249,22 +249,31 @@ const WhistleblowingPage = () => {
                     ))}
                   </div>
                 </div>
+
+                {/* Image after Key Features */}
+                <div className="mt-10 overflow-hidden rounded-xl h-[300px] flex-1">
+                  <img
+                    src="/career/whiteblow.jpg"
+                    alt="Confidential Reporting"
+                    className="w-full h-[600px] object-cover"
+                  />
+                </div>
               </div>
 
               {/* Right Side - Form */}
-              <div 
+              <div
                 id="form"
                 data-observe="true"
-                className={`transition-all duration-800 delay-400 transform ${visibleSections.form ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+                className={`transition-all duration-800 delay-400 transform ${visibleSections.form ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}
               >
-                <div className="bg-white border border-gray-100 shadow-md p-8 md:p-10 rounded-md">
-                  <div className="mb-8">
-                    <div className="w-12 h-px bg-[#0a0a0a]/50 mb-5"></div>
+                <div className="bg-white  shadow-md p-5 md:p-5 rounded-md h-full flex flex-col">
+                  <div className="mb-5">
+                    {/* <div className="w-12 h-px bg-[#0a0a0a]/50 mb-5"></div> */}
                     <h2 className="text-2xl md:text-3xl font-light text-gray-900">
                       Anonymous <span className="font-bold">Report</span>
                     </h2>
                   </div>
-                  
+
                   <form onSubmit={handleSubmit} className="space-y-7">
                     {/* Categories */}
                     <div>
@@ -438,7 +447,7 @@ const WhistleblowingPage = () => {
                     {/* Privacy Note */}
                     <div className="pt-4 text-center">
                       <p className="text-[11px] text-gray-400 font-light tracking-wide">
-                        Your report will be handled with strict confidentiality. You will receive a 
+                        Your report will be handled with strict confidentiality. You will receive a
                         password-protected link for secure communication.
                       </p>
                     </div>

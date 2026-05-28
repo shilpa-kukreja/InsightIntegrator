@@ -77,7 +77,7 @@ const PrivacyPolicyPage = () => {
      {
       id: 'how-we-use-your-information',
       title: 'How We Use Your Information',
-      content: 'The information collected may be used to provide and improve our advisory services, respond to inquiries and consultation requests, communicate important updates and business information, analyze website performance and user experience, maintain security and prevent unauthorized access, and comply with legal and regulatory obligations.'
+      content: 'The information collected may be used to provide and improve our  services, respond to inquiries and consultation requests, communicate important updates and business information, analyze website performance and user experience, maintain security and prevent unauthorized access, and comply with legal and regulatory obligations.Except as set out above, we will not disclose your personal information unless we are obliged to do so or allowed to do so, by law, or where we need to do so in order to run our business (for instance where we outsource services or other people process data for us).'
     },
      {
       id: 'data-protection-and security',
@@ -194,7 +194,7 @@ const PrivacyPolicyPage = () => {
         <section className="py-5 bg-gray-50 border-b border-gray-200">
           <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12">
             <p className="text-gray-500 text-sm font-light text-center">
-              Last Updated: <span className="font-medium text-gray-700">April 30, 2025</span>
+              Last Updated: <span className="font-medium text-gray-700">April 30, 2026</span>
             </p>
           </div>
         </section>
@@ -210,7 +210,7 @@ const PrivacyPolicyPage = () => {
               className={`mb-10 transition-all duration-700 transform ${visibleSections.intro ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
             >
               <p className="text-gray-600 text-base leading-relaxed font-light">
-                At Insight Integrators Management Consultancies LLC-FZ, we are committed to protecting 
+                At Insight Integrators LLC-FZ, we are committed to protecting 
                 your privacy and ensuring the security of your personal information. This Privacy Policy 
                 explains how we collect, use, disclose, and safeguard your information when you visit 
                 our website or use our services.
@@ -227,11 +227,11 @@ const PrivacyPolicyPage = () => {
                   className={`transition-all duration-700 transform ${visibleSections[section.id] ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
                   style={{ transitionDelay: `${Math.min(index * 50, 500)}ms` }}
                 >
-                  <div className="border-b border-gray-300 pb-3 mb-4">
+                  <div className="pb-3 mb-4">
                     <h2 className="text-lg md:text-xl font-semibold text-gray-900">
                       {section.title}
                     </h2>
-                    <div className="w-12 h-px bg-[#0a0a0a]/50 mt-2"></div>
+                   <div className="w-12 h-0.5 border-t border-black/40 mt-2"></div>
                   </div>
                   <p className="text-gray-500 text-base leading-relaxed font-light">
                     {section.content}

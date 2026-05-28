@@ -128,7 +128,7 @@
 //     <>
 //       <Navbar />
 //       <div ref={pageRef} className="min-h-screen bg-white mt-16">
-        
+
 //         {/* Hero Section - Premium Minimal */}
 //         <section className="relative pt-12 md:pt-12 lg:pt-16 pb-12 md:pb-16 lg:pb-16  flex items-center justify-center overflow-hidden bg-[#2c154f]">
 //           <div className="absolute inset-0 bg-[#2c154f]"></div>
@@ -470,6 +470,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { ShieldCheck, BarChart3, Calculator, Megaphone } from "lucide-react";
 
 
 
@@ -520,7 +521,7 @@ const AboutPage = () => {
 
     // Small delay to ensure DOM is ready
     const timer = setTimeout(observeElements, 100);
-    
+
     return () => {
       if (observerRef.current) {
         observerRef.current.disconnect();
@@ -532,27 +533,31 @@ const AboutPage = () => {
   const services = [
     {
       id: 1,
+      icon: ShieldCheck,
       title: 'Audit & Assurance',
       description: 'Build trust with clear, independent insights that strengthen controls and support regulatory readiness.',
-      features: ['External Audits', 'Internal Audits', 'Compliance Reviews', 'Financial Reporting']
-    },
-    {
-      id: 2,
-      title: 'Advisory',
-      description: 'Turn complexity into direction with structured guidance focused on performance, risk, and long-term stability.',
-      features: ['Strategic Planning', 'Business Transformation', 'Transaction Advisory', 'Risk Management']
+      features: ['Financial Reporting', 'In-Country Value (ICV)', 'Outsourcing and Business Solutions']
     },
     {
       id: 3,
+      icon: Calculator,
       title: 'Tax',
       description: 'Navigate evolving tax requirements with solutions designed for accuracy, efficiency, and full compliance.',
-      features: ['Corporate Tax', 'VAT Compliance', 'Cross-Border Tax', 'Tax Planning']
+      features: ['Corporate Tax', 'VAT ']
+    },
+    {
+      id: 2,
+      icon: BarChart3,
+      title: 'Advisory',
+      description: 'Turn complexity into direction with structured guidance focused on performance, risk, and long-term stability.',
+      features: ['Strategy & Transformation', 'Business Risk', 'Regulatory & Compliance', 'Financial Advisory', 'Technology & Cybersecurity']
     },
     {
       id: 4,
+      icon: Megaphone,
       title: 'Media',
       description: 'Create impactful brand presence with strategies and content designed to engage and deliver measurable results.',
-      features: ['Brand Strategy', 'Content Development', 'Digital Campaigns', 'Video Production']
+      features: ['Graphic Designing', 'Web Designing', 'Digital Marketing']
     }
   ];
 
@@ -585,6 +590,22 @@ const AboutPage = () => {
 
   const strategicDirections = [
     {
+      title: 'Integrated Service Approach',
+      description: 'Coordinated delivery across key service areas to ensure consistency and seamless execution.'
+    },
+    {
+      title: 'Client-Focused Approach',
+      description: 'Solutions designed around specific business needs, not generic frameworks.'
+    },
+    {
+      title: 'Regulatory & Market Understanding',
+      description: 'Combining regulatory knowledge with practical insight into business environments.'
+    },
+    {
+      title: 'Outcome-Oriented Execution',
+      description: 'Focused on delivering clear, structured, and measurable results.'
+    },
+    {
       title: 'Digital Enablement',
       description: 'Using modern tools and structured processes to improve efficiency and decision-making.',
       metric: '',
@@ -611,9 +632,9 @@ const AboutPage = () => {
   ];
 
   const milestones = [
-    { year: '2014', title: 'Foundation', description: 'Established with a focus on delivering structured advisory solutions across audit, risk, and compliance.' },
-    { year: '2016', title: 'Expansion', description: 'Expanded service capabilities to address a wider range of business and regulatory requirements.' },
-    { year: '2019', title: 'Market Reach', description: 'Extended support to organizations across multiple industries and evolving regulatory environments.' },
+    { year: '2020', title: 'Foundation', description: 'Established with a focus on delivering structured advisory solutions across audit, risk, and compliance.' },
+    { year: '2021', title: 'Expansion', description: 'Expanded service capabilities to address a wider range of business and regulatory requirements.' },
+    { year: '2023', title: 'Market Reach', description: 'Extended support to organizations across multiple industries and evolving regulatory environments.' },
     { year: '2024', title: 'Ongoing Progress', description: 'Continuing to strengthen capabilities and deliver consistent value through practical, client-focused solutions.' }
   ];
 
@@ -628,9 +649,9 @@ const AboutPage = () => {
     <>
       <Navbar />
       <div className="min-h-screen bg-white">
-        
+
         {/* Hero Section */}
-        <section 
+        <section
           id="hero"
           data-observe="true"
           className="relative pt-20 pb-16 md:pt-24 md:pb-20 lg:pt-28 lg:pb-24 flex items-center justify-center overflow-hidden bg-[#2c154f]"
@@ -640,8 +661,8 @@ const AboutPage = () => {
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center z-10">
             <div className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 tracking-tight leading-[1.2]">
-                Insight Integrators
-                <br />
+
+
                 <span className="font-bold bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent block mt-2">
                   Built on Expertise. Driven by Integrity.
 
@@ -649,7 +670,7 @@ const AboutPage = () => {
               </h1>
 
               <p className="text-white/40 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light px-4">
-               An independent advisory firm delivering structured audit, risk, and compliance solutions aligned with UAE regulatory standards.
+                An independent advisory firm delivering structured audit, risk and compliance solutions aligned with UAE regulatory standards.
 
               </p>
             </div>
@@ -657,25 +678,25 @@ const AboutPage = () => {
         </section>
 
         {/* Your Vision. Our Expertise. */}
-        <section 
+        <section
           id="vision"
           data-observe="true"
           className="py-12 md:py-16 lg:py-20 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 ">
               {/* Left Content */}
-              <div className={`transition-all duration-800 delay-100 transform ${visibleSections.vision ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}`}>
-                <div className="mb-6 md:mb-8">
-                  <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
+              <div className={`transition-all  duration-800 delay-100 transform ${visibleSections.vision ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}`}>
+                <div className="mb-6 md:mb-2">
+                  {/* <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
                     <div className="h-px w-8 md:w-10 bg-[#0a0a0a]/15"></div>
                     <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Approach</span>
-                  </div>
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 tracking-tight leading-[1.2]">
-                    Your Objectives.
+                  </div> */}
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#2c154f] tracking-tight leading-[1.2]">
+                    Your Objectives
                     <br />
                     <span className="font-bold relative inline-block mt-2">
-                      Our Expertise.
+                      Our Expertise
                       <span className="absolute -bottom-2 md:-bottom-3 left-0 w-full h-px bg-[#0a0a0a]/10"></span>
                     </span>
                   </h2>
@@ -706,7 +727,7 @@ const AboutPage = () => {
         </section>
 
         {/* Core Values Banner */}
-        <section 
+        <section
           id="values"
           data-observe="true"
           className="py-12 md:py-16 bg-[#2c154f]"
@@ -729,22 +750,22 @@ const AboutPage = () => {
         </section>
 
         {/* Our Strategic Direction */}
-        <section 
+        <section
           id="strategic"
           data-observe="true"
           className="py-12 md:py-16 lg:py-20 bg-gray-200"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="text-center mb-12 md:mb-16">
-              <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
+              {/* <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
                 <div className="h-px w-8 md:w-10 bg-[#0a0a0a]/15"></div>
                 <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Strategic Direction</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-tight">
-             Guided by Purpose. <span className="font-bold">Focused on Outcomes.</span>
+              </div> */}
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#2c154f] mb-4 tracking-tight">
+                Guided by Purpose. <span className="font-bold">Focused on Outcomes.</span>
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-base md:text-lg font-light px-4">
-                Our approach is centered on delivering consistent value through structured execution, regulatory alignment, and client-focused thinking.
+                Our approach is centered on delivering consistent value through structured execution, regulatory alignment and client-focused thinking.
               </p>
             </div>
 
@@ -770,7 +791,7 @@ const AboutPage = () => {
         </section>
 
         {/* What Makes Us Unique */}
-        <section 
+        <section
           id="unique"
           data-observe="true"
           className="py-12 md:py-16 lg:py-20 bg-white"
@@ -779,12 +800,12 @@ const AboutPage = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
               {/* Left - Title & Timeline */}
               <div className={`transition-all duration-800 delay-100 transform ${visibleSections.unique ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'}`}>
-                <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
+                {/* <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
                   <div className="h-px w-8 md:w-10 bg-[#0a0a0a]/50"></div>
-                  <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Distinction</span>
-                </div>
+                  <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Journey</span>
+                </div> */}
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 md:mb-6 tracking-tight leading-tight">
-                  What Defines Our <span className="font-bold">Approach</span>
+                  Our <span className="font-bold text-[#2b144d]  ">Journey</span>
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-8 md:mb-12 font-light">
                   We stand apart through a disciplined approach to quality, integrity, and client-focused delivery. Every engagement is built on clarity, consistency, and a strong understanding of regulatory expectations.
@@ -792,7 +813,7 @@ const AboutPage = () => {
 
                 {/* Timeline */}
                 <div className="space-y-6 md:space-y-8">
-                  <h3 className="text-xs font-semibold text-gray-500 tracking-[0.2em] uppercase">Our Journey (Neutral + Safe)</h3>
+                  {/* <h3 className="text-xs font-semibold text-gray-500 tracking-[0.2em] uppercase">Our Journey (Neutral + Safe)</h3> */}
                   <div className="relative">
                     <div className="absolute left-[19px] top-3 bottom-3 w-px bg-gradient-to-b from-[#0a0a0a]/40 via-[#0a0a0a]/30 to-[#0a0a0a]/10"></div>
                     {milestones.map((milestone, index) => (
@@ -814,34 +835,33 @@ const AboutPage = () => {
               </div>
 
               {/* Right - Unique Qualities Grid */}
-              <div className={`grid sm:grid-cols-2 gap-5 md:gap-6 transition-all duration-800 delay-200 transform ${visibleSections.unique ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}>
-                {uniqueQualities.map((quality, index) => (
-                  <div
-                    key={index}
-                    className="group bg-white p-6 md:p-8 hover:shadow-xl transition-all duration-500 border border-gray-200 hover:border-gray-200 rounded-lg"
-                  >
-                    <div className="w-px h-8 bg-[#0a0a0a]/50 mb-4 md:mb-5 group-hover:h-10 transition-all duration-500"></div>
-                    <h3 className="font-semibold text-gray-900 mb-2 md:mb-3 text-base tracking-wide">{quality.title}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed font-light">{quality.description}</p>
-                  </div>
-                ))}
+              <div className="sm:col-span-2 lg:col-span-1 overflow-hidden rounded-lg h-[700px]">
+
+                <div className="overflow-hidden rounded-lg ">
+                  <img
+                    src="/aboutus/ourjourney.jpg"
+                    alt="Quality"
+                    className="w-full h-[700px] object-cover"
+                  />
+                </div>
+
               </div>
             </div>
           </div>
         </section>
 
         {/* Our Services */}
-        <section 
+        <section
           id="services"
           data-observe="true"
           className="py-12 md:py-16 lg:py-20 bg-[#2c154f]"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="text-center mb-10 md:mb-12">
-              <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
+              {/* <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
                 <div className="h-px w-8 md:w-10 bg-white/20"></div>
                 <span className="text-white/60 text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">What We Offer</span>
-              </div>
+              </div> */}
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 tracking-tight">
                 Integrated Solutions for <span className="font-bold"> Complex Business Needs</span>
               </h2>
@@ -859,8 +879,18 @@ const AboutPage = () => {
                   style={{ transitionDelay: `${index * 100 + 500}ms` }}
                 >
                   <div className="absolute top-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#2c154f] to-[#4a2a7a] group-hover:w-full transition-all duration-700"></div>
-                  <div className="text-3xl md:text-4xl font-light text-gray-300 mb-4 md:mb-5 group-hover:text-gray-400 transition-colors">{String(index + 1).padStart(2, '0')}</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 tracking-tight">{service.title}</h3>
+                  {/* <div className="text-3xl md:text-4xl font-light text-gray-300 mb-4 md:mb-5 group-hover:text-gray-400 transition-colors">{String(index + 1).padStart(2, '0')}</div> */}
+                  <div className="flex items-center gap-2 mb-2 md:mb-3">
+                    {service.icon && (
+                      <service.icon
+                        size={20}
+                        className="text-[#2b144d]"
+                      />
+                    )}
+                    <h3 className="text-lg md:text-xl font-semibold text-[#2b144d] tracking-tight">
+                      {service.title}
+                    </h3>
+                  </div>
                   <p className="text-gray-500 text-sm leading-relaxed mb-4 md:mb-5 font-light">{service.description}</p>
                   <div className="flex flex-wrap gap-2 pt-3 md:pt-4 border-t border-gray-50">
                     {service.features.slice(0, 3).map((feature, idx) => (
@@ -874,7 +904,7 @@ const AboutPage = () => {
         </section>
 
         {/* Leadership Principles */}
-        <section 
+        <section
           id="leadership"
           data-observe="true"
           className="py-12 md:py-16 lg:py-20 bg-gray-50"
@@ -892,10 +922,10 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className={`order-1 lg:order-2 transition-all duration-800 delay-200 transform ${visibleSections.leadership ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}>
-                <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
+                {/* <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
                   <div className="h-px w-8 md:w-10 bg-[#0a0a0a]/15"></div>
                   <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Promise</span>
-                </div>
+                </div> */}
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 md:mb-6 tracking-tight leading-tight">
                   Built on Trust, <br /><span className="font-bold">Focused on Regulatory Clarity.</span>
                 </h2>
@@ -921,32 +951,32 @@ const AboutPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section 
+        <section
           id="cta"
           data-observe="true"
           className="py-10 md:py-12 lg:py-12 bg-[#2c154f] relative overflow-hidden"
         >
-          <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
+          <div className="relative max-w-5xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <div className="inline-flex items-center gap-3 mb-6 md:mb-8">
+              {/* <div className="inline-flex items-center gap-3 mb-6 md:mb-8">
                 <div className="h-px w-8 md:w-12 bg-white/40"></div>
-                <span className="text-white/40 text-[12px] tracking-[0.3em] uppercase">Start the Conversation</span>
+                <span className="text-white/40 text-[12px] tracking-[0.3em] uppercase"></span>
                 <div className="h-px w-8 md:w-12 bg-white/40"></div>
-              </div>
+              </div> */}
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 md:mb-5 tracking-tight">
-                Let’s Discuss Your <span className="font-bold"> Compliance Priorities</span>
+                Let’s Discuss Your <span className="font-bold"> Business Requirements</span>
               </h2>
               <p className="text-white/25 text-base md:text-lg mb-8 md:mb-10 max-w-xl mx-auto font-light px-4">
-                Connect with us to explore practical solutions that support your regulatory, risk, and business requirements.
+                Connect with us to explore practical solutions that support your regulatory, risk and business requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center px-4">
                 <Link href="/contact" className="group px-6 md:px-9 py-3 bg-white text-[#0a0a0a] text-sm font-medium tracking-wide hover:bg-gray-100 transition-all duration-300 rounded-lg">
                   Schedule a Consultation
                   <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
-                <Link href="/contact" className="px-6 md:px-9 py-3 border border-white/15 text-white text-sm font-medium tracking-wide hover:bg-white/5 transition-all duration-300 rounded-lg">
+                {/* <Link href="/contact" className="px-6 md:px-9 py-3 border border-white/15 text-white text-sm font-medium tracking-wide hover:bg-white/5 transition-all duration-300 rounded-lg">
                   Contact Our Team
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

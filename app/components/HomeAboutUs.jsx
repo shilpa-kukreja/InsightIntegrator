@@ -38,26 +38,26 @@ const HomeAboutUs = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 z-10">
         
         {/* Section Label - Premium */}
-        <div className={`text-center mb-8 transition-all duration-700 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        {/* <div className={`text-center mb-8 transition-all duration-700 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="inline-flex items-center gap-3">
             <div className="h-px w-10 bg-gradient-to-r from-transparent to-[#2c154f]"></div>
             <span className="text-[#0a0a0a] text-2xl font-semibold uppercase tracking-[0.2em]">About Us</span>
             <div className="h-px w-10 bg-gradient-to-l from-transparent to-[#2c154f]"></div>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Content - Premium Layout */}
         <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
           
           {/* Left Side - Content with Premium Typography */}
           <div className={`transition-all duration-700 delay-150 ease-out transform ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 tracking-tight leading-[1.2]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8  tracking-tight leading-[1.2]">
               Delivering Clarity in Complex 
               <span className="relative inline-block ml-2">
                 Regulatory Environments
-                <svg className="absolute -bottom-2 left-0 w-full h-1" viewBox="0 0 200 4" preserveAspectRatio="none">
+                {/* <svg className="absolute -bottom-2 left-0 w-full h-1" viewBox="0 0 200 4" preserveAspectRatio="none">
                   <line x1="0" y1="2" x2="200" y2="2" stroke="#0a0a0a" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.3"/>
-                </svg>
+                </svg> */}
               </span>
             </h2>
             

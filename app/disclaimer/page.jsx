@@ -50,27 +50,27 @@ const DisclaimerPage = () => {
     {
       id: 'general',
       title: 'General Information',
-      content: 'All advisory services, recommendations, insights, and strategies shared through this website or during consultations are based on available information, business objectives, and industry understanding at the time of engagement. Business outcomes may vary depending on market conditions, operational execution, regulatory changes, and other external factors beyond our control.'
+      content: 'All our services, recommendations, insights and strategies shared through this website or during consultations are based on available information, business objectives and industry understanding at the time of engagement. Business outcomes may vary depending on market conditions, operational execution, regulatory changes and other external factors beyond our control.'
     },
     {
       id: 'professional',
       title: 'Professional Advice Disclaimer',
-      content: 'Nothing on this website should be considered legal, financial, tax, investment, or regulatory advice unless explicitly stated through a formal professional engagement. Users are encouraged to seek independent professional guidance before making business, financial, or operational decisions.'
+      content: 'Nothing on this website should be considered legal, financial, tax, investment or regulatory advice unless explicitly stated through a formal professional engagement. Users are encouraged to seek independent professional guidance before making business, financial or operational decisions.'
     },
     {
       id: 'external',
       title: 'External Links Disclaimer',
-      content: 'We are not liable for any direct, indirect, incidental, or consequential loss or damages arising from the use of this website, reliance on its content, or implementation of recommendations provided through our services.'
+      content: 'We are not liable for any direct, indirect, incidental or consequential loss or damages arising from the use of this website, reliance on its content or implementation of recommendations provided through our services.'
     },
     {
       id: 'testimonials',
       title: 'Testimonials Disclaimer',
-      content: 'This website may include links to third-party websites or external resources for informational convenience. We do not endorse or assume responsibility for the content, availability, or practices of any third-party platforms.'
+      content: 'This website may include links to third-party websites or external resources for informational convenience. We do not endorse or assume responsibility for the content, availability or practices of any third-party platforms.'
     },
     {
       id: 'financial',
       title: 'Financial Information Disclaimer',
-      content: 'All intellectual property, branding, content, graphics, and materials displayed on this website remain the property of their respective owners unless otherwise stated. Unauthorized reproduction, distribution, or use of website content is prohibited without prior written permission.'
+      content: 'All intellectual property, branding, content, graphics and materials displayed on this website remain the property of their respective owners unless otherwise stated. Unauthorized reproduction, distribution or use of website content is prohibited without prior written permission.'
     },
     {
       id: 'tax',
@@ -107,11 +107,11 @@ const DisclaimerPage = () => {
           
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div className={`transition-all duration-800 transform ${visibleSections.hero ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <div className="inline-flex items-center gap-3 mb-6">
+              {/* <div className="inline-flex items-center gap-3 mb-6">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white/40 text-[12px] font-light tracking-[0.3em] uppercase">Legal Information</span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
+              </div> */}
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-5 tracking-tight">
                 Disclaimer
@@ -133,7 +133,7 @@ const DisclaimerPage = () => {
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className={`text-center transition-all duration-500 transform ${visibleSections['last-updated'] ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
               <p className="text-gray-500 text-sm font-light">
-                Last Updated: <span className="font-medium text-gray-700">April 30, 2025</span>
+                Last Updated: <span className="font-medium text-gray-700">April 30, 2026</span>
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@ const DisclaimerPage = () => {
               </div>
               <div className="bg-gray-50 border-l-4 border-[#2c154f] p-6 md:p-8">
                 <p className="text-gray-600 text-base leading-relaxed font-light">
-                 The information provided on this website is intended for general informational and business advisory purposes only. While we strive to ensure the accuracy, reliability, and relevance of the content, we do not guarantee that all information is complete, current, or free from errors.
+                 The information provided on this website is intended for general informational and business  purposes only. While we strive to ensure the accuracy, reliability, and relevance of the content, we do not guarantee that all information is complete, current or free from errors.
                 </p>
               </div>
             </div>

@@ -140,11 +140,11 @@ const ServicesPage = () => {
           
           <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center z-10">
             <div className={`transition-all duration-1000 delay-200 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-              <div className="inline-flex items-center gap-4 mb-6">
+              {/* <div className="inline-flex items-center gap-4 mb-6">
                 <div className="h-px w-12 bg-white/40"></div>
                 <span className="text-white/50 text-[11px] font-light tracking-[0.3em] uppercase">Our Services</span>
                 <div className="h-px w-12 bg-white/40"></div>
-              </div>
+              </div> */}
               <h1 className="text-4xl md:text-6xl lg:text-6xl font-light text-white mb-6 tracking-tight leading-[1.1]">
                 Comprehensive <span className="font-bold">Solutions</span>
               </h1>
@@ -198,10 +198,10 @@ const ServicesPage = () => {
         <section className="py-12 bg-[#2c154f]">
           <div className="max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div className={`transition-all duration-800 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <div className="inline-flex items-center gap-3 mb-6">
+              {/* <div className="inline-flex items-center gap-3 mb-6">
                 <div className="h-px w-10 bg-white/40"></div>
                 <span className="text-white text-[10px] font-light tracking-[0.2em] uppercase">Need Help?</span>
-              </div>
+              </div> */}
               <h2 className="text-2xl md:text-3xl font-light text-white mb-4">
                 Let's Discuss Your <span className="font-bold">Business Needs</span>
               </h2>

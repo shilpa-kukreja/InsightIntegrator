@@ -141,7 +141,7 @@ export default function CookieSettingsPage() {
             <p className="text-gray-500 text-sm font-light text-center">
               Last Updated:{" "}
               <span className="font-medium text-gray-700">
-                April 30, 2025
+                April 30, 2026
               </span>
             </p>
           </div>
@@ -184,12 +184,12 @@ export default function CookieSettingsPage() {
                     transitionDelay: `${Math.min(index * 50, 500)}ms`,
                   }}
                 >
-                  <div className="border-b border-gray-300 pb-3 mb-4">
+                  <div className=" pb-3 mb-4">
                     <h2 className="text-lg md:text-xl font-semibold text-gray-900">
                       {section.title}
                     </h2>
 
-                    <div className="w-12 h-px bg-[#0a0a0a]/50 mt-2"></div>
+                     <div className="w-12 h-0.5 border-t border-black/40 mt-2"></div>
                   </div>
 
                   <p className="text-gray-500 text-base leading-relaxed font-light">
@@ -203,7 +203,7 @@ export default function CookieSettingsPage() {
                       </p>
 
                       <p className="text-gray-500 text-base font-light">
-                        📍 Meydan Grandstand, Nad Al Sheba Dubai, United Arab Emirates
+                        📍 Meydan Grandstand, Nad Al Sheba, Dubai, United Arab Emirates
 
 
                       </p>

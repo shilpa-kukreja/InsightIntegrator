@@ -182,12 +182,12 @@ const TestimonialsSection = () => {
                 <div className="bg-white rounded-xl p-6 md:p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 h-full">
                   {/* Header */}
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                    <div className="w-12 h-12 rounded-full bg-[#4f2e80] flex items-center justify-center text-white font-bold text-lg shadow-md">
                       {testimonial.initial}
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                      <div className="flex items-center gap-2">
+                      {/* <div className="flex items-center gap-2">
                         <span className="text-xs text-gray-400">{testimonial.date}</span>
                         <span className="inline-flex items-center gap-0.5 text-xs text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-full">
                           <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
@@ -195,7 +195,7 @@ const TestimonialsSection = () => {
                           </svg>
                           <span>Verified</span>
                         </span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 

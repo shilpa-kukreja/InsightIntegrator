@@ -494,11 +494,11 @@ const BlogsPage = () => {
         >
           <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div className={`transition-all duration-800 transform ${visibleSections.cta ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <div className="inline-flex items-center gap-3 mb-8">
+              {/* <div className="inline-flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">Stay Informed</span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
+              </div> */}
 
               <h2 className="text-3xl md:text-4xl font-light text-white mb-5 tracking-tight">
                 Stay Ahead with <span className="font-bold"> Relevant Insights</span>

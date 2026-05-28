@@ -311,13 +311,13 @@ const MediaPage = () => {
             <div
               className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
             >
-              <div className="inline-flex items-center gap-4 mb-8">
+              {/* <div className="inline-flex items-center gap-4 mb-8">
                 <div className="h-px w-12 bg-white/40"></div>
                 <span className="text-white/50 text-[11px] font-light tracking-[0.3em] uppercase">
                   Media
                 </span>
                 <div className="h-px w-12 bg-white/40"></div>
-              </div>
+              </div> */}
 
               <h1 className="text-5xl md:text-6xl lg:text-6xl font-light text-white mb-8 tracking-tight leading-[1.1]">
                 
@@ -352,12 +352,12 @@ const MediaPage = () => {
             <div
               className={`text-center transition-all duration-800 transform ${visibleSections.overview ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <div className="inline-flex items-center gap-3 mb-3">
+              {/* <div className="inline-flex items-center gap-3 mb-3">
                 <div className="h-px w-10 bg-[#0a0a0a]/50"></div>
                 <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">
                   Overview
                 </span>
-              </div>
+              </div> */}
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
                 Creative.   <span className="font-bold">Results-Focused.</span> Engaging.
               </h2>
@@ -376,7 +376,7 @@ const MediaPage = () => {
           className="py-12 md:py-12 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-            <div
+            {/* <div
               className={`text-center mb-20 transition-all duration-800 transform ${visibleSections.services ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
               <div className="inline-flex items-center gap-3 mb-6">
@@ -393,7 +393,7 @@ const MediaPage = () => {
                 needs
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-5"></div>
-            </div>
+            </div> */}
 
            
 
@@ -421,7 +421,7 @@ const MediaPage = () => {
                       >
                         {/* LEFT CONTENT */}
                         <div>
-                          <div className="flex items-center gap-4 mb-4">
+                          {/* <div className="flex items-center gap-4 mb-4">
                             <span className="text-sm text-gray-400">
                               {(i + 1).toString().padStart(2, "0")}
                             </span>
@@ -429,7 +429,7 @@ const MediaPage = () => {
                             <span className="text-xs uppercase text-gray-400">
                               Service
                             </span>
-                          </div>
+                          </div> */}
 
                           <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
                             {service.name}
@@ -484,23 +484,23 @@ const MediaPage = () => {
         <section
           id="benefits"
           data-observe="true"
-          className="py-12 md:py-12 bg-[#2c154f]"
+          className="py-12 md:py-12 bg-gray-200"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="max-w-4xl mx-auto text-center">
               <div
                 className={`transition-all duration-800 transform ${visibleSections.benefits ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               >
-                <div className="inline-flex items-center gap-3 mb-6">
+                {/* <div className="inline-flex items-center gap-3 mb-6">
                   <div className="h-px w-10 bg-[#ffffff]/50"></div>
                   <span className="text-[#ffffff] text-[10px] font-light tracking-[0.2em] uppercase">
                     Why Choose Us
                   </span>
-                </div>
-                <h2 className="text-4xl md:text-5xl font-light text-[#ffffff] mb-4 leading-tight">
+                </div> */}
+                <h2 className="text-4xl md:text-5xl font-light text-[#2c154f] mb-4 leading-tight">
                   Key <span className="font-bold">Benefits</span>
                 </h2>
-                <div className="w-16 h-px bg-[#ffffff]/50 mx-auto mb-12"></div>
+                <div className="w-16 h-px bg-[#2c154f] mx-auto mb-12"></div>
 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
@@ -514,8 +514,8 @@ const MediaPage = () => {
                     "Consistent brand positioning across platforms",
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
-                      <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
-                      <span className="text-[#ffffff] text-base font-light group-hover:text-[#ffffff] transition-colors">
+                      <div className="w-px h-8 bg-[#2c154f] group-hover:h-12 transition-all duration-300"></div>
+                      <span className="text-black text-base font-light group-hover:text-gray-900 transition-colors">
                         {benefit}
                       </span>
                     </div>
@@ -528,7 +528,7 @@ const MediaPage = () => {
 
         {/* FAQ Section */}
         {/* FAQ Section */}
-        <section
+        {/* <section
           id="faq"
           data-observe="true"
           className="py-10 md:py-12 bg-gradient-to-b from-gray-50 to-white"
@@ -571,10 +571,9 @@ const MediaPage = () => {
                         : "hover:shadow-lg hover:border-gray-100"
                     }`}
                   >
-                    {/* Premium gradient border accent */}
+                 
                     <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#2c154f] via-[#6b3fa0] to-[#2c154f] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
 
-                    {/* Question Button */}
                     <button
                       onClick={() => toggleFaq(index)}
                       className="w-full flex justify-between items-center p-6 lg:p-7 text-left group/btn"
@@ -614,7 +613,7 @@ const MediaPage = () => {
                       </div>
                     </button>
 
-                    {/* Answer Panel */}
+                   
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${
                         openFaq === index
@@ -674,9 +673,9 @@ const MediaPage = () => {
                   </Link>
                 </div>
               </div>
-            </div> */}
+            </div> 
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section
@@ -689,27 +688,26 @@ const MediaPage = () => {
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/50 rounded-full blur-3xl animate-pulse delay-1000"></div>
           </div> */}
 
-          <div className="relative max-w-4xl mx-auto px-6 md:px-8 lg:px-12 text-center">
+          <div className="relative max-w-5xl mx-auto px-6 md:px-8 lg:px-12 text-center">
             <div
               className={`transition-all duration-800 transform ${visibleSections.cta ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <div className="inline-flex items-center gap-3 mb-8">
+              {/* <div className="inline-flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white text-[10px] tracking-[0.3em] uppercase">
                   Get Started
                 </span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
+              </div> */}
 
               <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
                 Ready for a{" "}
-                <span className="font-bold">Trusted Audit Partner?</span>
+                <span className="font-bold">Trusted Marketing Partner?</span>
               </h2>
 
               <p className="text-white/40 text-base mb-10 font-light max-w-md mx-auto">
-                Contact our Audit & Assurance experts to discuss how we can help
-                your organization achieve excellence in financial reporting and
-                compliance.
+                Contact our Marketing &  experts to discuss how we can help
+                your organization achieve excellence.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-5 justify-center">

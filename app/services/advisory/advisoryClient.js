@@ -138,6 +138,25 @@ const AdvisoryPage = () => {
           ],
           image: "/advisory/EnterpriseRiskManagement.jpg",
         },
+           {
+          id: "fraud-investigations",
+          name: "Fraud Risk Management (FRM) ",
+         shortDescription:
+            "Optimize supply chain for efficiency and resilience.",
+          description:
+            "Our FRM specialists help businesses identify, investigate, and respond to financial misconduct, fraud risks, and regulatory violations with complete confidentiality and professional integrity.",
+          detailedDescription:
+            "In today’s complex regulatory environment, organizations require proactive forensic support to protect financial assets, maintain stakeholder trust, and ensure compliance with UAE laws and corporate governance standards. We conduct detailed investigations, analyze financial irregularities, and provide clear reporting to support informed decision-making and legal proceedings when required.",
+          keyFeatures: [
+            "Fraud Risk Assessment",
+            "Investigation Support and Forensic Analysis",
+            "Fraud Detection and Monitoring",
+            "Whistleblower Program Design and Management",
+             "Fraud Awareness Training",
+            "Incident Response Planning"
+          ],
+          image: "/advisory/FraudInvestigations.jpg",
+        },
         {
           id: "corporate-governance",
           name: "Corporate Governance Assessment",
@@ -735,13 +754,13 @@ const AdvisoryPage = () => {
             <div
               className={`transition-all duration-1000 delay-200 transform ${visibleSections.hero ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
             >
-              <div className="inline-flex items-center gap-4 mb-8">
+              {/* <div className="inline-flex items-center gap-4 mb-8">
                 <div className="h-px w-12 bg-white/40"></div>
                 <span className="text-white/50 text-[12px] font-light tracking-[0.3em] uppercase">
                   Advisory Services
                 </span>
                 <div className="h-px w-12 bg-white/40"></div>
-              </div>
+              </div> */}
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 tracking-tight leading-[1.1]">
                 Strategic{" "}
@@ -777,12 +796,12 @@ const AdvisoryPage = () => {
             <div
               className={`text-center transition-all duration-800 transform ${visibleSections.overview ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <div className="inline-flex items-center gap-3 mb-4">
+              {/* <div className="inline-flex items-center gap-3 mb-4">
                 <div className="h-px w-10 bg-[#0a0a0a]/50"></div>
                 <span className="text-[#0a0a0a] text-[12px] font-light tracking-[0.2em] uppercase">
                   Overview
                 </span>
-              </div>
+              </div> */}
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 leading-tight">
                 Clarity.   <span className="font-bold">Sustainable Growth.</span>{" "}
                 Strategy.
@@ -821,7 +840,7 @@ const AdvisoryPage = () => {
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto mt-6"></div>
             </div> */}
-             <div
+             {/* <div
               className={`text-center mb-20 transition-all duration-800 transform `}
             >
               <div className="inline-flex items-center gap-3 mb-6">
@@ -838,7 +857,7 @@ const AdvisoryPage = () => {
 
               </p>
               <div className="w-16 h-px bg-[#0a0a0a]/40 mx-auto mt-6"></div>
-            </div>
+            </div> */}
 
             <div className="space-y-12">
               {serviceItems.map((item, index) => (
@@ -855,7 +874,7 @@ const AdvisoryPage = () => {
                   >
                     {/* Left Side - Content */}
                     <div className="order-2 lg:order-1">
-                      <div className="flex items-center gap-4 mb-6">
+                      {/* <div className="flex items-center gap-4 mb-6">
                         <span className="text-sm font-light text-gray-500 tracking-wider">
                           {(index + 1).toString().padStart(2, "0")}
                         </span>
@@ -863,7 +882,7 @@ const AdvisoryPage = () => {
                         <span className="text-[12px] text-gray-500 font-light uppercase tracking-wider">
                           Advisory Service
                         </span>
-                      </div>
+                      </div> */}
 
                       <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-5 leading-tight">
                         {item.name}
@@ -965,7 +984,7 @@ const AdvisoryPage = () => {
                       >
                         {/* LEFT CONTENT */}
                         <div>
-                          <div className="flex items-center gap-4 mb-4">
+                          {/* <div className="flex items-center gap-4 mb-4">
                             <span className="text-sm text-gray-400">
                               {(i + 1).toString().padStart(2, "0")}
                             </span>
@@ -973,7 +992,7 @@ const AdvisoryPage = () => {
                             <span className="text-xs uppercase text-gray-400">
                               Service
                             </span>
-                          </div>
+                          </div> */}
 
                           <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
                             {service.name}
@@ -1026,23 +1045,23 @@ const AdvisoryPage = () => {
         <section
           id="benefits"
           data-observe="true"
-          className="py-12 md:py-12 bg-[#2c154f]"
+          className="py-12 md:py-12 bg-gray-200"
         >
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
             <div className="max-w-4xl mx-auto text-center">
               <div
                 className={`transition-all duration-800 transform ${visibleSections.benefits ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               >
-                <div className="inline-flex items-center gap-3 mb-6">
-                  <div className="h-px w-10 bg-[#ffffff]/50"></div>
-                  <span className="text-[#ffffff] text-[12px] font-light tracking-[0.2em] uppercase">
+                {/* <div className="inline-flex items-center gap-3 mb-6">
+                  <div className="h-px w-10 bg-[#2c154f]"></div>
+                  <span className="text-[#2c154f] text-[12px] font-light tracking-[0.2em] uppercase">
                     Why Choose Us
                   </span>
-                </div>
-                <h2 className="text-4xl md:text-5xl font-light text-[#ffffff] mb-6 leading-tight">
+                </div> */}
+                <h2 className="text-4xl md:text-5xl font-light text-[#2c154f] mb-6 leading-tight">
                   Key <span className="font-bold">Benefits</span>
                 </h2>
-                <div className="w-16 h-px bg-[#ffffff]/50 mx-auto mb-12"></div>
+                <div className="w-16 h-px bg-[#2c154f] mx-auto mb-12"></div>
 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   {[
@@ -1056,8 +1075,8 @@ const AdvisoryPage = () => {
                     "Industry-focused expertise with practical implementation guidance",
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-5 group">
-                      <div className="w-px h-8 bg-[#ffffff]/50 group-hover:h-12 transition-all duration-300"></div>
-                      <span className="text-[#ffffff] text-base font-light group-hover:text-[#ffffff] transition-colors">
+                      <div className="w-px h-8 bg-[#2c154f] group-hover:h-12 transition-all duration-300"></div>
+                      <span className="text-black text-base font-light group-hover:text-gray-900 transition-colors">
                         {benefit}
                       </span>
                     </div>
@@ -1069,7 +1088,7 @@ const AdvisoryPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section
+        {/* <section
           id="faq"
           data-observe="true"
           className="py-10 md:py-12 bg-gradient-to-b from-gray-50 to-white"
@@ -1112,10 +1131,10 @@ const AdvisoryPage = () => {
                         : "hover:shadow-lg hover:border-gray-100"
                     }`}
                   >
-                    {/* Premium gradient border accent */}
+                   
                     <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#2c154f] via-[#6b3fa0] to-[#2c154f] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
 
-                    {/* Question Button */}
+                   
                     <button
                       onClick={() => toggleFaq(index)}
                       className="w-full flex justify-between items-center p-6 lg:p-7 text-left group/btn"
@@ -1155,7 +1174,7 @@ const AdvisoryPage = () => {
                       </div>
                     </button>
 
-                    {/* Answer Panel */}
+                   
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${
                         openFaq === index
@@ -1215,9 +1234,9 @@ const AdvisoryPage = () => {
                   </Link>
                 </div>
               </div>
-            </div> */}
+            </div> 
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section
@@ -1234,13 +1253,13 @@ const AdvisoryPage = () => {
             <div
               className={`transition-all duration-800 transform ${visibleSections.cta ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
             >
-              <div className="inline-flex items-center gap-3 mb-5">
+              {/* <div className="inline-flex items-center gap-3 mb-5">
                 <div className="h-px w-12 bg-white/50"></div>
                 <span className="text-white/50 text-[12px] tracking-[0.3em] uppercase">
                   Get Started
                 </span>
                 <div className="h-px w-12 bg-white/50"></div>
-              </div>
+              </div> */}
 
               <h2 className="text-4xl md:text-5xl font-light text-white mb-5 tracking-tight">
                 Ready to {" "}
