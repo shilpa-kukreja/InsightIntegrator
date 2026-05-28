@@ -137,7 +137,7 @@ const MediaPage = () => {
             "Brand-aligned visual presentation",
             "Clean and professional content structuring"
           ],
-          image: "/media/Catelogue&Brocheers Design.jpg",
+          image: "/media/Catelogue&BrocheersDesign1.jpg",
         },
       ],
     },
