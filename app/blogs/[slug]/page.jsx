@@ -66,7 +66,7 @@ const allBlogsData = {
       <p>Conclusion</p>
       <p>VAT audits are a normal part of regulatory compliance. With the right preparation and structured processes, businesses can manage audits efficiently and avoid unnecessary risks.</p>
     `,
-    image: "/blog/blog-image1.png",
+    image: "/blog/VATAuditsintheUAEKeyTriggersandWhattoExpect.jpg",
     category: "Tax & Compliance",
     author: {
       name: "Sarah Johnson",
@@ -126,7 +126,7 @@ const allBlogsData = {
       <h2>Conclusion:</h2>
       <p>A resilient supply chain is no longer optional. Businesses that actively manage risk and optimize operations gain a strong competitive advantage.</p>
     `,
-    image: "/blog/blog-image2.png",
+    image: "/blog/SupplyChainRiskManagementImprovingResilience.jpg",
     category: "Advisory",
     author: {
       name: "Michael Chen",
@@ -182,7 +182,7 @@ const allBlogsData = {
       <h2>Conclusion</h2>
       <p>E-invoicing is not just a regulatory requirement but a shift toward more efficient financial operations. Businesses that take early steps to prepare will benefit from smoother implementation and improved compliance.</p>
     `,
-    image: "/blog/blog-image3.png",
+    image: "/blog/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg",
     category: "Digital Transformation",
     author: {
       name: "David Williams",
@@ -240,7 +240,7 @@ const allBlogsData = {
       <h2>Conclusion:</h2>
       <p>Strategic tax planning helps businesses minimize risk, optimize liabilities, and stay compliant in an evolving regulatory environment.</p>
     `,
-    image: "/blog/blog-image1.png",
+    image: "/blog/SupplyChainRiskManagementImprovingResilience.jpg",
     category: "Tax & Compliance",
     author: {
       name: "Emily Rodriguez",
@@ -292,7 +292,7 @@ const allBlogsData = {
       <h2>Conclusion:</h2>
       <p>ESG is becoming a core part of business strategy. Companies that adopt it early gain credibility and long-term value.</p>
     `,
-    image: "/blog/blog-image2.png",
+    image: "/blog/UAEE-Invoicing2026PreparingforRegulatoryChange.jpg",
     category: "Business Strategy",
     author: {
       name: "Lisa Thompson",
@@ -346,7 +346,7 @@ const allBlogsData = {
       <h2>Conclusion:</h2>
       <p>Remote work offers flexibility, but requires structured compliance and planning. Businesses that address these risks early can operate confidently in a global workforce environment.</p>
     `,
-    image: "/blog/blog-image3.png",
+    image: "/blog/VATAuditsintheUAEKeyTriggersandWhattoExpect.jpg",
     category: "Market Insights",
     author: {
       name: "James Wilson",

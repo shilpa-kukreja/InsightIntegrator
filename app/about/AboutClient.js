@@ -926,7 +926,7 @@ const AboutPage = () => {
                   <div className="h-px w-8 md:w-10 bg-[#0a0a0a]/15"></div>
                   <span className="text-[#0a0a0a] text-[10px] md:text-xs font-light tracking-[0.2em] uppercase">Our Promise</span>
                 </div> */}
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 mb-4 md:mb-6 tracking-tight leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#2c154f] mb-4 md:mb-6 tracking-tight leading-tight">
                   Built on Trust, <br /><span className="font-bold">Focused on Regulatory Clarity.</span>
                 </h2>
                 <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-6 md:mb-10 font-light">
