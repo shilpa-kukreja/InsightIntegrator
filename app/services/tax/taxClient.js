@@ -86,7 +86,7 @@ const TaxPage = () => {
         "VAT advisory for business transactions",
       ],
       image:
-        "/tak/VAT.jpg",
+        "/tak/VAT1.jpg",
     },
     // {
     //   id: 'transfer-pricing',
