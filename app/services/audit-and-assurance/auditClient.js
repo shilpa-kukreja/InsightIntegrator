@@ -95,7 +95,7 @@ const AuditAssurancePage = () => {
         "Budgeting and Forecasting",
       ],
       image:
-        "/audit-and-assurance/FinancialReportingAdvisoryServices(FRAS).jpg",
+        "/audit-and-assurance/FinancialReportingAdvisoryServices(FRAS)1.jpg",
     },
     {
       id: "in-country",
@@ -115,7 +115,7 @@ const AuditAssurancePage = () => {
         "Data Management and Real-Time ICV Reporting Solutions",
       ],
       image:
-        "/audit-and-assurance/In-CountryValue.jpg",
+        "/audit-and-assurance/In-CountryValue1.jpg",
     },
   ];
 
@@ -143,7 +143,7 @@ const AuditAssurancePage = () => {
             "Virtual CFO Service",
             "Budgeting and forecasting",
           ],
-          image: "/audit-and-assurance/AccountingandBook-keeping.jpg",
+          image: "/audit-and-assurance/AccountingandBook-keeping1.jpg",
         },
         {
           id: "business-incorporation",
@@ -160,7 +160,7 @@ const AuditAssurancePage = () => {
             "Operational Excellence (Lean & Agile)",
             "ESG & Sustainability Strategy",
           ],
-          image: "/audit-and-assurance/BusinessIncorporation.jpg",
+          image: "/audit-and-assurance/BusinessIncorporation1.jpg",
         },
         {
           id: "liquidation",
@@ -178,7 +178,7 @@ const AuditAssurancePage = () => {
             "License Cancellation",
             "Public Notice Management",
           ],
-          image: "/audit-and-assurance/LiquidationandDe-registration.jpg",
+          image: "/audit-and-assurance/LiquidationandDe-registration1.jpg",
         },
         {
           id: "stock-asset",
@@ -195,7 +195,7 @@ const AuditAssurancePage = () => {
             "IFRS-Ready Asset Registers",
             "Cycle Counting & Perpetual Inventory",
           ],
-          image: "/audit-and-assurance/Stock&AssetAuditCount.jpg",
+          image: "/audit-and-assurance/Stock&AssetAuditCount1.jpg",
         },
         {
           id: "hr-payroll",
@@ -212,7 +212,7 @@ const AuditAssurancePage = () => {
             "End-of-Service & Gratuity Management",
             "HR Compliance Advisory",
           ],
-          image: "/audit-and-assurance/HRandPayroll.jpg",
+          image: "/audit-and-assurance/HRandPayroll1.jpg",
         },
       ],
     },
@@ -336,7 +336,7 @@ const AuditAssurancePage = () => {
                   Overview
                 </span>
               </div> */}
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-light text-[#2b144d] mb-6 leading-tight">
                 Clarity. <span className="font-bold">Compliance.</span> Confidence.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto my-4"></div>
@@ -571,7 +571,7 @@ const AuditAssurancePage = () => {
                     Why Choose Us
                   </span>
                 </div> */}
-                <h2 className="text-4xl md:text-5xl font-light text-black mb-4 leading-tight">
+                <h2 className="text-4xl md:text-5xl font-light text-[#2b144d] mb-4 leading-tight">
                   Core <span className="font-bold">Advantages</span>
                 </h2>
                 <div className="w-16 h-px bg-black mx-auto mb-12"></div>

@@ -66,7 +66,7 @@ const TaxPage = () => {
         "Tax process advisory",
       ],
       image:
-        "/tak/CorporateTax.jpg",
+        "/tak/CorporateTax1.jpg",
     },
     {
       id: "vat",
@@ -86,7 +86,7 @@ const TaxPage = () => {
         "VAT advisory for business transactions",
       ],
       image:
-        "/tak/Vat.jpg",
+        "/tak/VAT.jpg",
     },
     // {
     //   id: 'transfer-pricing',
@@ -297,7 +297,7 @@ const TaxPage = () => {
                   Overview
                 </span>
               </div> */}
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-light text-[#2b144d] mb-6 leading-tight">
                 Accuracy.
                 <span className="font-bold"> Compliance.</span> Tax Efficiency.
               </h2>

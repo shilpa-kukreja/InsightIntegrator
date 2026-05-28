@@ -354,7 +354,7 @@ const CareersPage = () => {
                 <div className="relative overflow-hidden shadow-2xl rounded-lg">
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/10 to-transparent z-10"></div>
                   <img
-                    src="/career/WhoWeAre.jpg"
+                    src="/career/JoinOurTeam1.jpeg"
                     alt="Insight Integrators Team"
                     className="w-full h-[300px] sm:h-[400px] lg:h-[450px] object-cover"
                   />
@@ -660,7 +660,7 @@ const CareersPage = () => {
       {/* Left Side - Image */}
       <div className="relative h-[300px] sm:h-[500px] lg:min-h-[720px]">
         <img
-          src="/career/CareerAplicationForm.jpg"
+          src="/career/CareerApplicationForm1.jpeg"
           alt="Submit your application"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -684,7 +684,7 @@ const CareersPage = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-light text-[#2b144d] leading-tight">
             Apply and become part of our{" "}
             <span className="font-bold">expert team</span>
           </h2>

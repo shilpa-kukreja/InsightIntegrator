@@ -211,7 +211,7 @@ const WhistleblowingPage = () => {
                     <div className="h-px w-8 bg-[#0a0a0a]/50"></div>
                     <span className="text-[#0a0a0a] text-[10px] font-light tracking-[0.2em] uppercase">Our Commitment</span>
                   </div> */}
-                  <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-5 leading-tight">
+                  <h2 className="text-2xl md:text-3xl font-light text-[#2b144d] mb-5 leading-tight">
                     Confidential <span className="font-bold">Whistleblowing Service</span>
                   </h2>
                   <p className="text-gray-500 text-base leading-relaxed text-justify mb-5 font-light">
@@ -269,7 +269,7 @@ const WhistleblowingPage = () => {
                 <div className="bg-white  shadow-md p-5 md:p-5 rounded-md h-full flex flex-col">
                   <div className="mb-5">
                     {/* <div className="w-12 h-px bg-[#0a0a0a]/50 mb-5"></div> */}
-                    <h2 className="text-2xl md:text-3xl font-light text-gray-900">
+                    <h2 className="text-2xl md:text-3xl font-light text-[#2b144d]">
                       Anonymous <span className="font-bold">Report</span>
                     </h2>
                   </div>

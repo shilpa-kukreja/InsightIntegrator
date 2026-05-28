@@ -193,7 +193,7 @@ const ContactPage = () => {
                     <div className="h-px w-8 bg-[#0a0a0a]/15"></div>
                     <span className="text-[#0a0a0a] text-[11px] font-light tracking-[0.2em] uppercase">Send a Message</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-light text-gray-900 leading-tight">
+                  <h2 className="text-3xl md:text-4xl font-light text-[#2b144d] leading-tight">
                     Share your enquiry and one of our <span className="font-bold">experts will contact you</span>
                   </h2>
                 </div>

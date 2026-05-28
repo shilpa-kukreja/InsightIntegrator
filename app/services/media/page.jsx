@@ -101,7 +101,7 @@ const MediaPage = () => {
             "Scalable vector design",
             "Rebranding and logo refresh solutions"
           ],
-          image: "/media/LogoDesign.jpg",
+          image: "/media/LogoDesign1.jpg",
         },
         {
           id: "packaging-design",
@@ -119,7 +119,7 @@ const MediaPage = () => {
             "Minimal and premium design styles",
             "Retail and e-commerce packaging solutions"
           ],
-          image: "/media/PackagingDesign.jpg",
+          image: "/media/PackagingDesign1.jpg",
         },
         {
           id: "catelogue-brocheers",
@@ -137,7 +137,7 @@ const MediaPage = () => {
             "Brand-aligned visual presentation",
             "Clean and professional content structuring"
           ],
-          image: "/media/Catelogue&BrocheersDesign.jpg",
+          image: "/media/Catelogue&Brocheers Design.jpg",
         },
       ],
     },
@@ -164,7 +164,7 @@ const MediaPage = () => {
             "User-friendly shopping experience",
             "Performance and speed optimization"
           ],
-          image: "/media/EcommerceDevelopment.jpg",
+          image: "/media/EcommerceDevelopment1.jpg",
         },
         {
           id: "web-development",
@@ -182,7 +182,7 @@ const MediaPage = () => {
             "API and third-party integrations",
             "Website speed and performance optimization"
           ],
-          image: "/media/WebDevelopment.jpg",
+          image: "/media/WebDevelopment1.jpg",
         },
         {
           id: "ui-ux",
@@ -200,7 +200,7 @@ const MediaPage = () => {
             "Interactive user journeys",
             "Conversion-focused design strategy"
           ],
-          image: "/media/UIUXDesign.jpg",
+          image: "/media/UIUXDesign1.jpg",
         },
       ],
     },
@@ -227,7 +227,7 @@ const MediaPage = () => {
             "Google Ads & Meta Ads management",
             "Brand strategy and online positioning"
           ],
-          image: "/media/DigitalMarketing.jpg",
+          image: "/media/DigitalMarketing1.jpg",
         },
        
      
@@ -358,7 +358,7 @@ const MediaPage = () => {
                   Overview
                 </span>
               </div> */}
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-light text-[#2b144d] mb-6 leading-tight">
                 Creative.   <span className="font-bold">Results-Focused.</span> Engaging.
               </h2>
               <div className="w-16 h-px bg-[#0a0a0a]/50 mx-auto my-4"></div>

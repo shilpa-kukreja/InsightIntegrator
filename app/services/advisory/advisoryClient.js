@@ -71,7 +71,7 @@ const AdvisoryPage = () => {
         "Change implementation support",
       ],
       image:
-        "/advisory/Strategy&Transformation.jpg",
+        "/advisory/Strategy&Transformation1.jpg",
     },
   ];
 
@@ -100,7 +100,7 @@ const AdvisoryPage = () => {
             "IT Audit",
             "Compliance Audit",
           ],
-          image: "/advisory/InternalAudit.jpg",
+          image: "/advisory/InternalAudit1.jpg",
         },
         {
           id: "internal-controls",
@@ -118,7 +118,7 @@ const AdvisoryPage = () => {
             "Independent Review and Assurance",
            
           ],
-          image: "/advisory/InternalControlsoverFinancialReporting.jpg",
+          image: "/advisory/InternalControlsoverFinancialReporting1.jpg",
         },
         {
           id: "enterprise-risk",
@@ -136,7 +136,7 @@ const AdvisoryPage = () => {
             "Regulatory and Compliance Risk Management",
             "Risk Training and Awareness",
           ],
-          image: "/advisory/EnterpriseRiskManagement.jpg",
+          image: "/advisory/EnterpriseRiskManagement1.jpg",
         },
            {
           id: "fraud-investigations",
@@ -155,7 +155,7 @@ const AdvisoryPage = () => {
              "Fraud Awareness Training",
             "Incident Response Planning"
           ],
-          image: "/advisory/FraudInvestigations.jpg",
+          image: "/advisory/Fraudinvestigations1.jpg",
         },
         {
           id: "corporate-governance",
@@ -173,7 +173,7 @@ const AdvisoryPage = () => {
             "Succession Planning",
             "Training and Awareness",
           ],
-          image: "/advisory/CorporateGovernanceAssessment.jpg",
+          image: "/advisory/CorporateGovernanceAssessment1.jpg",
         },
       ],
     },
@@ -202,7 +202,7 @@ const AdvisoryPage = () => {
             "Transaction monitoring guidance",
             "Regulatory reporting assistance",
           ],
-          image: "/advisory/AML&CFTCompliance.jpg",
+          image: "/advisory/AML&CFTCompliance1.jpg",
         },
         {
           id: "regulatory-comliance",
@@ -220,7 +220,7 @@ const AdvisoryPage = () => {
             "Regulatory gap analysis",
             "Compliance process improvement guidance",
           ],
-          image: "/advisory/RegulatoryComplianceAdvisory.jpg",
+          image: "/advisory/Accreditation&RegulatoryReadiness.jpg",
         },
         {
           id: "compilance-monitorign",
@@ -238,7 +238,7 @@ const AdvisoryPage = () => {
             "Ongoing compliance tracking",
             "Control testing and validation"
           ],
-          image: "/advisory/Compliancemonitoring&assurance.jpg",
+          image: "/advisory/Compliancemonitoring&assurance1.jpg",
         },
         {
           id: "training-development",
@@ -256,7 +256,7 @@ const AdvisoryPage = () => {
             "Employee capability assessments",
             "Customized learning frameworks"
           ],
-          image: "/advisory/Traininganddevelopment.jpg",
+          image: "/advisory/Traininganddevelopment1.jpg",
         },
         {
           id: "independent-third",
@@ -274,7 +274,7 @@ const AdvisoryPage = () => {
             "Risk and gap analysis",
             "Third-party assurance reporting"
           ],
-          image: "/advisory/Independentthirdpartyreviews.jpg",
+          image: "/advisory/Independentthird-partyreviews1.jpg",
         },
         {
           id: "islamic-finance",
@@ -292,7 +292,7 @@ const AdvisoryPage = () => {
             "Compliance monitoring frameworks",
             "Regulatory and ethical guidance"
           ],
-          image: "/advisory/Islamicfinanceadvisoryandshariahcompliance.jpg",
+          image: "/advisory/Islamic financeadvisoryandshari’ahcompliance.jpg",
         },
       ],
     },
@@ -321,7 +321,7 @@ const AdvisoryPage = () => {
             "Risk and opportunity analysis",
             "Business model evaluation"
           ],
-          image: "/advisory/FeasibilityStudies.jpg",
+          image: "/advisory/FeasibilityStudies1.jpg",
         },
         {
           id: "due-diligence",
@@ -339,7 +339,7 @@ const AdvisoryPage = () => {
             "Business performance analysis",
             "Risk identification and reporting"
           ],
-          image: "/advisory/DueDiligence.jpg",
+          image: "/advisory/DueDiligence1.jpg",
         },
         {
           id: "valuations-financial",
@@ -357,7 +357,7 @@ const AdvisoryPage = () => {
             "M&A valuation support",
             "Strategic financial planning"
           ],
-          image: "/advisory/ValuationsandFinancialModelling.jpg",
+          image: "/advisory/ValuationsandFinancialModelling1.jpg",
         },
       ],
     },
@@ -404,7 +404,7 @@ const AdvisoryPage = () => {
             "Digital innovation strategy",
             "Data-driven decision frameworks"
           ],
-          image: "/advisory/DigitalStrategy.jpg",
+          image: "/advisory/Digitalstrategy1.jpg",
         },
         {
           id: "implementation-support",
@@ -422,7 +422,7 @@ const AdvisoryPage = () => {
             "Performance monitoring assistance",
             "Change management support"
           ],
-          image: "/advisory/ImplementationSupport.jpg",
+          image: "/advisory/ImplementationSupport1.jpg",
         },
         {
           id: "post-implementation",
@@ -440,7 +440,7 @@ const AdvisoryPage = () => {
             "Compliance and control assessment",
             "Recommendations for optimization"
           ],
-          image: "/advisory/PostImplementationReview.jpg",
+          image: "/advisory/PostImplementationReview1.jpg",
         },
         {
           id: "technology-advisory",
@@ -458,7 +458,7 @@ const AdvisoryPage = () => {
             "IT governance and risk advisory",
             "Technology performance evaluation"
           ],
-          image: "/advisory/TechnologyAdvisory.jpg",
+          image: "/advisory/TechnologyAdvisory1.jpg",
         },
         {
           id: "training-change",
@@ -476,7 +476,7 @@ const AdvisoryPage = () => {
             "Workforce readiness assessments",
             "Performance and transition management"
           ],
-          image: "/advisory/TrainingandChangeManagement.jpg",
+          image: "/advisory/Trainingandchangemanagement1.jpg",
         },
       ],
     },
@@ -802,7 +802,7 @@ const AdvisoryPage = () => {
                   Overview
                 </span>
               </div> */}
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-light text-[#2b144d] mb-4 leading-tight">
                 Clarity.   <span className="font-bold">Sustainable Growth.</span>{" "}
                 Strategy.
               </h2>
