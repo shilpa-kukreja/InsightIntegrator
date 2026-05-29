@@ -584,7 +584,7 @@ export default function MasterclassPopup({
   const [isLoading, setIsLoading] = useState(false);
 
   const GOOGLE_SHEET_URL =
-    "https://script.google.com/macros/s/AKfycbyZvHfKtVW22C-jDr0QcGexrEawnyFqJXhiVIRvrfqV6ER_wtHfF8zRnJ2CUaJylVCx/exec";
+    "https://script.google.com/macros/s/AKfycbxAhWNPFf_xLhDY2j-CRa3WgOQMVvb9NHKmoS4JZmFrvHhK90oqmnl6JK7t-vR4GRrK/exec";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
