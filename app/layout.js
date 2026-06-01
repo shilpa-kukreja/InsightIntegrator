@@ -16,9 +16,14 @@ export const metadata = {
   title: "Insight Integrators | Consulting Services in UAE",
   description: "Insight Integrators is a leading consulting firm in the UAE offering internal audit, ICFR, risk advisory, AML, VAT, corporate tax, and regulatory compliance services to help businesses navigate complex challenges and achieve sustainable growth.",
   alternates: {
-    canonical: "https://insight-integrator.vercel.app/",
+    canonical: "https://insightintegrators.ae/",
   },
+  verification: {
+  google: "aEQ0NYEQ4tD88nfz3LUfON7bPKj-gzsDBNfgefdUAcg",
+},
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
