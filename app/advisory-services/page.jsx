@@ -25,6 +25,7 @@ import LeadMagnetSection from "../components/landingcomponents/LeadMagnet";
 import ContactPopup from "../components/landingcomponents/ContactPopup";
 import ReviewsSection from "../components/landingcomponents/ReviewsSection";
 import Footer from "../components/landingcomponents/Footer";
+import HeroBanner from "../components/landingcomponents/HeroBanner";
 
 
 
@@ -33,8 +34,8 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      {/* <HeroBanner /> */}
-      <HeroSection/>
+      <HeroBanner/>
+      {/* <HeroSection/> */}
       <AboutUs />
       <ProblemAwarenessSection/>
       <CoreServicesSection/>

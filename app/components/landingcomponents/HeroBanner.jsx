@@ -156,7 +156,7 @@ export default function HeroBanner() {
                                                     <MessageSquare className="w-6 h-6 text-white" />
                                                 </div>
                                                 <div>
-                                                    <h3 className="text-2xl font-bold text-white">Free  Consultation</h3>
+                                                    <h3 className="text-2xl font-bold text-white">GET STARTED NOW</h3>
                                                     <p className="text-blue-100 text-sm mt-1">Speak directly with our experts</p>
                                                 </div>
                                             </div>

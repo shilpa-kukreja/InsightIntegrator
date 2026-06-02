@@ -42,6 +42,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import NewsletterPopup from "./components/NewsletterPopup";
+import ContactPopup from "./components/landingcomponents/ContactPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -112,6 +113,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <NewsletterPopup />
+        <ContactPopup/>
       </body>
     </html>
   );
