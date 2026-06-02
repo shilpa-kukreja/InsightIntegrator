@@ -112,7 +112,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <NewsletterPopup />
+        {/* <NewsletterPopup /> */}
         <ContactPopup/>
       </body>
     </html>
