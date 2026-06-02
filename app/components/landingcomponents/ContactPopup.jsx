@@ -476,7 +476,7 @@ export default function ContactPopup({ onClose }) {
     clearTimer();
     autoShowTimer.current = setTimeout(() => {
       setIsVisible(true);
-    }, 30000);
+    }, 10000);
   };
 
   // On mount, start the 30-second timer
