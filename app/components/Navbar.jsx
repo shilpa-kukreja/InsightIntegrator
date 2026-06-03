@@ -1180,7 +1180,7 @@ const Navbar = () => {
               <span className="absolute inset-0 bg-[#4f2d80] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
 
-            <Link href="/landing" className=""><button
+            <Link href="/advisory-services" className=""><button
               onClick={() => {
 
                 closeMobileMenu();
