@@ -54,10 +54,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// export const metadata = {
+//   title: "Insight Integrators | Consulting Services in UAE",
+//   description:
+//     "Insight Integrators is a leading consulting firm in the UAE offering internal audit, ICFR, risk advisory, AML, VAT, corporate tax, and regulatory compliance services to help businesses navigate complex challenges and achieve sustainable growth.",
+
+//   alternates: {
+//     canonical: "https://insightintegrators.ae/",
+//   },
+
+//   verification: {
+//     google: "aEQ0NYEQ4tD88nfz3LUfON7bPKj-gzsDBNfgefdUAcg",
+//   },
+
+//   robots: {
+//     index: true,
+//     follow: true,
+//   },
+// };
+
+
 export const metadata = {
+  metadataBase: new URL("https://insightintegrators.ae"),
+
   title: "Insight Integrators | Consulting Services in UAE",
+
   description:
-    "Insight Integrators is a leading consulting firm in the UAE offering internal audit, ICFR, risk advisory, AML, VAT, corporate tax, and regulatory compliance services to help businesses navigate complex challenges and achieve sustainable growth.",
+    "Insight Integrators is a leading consulting firm in the UAE offering internal audit, ICFR, risk advisory, AML, VAT, corporate tax, and regulatory compliance services.",
 
   alternates: {
     canonical: "https://insightintegrators.ae/",
@@ -71,7 +94,60 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Insight Integrators | Consulting Services in UAE",
+    description:
+      "Leading consulting firm in UAE offering Internal Audit, Risk Advisory, AML, VAT, Corporate Tax and Compliance Services.",
+    url: "https://insightintegrators.ae",
+    siteName: "Insight Integrators",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Insight Integrators UAE",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Insight Integrators | Consulting Services in UAE",
+    description:
+      "Internal Audit, ICFR, Risk Advisory, AML, VAT, Corporate Tax and Regulatory Compliance Services in UAE.",
+    images: ["/og-image.jpeg"],
+  },
 };
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Insight Integrators L.L.C - FZ",
+  "url": "https://www.insightintegrators.ae",
+  "telephone": "+971526806400",
+  "email": "info@insightintegrators.ae",
+  "logo": "https://www.insightintegrators.ae/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/insight-integrators"
+  ]
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Insight Integrators L.L.C - FZ",
+  "url": "https://www.insightintegrators.ae",
+  "telephone": "+971526806400",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AE"
+  },
+  "areaServed": "United Arab Emirates"
+};
+
 
 export default function RootLayout({ children }) {
   return (
@@ -112,8 +188,24 @@ export default function RootLayout({ children }) {
 
         {children}
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+
+     
+
         {/* <NewsletterPopup /> */}
-        <ContactPopup/>
+        <ContactPopup />
       </body>
     </html>
   );

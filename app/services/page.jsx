@@ -9,7 +9,7 @@ export const metadata = {
     'Explore Insight Integrators consulting services in the UAE, including internal audit, ICFR, riskmanagement, AML, VAT, corporate tax, and regulatory compliance support.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/services',
+    canonical: 'https://insightintegrators.ae/services',
   },
 };
 

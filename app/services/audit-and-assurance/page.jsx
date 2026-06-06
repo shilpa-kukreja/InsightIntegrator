@@ -10,7 +10,7 @@ export const metadata = {
     'Audit and assurance services in the UAE including financial reporting advisory, accountingsupport, business incorporation, liquidation support, and payroll advisory.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/services/audit-and-assurance',
+    canonical: 'https://insightintegrators.ae/services/audit-and-assurance',
   },
 };
 

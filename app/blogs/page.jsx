@@ -12,7 +12,7 @@ export const metadata = {
     ' Read Insight Integrators latest insights on internal audit, VAT, ICFR, tax, compliance, riskmanagement, and business advisory in the UAE.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/blogs',
+    canonical: 'https://insightintegrators.ae/blogs',
   },
 };
 

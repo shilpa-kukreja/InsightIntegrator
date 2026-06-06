@@ -11,7 +11,7 @@ export const metadata = {
     'Contact Insight Integrators for internal audit, ICFR, compliance, VAT, AML, risk, and corporate tax consulting services in Dubai and across the UAE.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/contact',
+    canonical: 'https://insightintegrators.ae/contact',
   },
 };
 

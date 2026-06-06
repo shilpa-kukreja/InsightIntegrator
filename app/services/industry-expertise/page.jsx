@@ -10,7 +10,7 @@ export const metadata = {
     'Industry-focused consulting services for UAE businesses across supply chain, hospitality, education, healthcare, real estate, and financial services.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/services/industry-expertise',
+    canonical: 'https://insightintegrators.ae/services/industry-expertise',
   },
 };
 

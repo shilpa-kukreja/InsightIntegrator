@@ -12,7 +12,7 @@ export const metadata = {
     'Explore career opportunities at Insight Integrators in audit, advisory, compliance, tax, and risk consulting in the UAE.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/careers',
+    canonical: 'https://insightintegrators.ae/careers',
   },
 };
 

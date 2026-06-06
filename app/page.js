@@ -18,7 +18,7 @@ export const metadata = {
     'Insight Integrators provides internal audit, ICFR, risk advisory, AML, VAT, and corporate tax consulting services for businesses in Dubai and across the UAE.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/',
+    canonical: 'https://insightintegrators.ae/',
   },
 }
 

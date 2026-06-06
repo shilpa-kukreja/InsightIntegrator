@@ -9,7 +9,7 @@ export const metadata = {
     'Insight Integrators offers advisory services in the UAE including internal audit, ICFR, riskmanagement, governance, AML, compliance, and business transformation support.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/services/advisory',
+    canonical: 'https://insightintegrators.ae/services/advisory',
   },
 };
 

@@ -8,7 +8,7 @@ export const metadata = {
     'Learn about Insight Integrators, a UAE-based consulting firm supporting businesses with internal audit, ICFR, risk, compliance, AML, VAT, and corporate tax advisory.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/about',
+    canonical: 'https://insightintegrators.ae/about',
   },
 };
 

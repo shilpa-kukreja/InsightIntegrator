@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://insight-integrator.vercel.app",
+  siteUrl: "https://insightintegrators.ae",
   generateRobotsTxt: true,
 };
