@@ -9,7 +9,7 @@ export const metadata = {
     'Insight Integrators provides VAT and corporate tax advisory services in Dubai and across the UAE to help businesses strengthen compliance and tax governance.',
 
   alternates: {
-    canonical: 'https://insight-integrator.vercel.app/services/tax',
+    canonical: 'https://insightintegrators.ae/services/tax',
   },
 };
 
