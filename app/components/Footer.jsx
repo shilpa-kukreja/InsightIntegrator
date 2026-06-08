@@ -313,7 +313,7 @@ const Footer = () => {
           {/* Copyright and Legal Information */}
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-white/25 text-[11px] tracking-wide">
+              <p className="text-white/70 text-[11px] tracking-wide">
                 © {year} Insight Integrators UAE. All rights reserved.
               </p>
               {/* <div className="flex gap-6">
@@ -360,7 +360,7 @@ const Footer = () => {
         >
           <span className="absolute inset-0 rounded-full animate-ping bg-[#1b3163]/30"></span>
           <img
-            src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
+            src="/footer/phone.png"
             alt="call"
             className="relative w-5 h-5"
           />
@@ -376,7 +376,7 @@ const Footer = () => {
         >
           <span className="absolute inset-0 rounded-full animate-ping bg-[#25d366]/30"></span>
           <img
-            src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png"
+            src="/footer/whatsapp.png"
             alt="whatsapp"
             className="relative w-5 h-5"
           />

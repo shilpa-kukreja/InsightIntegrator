@@ -108,7 +108,7 @@ const HomeAboutUs = () => {
               {/* Image */}
               <img
                 src="/home/DeliveringClarityinComplexRegulatoryEnvironments1.jpg"
-                alt="Insight Integrators Team"
+                alt="Insight Integrators Professional Team"
                 className="w-full h-[380px] md:h-[440px] object-cover transition-transform duration-700 hover:scale-105"
               />
               

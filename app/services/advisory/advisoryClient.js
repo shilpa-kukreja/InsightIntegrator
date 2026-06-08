@@ -205,7 +205,7 @@ const AdvisoryPage = () => {
           image: "/advisory/AML&CFTCompliance1.jpg",
         },
         {
-          id: "regulatory-comliance",
+          id: "regulatory-compliance",
           name: "Regulatory compliance advisory ",
           shortDescription: "Improve productivity using lean methodologies.",
           description:
@@ -223,7 +223,7 @@ const AdvisoryPage = () => {
           image: "/advisory/Accreditation&RegulatoryReadiness.jpg",
         },
         {
-          id: "compilance-monitorign",
+          id: "compilance-monitoring",
           name: "Compliance monitoring & assurance ",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
@@ -892,7 +892,7 @@ const AdvisoryPage = () => {
                         {item.description}
                       </p>
 
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
                         {item.detailedDescription}
                       </p>
 

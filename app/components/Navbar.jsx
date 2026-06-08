@@ -245,11 +245,11 @@ const Navbar = () => {
             },
             {
               name: "Regulatory compliance advisory",
-              href: "/services/advisory#regulatory-comliance",
+              href: "/services/advisory#regulatory-compliance",
             },
             {
               name: "Compliance monitoring & assurance ",
-              href: "/services/advisory#compilance-monitorign",
+              href: "/services/advisory#compilance-monitoring",
             },
             {
               name: "Training and development",
@@ -421,8 +421,8 @@ const Navbar = () => {
               href: "/services/media#packaging-design",
             },
             {
-              name: "Catelogue & Brocheers Design",
-              href: "/services/media#catelogue-brocheers",
+              name: "Catelogue & Brochures Design",
+              href: "/services/media#catelogue-brochures",
             },
           ],
         },

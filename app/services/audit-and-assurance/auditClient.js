@@ -195,7 +195,7 @@ const AuditAssurancePage = () => {
             "IFRS-Ready Asset Registers",
             "Cycle Counting & Perpetual Inventory",
           ],
-          image: "/audit-and-assurance/Stock&AssetAuditCount1.jpg",
+          image: "/audit-and-assurance/stock-asset-audit-count.jpg",
         },
         {
           id: "hr-payroll",
@@ -406,7 +406,7 @@ const AuditAssurancePage = () => {
                         {item.description}
                       </p>
 
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
                         {item.detailedDescription}
                       </p>
 

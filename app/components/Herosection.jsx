@@ -147,9 +147,11 @@ const HeroSection = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold leading-tight">
               <span className="text-[#ffffff]">Strengthening Compliance.</span>
-              <span className="text-[#fefff2] block mt-2">
+              {/* <span className="text-[#fefff2] block mt-2"> */}
+                <span className="text-white block mt-2">
+
                  Enabling Confident Decisions.
               </span>
             </h1>

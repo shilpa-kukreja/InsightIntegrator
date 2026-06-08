@@ -9,7 +9,7 @@ export const metadata = {
     'Insights and Articles | Compliance, Audit & Tax in UAE',
 
   description:
-    ' Read Insight Integrators latest insights on internal audit, VAT, ICFR, tax, compliance, riskmanagement, and business advisory in the UAE.',
+    ' Read Insight Integrators latest insights on internal audit, VAT, ICFR, tax, compliance, risk management, and business advisory in the UAE.',
 
   alternates: {
     canonical: 'https://insightintegrators.ae/blogs',

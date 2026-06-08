@@ -716,7 +716,7 @@ const AboutPage = () => {
                     <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent"></div>
                     <img
                       src="/aboutus/YourObjectivesOurExpertise1.jpg"
-                      alt="Insight Integrators Team"
+                      alt="Insight Integrators Professional Team"
                       className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                     />
                   </div>
@@ -840,7 +840,7 @@ const AboutPage = () => {
                 <div className="overflow-hidden rounded-lg ">
                   <img
                     src="/aboutus/ourjourney.jpg"
-                    alt="Quality"
+                    alt="Audit and Assurance Services Team in Dubai"
                     className="w-full h-[700px] object-cover"
                   />
                 </div>
@@ -916,7 +916,7 @@ const AboutPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0a0a]/5 to-transparent"></div>
                   <img
                     src="/aboutus/BuiltonTrust1.jpg"
-                    alt="Leadership Principles"
+                    alt="Business Advisory Consultation Meeting"
                     className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover shadow-2xl rounded-lg"
                   />
                 </div>

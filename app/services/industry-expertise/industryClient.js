@@ -976,7 +976,7 @@ Empowering businesses with industry-specific strategies, operational excellence,
               {service.description}
             </p>
 
-            <div className="bg-gray-50 p-4 rounded-lg mb-6 border-l-4 border-[#2c154f]">
+            <div className="bg-gray-600 p-4 rounded-lg mb-6 border-l-4 border-[#2c154f]">
               <p className="text-sm text-gray-600 italic">
                 {service.detailedDescription}
               </p>

@@ -263,7 +263,7 @@ const TaxPage = () => {
                 </span>
               </h1>
 
-              <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
+              <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
                 Structured tax advisory services focused on regulatory
                 alignment, financial clarity, and efficient tax management for
                 businesses.
@@ -369,7 +369,7 @@ const TaxPage = () => {
                         {item.description}
                       </p>
 
-                      <p className="text-gray-500 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-8 font-light border-l-2 border-gray-400 pl-4 text-justify">
                         {item.detailedDescription}
                       </p>
 

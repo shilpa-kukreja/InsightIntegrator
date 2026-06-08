@@ -6,7 +6,7 @@ export const metadata = {
     'Consulting Services | Internal Audit, ICFR, Tax & Risk Advisory in UAE',
 
   description:
-    'Explore Insight Integrators consulting services in the UAE, including internal audit, ICFR, riskmanagement, AML, VAT, corporate tax, and regulatory compliance support.',
+    'Explore Insight Integrators consulting services in the UAE, including internal audit, ICFR, risk management, AML, VAT, corporate tax, and regulatory compliance support.',
 
   alternates: {
     canonical: 'https://insightintegrators.ae/services',

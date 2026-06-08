@@ -122,8 +122,8 @@ const MediaPage = () => {
           image: "/media/PackagingDesign1.jpg",
         },
         {
-          id: "catelogue-brocheers",
-          name: "Catelogue & Brocheers Design",
+          id: "catelogue-brochures",
+          name: "Catelogue & Brochures Design",
           shortDescription:
             "Optimize inventory levels and warehouse efficiency.",
           description: "Present your products, services, and brand story through professionally designed catalogues and brochures that leave a lasting impression.",
@@ -439,7 +439,7 @@ const MediaPage = () => {
                             {service.description}
                           </p>
 
-                          <p className="text-sm text-gray-400 border-l-2 pl-4 mb-6 text-justify">
+                          <p className="text-sm text-gray-600 border-l-2 pl-4 mb-6 text-justify">
                             {service.detailedDescription}
                           </p>
 
