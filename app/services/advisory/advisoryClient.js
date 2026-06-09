@@ -769,8 +769,8 @@ const AdvisoryPage = () => {
                 </span>
               </h1>
 
-              <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-               Practical advisory solutions designed to help businesses improve decision-making, strengthen operations, manage risk, and adapt confidently to evolving market demands.
+              <p className="text-white/50 text-lg md:text-xl max-w-6xl mx-auto leading-relaxed font-light tracking-wide">
+              Our advisory services help businesses overcome operational and financial challenges through structured planning and expert guidance. From business advisory services Dubai to financial consulting and growth strategy, we provide practical solutions that support long-term stability, performance improvement, and sustainable growth.
 
               </p>
 

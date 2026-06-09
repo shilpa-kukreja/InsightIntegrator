@@ -303,9 +303,8 @@ const AuditAssurancePage = () => {
                 </span>
               </h1>
 
-              <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Structured assurance services designed to strengthen financial transparency, improve compliance oversight, and support confident business decisions.
-
+              <p className="text-white/50 text-lg md:text-xl max-w-6xl mx-auto leading-relaxed font-light tracking-wide">
+                Our Audit & Assurance services help businesses strengthen financial transparency, improve reporting accuracy, and meet regulatory requirements with confidence. Through independent reviews, financial reporting assessments, and ICV support, we help organizations enhance governance, reduce risk, and support informed decision-making across the UAE.
               </p>
               {/*               
               <div className="absolute bottom-12 left-1/2 -translate-x-1/2">

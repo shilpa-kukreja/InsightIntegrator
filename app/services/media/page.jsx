@@ -326,8 +326,8 @@ const MediaPage = () => {
                 </span>
               </h1>
 
-              <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Building impactful digital experiences through strategic design, branding, content creation, and performance-driven marketing solutions.
+              <p className="text-white/50 text-lg md:text-xl max-w-6xl mx-auto leading-relaxed font-light tracking-wide">
+                Our media services help organizations strengthen brand visibility, improve stakeholder engagement, and communicate with clarity. Through strategic content, corporate communication, and digital outreach, we help businesses build credibility and create a stronger market presence.
               </p>
               {/*               
               <div className="absolute bottom-12 left-1/2 -translate-x-1/2">

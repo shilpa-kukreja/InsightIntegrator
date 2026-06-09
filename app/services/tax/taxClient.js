@@ -263,10 +263,8 @@ const TaxPage = () => {
                 </span>
               </h1>
 
-              <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-wide">
-                Structured tax advisory services focused on regulatory
-                alignment, financial clarity, and efficient tax management for
-                businesses.
+              <p className="text-white/80 text-lg md:text-xl max-w-6xl mx-auto leading-relaxed font-light tracking-wide">
+               As an experienced tax consultant in Dubai, we assist businesses with UAE Corporate Tax, VAT compliance, VAT registration UAE, and corporate tax filing UAE requirements. Our practical tax advisory services help organizations stay compliant while improving financial efficiency and managing regulatory obligations effectively.
               </p>
 
               {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
