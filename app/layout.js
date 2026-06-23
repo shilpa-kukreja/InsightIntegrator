@@ -43,6 +43,8 @@ import Script from "next/script";
 import "./globals.css";
 import NewsletterPopup from "./components/NewsletterPopup";
 import ContactPopup from "./components/landingcomponents/ContactPopup";
+import ClientPopupHandler from "./components/ClientPopupHandler"; // <-- import the wrapper
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -187,6 +189,8 @@ export default function RootLayout({ children }) {
         </noscript>
 
         {children}
+         {/* Add the popup handler here */}
+        <ClientPopupHandler />
 
         <script
           type="application/ld+json"
@@ -205,7 +209,7 @@ export default function RootLayout({ children }) {
      
 
         {/* <NewsletterPopup /> */}
-        <ContactPopup />
+        {/* <ContactPopup /> */}
       </body>
     </html>
   );
