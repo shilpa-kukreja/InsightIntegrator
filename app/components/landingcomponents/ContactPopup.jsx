@@ -450,6 +450,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, User, Mail, Phone, Calendar, CheckCircle } from "lucide-react";
 
 export default function ContactPopup({ onClose }) {
+
+  const isFirstShow = useRef(true);
   const [isVisible, setIsVisible] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -472,12 +474,17 @@ export default function ContactPopup({ onClose }) {
 
   // Schedule popup to show after 30 seconds (only if not submitted yet)
   const scheduleAutoShow = () => {
-    if (hasSubmitted) return;
-    clearTimer();
-    autoShowTimer.current = setTimeout(() => {
-      setIsVisible(true);
-    }, 15000);
-  };
+  if (hasSubmitted) return;
+  clearTimer();
+
+  // First time: 10 seconds, subsequent: 15 seconds
+  const delay = isFirstShow.current ? 10000 : 15000;
+
+  autoShowTimer.current = setTimeout(() => {
+    isFirstShow.current = false; // mark that the first show has occurred
+    setIsVisible(true);
+  }, delay);
+};
 
   // On mount, start the 30-second timer
   useEffect(() => {
