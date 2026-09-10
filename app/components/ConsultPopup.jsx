@@ -82,54 +82,109 @@ const ConsultPopup = ({ isOpen, onClose }) => {
 
 
   // Update the handleSubmit function in ConsultPopup.jsx
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+  //   setSubmitStatus(null);
 
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          source: 'consult-popup' // This identifies the form source
-        }),
+  //   try {
+  //     const response = await fetch('/api/send-email', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         ...formData,
+  //         source: 'consult-popup' // This identifies the form source
+  //       }),
+  //     });
+
+  //     const data = await response.json();
+
+  //     if (response.ok) {
+  //       setSubmitStatus('success');
+  //       setFormData({
+  //         fullName: '',
+  //         email: '',
+  //         phone: '',
+  //         company: '',
+  //         designation: '',
+  //         industry: '',
+  //         message: ''
+  //       });
+
+  //       // Close popup after 3 seconds on success
+  //       setTimeout(() => {
+  //         setSubmitStatus(null);
+  //         handleClose();
+  //       }, 3000);
+  //     } else {
+  //       setSubmitStatus('error');
+  //       setTimeout(() => setSubmitStatus(null), 5000);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error submitting form:', error);
+  //     setSubmitStatus('error');
+  //     setTimeout(() => setSubmitStatus(null), 5000);
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
+
+  try {
+    const payload = new FormData();
+
+    payload.append('fullName', formData.fullName);
+    payload.append('email', formData.email);
+    payload.append('phone', formData.phone);
+    payload.append('company', formData.company || '');
+    payload.append('designation', formData.designation || '');
+    payload.append('industry', formData.industry || '');
+    payload.append('message', formData.message);
+    payload.append('source', 'consult-popup');
+
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      body: payload,
+      // IMPORTANT: Do NOT set Content-Type when sending FormData
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setSubmitStatus('success');
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        company: '',
+        designation: '',
+        industry: '',
+        message: ''
       });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({
-          fullName: '',
-          email: '',
-          phone: '',
-          company: '',
-          designation: '',
-          industry: '',
-          message: ''
-        });
-
-        // Close popup after 3 seconds on success
-        setTimeout(() => {
-          setSubmitStatus(null);
-          handleClose();
-        }, 3000);
-      } else {
-        setSubmitStatus('error');
-        setTimeout(() => setSubmitStatus(null), 5000);
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
+      setTimeout(() => {
+        setSubmitStatus(null);
+        handleClose();
+      }, 3000);
+    } else {
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus(null), 5000);
-    } finally {
-      setIsSubmitting(false);
     }
-  };
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    setSubmitStatus('error');
+    setTimeout(() => setSubmitStatus(null), 5000);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
 
   const industries = [
