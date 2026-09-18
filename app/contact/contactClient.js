@@ -424,7 +424,7 @@ const ContactPage = () => {
                           </a>
                         </p>
                         <p className="text-gray-600 text-[12px] font-light">
-                          <a href="tel:+971508896810" className="hover:text-[#0a0a0a] transition-colors duration-300">
+                          <a href="tel:+971526806400" className="hover:text-[#0a0a0a] transition-colors duration-300">
                             +971526806400
                           </a>
                         </p>
