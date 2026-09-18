@@ -823,12 +823,12 @@ export async function POST(request) {
       if (source === 'consult-popup') {
         return `
           <p>Thank you for requesting a consultation with Insight Integrators. We have received your request and one of our experts will contact you within 24 hours to schedule a meeting.</p>
-          <p>In the meantime, if you have any urgent matters, please don't hesitate to call us directly at +971 50 889 6810.</p>
+          <p>In the meantime, if you have any urgent matters, please don't hesitate to call us directly at +971526806400.</p>
         `;
       } else {
         return `
           <p>Thank you for reaching out to Insight Integrators. We have received your message and one of our team members will get back to you within 24 hours.</p>
-          <p>If you have any urgent matters, please don't hesitate to call us directly at +971 50 889 6810.</p>
+          <p>If you have any urgent matters, please don't hesitate to call us directly at +971526806400.</p>
         `;
       }
     };
