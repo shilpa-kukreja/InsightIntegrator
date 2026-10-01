@@ -68,7 +68,7 @@
 //       });
 //       setIsSubmitted(false);
 //       setIsLoading(false);
-      
+
 //     }, 3000);
 
 //   } catch (error) {
@@ -132,7 +132,7 @@
 //                         {/* Right Side - Content */}
 //                         <div className="lg:col-span-7 space-y-8">
 
-                       
+
 //                             {/* Contact Popup */}
 //                             {isPopupOpen && <ContactPopup onClose={() => setIsPopupOpen(false)} />}
 
@@ -161,10 +161,10 @@
 //                                                     <p className="text-blue-100 text-sm mt-1">Speak directly with our experts</p>
 //                                                 </div>
 //                                             </div>
-                                           
+
 //                                         </div>
 
-                                        
+
 //                                     </div>
 
 //                                     {/* Form Body */}
@@ -224,7 +224,7 @@
 //                                                             value={formData.companyName}
 //                                                             onChange={handleChange}
 //                                                             placeholder="Enter your company name"
-                                                        
+
 //                                                             className="w-full pl-10 pr-4 py-3.5 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-gray-50 hover:bg-white focus:bg-white text-gray-900 placeholder-gray-400"
 //                                                         />
 //                                                     </div>
@@ -284,7 +284,7 @@
 //                                                         name="serviceType"
 //                                                         value={formData.serviceType}
 //                                                         onChange={handleChange}
-                                                        
+
 //                                                         className="w-full border border-gray-200 px-4 py-3.5 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-gray-50 hover:bg-white focus:bg-white text-gray-900 placeholder-gray-400 appearance-none"
 //                                                     >
 //                                                         <option value="">Select a service</option>
@@ -348,13 +348,13 @@
 //                                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
 //                                                 </button>
 
-                                               
+
 //                                             </form>
 //                                         )}
 //                                     </div>
 //                                 </div>
 
-                              
+
 //                             </div>
 //                         </motion.div>
 //                     </div>
@@ -596,11 +596,26 @@ export default function HeroBanner() {
                                                     {/* Company Networth */}
                                                     <div>
                                                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                                                            Company Networth <span className="text-red-500">*</span>
+                                                            Company Anual Turnover <span className="text-red-500">*</span>
                                                         </label>
                                                         <div className="relative">
                                                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                                                <DollarSign className="w-5 h-5 text-gray-400" />
+                                                                {/* UAE Dirham Symbol (new 2025) */}
+                                                                <svg
+                                                                    viewBox="0 0 24 24"
+                                                                    className="w-5 h-5 text-gray-400"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    strokeWidth="2"
+                                                                    strokeLinecap="round"
+                                                                    strokeLinejoin="round"
+                                                                >
+                                                                    {/* Letter D */}
+                                                                    <path d="M8 4 H13 a7 7 0 0 1 0 14 H8 Z" />
+                                                                    {/* Two horizontal strokes (Dirham signature) */}
+                                                                    <line x1="4" y1="9" x2="16" y2="9" />
+                                                                    <line x1="4" y1="13" x2="16" y2="13" />
+                                                                </svg>
                                                             </div>
                                                             <input
                                                                 type="text"
