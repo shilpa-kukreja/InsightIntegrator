@@ -13,64 +13,62 @@ export default function ThankYouPage() {
   const [isRedirecting, setIsRedirecting] = useState(false);
   const hasRunRef = useRef(false); // ✅ guard against Strict Mode double-invoke
 
-  useEffect(() => {
-    if (hasRunRef.current) return;
-    hasRunRef.current = true;
+useEffect(() => {
+  if (hasRunRef.current) return;
+  hasRunRef.current = true;
 
-    try {
-      const stored = localStorage.getItem('consultFormData');
-      if (!stored) {
-        console.warn('[thankyou] No form data found in localStorage');
-        return;
-      }
-
-      const data = JSON.parse(stored);
-      console.log('[thankyou] Form data:', data);
-
-      // Build WhatsApp message with whichever fields exist
-      const lines = ['🔔 *New Consultation Request*', ''];
-      if (data.fullName) lines.push(`👤 *Name:* ${data.fullName}`);
-      if (data.companyName || data.company)
-        lines.push(`🏢 *Company:* ${data.companyName || data.company}`);
-      if (data.companyNetworth)
-        lines.push(`💰 *Annual Turnover:* ${data.companyNetworth}`);
-      if (data.employeeCount)
-        lines.push(`👥 *Employees:* ${data.employeeCount}`);
-      if (data.email) lines.push(`📧 *Email:* ${data.email}`);
-      if (data.phone) lines.push(`📱 *Phone:* ${data.phone}`);
-      if (data.designation) lines.push(`💼 *Designation:* ${data.designation}`);
-      if (data.industry) lines.push(`🏭 *Industry:* ${data.industry}`);
-      if (data.serviceType) lines.push(`🛠️ *Service:* ${data.serviceType}`);
-      if (data.message) {
-        lines.push('');
-        lines.push(`💬 *Message:*`);
-        lines.push(data.message);
-      }
-
-      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-        lines.join('\n')
-      )}`;
-
-      setWhatsappUrl(url);
-      setIsRedirecting(true);
-
-      // ✅ No cleanup return — let the timer fire even after Strict Mode re-invoke.
-      // ✅ Remove localStorage INSIDE the timer, not before.
-      setTimeout(() => {
-        // Safety: only redirect if user is still on /thankyou
-        if (window.location.pathname === '/thankyou') {
-          try {
-            localStorage.removeItem('consultFormData');
-          } catch (e) {}
-          console.log('[thankyou] Redirecting to WhatsApp:', url);
-          window.location.replace(url); // replace() avoids back-button loop
-        }
-      }, REDIRECT_DELAY_MS);
-    } catch (err) {
-      console.error('[thankyou] WhatsApp redirect error:', err);
+  try {
+    const stored = localStorage.getItem('consultFormData');
+    if (!stored) {
+      console.warn('[thankyou] No form data found in localStorage');
+      return;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+
+    const data = JSON.parse(stored);
+    console.log('[thankyou] Form data:', data);
+
+    // ✅ Build WhatsApp message with bullet points
+    const lines = ['*New Consultation Request*', ''];
+
+    if (data.fullName) lines.push(`• Name: ${data.fullName}`);
+    if (data.companyName || data.company)
+      lines.push(`• Company: ${data.companyName || data.company}`);
+    if (data.companyNetworth)
+      lines.push(`• Annual Turnover: ${data.companyNetworth}`);
+    if (data.employeeCount)
+      lines.push(`• Employees: ${data.employeeCount}`);
+    if (data.email) lines.push(`• Email: ${data.email}`);
+    if (data.phone) lines.push(`• Phone: ${data.phone}`);
+    if (data.designation) lines.push(`• Designation: ${data.designation}`);
+    if (data.industry) lines.push(`• Industry: ${data.industry}`);
+    if (data.serviceType) lines.push(`• Service: ${data.serviceType}`);
+    if (data.message) {
+      lines.push('');
+      lines.push('*Message:*');
+      lines.push(data.message);
+    }
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+      lines.join('\n')
+    )}`;
+
+    setWhatsappUrl(url);
+    setIsRedirecting(true);
+
+    setTimeout(() => {
+      if (window.location.pathname === '/thankyou') {
+        try {
+          localStorage.removeItem('consultFormData');
+        } catch (e) {}
+        console.log('[thankyou] Redirecting to WhatsApp:', url);
+        window.location.replace(url);
+      }
+    }, REDIRECT_DELAY_MS);
+  } catch (err) {
+    console.error('[thankyou] WhatsApp redirect error:', err);
+  }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   const steps = [
     {
