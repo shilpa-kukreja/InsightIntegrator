@@ -182,12 +182,18 @@ export default function HomePage() {
                     >
                       Whatsapp Now
                     </a>
-                    <button 
-                      onClick={() => window.location.href = "tel:+971526806400"}
-                      className="border-2 border-white hover:bg-white hover:text-[#4f2e80] text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300"
-                    >
-                      Call Us Now
-                    </button>
+                   <a 
+  href="tel:+971526806400"
+  className="group relative flex items-center justify-center gap-2 bg-[#4f2e80] text-white px-6 py-3 rounded-full font-semibold text-sm shadow-[0_8px_20px_rgba(27,49,99,0.35)] hover:bg-[#152750] hover:scale-105 transition-all duration-300"
+>
+  {/* Exact same Phone Icon (or you can use an SVG) */}
+  <img
+    src="/footer/phone.png"
+    alt="call"
+    className="w-5 h-5"
+  />
+  <span>Call Us Now</span>
+</a>
                   </div>
                 </div>
               </div>
